@@ -1,0 +1,7 @@
+ChibiOS/os/hal/src/hal_ext.c:56:6:extInit	8	static
+ChibiOS/os/hal/src/hal_ext.c:68:6:extObjectInit	0	static
+ChibiOS/os/hal/src/hal_ext.c:84:6:extStart	8	static
+ChibiOS/os/hal/src/hal_ext.c:104:6:extStop	8	static
+ChibiOS/os/hal/src/hal_ext.c:125:6:extChannelEnable	8	static
+ChibiOS/os/hal/src/hal_ext.c:147:6:extChannelDisable	8	static
+ChibiOS/os/hal/src/hal_ext.c:177:6:extSetChannelModeI	8	static

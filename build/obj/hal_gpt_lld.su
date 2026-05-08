@@ -1,0 +1,9 @@
+ChibiOS/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c:406:6:gpt_lld_init	8	static
+ChibiOS/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c:488:6:gpt_lld_start	8	static
+ChibiOS/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c:695:6:gpt_lld_stop	8	static
+ChibiOS/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c:820:6:gpt_lld_start_timer	0	static
+ChibiOS/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c:842:6:gpt_lld_stop_timer	0	static
+ChibiOS/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c:862:6:gpt_lld_polled_delay	0	static
+ChibiOS/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c:879:6:gpt_lld_serve_interrupt	8	static
+ChibiOS/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c:155:1:VectorA4	8	static
+ChibiOS/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c:218:1:VectorB8	8	static

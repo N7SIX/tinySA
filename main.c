@@ -2707,8 +2707,8 @@ void shell_reset_console(void){
   // Reset I/O queue over Serial
 //  oqResetI(&SD1.oqueue);
 //  iqResetI(&SD1.iqueue);
-  qResetI(&SD1.oqueue);
-  qResetI(&SD1.iqueue);
+  oqResetI(&SD1.oqueue);
+  iqResetI(&SD1.iqueue);
 
 }
 

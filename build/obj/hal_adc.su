@@ -1,0 +1,9 @@
+ChibiOS/os/hal/src/hal_adc.c:56:6:adcInit	8	static
+ChibiOS/os/hal/src/hal_adc.c:68:6:adcObjectInit	0	static
+ChibiOS/os/hal/src/hal_adc.c:95:6:adcStart	8	static
+ChibiOS/os/hal/src/hal_adc.c:115:6:adcStop	8	static
+ChibiOS/os/hal/src/hal_adc.c:171:6:adcStartConversionI	8	static
+ChibiOS/os/hal/src/hal_adc.c:143:6:adcStartConversion	8	static
+ChibiOS/os/hal/src/hal_adc.c:201:6:adcStopConversion	8	static
+ChibiOS/os/hal/src/hal_adc.c:227:6:adcStopConversionI	8	static
+ChibiOS/os/hal/src/hal_adc.c:268:7:adcConvert	8	static

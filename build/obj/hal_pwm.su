@@ -1,0 +1,11 @@
+ChibiOS/os/hal/src/hal_pwm.c:56:6:pwmInit	8	static
+ChibiOS/os/hal/src/hal_pwm.c:68:6:pwmObjectInit	0	static
+ChibiOS/os/hal/src/hal_pwm.c:89:6:pwmStart	8	static
+ChibiOS/os/hal/src/hal_pwm.c:111:6:pwmStop	8	static
+ChibiOS/os/hal/src/hal_pwm.c:139:6:pwmChangePeriod	0	static
+ChibiOS/os/hal/src/hal_pwm.c:163:6:pwmEnableChannel	16	static
+ChibiOS/os/hal/src/hal_pwm.c:192:6:pwmDisableChannel	8	static
+ChibiOS/os/hal/src/hal_pwm.c:214:6:pwmEnablePeriodicNotification	8	static
+ChibiOS/os/hal/src/hal_pwm.c:237:6:pwmDisablePeriodicNotification	8	static
+ChibiOS/os/hal/src/hal_pwm.c:262:6:pwmEnableChannelNotification	8	static
+ChibiOS/os/hal/src/hal_pwm.c:290:6:pwmDisableChannelNotification	8	static

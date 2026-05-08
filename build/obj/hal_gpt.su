@@ -1,0 +1,12 @@
+ChibiOS/os/hal/src/hal_gpt.c:56:6:gptInit	8	static
+ChibiOS/os/hal/src/hal_gpt.c:68:6:gptObjectInit	0	static
+ChibiOS/os/hal/src/hal_gpt.c:82:6:gptStart	8	static
+ChibiOS/os/hal/src/hal_gpt.c:102:6:gptStop	8	static
+ChibiOS/os/hal/src/hal_gpt.c:125:6:gptChangeInterval	0	static
+ChibiOS/os/hal/src/hal_gpt.c:159:6:gptStartContinuousI	8	static
+ChibiOS/os/hal/src/hal_gpt.c:144:6:gptStartContinuous	8	static
+ChibiOS/os/hal/src/hal_gpt.c:193:6:gptStartOneShotI	8	static
+ChibiOS/os/hal/src/hal_gpt.c:178:6:gptStartOneShot	8	static
+ChibiOS/os/hal/src/hal_gpt.c:226:6:gptStopTimerI	8	static
+ChibiOS/os/hal/src/hal_gpt.c:212:6:gptStopTimer	8	static
+ChibiOS/os/hal/src/hal_gpt.c:250:6:gptPolledDelay	8	static

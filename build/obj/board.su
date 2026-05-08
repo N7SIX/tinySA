@@ -1,0 +1,2 @@
+./NANOVNA_STM32_F303/board.c:72:6:__early_init	8	static
+./NANOVNA_STM32_F303/board.c:138:6:boardInit	0	static
