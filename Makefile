@@ -1,4 +1,8 @@
 ##############################################################################
+
+# Default target: always build everything
+all: prebuild_clean PRE_MAKE_ALL_RULE_HOOK $(OBJS) $(OUTFILES) postbuild_rename POST_MAKE_ALL_RULE_HOOK
+
 # Build global options
 # NOTE: Can be overridden externally.
 #
@@ -15,8 +19,6 @@ endif
 prebuild_clean:
 	@echo "Cleaning build directory..."
 	rm -rf build/*
-
-all: prebuild_clean PRE_MAKE_ALL_RULE_HOOK $(OBJS) $(OUTFILES) postbuild_rename POST_MAKE_ALL_RULE_HOOK
 
 
 
