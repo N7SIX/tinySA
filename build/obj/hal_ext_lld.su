@@ -1,0 +1,5 @@
+ChibiOS/os/hal/ports/STM32/LLD/EXTIv1/hal_ext_lld.c:72:6:ext_lld_init	8	static
+ChibiOS/os/hal/ports/STM32/LLD/EXTIv1/hal_ext_lld.c:106:6:ext_lld_stop	8	static
+ChibiOS/os/hal/ports/STM32/LLD/EXTIv1/hal_ext_lld.c:128:6:ext_lld_channel_enable	16	static
+ChibiOS/os/hal/ports/STM32/LLD/EXTIv1/hal_ext_lld.c:212:6:ext_lld_channel_disable	0	static
+ChibiOS/os/hal/ports/STM32/LLD/EXTIv1/hal_ext_lld.c:85:6:ext_lld_start	16	static

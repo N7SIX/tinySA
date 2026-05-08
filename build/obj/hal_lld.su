@@ -1,0 +1,3 @@
+ChibiOS/os/hal/ports/STM32/STM32F3xx/hal_lld.c:54:13:hal_lld_backup_domain_init	0	static
+ChibiOS/os/hal/ports/STM32/STM32F3xx/hal_lld.c:105:6:hal_lld_init	8	static
+ChibiOS/os/hal/ports/STM32/STM32F3xx/hal_lld.c:144:6:stm32_clock_init	0	static

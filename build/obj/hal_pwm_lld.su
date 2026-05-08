@@ -1,0 +1,11 @@
+ChibiOS/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c:307:6:pwm_lld_init	8	static
+ChibiOS/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c:368:6:pwm_lld_start	8	static
+ChibiOS/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c:612:6:pwm_lld_stop	8	static
+ChibiOS/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c:703:6:pwm_lld_enable_channel	0	static
+ChibiOS/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c:730:6:pwm_lld_disable_channel	0	static
+ChibiOS/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c:754:6:pwm_lld_enable_periodic_notification	0	static
+ChibiOS/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c:774:6:pwm_lld_disable_periodic_notification	0	static
+ChibiOS/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c:790:6:pwm_lld_enable_channel_notification	4	static
+ChibiOS/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c:818:6:pwm_lld_disable_channel_notification	0	static
+ChibiOS/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c:834:6:pwm_lld_serve_interrupt	16	static
+ChibiOS/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c:180:1:VectorB4	8	static

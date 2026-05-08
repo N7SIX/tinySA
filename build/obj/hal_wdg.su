@@ -1,0 +1,4 @@
+ChibiOS/os/hal/src/hal_wdg.c:56:6:wdgInit	8	static
+ChibiOS/os/hal/src/hal_wdg.c:69:6:wdgStart	8	static
+ChibiOS/os/hal/src/hal_wdg.c:89:6:wdgStop	8	static
+ChibiOS/os/hal/src/hal_wdg.c:108:6:wdgReset	8	static
