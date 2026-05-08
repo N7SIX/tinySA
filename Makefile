@@ -1,3 +1,9 @@
+# --- Custom versioned output filename logic ---
+PROJECT_NAME := tinSA-Ultra_N7SIX
+VERSION ?= v7.6
+GIT_REV := $(shell git rev-list --count HEAD 2>/dev/null || echo 0)
+GIT_HASH := $(shell git rev-parse --short HEAD 2>/dev/null || echo unknown)
+OUTFILE := $(PROJECT_NAME)_$(VERSION)-$(GIT_REV)-$(GIT_HASH)
 ##############################################################################
 # Build global options
 # NOTE: Can be overridden externally.
@@ -305,11 +311,39 @@ clean:
 	rm -f -rf build/$(PROJECT).* build/lst/*.* build/obj/*.*
 endif
 
-flash: build/$(PROJECT).bin
+
+build/$(PROJECT).hex: build/$(PROJECT).elf
+	arm-none-eabi-objcopy -O ihex build/$(PROJECT).elf build/$(PROJECT).hex
+
+build/$(PROJECT).list: build/$(PROJECT).elf
+	arm-none-eabi-objdump -d build/$(PROJECT).elf > build/$(PROJECT).list
+
+build/$(PROJECT).dmp: build/$(PROJECT).elf
+	arm-none-eabi-objdump -x build/$(PROJECT).elf > build/$(PROJECT).dmp
+
+# After build, copy all output files to versioned filename
+flash: clean_build build/$(PROJECT).bin build/$(PROJECT).hex build/$(PROJECT).list build/$(PROJECT).dmp
+
+
+clean_build:
+	rm -rf build/lst build/obj
+	find build -maxdepth 1 -type f -name '*_v*.bin' ! -name '$(OUTFILE).bin' -delete
+	find build -maxdepth 1 -type f -name '*_v*.hex' ! -name '$(OUTFILE).hex' -delete
+	find build -maxdepth 1 -type f -name '*_v*.elf' ! -name '$(OUTFILE).elf' -delete
+	find build -maxdepth 1 -type f -name '*_v*.map' ! -name '$(OUTFILE).map' -delete
+	find build -maxdepth 1 -type f -name '*_v*.list' ! -name '$(OUTFILE).list' -delete
+	find build -maxdepth 1 -type f -name '*_v*.dmp' ! -name '$(OUTFILE).dmp' -delete
+	[ -f build/$(PROJECT).bin ] && cp build/$(PROJECT).bin build/$(OUTFILE).bin || true
+	[ -f build/$(PROJECT).hex ] && cp build/$(PROJECT).hex build/$(OUTFILE).hex || true
+	[ -f build/$(PROJECT).elf ] && cp build/$(PROJECT).elf build/$(OUTFILE).elf || true
+	[ -f build/$(PROJECT).map ] && cp build/$(PROJECT).map build/$(OUTFILE).map || true
+	[ -f build/$(PROJECT).list ] && cp build/$(PROJECT).list build/$(OUTFILE).list || true
+	[ -f build/$(PROJECT).dmp ] && cp build/$(PROJECT).dmp build/$(OUTFILE).dmp || true
+	rm -f build/$(PROJECT).bin build/$(PROJECT).hex build/$(PROJECT).elf build/$(PROJECT).dmp build/$(PROJECT).list build/$(PROJECT).map
 	-@printf "reset dfu\r" >/dev/cu.usbmodem401 # mac
 	-@printf "reset dfu\r" >/dev/ttyACM0 # linux
 	sleep 2
-	dfu-util -d 0483:df11 -a 0 -s 0x08000000:leave -D $<
+	dfu-util -d 0483:df11 -a 0 -s 0x08000000:leave -D build/$(OUTFILE).bin
 
 dfu:	build/$(PROJECT).hex
 	-@#c:/work/dfu/HEX2DFU $< build/$(PROJECT).dfu # win

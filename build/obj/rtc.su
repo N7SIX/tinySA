@@ -1,7 +1,0 @@
-rtc.c:60:13:rtc_exit_init	0	static
-rtc.c:65:13:rtc_enter_init	0	static
-rtc.c:33:10:rtc_get_tr_bin	0	static
-rtc.c:40:10:rtc_get_dr_bin	0	static
-rtc.c:46:10:rtc_get_FAT	8	static
-rtc.c:74:6:rtc_set_time	16	static
-rtc.c:142:6:rtc_init	8	static

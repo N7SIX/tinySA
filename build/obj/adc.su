@@ -1,8 +1,0 @@
-./NANOVNA_STM32_F303/adc.c:192:20:adc_interrupt	8	static
-./NANOVNA_STM32_F303/adc.c:89:6:adc_init	8	static
-./NANOVNA_STM32_F303/adc.c:100:10:adc_single_read	8	static
-./NANOVNA_STM32_F303/adc.c:109:10:adc1_single_read	8	static
-./NANOVNA_STM32_F303/adc.c:118:9:adc_vbat_read	24	static
-./NANOVNA_STM32_F303/adc.c:182:6:adc_start_analog_watchdog	8	static
-./NANOVNA_STM32_F303/adc.c:187:6:adc_stop_analog_watchdog	8	static
-./NANOVNA_STM32_F303/adc.c:205:1:Vector88	8	static

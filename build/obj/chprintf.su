@@ -1,9 +1,0 @@
-chprintf.c:67:14:long_to_string_with_divisor	48	static
-chprintf.c:95:1:ulong_freq	48	static
-chprintf.c:172:14:ftoa	24	static
-chprintf.c:195:14:ftoaS	16	static
-chprintf.c:230:14:etoa	4	static
-chprintf.c:624:14:put	0	static
-chprintf.c:285:5:chvprintf	120	static
-chprintf.c:634:6:printObjectInit	0	static
-chprintf.c:640:5:plot_printf	24	static
