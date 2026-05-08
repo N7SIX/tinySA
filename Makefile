@@ -1,3 +1,17 @@
+# Post-build: copy to versioned files and remove unversioned files
+post_build:
+	[ -f build/$(PROJECT).bin ] && cp build/$(PROJECT).bin build/$(OUTFILE).bin || true
+	[ -f build/$(PROJECT).hex ] && cp build/$(PROJECT).hex build/$(OUTFILE).hex || true
+	[ -f build/$(PROJECT).elf ] && cp build/$(PROJECT).elf build/$(OUTFILE).elf || true
+	[ -f build/$(PROJECT).map ] && cp build/$(PROJECT).map build/$(OUTFILE).map || true
+	[ -f build/$(PROJECT).list ] && cp build/$(PROJECT).list build/$(OUTFILE).list || true
+	[ -f build/$(PROJECT).dmp ] && cp build/$(PROJECT).dmp build/$(OUTFILE).dmp || true
+	rm -f build/$(PROJECT).bin build/$(PROJECT).hex build/$(PROJECT).elf build/$(PROJECT).dmp build/$(PROJECT).list build/$(PROJECT).map
+
+# Default build rule: build all, then post_build cleanup
+all: build/$(PROJECT).bin build/$(PROJECT).hex build/$(PROJECT).list build/$(PROJECT).dmp post_build
+
+flash: clean_build all
 # --- Custom versioned output filename logic ---
 PROJECT_NAME := tinSA-Ultra_N7SIX
 VERSION ?= v7.6
