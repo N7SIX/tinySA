@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccaCoijd.s 			page 1
+ARM GAS  /tmp/cciEzyb0.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
   55              	.LVL1:
   56              	.LFB234:
   57              		.loc 1 68 37 is_stmt 1 view -0
-ARM GAS  /tmp/ccaCoijd.s 			page 2
+ARM GAS  /tmp/cciEzyb0.s 			page 2
 
 
   58              		.cfi_startproc
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  112              		.file 4 "ChibiOS/os/common/ports/ARMCMx/chcore_v7m.h"
  113              		.loc 4 604 20 view .LVU19
  114              		.loc 4 612 3 view .LVU20
-ARM GAS  /tmp/ccaCoijd.s 			page 3
+ARM GAS  /tmp/cciEzyb0.s 			page 3
 
 
  115              	.LVL3:
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  169              		.loc 4 631 3 view .LVU45
  170              	.LVL6:
  171              	.LBB111:
-ARM GAS  /tmp/ccaCoijd.s 			page 4
+ARM GAS  /tmp/cciEzyb0.s 			page 4
 
 
  172              	.LBI111:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  226              	.LBB114:
  227              	.LBI114:
  228              		.loc 3 374 20 view .LVU59
-ARM GAS  /tmp/ccaCoijd.s 			page 5
+ARM GAS  /tmp/cciEzyb0.s 			page 5
 
 
  229              		.loc 3 376 3 view .LVU60
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  283              		.loc 4 628 20 view .LVU84
  284              		.loc 4 631 3 view .LVU85
  285              	.LVL12:
-ARM GAS  /tmp/ccaCoijd.s 			page 6
+ARM GAS  /tmp/cciEzyb0.s 			page 6
 
 
  286              	.LBB122:
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  340              	.LBB126:
  341              	.LBI126:
  342              		.loc 4 604 20 view .LVU100
-ARM GAS  /tmp/ccaCoijd.s 			page 7
+ARM GAS  /tmp/cciEzyb0.s 			page 7
 
 
  343              		.loc 4 612 3 view .LVU101
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  397              		.loc 5 546 57 view .LVU125
  398              	.LBB134:
  399              		.loc 5 548 3 view .LVU126
-ARM GAS  /tmp/ccaCoijd.s 			page 8
+ARM GAS  /tmp/cciEzyb0.s 			page 8
 
 
  400 000c 0023     		movs	r3, #0
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  454              		.loc 1 168 1 is_stmt 0 view .LVU141
  455 000a 08BD     		pop	{r3, pc}
  456              		.cfi_endproc
-ARM GAS  /tmp/ccaCoijd.s 			page 9
+ARM GAS  /tmp/cciEzyb0.s 			page 9
 
 
  457              	.LFE239:
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  511              		.loc 3 378 20 view .LVU155
  512              	.LBE136:
  513              	.LBE135:
-ARM GAS  /tmp/ccaCoijd.s 			page 10
+ARM GAS  /tmp/cciEzyb0.s 			page 10
 
 
  514              		.loc 1 147 3 view .LVU156
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  568              		.type	gptStartOneShotI, %function
  569              	gptStartOneShotI:
  570              	.LVL26:
-ARM GAS  /tmp/ccaCoijd.s 			page 11
+ARM GAS  /tmp/cciEzyb0.s 			page 11
 
 
  571              	.LFB241:
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  625              	.LBI146:
  626              		.loc 2 491 20 view .LVU192
  627              		.loc 2 493 3 view .LVU193
-ARM GAS  /tmp/ccaCoijd.s 			page 12
+ARM GAS  /tmp/cciEzyb0.s 			page 12
 
 
  628              	.LBB147:
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  682              		.loc 5 546 57 view .LVU216
  683              	.LBB156:
  684              		.loc 5 548 3 view .LVU217
-ARM GAS  /tmp/ccaCoijd.s 			page 13
+ARM GAS  /tmp/cciEzyb0.s 			page 13
 
 
  685 000c 0023     		movs	r3, #0
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  739              		.loc 1 236 1 is_stmt 0 view .LVU232
  740 000a 08BD     		pop	{r3, pc}
  741              		.cfi_endproc
-ARM GAS  /tmp/ccaCoijd.s 			page 14
+ARM GAS  /tmp/cciEzyb0.s 			page 14
 
 
  742              	.LFE243:
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  796              		.loc 3 378 20 view .LVU246
  797              	.LBE158:
  798              	.LBE157:
-ARM GAS  /tmp/ccaCoijd.s 			page 15
+ARM GAS  /tmp/cciEzyb0.s 			page 15
 
 
  799              		.loc 1 215 3 view .LVU247
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  853              		.type	gptPolledDelay, %function
  854              	gptPolledDelay:
  855              	.LVL40:
-ARM GAS  /tmp/ccaCoijd.s 			page 16
+ARM GAS  /tmp/cciEzyb0.s 			page 16
 
 
  856              	.LFB244:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  910 001e 00000000 		.4byte	0
  911 0022 00000000 		.4byte	.Ldebug_line0
  912 0026 07       		.uleb128 0x7
-ARM GAS  /tmp/ccaCoijd.s 			page 17
+ARM GAS  /tmp/cciEzyb0.s 			page 17
 
 
  913 0027 08       		.byte	0x8
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  967 008a 34       		.byte	0x34
  968 008b 19       		.byte	0x19
  969 008c 95000000 		.4byte	0x95
-ARM GAS  /tmp/ccaCoijd.s 			page 18
+ARM GAS  /tmp/cciEzyb0.s 			page 18
 
 
  970 0090 19       		.uleb128 0x19
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  1024 00fc 08       		.uleb128 0x8
  1025 00fd B9010000 		.4byte	.LASF20
  1026 0101 9B       		.byte	0x9b
-ARM GAS  /tmp/ccaCoijd.s 			page 19
+ARM GAS  /tmp/cciEzyb0.s 			page 19
 
 
  1027 0102 19       		.byte	0x19
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  1081 016e BE       		.byte	0xbe
  1082 016f 19       		.byte	0x19
  1083 0170 C0000000 		.4byte	0xc0
-ARM GAS  /tmp/ccaCoijd.s 			page 20
+ARM GAS  /tmp/cciEzyb0.s 			page 20
 
 
  1084 0174 22       		.byte	0x22
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  1138 01da F7010000 		.4byte	0x1f7
  1139 01de 08       		.uleb128 0x8
  1140 01df 18000000 		.4byte	.LASF34
-ARM GAS  /tmp/ccaCoijd.s 			page 21
+ARM GAS  /tmp/cciEzyb0.s 			page 21
 
 
  1141 01e3 90       		.byte	0x90
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  1195 024e B9030000 		.4byte	0x3b9
  1196 0252 00       		.byte	0
  1197 0253 00       		.byte	0
-ARM GAS  /tmp/ccaCoijd.s 			page 22
+ARM GAS  /tmp/cciEzyb0.s 			page 22
 
 
  1198 0254 1B       		.uleb128 0x1b
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  1252 02c2 18       		.byte	0x18
  1253 02c3 01       		.uleb128 0x1
  1254 02c4 73323300 		.ascii	"s23\000"
-ARM GAS  /tmp/ccaCoijd.s 			page 23
+ARM GAS  /tmp/cciEzyb0.s 			page 23
 
 
  1255 02c8 04       		.byte	0x4
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  1309 0333 01       		.uleb128 0x1
  1310 0334 73333100 		.ascii	"s31\000"
  1311 0338 04       		.byte	0x4
-ARM GAS  /tmp/ccaCoijd.s 			page 24
+ARM GAS  /tmp/cciEzyb0.s 			page 24
 
 
  1312 0339 7101     		.2byte	0x171
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  1366 039e 72313100 		.ascii	"r11\000"
  1367 03a2 04       		.byte	0x4
  1368 03a3 7A01     		.2byte	0x17a
-ARM GAS  /tmp/ccaCoijd.s 			page 25
+ARM GAS  /tmp/cciEzyb0.s 			page 25
 
 
  1369 03a5 11       		.byte	0x11
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  1423 040d 45475200 		.ascii	"EGR\000"
  1424 0411 0B       		.byte	0xb
  1425 0412 A701     		.2byte	0x1a7
-ARM GAS  /tmp/ccaCoijd.s 			page 26
+ARM GAS  /tmp/cciEzyb0.s 			page 26
 
 
  1426 0414 19       		.byte	0x19
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  1480 0481 0B       		.byte	0xb
  1481 0482 AF01     		.2byte	0x1af
  1482 0484 19       		.byte	0x19
-ARM GAS  /tmp/ccaCoijd.s 			page 27
+ARM GAS  /tmp/cciEzyb0.s 			page 27
 
 
  1483 0485 1E020000 		.4byte	0x21e
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  1537 04ee D2       		.byte	0xd2
  1538 04ef 03       		.byte	0x3
  1539 04f0 21050000 		.4byte	0x521
-ARM GAS  /tmp/ccaCoijd.s 			page 28
+ARM GAS  /tmp/cciEzyb0.s 			page 28
 
 
  1540 04f4 18       		.uleb128 0x18
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  1594 0563 13       		.uleb128 0x13
  1595 0564 D5000000 		.4byte	.LASF61
  1596 0568 03       		.byte	0x3
-ARM GAS  /tmp/ccaCoijd.s 			page 29
+ARM GAS  /tmp/cciEzyb0.s 			page 29
 
 
  1597 0569 13       		.uleb128 0x13
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  1651 05d4 43       		.byte	0x43
  1652 05d5 10       		.byte	0x10
  1653 05d6 DA050000 		.4byte	0x5da
-ARM GAS  /tmp/ccaCoijd.s 			page 30
+ARM GAS  /tmp/cciEzyb0.s 			page 30
 
 
  1654 05da 0F       		.uleb128 0xf
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  1708 064a 00       		.byte	0
  1709 064b 17       		.uleb128 0x17
  1710 064c BE040000 		.4byte	.LASF73
-ARM GAS  /tmp/ccaCoijd.s 			page 31
+ARM GAS  /tmp/cciEzyb0.s 			page 31
 
 
  1711 0650 0D       		.byte	0xd
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  1765 06cf 09       		.uleb128 0x9
  1766 06d0 16050000 		.4byte	.LASF81
  1767 06d4 FA       		.byte	0xfa
-ARM GAS  /tmp/ccaCoijd.s 			page 32
+ARM GAS  /tmp/cciEzyb0.s 			page 32
 
 
  1768 06d5 00000000 		.4byte	.LFB244
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  1822 0741 30070000 		.4byte	0x730
  1823 0745 09       		.uleb128 0x9
  1824 0746 84050000 		.4byte	.LASF82
-ARM GAS  /tmp/ccaCoijd.s 			page 33
+ARM GAS  /tmp/cciEzyb0.s 			page 33
 
 
  1825 074a E2       		.byte	0xe2
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  1879 07bc 1E       		.byte	0x1e
  1880 07bd EA050000 		.4byte	0x5ea
  1881 07c1 5E000000 		.4byte	.LLST23
-ARM GAS  /tmp/ccaCoijd.s 			page 34
+ARM GAS  /tmp/cciEzyb0.s 			page 34
 
 
  1882 07c5 5A000000 		.4byte	.LVUS23
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  1936 0855 06000000 		.4byte	.LBE163-.LBB163
  1937 0859 02       		.byte	0x2
  1938 085a F801     		.2byte	0x1f8
-ARM GAS  /tmp/ccaCoijd.s 			page 35
+ARM GAS  /tmp/cciEzyb0.s 			page 35
 
 
  1939 085c 02       		.uleb128 0x2
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  1993 08ca EA050000 		.4byte	0x5ea
  1994 08ce 94000000 		.4byte	.LLST16
  1995 08d2 90000000 		.4byte	.LVUS16
-ARM GAS  /tmp/ccaCoijd.s 			page 36
+ARM GAS  /tmp/cciEzyb0.s 			page 36
 
 
  1996 08d6 05       		.uleb128 0x5
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  2050 0936 14000000 		.4byte	.LFE240-.LFB240
  2051 093a 01       		.uleb128 0x1
  2052 093b 9C       		.byte	0x9c
-ARM GAS  /tmp/ccaCoijd.s 			page 37
+ARM GAS  /tmp/cciEzyb0.s 			page 37
 
 
  2053 093c 590A0000 		.4byte	0xa59
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  2107 09cc 00       		.byte	0
  2108 09cd 0B       		.uleb128 0xb
  2109 09ce BD0F0000 		.4byte	0xfbd
-ARM GAS  /tmp/ccaCoijd.s 			page 38
+ARM GAS  /tmp/cciEzyb0.s 			page 38
 
 
  2110 09d2 0C000000 		.4byte	.LBI151
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  2164 0a4a 06       		.uleb128 0x6
  2165 0a4b 01       		.uleb128 0x1
  2166 0a4c 51       		.byte	0x51
-ARM GAS  /tmp/ccaCoijd.s 			page 39
+ARM GAS  /tmp/cciEzyb0.s 			page 39
 
 
  2167 0a4d 09       		.uleb128 0x9
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  2221 0ab3 01       		.uleb128 0x1
  2222 0ab4 51       		.byte	0x51
  2223 0ab5 09       		.uleb128 0x9
-ARM GAS  /tmp/ccaCoijd.s 			page 40
+ARM GAS  /tmp/cciEzyb0.s 			page 40
 
 
  2224 0ab6 A3       		.byte	0xa3
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  2278 0b31 02000000 		.4byte	.LBB136
  2279 0b35 06000000 		.4byte	.LBE136-.LBB136
  2280 0b39 02       		.byte	0x2
-ARM GAS  /tmp/ccaCoijd.s 			page 41
+ARM GAS  /tmp/cciEzyb0.s 			page 41
 
 
  2281 0b3a ED01     		.2byte	0x1ed
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  2335 0bc6 06000000 		.4byte	.LBE144-.LBB144
  2336 0bca 04       		.byte	0x4
  2337 0bcb 7702     		.2byte	0x277
-ARM GAS  /tmp/ccaCoijd.s 			page 42
+ARM GAS  /tmp/cciEzyb0.s 			page 42
 
 
  2338 0bcd 0A       		.uleb128 0xa
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  2392 0c24 05       		.uleb128 0x5
  2393 0c25 3B010000 		.4byte	.LASF80
  2394 0c29 7D       		.byte	0x7d
-ARM GAS  /tmp/ccaCoijd.s 			page 43
+ARM GAS  /tmp/cciEzyb0.s 			page 43
 
 
  2395 0c2a 32       		.byte	0x32
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  2449 0cba 85       		.byte	0x85
  2450 0cbb 03       		.byte	0x3
  2451 0cbc 02       		.uleb128 0x2
-ARM GAS  /tmp/ccaCoijd.s 			page 44
+ARM GAS  /tmp/cciEzyb0.s 			page 44
 
 
  2452 0cbd CD0F0000 		.4byte	0xfcd
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  2506 0d41 DD010000 		.4byte	.LLST4
  2507 0d45 D9010000 		.4byte	.LVUS4
  2508 0d49 12       		.uleb128 0x12
-ARM GAS  /tmp/ccaCoijd.s 			page 45
+ARM GAS  /tmp/cciEzyb0.s 			page 45
 
 
  2509 0d4a 02040000 		.4byte	.LASF83
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  2563 0dda 12000000 		.4byte	.LBB119
  2564 0dde 06000000 		.4byte	.LBE119-.LBB119
  2565 0de2 02       		.byte	0x2
-ARM GAS  /tmp/ccaCoijd.s 			page 46
+ARM GAS  /tmp/cciEzyb0.s 			page 46
 
 
  2566 0de3 F801     		.2byte	0x1f8
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  2620 0e5b B4010000 		.4byte	.LASF79
  2621 0e5f 52       		.byte	0x52
  2622 0e60 1A       		.byte	0x1a
-ARM GAS  /tmp/ccaCoijd.s 			page 47
+ARM GAS  /tmp/cciEzyb0.s 			page 47
 
 
  2623 0e61 EA050000 		.4byte	0x5ea
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  2677 0ef1 BD0F0000 		.4byte	0xfbd
  2678 0ef5 14000000 		.4byte	.LBI107
  2679 0ef9 01       		.byte	.LVU35
-ARM GAS  /tmp/ccaCoijd.s 			page 48
+ARM GAS  /tmp/cciEzyb0.s 			page 48
 
 
  2680 0efa 14000000 		.4byte	.LBB107
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  2734 0f78 0E       		.uleb128 0xe
  2735 0f79 680F0000 		.4byte	0xf68
  2736 0f7d 09       		.uleb128 0x9
-ARM GAS  /tmp/ccaCoijd.s 			page 49
+ARM GAS  /tmp/cciEzyb0.s 			page 49
 
 
  2737 0f7e 97010000 		.4byte	.LASF92
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  2791 0ff6 E50F0000 		.4byte	0xfe5
  2792 0ffa 15       		.uleb128 0x15
  2793 0ffb 0B040000 		.4byte	.LASF96
-ARM GAS  /tmp/ccaCoijd.s 			page 50
+ARM GAS  /tmp/cciEzyb0.s 			page 50
 
 
  2794 0fff 03       		.byte	0x3
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  2848 001d 12       		.uleb128 0x12
  2849 001e 06       		.uleb128 0x6
  2850 001f 58       		.uleb128 0x58
-ARM GAS  /tmp/ccaCoijd.s 			page 51
+ARM GAS  /tmp/cciEzyb0.s 			page 51
 
 
  2851 0020 0B       		.uleb128 0xb
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  2905 0056 02       		.uleb128 0x2
  2906 0057 17       		.uleb128 0x17
  2907 0058 B742     		.uleb128 0x2137
-ARM GAS  /tmp/ccaCoijd.s 			page 52
+ARM GAS  /tmp/cciEzyb0.s 			page 52
 
 
  2908 005a 17       		.uleb128 0x17
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  2962 0090 21       		.uleb128 0x21
  2963 0091 06       		.sleb128 6
  2964 0092 27       		.uleb128 0x27
-ARM GAS  /tmp/ccaCoijd.s 			page 53
+ARM GAS  /tmp/cciEzyb0.s 			page 53
 
 
  2965 0093 19       		.uleb128 0x19
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  3019 00cb 01       		.uleb128 0x1
  3020 00cc 13       		.uleb128 0x13
  3021 00cd 00       		.byte	0
-ARM GAS  /tmp/ccaCoijd.s 			page 54
+ARM GAS  /tmp/cciEzyb0.s 			page 54
 
 
  3022 00ce 00       		.byte	0
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  3076 0104 13       		.uleb128 0x13
  3077 0105 28       		.uleb128 0x28
  3078 0106 00       		.byte	0
-ARM GAS  /tmp/ccaCoijd.s 			page 55
+ARM GAS  /tmp/cciEzyb0.s 			page 55
 
 
  3079 0107 03       		.uleb128 0x3
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  3133 013d 0B       		.uleb128 0xb
  3134 013e 3A       		.uleb128 0x3a
  3135 013f 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccaCoijd.s 			page 56
+ARM GAS  /tmp/cciEzyb0.s 			page 56
 
 
  3136 0140 3B       		.uleb128 0x3b
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  3190 0176 3B       		.uleb128 0x3b
  3191 0177 0B       		.uleb128 0xb
  3192 0178 39       		.uleb128 0x39
-ARM GAS  /tmp/ccaCoijd.s 			page 57
+ARM GAS  /tmp/cciEzyb0.s 			page 57
 
 
  3193 0179 0B       		.uleb128 0xb
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  3247 01af 13       		.uleb128 0x13
  3248 01b0 02       		.uleb128 0x2
  3249 01b1 18       		.uleb128 0x18
-ARM GAS  /tmp/ccaCoijd.s 			page 58
+ARM GAS  /tmp/cciEzyb0.s 			page 58
 
 
  3250 01b2 00       		.byte	0
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  3304 01e8 22       		.uleb128 0x22
  3305 01e9 04       		.uleb128 0x4
  3306 01ea 01       		.byte	0x1
-ARM GAS  /tmp/ccaCoijd.s 			page 59
+ARM GAS  /tmp/cciEzyb0.s 			page 59
 
 
  3307 01eb 3E       		.uleb128 0x3e
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  3361 0222 01       		.uleb128 0x1
  3362 0223 12       		.uleb128 0x12
  3363 0224 06       		.uleb128 0x6
-ARM GAS  /tmp/ccaCoijd.s 			page 60
+ARM GAS  /tmp/cciEzyb0.s 			page 60
 
 
  3364 0225 58       		.uleb128 0x58
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  3418 025b 05       		.uleb128 0x5
  3419 025c 00       		.byte	0
  3420 025d 03       		.uleb128 0x3
-ARM GAS  /tmp/ccaCoijd.s 			page 61
+ARM GAS  /tmp/cciEzyb0.s 			page 61
 
 
  3421 025e 0E       		.uleb128 0xe
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  3475 0030 12       		.uleb128 .LFE244-.LVL40
  3476 0031 0A       		.uleb128 0xa
  3477 0032 A3       		.byte	0xa3
-ARM GAS  /tmp/ccaCoijd.s 			page 62
+ARM GAS  /tmp/cciEzyb0.s 			page 62
 
 
  3478 0033 03       		.uleb128 0x3
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  3532 006b 0A       		.uleb128 0xa
  3533 006c A3       		.byte	0xa3
  3534 006d 03       		.uleb128 0x3
-ARM GAS  /tmp/ccaCoijd.s 			page 63
+ARM GAS  /tmp/cciEzyb0.s 			page 63
 
 
  3535 006e A5       		.byte	0xa5
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  3589 00a7 A8       		.byte	0xa8
  3590 00a8 2D       		.uleb128 0x2d
  3591 00a9 A8       		.byte	0xa8
-ARM GAS  /tmp/ccaCoijd.s 			page 64
+ARM GAS  /tmp/cciEzyb0.s 			page 64
 
 
  3592 00aa 00       		.uleb128 0
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  3646 00e2 2D       		.uleb128 0x2d
  3647 00e3 A8       		.byte	0xa8
  3648 00e4 00       		.uleb128 0
-ARM GAS  /tmp/ccaCoijd.s 			page 65
+ARM GAS  /tmp/cciEzyb0.s 			page 65
 
 
  3649 00e5 9F       		.byte	0x9f
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  3703 011d 00       		.uleb128 0
  3704 011e 00       		.uleb128 .LVU141
  3705 011f 00       		.uleb128 .LVU141
-ARM GAS  /tmp/ccaCoijd.s 			page 66
+ARM GAS  /tmp/cciEzyb0.s 			page 66
 
 
  3706 0120 00       		.uleb128 0
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  3760 0158 00       		.uleb128 .LVU157
  3761 0159 00       		.uleb128 .LVU157
  3762 015a 00       		.uleb128 0
-ARM GAS  /tmp/ccaCoijd.s 			page 67
+ARM GAS  /tmp/cciEzyb0.s 			page 67
 
 
  3763              	.LLST12:
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  3817              	.LLST14:
  3818 0193 08       		.byte	0x8
  3819 0194 02000000 		.4byte	.LVL22
-ARM GAS  /tmp/ccaCoijd.s 			page 68
+ARM GAS  /tmp/cciEzyb0.s 			page 68
 
 
  3820 0198 06       		.uleb128 .LVL23-.LVL22
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  3874 01cf 08       		.byte	0x8
  3875 01d0 0C000000 		.4byte	.LVL17
  3876 01d4 06       		.uleb128 .LVL18-.LVL17
-ARM GAS  /tmp/ccaCoijd.s 			page 69
+ARM GAS  /tmp/cciEzyb0.s 			page 69
 
 
  3877 01d5 02       		.uleb128 0x2
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  3931 020f 04       		.byte	0x4
  3932 0210 00       		.uleb128 .LVL2-.LVL2
  3933 0211 0F       		.uleb128 .LVL5-1-.LVL2
-ARM GAS  /tmp/ccaCoijd.s 			page 70
+ARM GAS  /tmp/cciEzyb0.s 			page 70
 
 
  3934 0212 01       		.uleb128 0x1
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  3988 024b 06       		.uleb128 .LVL7-.LVL6
  3989 024c 02       		.uleb128 0x2
  3990 024d 30       		.byte	0x30
-ARM GAS  /tmp/ccaCoijd.s 			page 71
+ARM GAS  /tmp/cciEzyb0.s 			page 71
 
 
  3991 024e 9F       		.byte	0x9f
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  4045 001d 1C       		.uleb128 .LFE235-.LFB235
  4046 001e 07       		.byte	0x7
  4047 001f 00000000 		.4byte	.LFB236
-ARM GAS  /tmp/ccaCoijd.s 			page 72
+ARM GAS  /tmp/cciEzyb0.s 			page 72
 
 
  4048 0023 1A       		.uleb128 .LFE236-.LFB236
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  4089      00
  4090              	.LASF37:
  4091 002d 70726576 		.ascii	"prev\000"
-ARM GAS  /tmp/ccaCoijd.s 			page 73
+ARM GAS  /tmp/cciEzyb0.s 			page 73
 
 
  4091      00
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  4117      6F732F68 
  4117      616C2F73 
  4117      72632F68 
-ARM GAS  /tmp/ccaCoijd.s 			page 74
+ARM GAS  /tmp/cciEzyb0.s 			page 74
 
 
  4118              	.LASF61:
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  4145 015f 6F73616C 		.ascii	"osalSysLock\000"
  4145      5379734C 
  4145      6F636B00 
-ARM GAS  /tmp/ccaCoijd.s 			page 75
+ARM GAS  /tmp/cciEzyb0.s 			page 75
 
 
  4146              	.LASF2:
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  4174              	.LASF102:
  4175 01ec 6770745F 		.ascii	"gpt_lld_init\000"
  4175      6C6C645F 
-ARM GAS  /tmp/ccaCoijd.s 			page 76
+ARM GAS  /tmp/cciEzyb0.s 			page 76
 
 
  4175      696E6974 
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  4194      6E73202D 
  4194      666E6F2D 
  4194      636F6D6D 
-ARM GAS  /tmp/ccaCoijd.s 			page 77
+ARM GAS  /tmp/cciEzyb0.s 			page 77
 
 
  4194      6F6E202D 
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  4222 03f8 73686F72 		.ascii	"short int\000"
  4222      7420696E 
  4222      7400
-ARM GAS  /tmp/ccaCoijd.s 			page 78
+ARM GAS  /tmp/cciEzyb0.s 			page 78
 
 
  4223              	.LASF83:
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  4250      696700
  4251              	.LASF48:
  4252 048a 444D4152 		.ascii	"DMAR\000"
-ARM GAS  /tmp/ccaCoijd.s 			page 79
+ARM GAS  /tmp/cciEzyb0.s 			page 79
 
 
  4252      00
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  4276 0525 666C6167 		.ascii	"flags\000"
  4276      7300
  4277              	.LASF30:
-ARM GAS  /tmp/ccaCoijd.s 			page 80
+ARM GAS  /tmp/cciEzyb0.s 			page 80
 
 
  4278 052b 74687265 		.ascii	"thread_reference_t\000"
@@ -4779,35 +4779,35 @@ ARM GAS  /tmp/ccaCoijd.s 			page 1
  4294      696D6572 
  4294      4900
  4295              		.ident	"GCC: (15:13.2.rel1-2) 13.2.1 20231009"
-ARM GAS  /tmp/ccaCoijd.s 			page 81
+ARM GAS  /tmp/cciEzyb0.s 			page 81
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 hal_gpt.c
-     /tmp/ccaCoijd.s:21     .text.gptInit:00000000 $t
-     /tmp/ccaCoijd.s:28     .text.gptInit:00000000 gptInit
-     /tmp/ccaCoijd.s:47     .text.gptObjectInit:00000000 $t
-     /tmp/ccaCoijd.s:54     .text.gptObjectInit:00000000 gptObjectInit
-     /tmp/ccaCoijd.s:76     .text.gptStart:00000000 $t
-     /tmp/ccaCoijd.s:83     .text.gptStart:00000000 gptStart
-     /tmp/ccaCoijd.s:198    .text.gptStop:00000000 $t
-     /tmp/ccaCoijd.s:205    .text.gptStop:00000000 gptStop
-     /tmp/ccaCoijd.s:313    .text.gptChangeInterval:00000000 $t
-     /tmp/ccaCoijd.s:320    .text.gptChangeInterval:00000000 gptChangeInterval
-     /tmp/ccaCoijd.s:421    .text.gptStartContinuousI:00000000 $t
-     /tmp/ccaCoijd.s:428    .text.gptStartContinuousI:00000000 gptStartContinuousI
-     /tmp/ccaCoijd.s:460    .text.gptStartContinuous:00000000 $t
-     /tmp/ccaCoijd.s:467    .text.gptStartContinuous:00000000 gptStartContinuous
-     /tmp/ccaCoijd.s:562    .text.gptStartOneShotI:00000000 $t
-     /tmp/ccaCoijd.s:569    .text.gptStartOneShotI:00000000 gptStartOneShotI
-     /tmp/ccaCoijd.s:604    .text.gptStartOneShot:00000000 $t
-     /tmp/ccaCoijd.s:611    .text.gptStartOneShot:00000000 gptStartOneShot
-     /tmp/ccaCoijd.s:706    .text.gptStopTimerI:00000000 $t
-     /tmp/ccaCoijd.s:713    .text.gptStopTimerI:00000000 gptStopTimerI
-     /tmp/ccaCoijd.s:745    .text.gptStopTimer:00000000 $t
-     /tmp/ccaCoijd.s:752    .text.gptStopTimer:00000000 gptStopTimer
-     /tmp/ccaCoijd.s:847    .text.gptPolledDelay:00000000 $t
-     /tmp/ccaCoijd.s:854    .text.gptPolledDelay:00000000 gptPolledDelay
+     /tmp/cciEzyb0.s:21     .text.gptInit:00000000 $t
+     /tmp/cciEzyb0.s:28     .text.gptInit:00000000 gptInit
+     /tmp/cciEzyb0.s:47     .text.gptObjectInit:00000000 $t
+     /tmp/cciEzyb0.s:54     .text.gptObjectInit:00000000 gptObjectInit
+     /tmp/cciEzyb0.s:76     .text.gptStart:00000000 $t
+     /tmp/cciEzyb0.s:83     .text.gptStart:00000000 gptStart
+     /tmp/cciEzyb0.s:198    .text.gptStop:00000000 $t
+     /tmp/cciEzyb0.s:205    .text.gptStop:00000000 gptStop
+     /tmp/cciEzyb0.s:313    .text.gptChangeInterval:00000000 $t
+     /tmp/cciEzyb0.s:320    .text.gptChangeInterval:00000000 gptChangeInterval
+     /tmp/cciEzyb0.s:421    .text.gptStartContinuousI:00000000 $t
+     /tmp/cciEzyb0.s:428    .text.gptStartContinuousI:00000000 gptStartContinuousI
+     /tmp/cciEzyb0.s:460    .text.gptStartContinuous:00000000 $t
+     /tmp/cciEzyb0.s:467    .text.gptStartContinuous:00000000 gptStartContinuous
+     /tmp/cciEzyb0.s:562    .text.gptStartOneShotI:00000000 $t
+     /tmp/cciEzyb0.s:569    .text.gptStartOneShotI:00000000 gptStartOneShotI
+     /tmp/cciEzyb0.s:604    .text.gptStartOneShot:00000000 $t
+     /tmp/cciEzyb0.s:611    .text.gptStartOneShot:00000000 gptStartOneShot
+     /tmp/cciEzyb0.s:706    .text.gptStopTimerI:00000000 $t
+     /tmp/cciEzyb0.s:713    .text.gptStopTimerI:00000000 gptStopTimerI
+     /tmp/cciEzyb0.s:745    .text.gptStopTimer:00000000 $t
+     /tmp/cciEzyb0.s:752    .text.gptStopTimer:00000000 gptStopTimer
+     /tmp/cciEzyb0.s:847    .text.gptPolledDelay:00000000 $t
+     /tmp/cciEzyb0.s:854    .text.gptPolledDelay:00000000 gptPolledDelay
 
 UNDEFINED SYMBOLS
 gpt_lld_init

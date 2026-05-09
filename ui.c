@@ -658,7 +658,6 @@ show_version(void)
   ili9341_drawstring_10x14(info_about[i++], x , y);
   ili9341_drawstring_10x14(hw_text, x + 138 , y);
   y+=FONT_GET_HEIGHT*3+2-5;
-  ili9341_drawstring_7x13(info_about[i++], x , y);
   while (info_about[i]) {
     do {shift>>=1; y+=5;} while (shift&1);
     ili9341_drawstring_7x13(info_about[i++], x, y+=bFONT_STR_HEIGHT+2-5);
@@ -6533,27 +6532,33 @@ redraw_cal_status:
 
   // Version
   y += YSTEP + YSTEP/2 ;
-#ifdef TINYSA4 // 'tinySA4_v1.2-[0-9]*-gxxxxxxx'
-  strncpy(buf,&TINYSA_VERSION[9], BLEN+1); // '1.2-...'
+#ifdef TINYSA4 // 'tinySA4_N7SIX_v7.6.x.xxxxxx'
+  {
+    char *version_start = &TINYSA_VERSION[13]; // Skip "tinySA4_N7SIX_"
+    // Parse "v7.6.2238.c979386" to create "7.6.2.c9" format
+    char *dot1 = strchr(version_start, '.'); // After "v7"
+    if (dot1) {
+      char *dot2 = strchr(dot1 + 1, '.'); // After "v7.6"
+      if (dot2) {
+        char *dot3 = strchr(dot2 + 1, '.'); // After "v7.6.2238"
+        if (dot3) {
+          // Format: "7.6.X.Y" where X is first digit of commit count, Y is first char of hash
+          char commit_count_first_digit = *(dot2 + 1); // First digit after "v7.6."
+          char hash_first_char = *(dot3 + 1); // First char after "v7.6.2239."
+          snprintf(buf, BLEN + 1, "7.6.%c.%c", commit_count_first_digit, hash_first_char);
+        } else {
+          strncpy(buf, "7.6.?.??", BLEN + 1);
+        }
+      } else {
+        strncpy(buf, "7.6.?.??", BLEN + 1);
+      }
+    } else {
+      strncpy(buf, "7.6.?.??", BLEN + 1);
+    }
+  }
 #else // 'tinySA_v1.2-[0-9]*-gxxxxxxx'
   strncpy(buf,&TINYSA_VERSION[8], BLEN+1); // '1.2-...'
 #endif
-  if (buf[5]=='-' ) { // '1.2-n-g...'
-    if (buf[4]=='0')  // '1.2-0-g...'
-      buf[3] = 0;  // -> '1.2'
-    else {
-      buf[5] = buf[4]; // -> '1.200n'
-      buf[4] = '0';
-      buf[3] = '0';
-    }
-  } else if (buf[6]=='-' ) { // 1.2-nn-g...
-    buf[3] = '0'; // -> '1.20nn'
-  } else { // 1.2-345-g... (or 1.2-3456...)
-    buf[3] = buf[4]; // -> '1.2345'
-    buf[4] = buf[5];
-    buf[5] = buf[6];
-  }
-  buf[6] = 0;
   ili9341_drawstring(buf, x, y);
 
 #ifdef TINYSA4

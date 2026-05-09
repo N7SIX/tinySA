@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccFSQlwa.s 			page 1
+ARM GAS  /tmp/ccQKr0Dm.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
   55              	.LVL1:
   56              	.LFB234:
   57              		.loc 1 68 37 is_stmt 1 view -0
-ARM GAS  /tmp/ccFSQlwa.s 			page 2
+ARM GAS  /tmp/ccQKr0Dm.s 			page 2
 
 
   58              		.cfi_startproc
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  112              	.LBB95:
  113              	.LBI95:
  114              		.file 2 "ChibiOS/os/hal/osal/rt/osal.h"
-ARM GAS  /tmp/ccFSQlwa.s 			page 3
+ARM GAS  /tmp/ccQKr0Dm.s 			page 3
 
 
  115              		.loc 2 491 20 view .LVU23
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  169              	.LBI101:
  170              		.loc 3 386 20 view .LVU45
  171              	.LBB102:
-ARM GAS  /tmp/ccFSQlwa.s 			page 4
+ARM GAS  /tmp/ccQKr0Dm.s 			page 4
 
 
  172              		.loc 3 388 22 view .LVU46
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  226              		.cfi_def_cfa_offset 8
  227              		.cfi_offset 4, -8
  228              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccFSQlwa.s 			page 5
+ARM GAS  /tmp/ccQKr0Dm.s 			page 5
 
 
  229 0002 0446     		mov	r4, r0
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  283              	.LBB112:
  284              	.LBI112:
  285              		.loc 3 386 20 view .LVU85
-ARM GAS  /tmp/ccFSQlwa.s 			page 6
+ARM GAS  /tmp/ccQKr0Dm.s 			page 6
 
 
  286              	.LBB113:
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  340 0000 08B5     		push	{r3, lr}
  341              		.cfi_def_cfa_offset 8
  342              		.cfi_offset 3, -8
-ARM GAS  /tmp/ccFSQlwa.s 			page 7
+ARM GAS  /tmp/ccQKr0Dm.s 			page 7
 
 
  343              		.cfi_offset 14, -4
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  397              		.loc 2 491 20 view .LVU122
  398              		.loc 2 493 3 view .LVU123
  399              	.LBB118:
-ARM GAS  /tmp/ccFSQlwa.s 			page 8
+ARM GAS  /tmp/ccQKr0Dm.s 			page 8
 
 
  400              	.LBI118:
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  454              	.LBB127:
  455              		.loc 5 548 3 view .LVU147
  456 000e 0023     		movs	r3, #0
-ARM GAS  /tmp/ccFSQlwa.s 			page 9
+ARM GAS  /tmp/ccQKr0Dm.s 			page 9
 
 
  457              		.syntax unified
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  511              		.loc 5 548 3 view .LVU162
  512 0000 2023     		movs	r3, #32
  513              		.syntax unified
-ARM GAS  /tmp/ccFSQlwa.s 			page 10
+ARM GAS  /tmp/ccQKr0Dm.s 			page 10
 
 
  514              	@ 548 "ChibiOS/os/common/ext/CMSIS/include/core_cmFunc.h" 1
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  568              		.loc 5 548 3 is_stmt 0 view .LVU186
  569              		.thumb
  570              		.syntax unified
-ARM GAS  /tmp/ccFSQlwa.s 			page 11
+ARM GAS  /tmp/ccQKr0Dm.s 			page 11
 
 
  571 0012 7047     		bx	lr
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  625              		.loc 4 631 3 view .LVU208
  626              	.LBB140:
  627              		.loc 5 546 57 view .LVU209
-ARM GAS  /tmp/ccFSQlwa.s 			page 12
+ARM GAS  /tmp/ccQKr0Dm.s 			page 12
 
 
  628              	.LBB139:
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  682 0008 10B5     		push	{r4, lr}
  683              		.cfi_def_cfa_offset 8
  684              		.cfi_offset 4, -8
-ARM GAS  /tmp/ccFSQlwa.s 			page 13
+ARM GAS  /tmp/ccQKr0Dm.s 			page 13
 
 
  685              		.cfi_offset 14, -4
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  739              		.loc 1 272 3 is_stmt 1 view .LVU239
  740              		.loc 1 274 3 view .LVU240
  741              	.LBB149:
-ARM GAS  /tmp/ccFSQlwa.s 			page 14
+ARM GAS  /tmp/ccQKr0Dm.s 			page 14
 
 
  742              	.LBI149:
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  796              		.loc 1 278 3 is_stmt 1 view .LVU262
  797              	.LBB156:
  798              	.LBI156:
-ARM GAS  /tmp/ccFSQlwa.s 			page 15
+ARM GAS  /tmp/ccQKr0Dm.s 			page 15
 
 
  799              		.loc 2 502 20 view .LVU263
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  853              		.file 15 "ChibiOS/os/hal/ports/STM32/LLD/ADCv3/hal_adc_lld.h"
  854              		.file 16 "ChibiOS/os/rt/include/chthreads.h"
  855              		.section	.debug_info,"",%progbits
-ARM GAS  /tmp/ccFSQlwa.s 			page 16
+ARM GAS  /tmp/ccQKr0Dm.s 			page 16
 
 
  856              	.Ldebug_info0:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  910 006f 0C       		.uleb128 0xc
  911 0070 04       		.byte	0x4
  912 0071 05       		.byte	0x5
-ARM GAS  /tmp/ccFSQlwa.s 			page 17
+ARM GAS  /tmp/ccQKr0Dm.s 			page 17
 
 
  913 0072 52010000 		.4byte	.LASF8
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  967 00de 3E       		.byte	0x3e
  968 00df 1D       		.byte	0x1d
  969 00e0 76000000 		.4byte	0x76
-ARM GAS  /tmp/ccFSQlwa.s 			page 18
+ARM GAS  /tmp/ccQKr0Dm.s 			page 18
 
 
  970 00e4 05       		.uleb128 0x5
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  1024 014d 0A       		.byte	0xa
  1025 014e A0       		.byte	0xa0
  1026 014f 1A       		.byte	0x1a
-ARM GAS  /tmp/ccFSQlwa.s 			page 19
+ARM GAS  /tmp/ccQKr0Dm.s 			page 19
 
 
  1027 0150 BD010000 		.4byte	0x1bd
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  1081 01b6 09       		.byte	0x9
  1082 01b7 44       		.byte	0x44
  1083 01b8 14       		.byte	0x14
-ARM GAS  /tmp/ccFSQlwa.s 			page 20
+ARM GAS  /tmp/ccQKr0Dm.s 			page 20
 
 
  1084 01b9 BD010000 		.4byte	0x1bd
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  1138 0222 2D020000 		.4byte	0x22d
  1139 0226 12       		.uleb128 0x12
  1140 0227 2D000000 		.4byte	0x2d
-ARM GAS  /tmp/ccFSQlwa.s 			page 21
+ARM GAS  /tmp/ccQKr0Dm.s 			page 21
 
 
  1141 022b 01       		.byte	0x1
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  1195 028a A8000000 		.4byte	0xa8
  1196 028e 18       		.byte	0x18
  1197 028f 01       		.uleb128 0x1
-ARM GAS  /tmp/ccFSQlwa.s 			page 22
+ARM GAS  /tmp/ccQKr0Dm.s 			page 22
 
 
  1198 0290 45050000 		.4byte	.LASF44
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  1252 02f6 38       		.byte	0x38
  1253 02f7 01       		.uleb128 0x1
  1254 02f8 0C050000 		.4byte	.LASF49
-ARM GAS  /tmp/ccFSQlwa.s 			page 23
+ARM GAS  /tmp/ccQKr0Dm.s 			page 23
 
 
  1255 02fc 0B       		.byte	0xb
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  1309 035e 01       		.uleb128 0x1
  1310 035f FF020000 		.4byte	.LASF56
  1311 0363 0B       		.byte	0xb
-ARM GAS  /tmp/ccFSQlwa.s 			page 24
+ARM GAS  /tmp/ccQKr0Dm.s 			page 24
 
 
  1312 0364 CD       		.byte	0xcd
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  1366 03c7 B0020000 		.4byte	.LASF64
  1367 03cb 0B       		.byte	0xb
  1368 03cc D5       		.byte	0xd5
-ARM GAS  /tmp/ccFSQlwa.s 			page 25
+ARM GAS  /tmp/ccQKr0Dm.s 			page 25
 
 
  1369 03cd 11       		.byte	0x11
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  1423 0433 0B       		.byte	0xb
  1424 0434 DE       		.byte	0xde
  1425 0435 6E040000 		.4byte	0x46e
-ARM GAS  /tmp/ccFSQlwa.s 			page 26
+ARM GAS  /tmp/ccQKr0Dm.s 			page 26
 
 
  1426 0439 0A       		.uleb128 0xa
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  1480 049f 04       		.uleb128 0x4
  1481 04a0 7D020000 		.4byte	.LASF74
  1482 04a4 0B       		.byte	0xb
-ARM GAS  /tmp/ccFSQlwa.s 			page 27
+ARM GAS  /tmp/ccQKr0Dm.s 			page 27
 
 
  1483 04a5 6601     		.2byte	0x166
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  1537 050f 12       		.byte	0x12
  1538 0510 B4000000 		.4byte	0xb4
  1539 0514 18       		.uleb128 0x18
-ARM GAS  /tmp/ccFSQlwa.s 			page 28
+ARM GAS  /tmp/ccQKr0Dm.s 			page 28
 
 
  1540 0515 DF040000 		.4byte	.LASF81
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  1594 0580 02       		.uleb128 0x2
  1595 0581 73323100 		.ascii	"s21\000"
  1596 0585 04       		.byte	0x4
-ARM GAS  /tmp/ccFSQlwa.s 			page 29
+ARM GAS  /tmp/ccQKr0Dm.s 			page 29
 
 
  1597 0586 6701     		.2byte	0x167
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  1651 05f1 73323900 		.ascii	"s29\000"
  1652 05f5 04       		.byte	0x4
  1653 05f6 6F01     		.2byte	0x16f
-ARM GAS  /tmp/ccFSQlwa.s 			page 30
+ARM GAS  /tmp/ccQKr0Dm.s 			page 30
 
 
  1654 05f8 11       		.byte	0x11
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  1708 065f 04       		.byte	0x4
  1709 0660 7801     		.2byte	0x178
  1710 0662 11       		.byte	0x11
-ARM GAS  /tmp/ccFSQlwa.s 			page 31
+ARM GAS  /tmp/ccQKr0Dm.s 			page 31
 
 
  1711 0663 FC040000 		.4byte	0x4fc
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  1765 06ce B1010000 		.4byte	0x1b1
  1766 06d2 07       		.uleb128 0x7
  1767 06d3 DE060000 		.4byte	0x6de
-ARM GAS  /tmp/ccFSQlwa.s 			page 32
+ARM GAS  /tmp/ccQKr0Dm.s 			page 32
 
 
  1768 06d7 0C       		.uleb128 0xc
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  1822 073d 11       		.byte	0x11
  1823 073e 01       		.uleb128 0x1
  1824 073f 3A000000 		.4byte	.LASF93
-ARM GAS  /tmp/ccFSQlwa.s 			page 33
+ARM GAS  /tmp/ccQKr0Dm.s 			page 33
 
 
  1825 0743 0D       		.byte	0xd
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  1879 07ac 4D       		.byte	0x4d
  1880 07ad 03       		.byte	0x3
  1881 07ae 73070000 		.4byte	0x773
-ARM GAS  /tmp/ccFSQlwa.s 			page 34
+ARM GAS  /tmp/ccQKr0Dm.s 			page 34
 
 
  1882 07b2 0F       		.uleb128 0xf
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  1936 0821 04       		.uleb128 0x4
  1937 0822 43010000 		.4byte	.LASF28
  1938 0826 0F       		.byte	0xf
-ARM GAS  /tmp/ccFSQlwa.s 			page 35
+ARM GAS  /tmp/ccQKr0Dm.s 			page 35
 
 
  1939 0827 D202     		.2byte	0x2d2
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  1993 0892 0F010000 		.4byte	.LASF119
  1994 0896 0F       		.byte	0xf
  1995 0897 0403     		.2byte	0x304
-ARM GAS  /tmp/ccFSQlwa.s 			page 36
+ARM GAS  /tmp/ccQKr0Dm.s 			page 36
 
 
  1996 0899 1E       		.byte	0x1e
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  2050 090f 0F       		.byte	0xf
  2051 0910 8702     		.2byte	0x287
  2052 0912 1D       		.byte	0x1d
-ARM GAS  /tmp/ccFSQlwa.s 			page 37
+ARM GAS  /tmp/ccQKr0Dm.s 			page 37
 
 
  2053 0913 6C070000 		.4byte	0x76c
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  2107 0980 0F       		.byte	0xf
  2108 0981 BF02     		.2byte	0x2bf
  2109 0983 03       		.byte	0x3
-ARM GAS  /tmp/ccFSQlwa.s 			page 38
+ARM GAS  /tmp/ccQKr0Dm.s 			page 38
 
 
  2110 0984 01090000 		.4byte	0x901
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  2164 09fc FF010000 		.4byte	.LASF133
  2165 0a00 FB       		.byte	0xfb
  2166 0a01 100A0000 		.4byte	0xa10
-ARM GAS  /tmp/ccFSQlwa.s 			page 39
+ARM GAS  /tmp/ccQKr0Dm.s 			page 39
 
 
  2167 0a05 09       		.uleb128 0x9
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  2221 0a84 10000000 		.4byte	.LLST26
  2222 0a88 0C000000 		.4byte	.LVUS26
  2223 0a8c 1C       		.uleb128 0x1c
-ARM GAS  /tmp/ccFSQlwa.s 			page 40
+ARM GAS  /tmp/ccQKr0Dm.s 			page 40
 
 
  2224 0a8d 3C030000 		.4byte	.LASF115
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  2278 0b26 03       		.byte	0x3
  2279 0b27 7801     		.2byte	0x178
  2280 0b29 03       		.uleb128 0x3
-ARM GAS  /tmp/ccFSQlwa.s 			page 41
+ARM GAS  /tmp/ccQKr0Dm.s 			page 41
 
 
  2281 0b2a A2130000 		.4byte	0x13a2
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  2335 0bb1 02       		.byte	0x2
  2336 0bb2 F801     		.2byte	0x1f8
  2337 0bb4 03       		.uleb128 0x3
-ARM GAS  /tmp/ccFSQlwa.s 			page 42
+ARM GAS  /tmp/ccQKr0Dm.s 			page 42
 
 
  2338 0bb5 92130000 		.4byte	0x1392
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  2392 0c14 A8       		.byte	0xa8
  2393 0c15 2D       		.uleb128 0x2d
  2394 0c16 A8       		.byte	0xa8
-ARM GAS  /tmp/ccFSQlwa.s 			page 43
+ARM GAS  /tmp/ccQKr0Dm.s 			page 43
 
 
  2395 0c17 00       		.uleb128 0
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  2449 0c89 D0000000 		.4byte	.LLST24
  2450 0c8d CE000000 		.4byte	.LVUS24
  2451 0c91 08       		.uleb128 0x8
-ARM GAS  /tmp/ccFSQlwa.s 			page 44
+ARM GAS  /tmp/ccQKr0Dm.s 			page 44
 
 
  2452 0c92 17130000 		.4byte	0x1317
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  2506 0cfe F1000000 		.4byte	.LVUS17
  2507 0d02 15       		.uleb128 0x15
  2508 0d03 FD050000 		.4byte	.LASF139
-ARM GAS  /tmp/ccFSQlwa.s 			page 45
+ARM GAS  /tmp/ccQKr0Dm.s 			page 45
 
 
  2509 0d07 3C0E0000 		.4byte	0xe3c
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  2563 0d91 03       		.byte	.LVU175
  2564 0d92 0C000000 		.4byte	.LLRL19
  2565 0d96 02       		.byte	0x2
-ARM GAS  /tmp/ccFSQlwa.s 			page 46
+ARM GAS  /tmp/ccQKr0Dm.s 			page 46
 
 
  2566 0d97 F801     		.2byte	0x1f8
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  2620 0e15 51       		.byte	0x51
  2621 0e16 02       		.uleb128 0x2
  2622 0e17 09       		.byte	0x9
-ARM GAS  /tmp/ccFSQlwa.s 			page 47
+ARM GAS  /tmp/ccQKr0Dm.s 			page 47
 
 
  2623 0e18 FE       		.byte	0xfe
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  2677 0e93 AE       		.byte	0xae
  2678 0e94 21       		.byte	0x21
  2679 0e95 3B000000 		.4byte	0x3b
-ARM GAS  /tmp/ccFSQlwa.s 			page 48
+ARM GAS  /tmp/ccQKr0Dm.s 			page 48
 
 
  2680 0e99 A8010000 		.4byte	.LLST10
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  2734 0f11 0B       		.uleb128 0xb
  2735 0f12 4E030000 		.4byte	.LASF113
  2736 0f16 91       		.byte	0x91
-ARM GAS  /tmp/ccFSQlwa.s 			page 49
+ARM GAS  /tmp/ccQKr0Dm.s 			page 49
 
 
  2737 0f17 26       		.byte	0x26
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  2791 0fa4 0E000000 		.4byte	.LBI122
  2792 0fa8 01       		.byte	.LVU135
  2793 0fa9 0E000000 		.4byte	.LBB122
-ARM GAS  /tmp/ccFSQlwa.s 			page 50
+ARM GAS  /tmp/ccQKr0Dm.s 			page 50
 
 
  2794 0fad 06000000 		.4byte	.LBE122-.LBB122
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  2848 101f 51       		.byte	0x51
  2849 1020 09       		.uleb128 0x9
  2850 1021 A3       		.byte	0xa3
-ARM GAS  /tmp/ccFSQlwa.s 			page 51
+ARM GAS  /tmp/ccQKr0Dm.s 			page 51
 
 
  2851 1022 03       		.uleb128 0x3
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  2905 1076 13       		.uleb128 0x13
  2906 1077 57130000 		.4byte	0x1357
  2907 107b 04000000 		.4byte	.LBI106
-ARM GAS  /tmp/ccFSQlwa.s 			page 52
+ARM GAS  /tmp/ccQKr0Dm.s 			page 52
 
 
  2908 107f 04       		.byte	.LVU65
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  2962 1109 F801     		.2byte	0x1f8
  2963 110b 03       		.uleb128 0x3
  2964 110c 92130000 		.4byte	0x1392
-ARM GAS  /tmp/ccFSQlwa.s 			page 53
+ARM GAS  /tmp/ccQKr0Dm.s 			page 53
 
 
  2965 1110 12000000 		.4byte	.LBI114
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  3019 1187 D5080000 		.4byte	0x8d5
  3020 118b 85020000 		.4byte	.LLST0
  3021 118f 81020000 		.4byte	.LVUS0
-ARM GAS  /tmp/ccFSQlwa.s 			page 54
+ARM GAS  /tmp/ccQKr0Dm.s 			page 54
 
 
  3022 1193 0B       		.uleb128 0xb
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  3076 1220 01       		.byte	.LVU43
  3077 1221 14000000 		.4byte	.LBB100
  3078 1225 06000000 		.4byte	.LBE100-.LBB100
-ARM GAS  /tmp/ccFSQlwa.s 			page 55
+ARM GAS  /tmp/ccQKr0Dm.s 			page 55
 
 
  3079 1229 69       		.byte	0x69
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  3133 12a1 90120000 		.4byte	0x1290
  3134 12a5 14       		.uleb128 0x14
  3135 12a6 5C020000 		.4byte	.LASF146
-ARM GAS  /tmp/ccFSQlwa.s 			page 56
+ARM GAS  /tmp/ccQKr0Dm.s 			page 56
 
 
  3136 12aa 44       		.byte	0x44
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  3190 1324 6D736700 		.ascii	"msg\000"
  3191 1328 D602     		.2byte	0x2d6
  3192 132a 45       		.byte	0x45
-ARM GAS  /tmp/ccFSQlwa.s 			page 57
+ARM GAS  /tmp/ccQKr0Dm.s 			page 57
 
 
  3193 132b F0000000 		.4byte	0xf0
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  3247 13a2 34       		.uleb128 0x34
  3248 13a3 9C060000 		.4byte	.LASF164
  3249 13a7 05       		.byte	0x5
-ARM GAS  /tmp/ccFSQlwa.s 			page 58
+ARM GAS  /tmp/ccQKr0Dm.s 			page 58
 
 
  3250 13a8 2202     		.2byte	0x222
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  3304 0029 B842     		.uleb128 0x2138
  3305 002b 0B       		.uleb128 0xb
  3306 002c 11       		.uleb128 0x11
-ARM GAS  /tmp/ccFSQlwa.s 			page 59
+ARM GAS  /tmp/ccQKr0Dm.s 			page 59
 
 
  3307 002d 01       		.uleb128 0x1
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  3361 0063 0F       		.uleb128 0xf
  3362 0064 00       		.byte	0
  3363 0065 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccFSQlwa.s 			page 60
+ARM GAS  /tmp/ccQKr0Dm.s 			page 60
 
 
  3364 0066 21       		.uleb128 0x21
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  3418 009d 13       		.uleb128 0x13
  3419 009e 02       		.uleb128 0x2
  3420 009f 17       		.uleb128 0x17
-ARM GAS  /tmp/ccFSQlwa.s 			page 61
+ARM GAS  /tmp/ccQKr0Dm.s 			page 61
 
 
  3421 00a0 B742     		.uleb128 0x2137
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  3475 00d7 00       		.byte	0
  3476 00d8 11       		.uleb128 0x11
  3477 00d9 01       		.uleb128 0x1
-ARM GAS  /tmp/ccFSQlwa.s 			page 62
+ARM GAS  /tmp/ccQKr0Dm.s 			page 62
 
 
  3478 00da 01       		.byte	0x1
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  3532 0111 06       		.sleb128 6
  3533 0112 27       		.uleb128 0x27
  3534 0113 19       		.uleb128 0x19
-ARM GAS  /tmp/ccFSQlwa.s 			page 63
+ARM GAS  /tmp/ccQKr0Dm.s 			page 63
 
 
  3535 0114 11       		.uleb128 0x11
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  3589 014a 21       		.uleb128 0x21
  3590 014b 03       		.sleb128 3
  3591 014c 00       		.byte	0
-ARM GAS  /tmp/ccFSQlwa.s 			page 64
+ARM GAS  /tmp/ccQKr0Dm.s 			page 64
 
 
  3592 014d 00       		.byte	0
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  3646 0183 3F       		.uleb128 0x3f
  3647 0184 19       		.uleb128 0x19
  3648 0185 03       		.uleb128 0x3
-ARM GAS  /tmp/ccFSQlwa.s 			page 65
+ARM GAS  /tmp/ccQKr0Dm.s 			page 65
 
 
  3649 0186 0E       		.uleb128 0xe
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  3703 01bd 1D       		.uleb128 0x1d
  3704 01be 01       		.byte	0x1
  3705 01bf 31       		.uleb128 0x31
-ARM GAS  /tmp/ccFSQlwa.s 			page 66
+ARM GAS  /tmp/ccQKr0Dm.s 			page 66
 
 
  3706 01c0 13       		.uleb128 0x13
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  3760 01f8 20       		.uleb128 0x20
  3761 01f9 21       		.uleb128 0x21
  3762 01fa 03       		.sleb128 3
-ARM GAS  /tmp/ccFSQlwa.s 			page 67
+ARM GAS  /tmp/ccQKr0Dm.s 			page 67
 
 
  3763 01fb 01       		.uleb128 0x1
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  3817 0231 24       		.uleb128 0x24
  3818 0232 11       		.uleb128 0x11
  3819 0233 01       		.byte	0x1
-ARM GAS  /tmp/ccFSQlwa.s 			page 68
+ARM GAS  /tmp/ccQKr0Dm.s 			page 68
 
 
  3820 0234 25       		.uleb128 0x25
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  3874 026a 00       		.byte	0
  3875 026b 00       		.byte	0
  3876 026c 29       		.uleb128 0x29
-ARM GAS  /tmp/ccFSQlwa.s 			page 69
+ARM GAS  /tmp/ccQKr0Dm.s 			page 69
 
 
  3877 026d 04       		.uleb128 0x4
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  3931 02a3 3C       		.uleb128 0x3c
  3932 02a4 19       		.uleb128 0x19
  3933 02a5 01       		.uleb128 0x1
-ARM GAS  /tmp/ccFSQlwa.s 			page 70
+ARM GAS  /tmp/ccQKr0Dm.s 			page 70
 
 
  3934 02a6 13       		.uleb128 0x13
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  3988 02dc 03       		.uleb128 0x3
  3989 02dd 08       		.uleb128 0x8
  3990 02de 3A       		.uleb128 0x3a
-ARM GAS  /tmp/ccFSQlwa.s 			page 71
+ARM GAS  /tmp/ccQKr0Dm.s 			page 71
 
 
  3991 02df 0B       		.uleb128 0xb
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  4045 0317 02       		.uleb128 0x2
  4046 0318 18       		.uleb128 0x18
  4047 0319 00       		.byte	0
-ARM GAS  /tmp/ccFSQlwa.s 			page 72
+ARM GAS  /tmp/ccQKr0Dm.s 			page 72
 
 
  4048 031a 00       		.byte	0
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  4102 0350 0B       		.uleb128 0xb
  4103 0351 3B       		.uleb128 0x3b
  4104 0352 05       		.uleb128 0x5
-ARM GAS  /tmp/ccFSQlwa.s 			page 73
+ARM GAS  /tmp/ccQKr0Dm.s 			page 73
 
 
  4105 0353 39       		.uleb128 0x39
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  4159 0035 01       		.uleb128 0x1
  4160 0036 26       		.uleb128 0x26
  4161 0037 A8       		.byte	0xa8
-ARM GAS  /tmp/ccFSQlwa.s 			page 74
+ARM GAS  /tmp/ccQKr0Dm.s 			page 74
 
 
  4162 0038 2D       		.uleb128 0x2d
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  4216 0070 26       		.uleb128 0x26
  4217 0071 A8       		.byte	0xa8
  4218 0072 2D       		.uleb128 0x2d
-ARM GAS  /tmp/ccFSQlwa.s 			page 75
+ARM GAS  /tmp/ccQKr0Dm.s 			page 75
 
 
  4219 0073 A8       		.byte	0xa8
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  4273 00ac 9F       		.byte	0x9f
  4274 00ad 00       		.byte	0
  4275              	.LVUS33:
-ARM GAS  /tmp/ccFSQlwa.s 			page 76
+ARM GAS  /tmp/ccQKr0Dm.s 			page 76
 
 
  4276 00ae 0D       		.uleb128 .LVU274
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  4330 00e9 04       		.byte	0x4
  4331 00ea 07       		.uleb128 .LVL33-1-.LVL32
  4332 00eb 08       		.uleb128 .LVL33-.LVL32
-ARM GAS  /tmp/ccFSQlwa.s 			page 77
+ARM GAS  /tmp/ccQKr0Dm.s 			page 77
 
 
  4333 00ec 03       		.uleb128 0x3
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  4387 0125 30       		.byte	0x30
  4388 0126 9F       		.byte	0x9f
  4389 0127 00       		.byte	0
-ARM GAS  /tmp/ccFSQlwa.s 			page 78
+ARM GAS  /tmp/ccQKr0Dm.s 			page 78
 
 
  4390              	.LVUS21:
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  4444 0161 26       		.uleb128 0x26
  4445 0162 A8       		.byte	0xa8
  4446 0163 2D       		.uleb128 0x2d
-ARM GAS  /tmp/ccFSQlwa.s 			page 79
+ARM GAS  /tmp/ccQKr0Dm.s 			page 79
 
 
  4447 0164 A8       		.byte	0xa8
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  4501 019c A8       		.byte	0xa8
  4502 019d 2D       		.uleb128 0x2d
  4503 019e A8       		.byte	0xa8
-ARM GAS  /tmp/ccFSQlwa.s 			page 80
+ARM GAS  /tmp/ccQKr0Dm.s 			page 80
 
 
  4504 019f 00       		.uleb128 0
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  4558 01d7 16       		.uleb128 .LFE237-.LVL17
  4559 01d8 0A       		.uleb128 0xa
  4560 01d9 A3       		.byte	0xa3
-ARM GAS  /tmp/ccFSQlwa.s 			page 81
+ARM GAS  /tmp/ccQKr0Dm.s 			page 81
 
 
  4561 01da 03       		.uleb128 0x3
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  4615 0212 0A       		.uleb128 0xa
  4616 0213 A3       		.byte	0xa3
  4617 0214 03       		.uleb128 0x3
-ARM GAS  /tmp/ccFSQlwa.s 			page 82
+ARM GAS  /tmp/ccQKr0Dm.s 			page 82
 
 
  4618 0215 A5       		.byte	0xa5
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  4672 024b 0E000000 		.4byte	.LVL20
  4673 024f 06       		.uleb128 .LVL21-.LVL20
  4674 0250 02       		.uleb128 0x2
-ARM GAS  /tmp/ccFSQlwa.s 			page 83
+ARM GAS  /tmp/ccQKr0Dm.s 			page 83
 
 
  4675 0251 30       		.byte	0x30
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  4729 028b 00       		.uleb128 .LVL2-.LVL2
  4730 028c 0F       		.uleb128 .LVL5-1-.LVL2
  4731 028d 01       		.uleb128 0x1
-ARM GAS  /tmp/ccFSQlwa.s 			page 84
+ARM GAS  /tmp/ccQKr0Dm.s 			page 84
 
 
  4732 028e 50       		.byte	0x50
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  4786 02c7 02       		.uleb128 0x2
  4787 02c8 30       		.byte	0x30
  4788 02c9 9F       		.byte	0x9f
-ARM GAS  /tmp/ccFSQlwa.s 			page 85
+ARM GAS  /tmp/ccQKr0Dm.s 			page 85
 
 
  4789 02ca 00       		.byte	0
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  4843 0023 12       		.uleb128 .LFE234-.LFB234
  4844 0024 07       		.byte	0x7
  4845 0025 00000000 		.4byte	.LFB235
-ARM GAS  /tmp/ccFSQlwa.s 			page 86
+ARM GAS  /tmp/ccQKr0Dm.s 			page 86
 
 
  4846 0029 1C       		.uleb128 .LFE235-.LFB235
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  4885 003a 76656374 		.ascii	"vector\000"
  4885      6F7200
  4886              	.LASF65:
-ARM GAS  /tmp/ccFSQlwa.s 			page 87
+ARM GAS  /tmp/ccQKr0Dm.s 			page 87
 
 
  4887 0041 41574433 		.ascii	"AWD3CR\000"
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  4913      7400
  4914              	.LASF4:
  4915 00d4 7369676E 		.ascii	"signed char\000"
-ARM GAS  /tmp/ccFSQlwa.s 			page 88
+ARM GAS  /tmp/ccQKr0Dm.s 			page 88
 
 
  4915      65642063 
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  4941      6700
  4942              	.LASF135:
  4943 0165 6164635F 		.ascii	"adc_lld_start_conversion\000"
-ARM GAS  /tmp/ccFSQlwa.s 			page 89
+ARM GAS  /tmp/ccQKr0Dm.s 			page 89
 
 
  4943      6C6C645F 
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  4967      64526573 
  4967      756D6553 
  4967      00
-ARM GAS  /tmp/ccFSQlwa.s 			page 90
+ARM GAS  /tmp/ccQKr0Dm.s 			page 90
 
 
  4968              	.LASF151:
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  4993      6E656C5F 
  4993      54797065 
  4993      44656600 
-ARM GAS  /tmp/ccFSQlwa.s 			page 91
+ARM GAS  /tmp/ccQKr0Dm.s 			page 91
 
 
  4994              	.LASF26:
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  5023      6164735F 
  5023      6C697374 
  5023      5F7400
-ARM GAS  /tmp/ccFSQlwa.s 			page 92
+ARM GAS  /tmp/ccQKr0Dm.s 			page 92
 
 
  5024              	.LASF89:
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  5043              	.LASF3:
  5044 049c 6C6F6E67 		.ascii	"long double\000"
  5044      20646F75 
-ARM GAS  /tmp/ccFSQlwa.s 			page 93
+ARM GAS  /tmp/ccQKr0Dm.s 			page 93
 
 
  5044      626C6500 
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  5074      5300
  5075              	.LASF142:
  5076 051f 61646353 		.ascii	"adcStartConversionI\000"
-ARM GAS  /tmp/ccFSQlwa.s 			page 94
+ARM GAS  /tmp/ccQKr0Dm.s 			page 94
 
 
  5076      74617274 
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  5104      325F7400 
  5105              	.LASF10:
  5106 05b2 756E7369 		.ascii	"unsigned char\000"
-ARM GAS  /tmp/ccFSQlwa.s 			page 95
+ARM GAS  /tmp/ccQKr0Dm.s 			page 95
 
 
  5106      676E6564 
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  5131              	.LASF114:
  5132 064d 64657074 		.ascii	"depth\000"
  5132      6800
-ARM GAS  /tmp/ccFSQlwa.s 			page 96
+ARM GAS  /tmp/ccQKr0Dm.s 			page 96
 
 
  5133              	.LASF87:
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  5157              	.LASF13:
  5158 06f0 75696E74 		.ascii	"uint32_t\000"
  5158      33325F74 
-ARM GAS  /tmp/ccFSQlwa.s 			page 97
+ARM GAS  /tmp/ccQKr0Dm.s 			page 97
 
 
  5158      00
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  5188      00
  5189              	.LASF39:
  5190 0779 70726576 		.ascii	"prev\000"
-ARM GAS  /tmp/ccFSQlwa.s 			page 98
+ARM GAS  /tmp/ccQKr0Dm.s 			page 98
 
 
  5190      00
@@ -5853,29 +5853,29 @@ ARM GAS  /tmp/ccFSQlwa.s 			page 1
  5204      41494C55 
  5204      524500
  5205              		.ident	"GCC: (15:13.2.rel1-2) 13.2.1 20231009"
-ARM GAS  /tmp/ccFSQlwa.s 			page 99
+ARM GAS  /tmp/ccQKr0Dm.s 			page 99
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 hal_adc.c
-     /tmp/ccFSQlwa.s:21     .text.adcInit:00000000 $t
-     /tmp/ccFSQlwa.s:28     .text.adcInit:00000000 adcInit
-     /tmp/ccFSQlwa.s:47     .text.adcObjectInit:00000000 $t
-     /tmp/ccFSQlwa.s:54     .text.adcObjectInit:00000000 adcObjectInit
-     /tmp/ccFSQlwa.s:88     .text.adcStart:00000000 $t
-     /tmp/ccFSQlwa.s:95     .text.adcStart:00000000 adcStart
-     /tmp/ccFSQlwa.s:210    .text.adcStop:00000000 $t
-     /tmp/ccFSQlwa.s:217    .text.adcStop:00000000 adcStop
-     /tmp/ccFSQlwa.s:325    .text.adcStartConversionI:00000000 $t
-     /tmp/ccFSQlwa.s:332    .text.adcStartConversionI:00000000 adcStartConversionI
-     /tmp/ccFSQlwa.s:375    .text.adcStartConversion:00000000 $t
-     /tmp/ccFSQlwa.s:382    .text.adcStartConversion:00000000 adcStartConversion
-     /tmp/ccFSQlwa.s:477    .text.adcStopConversion:00000000 $t
-     /tmp/ccFSQlwa.s:484    .text.adcStopConversion:00000000 adcStopConversion
-     /tmp/ccFSQlwa.s:652    .text.adcStopConversionI:00000000 $t
-     /tmp/ccFSQlwa.s:659    .text.adcStopConversionI:00000000 adcStopConversionI
-     /tmp/ccFSQlwa.s:719    .text.adcConvert:00000000 $t
-     /tmp/ccFSQlwa.s:726    .text.adcConvert:00000000 adcConvert
+     /tmp/ccQKr0Dm.s:21     .text.adcInit:00000000 $t
+     /tmp/ccQKr0Dm.s:28     .text.adcInit:00000000 adcInit
+     /tmp/ccQKr0Dm.s:47     .text.adcObjectInit:00000000 $t
+     /tmp/ccQKr0Dm.s:54     .text.adcObjectInit:00000000 adcObjectInit
+     /tmp/ccQKr0Dm.s:88     .text.adcStart:00000000 $t
+     /tmp/ccQKr0Dm.s:95     .text.adcStart:00000000 adcStart
+     /tmp/ccQKr0Dm.s:210    .text.adcStop:00000000 $t
+     /tmp/ccQKr0Dm.s:217    .text.adcStop:00000000 adcStop
+     /tmp/ccQKr0Dm.s:325    .text.adcStartConversionI:00000000 $t
+     /tmp/ccQKr0Dm.s:332    .text.adcStartConversionI:00000000 adcStartConversionI
+     /tmp/ccQKr0Dm.s:375    .text.adcStartConversion:00000000 $t
+     /tmp/ccQKr0Dm.s:382    .text.adcStartConversion:00000000 adcStartConversion
+     /tmp/ccQKr0Dm.s:477    .text.adcStopConversion:00000000 $t
+     /tmp/ccQKr0Dm.s:484    .text.adcStopConversion:00000000 adcStopConversion
+     /tmp/ccQKr0Dm.s:652    .text.adcStopConversionI:00000000 $t
+     /tmp/ccQKr0Dm.s:659    .text.adcStopConversionI:00000000 adcStopConversionI
+     /tmp/ccQKr0Dm.s:719    .text.adcConvert:00000000 $t
+     /tmp/ccQKr0Dm.s:726    .text.adcConvert:00000000 adcConvert
 
 UNDEFINED SYMBOLS
 adc_lld_init

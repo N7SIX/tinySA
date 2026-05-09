@@ -1,28 +1,14 @@
 ##############################################################################
-
-# Set PROJECT to versioned name for F303 at the very top
-ifeq ($(TARGET),F303)
-  COMMIT_COUNT := $(shell git rev-list --count HEAD 2>/dev/null || echo 0)
-  COMMIT_HASH := $(shell git rev-parse --short HEAD 2>/dev/null || echo 0000000)
-  PROJECT = tinySA4_N7SIX_v7.6.$(COMMIT_COUNT).$(COMMIT_HASH)
-else
-  PROJECT = tinySA
-endif
-
-# Default target: always build everything
-all: prebuild_clean PRE_MAKE_ALL_RULE_HOOK $(OBJS) $(OUTFILES) POST_MAKE_ALL_RULE_HOOK
-
 # Build global options
 # NOTE: Can be overridden externally.
 #
 
-# Clean build directory before every build
-.PHONY: prebuild_clean
-prebuild_clean:
-	@echo "Cleaning build directory..."
-	rm -rf build/*
-
-
+#Build target
+ifeq ($(TARGET),)
+  TARGET = F072
+else
+  TARGET = F303
+endif
 
 # Compiler options here.
 ifeq ($(USE_OPT),)
@@ -85,12 +71,8 @@ endif
 # or     ...
 
 ifeq ($(VERSION),)
-  VERSION="$(PROJECT)_$(shell git describe --tags --long)"
+  VERSION="$(PROJECT)"
 endif
-ifeq ($(VERSION),)
-  VERSION := $(PROJECT)_$(shell git describe --tags --long 2>/dev/null || echo default-version)
-endif
-
 
 ##############################################################################
 # Architecture or project specific options
@@ -124,7 +106,7 @@ endif
 
 # Define project name here
 ifeq ($(TARGET),F303)
-PROJECT = tinySA4
+PROJECT = tinySA4_N7SIX_v7.6.$(shell git rev-list --count HEAD).$(shell git rev-parse --short HEAD)
 else
 PROJECT = tinySA
 endif
@@ -314,10 +296,17 @@ RULESPATH = $(CHIBIOS)/os/common/startup/ARMCMx/compilers/GCC
 include $(RULESPATH)/rules.mk
 #include $(CHIBIOS)/memory.mk
 
+# Auto-clean before build
+ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(MAKECMDGOALS),)
+$(info Cleaning old build artifacts...)
+$(shell rm -f -rf build/tinySA4* build/lst/*.* build/obj/*.*)
+endif
+endif
 
 ifeq ($(TARGET),F303)
 clean:
-	rm -f -rf build/tinySA4.* build/lst/*.* build/obj/*.*
+	rm -f -rf build/tinySA4* build/lst/*.* build/obj/*.*
 else
 clean:
 	rm -f -rf build/$(PROJECT).* build/lst/*.* build/obj/*.*

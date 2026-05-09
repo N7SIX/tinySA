@@ -93,7 +93,7 @@ uint16_t redraw_request = 0; // contains REDRAW_XXX flags
 // Version text, displayed in Config->Version menu, also send by info command
 const char * const info_about[]={
   BOARD_NAME,
-  "2025-2030 Copyright @Sean Ebue",
+  "2025-2030 Copyright @Sean Ebue, N7SIX",
   "2019-2024 Copyright @Erik Kaashoek",
   "2016-2020 Copyright @edy555",
   "SW licensed under GPL. See: https://github.com/N7SIX/tinySA",
@@ -2708,8 +2708,8 @@ void shell_reset_console(void){
   // Reset I/O queue over Serial
 //  oqResetI(&SD1.oqueue);
 //  iqResetI(&SD1.iqueue);
-  oqResetI(&SD1.oqueue);
-  iqResetI(&SD1.iqueue);
+  qResetI(&SD1.oqueue);
+  qResetI(&SD1.iqueue);
 
 }
 
