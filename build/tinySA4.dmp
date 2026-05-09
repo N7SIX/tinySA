@@ -6,13 +6,13 @@ EXEC_P, HAS_SYMS, D_PAGED
 start address 0x080001c1
 
 Program Header:
-0x70000001 off    0x0002f9f8 vaddr 0x0802e9f8 paddr 0x0802e9f8 align 2**2
+0x70000001 off    0x0002fa10 vaddr 0x0802ea10 paddr 0x0802ea10 align 2**2
          filesz 0x00000008 memsz 0x00000008 flags r--
     LOAD off    0x00001000 vaddr 0x08000000 paddr 0x08000000 align 2**12
-         filesz 0x0002ea00 memsz 0x0002ea00 flags rwx
-    LOAD off    0x00030680 vaddr 0x20000680 paddr 0x0802ea00 align 2**12
+         filesz 0x0002ea18 memsz 0x0002ea18 flags rwx
+    LOAD off    0x00030680 vaddr 0x20000680 paddr 0x0802ea18 align 2**12
          filesz 0x00000eb4 memsz 0x00000eb4 flags rw-
-    LOAD off    0x00000538 vaddr 0x20001538 paddr 0x0802f8b4 align 2**12
+    LOAD off    0x00000538 vaddr 0x20001538 paddr 0x0802f8cc align 2**12
          filesz 0x00000000 memsz 0x00006ca4 flags rw-
     LOAD off    0x00000000 vaddr 0x20000000 paddr 0x20000000 align 2**12
          filesz 0x00000000 memsz 0x00000680 flags rw-
@@ -30,13 +30,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, DATA
   3 .text         000248cc  080001c0  080001c0  000011c0  2**6
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  4 .rodata       00009f68  08024a90  08024a90  00025a90  2**3
+  4 .rodata       00009f80  08024a90  08024a90  00025a90  2**3
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  5 .ARM.exidx    00000008  0802e9f8  0802e9f8  0002f9f8  2**2
+  5 .ARM.exidx    00000008  0802ea10  0802ea10  0002fa10  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  6 .data         00000eb4  20000680  0802ea00  00030680  2**3
+  6 .data         00000eb4  20000680  0802ea18  00030680  2**3
                   CONTENTS, ALLOC, LOAD, DATA
-  7 .bss          00006ca4  20001538  0802f8b4  00031538  2**3
+  7 .bss          00006ca4  20001538  0802f8cc  00031538  2**3
                   ALLOC
   8 .ram0_init    00000000  200081dc  200081dc  00031534  2**2
                   CONTENTS
@@ -100,7 +100,7 @@ SYMBOL TABLE:
 08000000 l    d  vectors	00000000 vectors
 080001c0 l    d  .text	00000000 .text
 08024a90 l    d  .rodata	00000000 .rodata
-0802e9f8 l    d  .ARM.exidx	00000000 .ARM.exidx
+0802ea10 l    d  .ARM.exidx	00000000 .ARM.exidx
 20000680 l    d  .data	00000000 .data
 20001538 l    d  .bss	00000000 .bss
 200081dc l    d  .ram0_init	00000000 .ram0_init
@@ -184,7 +184,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08001f00 l     F .text	00000044 port_init
 08001f50 l     F .text	00000002 _idle_thread
 08001f60 l     F .text	0000007c chVTDoTickI
-080264f4 l     O .rodata	00000018 idle_descriptor.0
+0802650c l     O .rodata	00000018 idle_descriptor.0
 00000000 l    df *ABS*	00000000 chvt.c
 00000000 l    df *ABS*	00000000 chschd.c
 080021f0 l     F .text	00000040 wakeup
@@ -208,7 +208,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 080032c0 l     F .text	0000000e get
 080032d0 l     F .text	0000000a putt
 080032e0 l     F .text	0000000e put
-08026524 l     O .rodata	00000020 vmt
+0802653c l     O .rodata	00000020 vmt
 00000000 l    df *ABS*	00000000 hal_serial_usb.c
 080033c0 l     F .text	00000048 obnotify
 08003410 l     F .text	00000042 ibnotify
@@ -220,15 +220,15 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08003500 l     F .text	00000020 get
 08003520 l     F .text	0000001c putt
 08003540 l     F .text	00000020 put
-08026544 l     O .rodata	00000020 vmt
+0802655c l     O .rodata	00000020 vmt
 200006d0 l     O .data	00000007 linecoding
 00000000 l    df *ABS*	00000000 hal_usb.c
 08003820 l     F .text	0000000a get_hword
 08003830 l     F .text	00000244 default_handler
-0802656c l     O .rodata	00000002 zero_status
+08026584 l     O .rodata	00000002 zero_status
 08003a80 l     F .text	00000022 set_address
-08026564 l     O .rodata	00000002 halted_status
-08026568 l     O .rodata	00000002 active_status
+0802657c l     O .rodata	00000002 halted_status
+08026580 l     O .rodata	00000002 active_status
 00000000 l    df *ABS*	00000000 hal_wdg.c
 00000000 l    df *ABS*	00000000 nvic.c
 00000000 l    df *ABS*	00000000 hal_lld.c
@@ -242,7 +242,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08004400 l     F .text	0000001e adc_lld_stop_adc
 08004420 l     F .text	0000001a adc_lld_vreg_on
 20001740 l     O .bss	00000004 clkmask
-08026660 l     O .rodata	00000004 default_config
+08026678 l     O .rodata	00000004 default_config
 08004640 l     F .text	000000d8 adc_lld_serve_dma_interrupt
 00000000 l    df *ABS*	00000000 hal_ext_lld.c
 00000000 l    df *ABS*	00000000 hal_ext_lld_isr.c
@@ -256,14 +256,14 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08005320 l     F .text	0000003a set_error
 08005360 l     F .text	00000010 notify1
 08005370 l     F .text	000000c4 serve_interrupt
-08026664 l     O .rodata	00000010 default_config
+0802667c l     O .rodata	00000010 default_config
 00000000 l    df *ABS*	00000000 hal_usb_lld.c
 08005510 l     F .text	00000008 usb_pm_reset
 08005520 l     F .text	00000014 usb_pm_alloc
 08005540 l     F .text	00000050 usb_packet_read_to_buffer
 08005590 l     F .text	0000004c usb_packet_write_from_buffer
 080055e0 l     F .text	00000148 usb_serve_endpoints
-08026674 l     O .rodata	00000024 ep0config
+0802668c l     O .rodata	00000024 ep0config
 200018bc l     O .bss	00000010 ep0_state
 200018b4 l     O .bss	00000008 ep0setup_buffer
 00000000 l    df *ABS*	00000000 hal_wdg_lld.c
@@ -271,14 +271,14 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 00000000 l    df *ABS*	00000000 chprintf.c
 08005c10 l     F .text	0000007e long_to_string_with_divisor
 08005c90 l     F .text	00000178 ulong_freq
-0802675c l     O .rodata	0000000a bigPrefix
+08026774 l     O .rodata	0000000a bigPrefix
 08005e10 l     F .text	0000007c ftoa
-08026768 l     O .rodata	00000028 pow10
+08026780 l     O .rodata	00000028 pow10
 08005e90 l     F .text	000000d8 ftoaS
-08026750 l     O .rodata	00000009 smallPrefix
+08026768 l     O .rodata	00000009 smallPrefix
 08005f70 l     F .text	000000f0 etoa
 08006060 l     F .text	00000018 put
-08026740 l     O .rodata	00000010 vmt
+08026758 l     O .rodata	00000010 vmt
 00000000 l    df *ABS*	00000000 ff.c
 080065c0 l     F .text	00000004 dbc_1st
 080065d0 l     F .text	00000004 dbc_2nd
@@ -286,13 +286,13 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08006600 l     F .text	00000014 ld_clust
 08006620 l     F .text	00000010 st_clust
 08006630 l     F .text	0000007c pick_lfn
-08026810 l     O .rodata	0000000d LfnOfs
+08026828 l     O .rodata	0000000d LfnOfs
 080066b0 l     F .text	00000064 put_lfn
 08006720 l     F .text	00000020 sum_sfn
 08006740 l     F .text	00000032 xdir_sum
 08006780 l     F .text	00000022 init_alloc_info
 080067b0 l     F .text	00000024 get_achar
-08026790 l     O .rodata	00000080 ExCvt
+080267a8 l     O .rodata	00000080 ExCvt
 080067e0 l     F .text	000000b6 pattern_match
 080068a0 l     F .text	00000056 get_ldnumber
 08006900 l     F .text	00000046 validate
@@ -335,37 +335,37 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 080085c0 l     F .text	000001fc dir_register
 080087c0 l     F .text	0000007c sync_fs
 00000000 l    df *ABS*	00000000 ffunicode.c
-08026ad0 l     O .rodata	00000100 uc866
-080268dc l     O .rodata	000001f2 cvt1.1
-08026820 l     O .rodata	000000bc cvt2.0
+08026ae8 l     O .rodata	00000100 uc866
+080268f4 l     O .rodata	000001f2 cvt1.1
+08026838 l     O .rodata	000000bc cvt2.0
 00000000 l    df *ABS*	00000000 usbcfg.c
 080093e0 l     F .text	00000034 get_descriptor
-08026cd0 l     O .rodata	00000008 vcom_device_descriptor
-08026c30 l     O .rodata	00000020 vcom_strings
-08026c84 l     O .rodata	00000008 vcom_configuration_descriptor
+08026ce8 l     O .rodata	00000008 vcom_device_descriptor
+08026c48 l     O .rodata	00000020 vcom_strings
+08026c9c l     O .rodata	00000008 vcom_configuration_descriptor
 08009420 l     F .text	0000001c sof_handler
 08009440 l     F .text	00000054 usb_event
-08026c0c l     O .rodata	00000024 ep1config
-08026be8 l     O .rodata	00000024 ep2config
+08026c24 l     O .rodata	00000024 ep1config
+08026c00 l     O .rodata	00000024 ep2config
 20001a48 l     O .bss	00000010 ep2instate
 20001a68 l     O .bss	00000010 ep1instate
 20001a58 l     O .bss	00000010 ep1outstate
-08026c80 l     O .rodata	00000004 vcom_string0
-08026c68 l     O .rodata	00000016 vcom_string1
-08026c58 l     O .rodata	00000010 vcom_string2
-08026c50 l     O .rodata	00000008 vcom_string3
-08026c8c l     O .rodata	00000043 vcom_configuration_descriptor_data
-08026cd8 l     O .rodata	00000012 vcom_device_descriptor_data
+08026c98 l     O .rodata	00000004 vcom_string0
+08026c80 l     O .rodata	00000016 vcom_string1
+08026c70 l     O .rodata	00000010 vcom_string2
+08026c68 l     O .rodata	00000008 vcom_string3
+08026ca4 l     O .rodata	00000043 vcom_configuration_descriptor_data
+08026cf0 l     O .rodata	00000012 vcom_device_descriptor_data
 00000000 l    df *ABS*	00000000 adc.c
 080094a0 l     F .text	0000001c adc_interrupt
 200006dc l     O .data	0000002c adcgrpcfgXY
 20001d04 l     O .bss	00000002 samples
-08026d18 l     O .rodata	0000002c adcgrpcfgVersion
+08026d30 l     O .rodata	0000002c adcgrpcfgVersion
 200006d8 l     O .data	00000004 vbat_time.1
 20001d08 l     O .bss	00000004 samplesVBAT
-08026d44 l     O .rodata	0000002c adcgrpcfgVBAT
+08026d5c l     O .rodata	0000002c adcgrpcfgVBAT
 20001d00 l     O .bss	00000002 vbat_raw.0
-08026cec l     O .rodata	0000002c adcgrpcfgTouch
+08026d04 l     O .rodata	0000002c adcgrpcfgTouch
 00000000 l    df *ABS*	00000000 main.c
 08009640 l     F .text	00000024 NVIC_SystemReset
 08009670 l     F .text	00000008 chSysLock
@@ -409,7 +409,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08009cd0 l     F .text	00000028 cmd_sd_card_mount
 08009d00 l     F .text	0000003c cmd_info
 08009d40 l     F .text	00000070 cmd_help
-08028b98 l     O .rodata	00000406 commands
+08028bb0 l     O .rodata	00000406 commands
 08010e60 l     F .text	00000074 cmd_y
 08009db0 l     F .text	00000030 cmd_vbat_offset
 08009de0 l     F .text	00000018 cmd_vbat
@@ -419,7 +419,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08009ed0 l     F .text	00000050 cmd_touchcal
 08009f20 l     F .text	0000002c cmd_test
 08009f50 l     F .text	00000048 cmd_abort
-080288bc l     O .rodata	00000007 cmd_on_off.4
+080288d4 l     O .rodata	00000007 cmd_on_off.4
 08009fa0 l     F .text	00000014 cmd_saveconfig
 08009fc0 l     F .text	0000002c cmd_reset
 0800a020 l     F .text	00000034 cmd_z
@@ -435,42 +435,42 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 0800a400 l     F .text	00000074 cmd_wait
 0800a480 l     F .text	00000030 cmd_zero
 0800a4b0 l     F .text	00000074 cmd_data
-080288b8 l     O .rodata	00000003 sel_conv.3
+080288d0 l     O .rodata	00000003 sel_conv.3
 0800a530 l     F .text	00000048 cmd_clearconfig
 0800a6a0 l     F .text	0000002c cmd_b
 0800a6d0 l     F .text	0000002c cmd_a
 0800a700 l     F .text	00000058 cmd_selftest
 0800a760 l     F .text	00000040 cmd_deviceid
 0800a7a0 l     F .text	00000080 cmd_direct
-08028ac4 l     O .rodata	00000012 direct_cmd.20
+08028adc l     O .rodata	00000012 direct_cmd.20
 0800a820 l     F .text	00000064 cmd_if1
 0800a890 l     F .text	0000009c cmd_color
 0800a930 l     F .text	00000088 cmd_usart
 0800a9c0 l     F .text	0000003c cmd_dac
 0800aa00 l     F .text	000000d4 cmd_time
-080288a8 l     O .rodata	00000010 time_cmd.2
-080288a0 l     O .rodata	00000006 idx_to_time.1
+080288c0 l     O .rodata	00000010 time_cmd.2
+080288b8 l     O .rodata	00000006 idx_to_time.1
 0800aae0 l     F .text	0000002c cmd_freq
 0800ac60 l     F .text	00000050 cmd_text
 0800acb0 l     F .text	00000178 cmd_correction
-08028ae0 l     O .rodata	00000060 cmd.22
-08028ad8 l     O .rodata	00000005 range.21
+08028af8 l     O .rodata	00000060 cmd.22
+08028af0 l     O .rodata	00000005 range.21
 0800ae30 l     F .text	00000378 cmd_leveloffset
-080289c0 l     O .rodata	000000b5 cmd_mode_list.15
+080289d8 l     O .rodata	000000b5 cmd_mode_list.15
 0800b1b0 l     F .text	00000044 cmd_nf
 0800b200 l     F .text	0000002c cmd_levelchange
 20003288 l     O .bss	00000028 old_freq
 20003260 l     O .bss	00000028 real_old_freq
 0800b460 l     F .text	000000ac cmd_ultra
 0800b5c0 l     F .text	00000030 cmd_caloutput
-08028904 l     O .rodata	00000015 cmd.7
+0802891c l     O .rodata	00000015 cmd.7
 0800b780 l     F .text	00000050 cmd_freq_correction
 0800b820 l     F .text	00000034 cmd_actual_freq
 0800b930 l     F .text	0000006c cmd_sweeptime
 0800ba40 l     F .text	00000004 cmd_u
 0800bc50 l     F .text	00000084 cmd_modulation
-08028a90 l     O .rodata	0000001f cmd_mod.17
-08028a78 l     O .rodata	00000018 cmd_mod_val.16
+08028aa8 l     O .rodata	0000001f cmd_mod.17
+08028a90 l     O .rodata	00000018 cmd_mod_val.16
 0800bd40 l     F .text	00000090 cmd_if
 0800be50 l     F .text	00000010 cmd_r
 0800be80 l     F .text	00000010 cmd_h
@@ -479,12 +479,12 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 20002352 l     O .bss	00000002 correct_RSSI
 0800c4e0 l     F .text	00000080 cmd_attenuate
 0800cae0 l     F .text	00000084 cmd_calc
-08028b40 l     O .rodata	00000033 cmd_cal.23
+08028b58 l     O .rodata	00000033 cmd_cal.23
 0800cc70 l     F .text	0000002c cmd_ext_gain
 0800cd20 l     F .text	0000006c cmd_line
 0800cd90 l     F .text	00000084 cmd_trigger
-08028970 l     O .rodata	00000013 cmd_trigger_list.12
-08029570 l     O .rodata	00000090 step_delay_table
+08028988 l     O .rodata	00000013 cmd_trigger_list.12
+08029588 l     O .rodata	00000090 step_delay_table
 20002a9c l     O .bss	000003c0 scaled_correction_value
 20002e5c l     O .bss	000003c0 scaled_correction_multi
 20002a80 l     O .bss	00000004 fast_counter
@@ -493,15 +493,15 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 0800d8f0 l     F .text	00000028 cmd_o
 200007bc l     O .data	00000004 spur_table
 20002744 l     O .bss	00000004 always_use_dynamic_table
-080293b0 l     O .rodata	000001c0 static_spur_table
+080293c8 l     O .rodata	000001c0 static_spur_table
 0800dd20 l     F .text	000000bc cmd_rbw
 200007a0 l     O .data	00000004 last_band
 20002218 l     O .bss	00000004 show_test_info
 2000221c l     O .bss	00000080 test_status
 20002214 l     O .bss	00000004 test_wait
-08029058 l     O .rodata	00000010 test_text
+08029070 l     O .rodata	00000010 test_text
 2000229c l     O .bss	00000080 test_fail_cause
-0802889c l     O .rodata	00000003 CSWTCH.1378
+080288b4 l     O .rodata	00000003 CSWTCH.1378
 2000220c l     O .bss	00000004 lpf_test_level
 20000798 l     O .data	00000008 direct_test_freq
 20002040 l     O .bss	000001c2 _f_band_index
@@ -513,25 +513,25 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 20002730 l     O .bss	00000010 max_index
 2000272c l     O .bss	00000002 cur_max
 0800f6a0 l     F .text	00000294 cmd_marker
-0802898c l     O .rodata	00000032 cmd_marker_list.14
-08028984 l     O .rodata	00000007 cmd_marker_on_off.13
+080289a4 l     O .rodata	00000032 cmd_marker_list.14
+0802899c l     O .rodata	00000007 cmd_marker_on_off.13
 0800f940 l     F .text	00000030 cmd_frequencies
 0800fad0 l     F .text	0000004c cmd_level
 0800fed0 l     F .text	00000050 cmd_recall
 0800ff20 l     F .text	00000030 cmd_resume
 0800ff50 l     F .text	00000120 cmd_sweep
-080288e8 l     O .rodata	0000001a sweep_cmd.6
-080288c4 l     O .rodata	00000023 sweep_cmd2.5
-080296b0 l     O .rodata	00000080 def_markers
+08028900 l     O .rodata	0000001a sweep_cmd.6
+080288dc l     O .rodata	00000023 sweep_cmd2.5
+080296c8 l     O .rodata	00000080 def_markers
 080106d0 l     F .text	00000070 cmd_mode
-08028ab4 l     O .rodata	0000000d cmd_in_out.19
-08028ab0 l     O .rodata	00000004 cmd_low_high.18
+08028acc l     O .rodata	0000000d cmd_in_out.19
+08028ac8 l     O .rodata	00000004 cmd_low_high.18
 08010740 l     F .text	0000004c cmd_load
 08010920 l     F .text	00000260 cmd_trace
-0802891c l     O .rodata	00000020 cmd_load_list.8
-08028944 l     O .rodata	0000000f cmd_scale_ref_list.10
-08028954 l     O .rodata	0000001a cmd_type_list.11
-0802893c l     O .rodata	00000006 cmd_value_list.9
+08028934 l     O .rodata	00000020 cmd_load_list.8
+0802895c l     O .rodata	0000000f cmd_scale_ref_list.10
+0802896c l     O .rodata	0000001a cmd_type_list.11
+08028954 l     O .rodata	00000006 cmd_value_list.9
 08010c00 l     F .text	00000038 cmd_version
 08010c70 l     F .text	0000004c cmd_output
 08010cc0 l     F .text	00000030 cmd_lna
@@ -554,8 +554,8 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 20003250 l     O .bss	00000004 LO_spur_shifted
 2000324c l     O .bss	00000004 LO_mirrored
 20003248 l     O .bss	00000004 LO_shifting
-080292e8 l     O .rodata	00000084 sine_wave
-08029370 l     O .rodata	00000040 additional_spur_table
+08029300 l     O .rodata	00000084 sine_wave
+08029388 l     O .rodata	00000040 additional_spur_table
 2000070c l     O .data	00000002 spur_RSSI.27
 08013600 l     F .text	000012a4 sweep
 20002328 l     O .bss	00000001 sweep_counter
@@ -566,19 +566,19 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 20002210 l     O .bss	00000004 test_value
 08014d00 l     F .text	000001a4 cmd_scan
 20002204 l     O .bss	00000004 test_step
-08028b74 l     O .rodata	00000014 R_table.24
+08028b8c l     O .rodata	00000014 R_table.24
 08016570 l     F .text	0000021c cmd_scanraw
 08016790 l     F .text	000001b0 cmd_hop
 08016940 l     F .text	000003e4 Thread1
 20001d0c l     O .bss	00000004 minutes.0
-08028b88 l     O .rodata	00000010 gpt4cfg
+08028ba0 l     O .rodata	00000010 gpt4cfg
 20005550 l     O .bss	00000600 waThread1
 20001d18 l     O .bss	00000300 waThread2
 00000000 l    df *ABS*	00000000 plot.c
 08017450 l     F .text	000000f0 trace_into_index_y_array
-0802ae18 l     O .rodata	0000001c CSWTCH.159
-0802ade0 l     O .rodata	0000001c CSWTCH.161
-0802adfc l     O .rodata	0000001c CSWTCH.160
+0802ae34 l     O .rodata	0000001c CSWTCH.159
+0802adfc l     O .rodata	0000001c CSWTCH.161
+0802ae18 l     O .rodata	0000001c CSWTCH.160
 08017540 l     F .text	00000044 invalidate_rect_func
 20006df8 l     O .bss	00000001 current_mappage
 20006dfc l     O .bss	0000002c markmap
@@ -596,10 +596,10 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08017d60 l     F .text	00001100 draw_all_cells
 20006e38 l     O .bss	00000002 grid_width
 20006e3a l     O .bss	00000002 grid_offset
-0802b058 l     O .rodata	000000fc marker_bitmap
+0802b074 l     O .rodata	000000fc marker_bitmap
 20006e30 l     O .bss	00000008 grid_span
-0802ae34 l     O .rodata	00000020 sd_icon.0
-0802ae54 l     O .rodata	00000202 waterfall_palette
+0802ae50 l     O .rodata	00000020 sd_icon.0
+0802ae70 l     O .rodata	00000202 waterfall_palette
 00000000 l    df *ABS*	00000000 ui.c
 080198d0 l     F .text	00000008 chVTGetSystemTimeX
 080198e0 l     F .text	00000020 select_lever_mode
@@ -607,7 +607,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08019970 l     F .text	00000020 menu_sleep_acb
 08019990 l     F .text	0000003c menu_multi_trace_acb
 080199d0 l     F .text	00000048 browser_get_button_pos
-0802be70 l     O .rodata	00000028 browser_btn
+0802be88 l     O .rodata	00000028 browser_btn
 08019a20 l     F .text	00000038 browser_get_max
 2000709e l     O .bss	00000002 current_page
 200070a0 l     O .bss	00000002 page_count
@@ -637,8 +637,8 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08019e80 l     F .text	000000c4 draw_button
 08019f50 l     F .text	000000d8 draw_keypad_button
 200070dc l     O .bss	00000004 keypads
-0802ca58 l     O .rodata	00000010 key_pos
-0802b49c l     O .rodata	00000028 keypad_scale_text
+0802ca70 l     O .rodata	00000010 key_pos
+0802b4b4 l     O .rodata	00000028 keypad_scale_text
 0801a030 l     F .text	0000008c browser_draw_button
 2000709c l     O .bss	00000002 sel_mode
 0801a0c0 l     F .text	00000038 browser_draw_buttons
@@ -654,7 +654,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 0801a3d0 l     F .text	00000014 menu_lo_output_acb
 0801a3f0 l     F .text	00000014 menu_settings_pulse_acb
 0801a410 l     F .text	00000028 menu_points_acb
-0802bf34 l     O .rodata	0000000c points_setting
+0802bf4c l     O .rodata	0000000c points_setting
 0801a440 l     F .text	0000005c menu_modulation_acb
 0801a4a0 l     F .text	00000024 menu_outputmode_acb
 0801a4d0 l     F .text	00000034 menu_markers_reset_acb
@@ -662,7 +662,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 0801a5a0 l     F .text	0000008c menu_marker_search_cb
 0801a630 l     F .text	00000074 lever_search_marker
 0801a6b0 l     F .text	00000028 menu_serial_speed_acb
-0802b2e0 l     O .rodata	00000028 usart_speed.2
+0802b2f8 l     O .rodata	00000028 usart_speed.2
 0801a6e0 l     F .text	00000034 menu_flip_acb
 0801a720 l     F .text	00000018 menu_pause_acb
 0801a740 l     F .text	00000860 fetch_numeric_target
@@ -676,7 +676,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 200070e0 l     O .bss	00000002 last_touch_y
 200070e4 l     O .bss	00000001 last_touch_status
 0801b210 l     F .text	00000060 getTouchPoint
-0802cba8 l     O .rodata	00000012 touch_bitmap
+0802cbc0 l     O .rodata	00000012 touch_bitmap
 0801b270 l     F .text	0000007a sd_findnext
 200070f5 l     O .bss	00000001 ui_mode
 0801bfd0 l     F .text	000001a0 keypad_click
@@ -684,61 +684,61 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 20007021 l     O .bss	00000001 max_quick_menu
 20007074 l     O .bss	00000028 quick_menu_y
 20007024 l     O .bss	00000050 quick_menu
-0802bd14 l     O .rodata	00000028 menu_reflevel
-0802b6d8 l     O .rodata	00000050 menu_unit
-0802c414 l     O .rodata	00000032 menu_band_select
-0802b8e4 l     O .rodata	0000005a menu_measure
-0802c204 l     O .rodata	00000032 menu_measure_noise_figure
-0802bd3c l     O .rodata	00000028 menu_atten
-0802c3b0 l     O .rodata	00000064 menu_average
-0802c2d4 l     O .rodata	00000064 menu_config
-0802b5a8 l     O .rodata	0000006e menu_stimulus
-0802b728 l     O .rodata	00000064 menu_display
-0802bd84 l     O .rodata	0000001e menu_rbw
-0802bd64 l     O .rodata	0000001e menu_vbw
-0802b2d8 l     O .rodata	00000005 fscan.1
-0802bb04 l     O .rodata	00000046 menu_sweep_speed
-0802b618 l     O .rodata	0000005a menu_level
-0802c39c l     O .rodata	00000014 menu_reffer
-0802b674 l     O .rodata	00000064 menu_trigger
+0802bd2c l     O .rodata	00000028 menu_reflevel
+0802b6f0 l     O .rodata	00000050 menu_unit
+0802c42c l     O .rodata	00000032 menu_band_select
+0802b8fc l     O .rodata	0000005a menu_measure
+0802c21c l     O .rodata	00000032 menu_measure_noise_figure
+0802bd54 l     O .rodata	00000028 menu_atten
+0802c3c8 l     O .rodata	00000064 menu_average
+0802c2ec l     O .rodata	00000064 menu_config
+0802b5c0 l     O .rodata	0000006e menu_stimulus
+0802b740 l     O .rodata	00000064 menu_display
+0802bd9c l     O .rodata	0000001e menu_rbw
+0802bd7c l     O .rodata	0000001e menu_vbw
+0802b2f0 l     O .rodata	00000005 fscan.1
+0802bb1c l     O .rodata	00000046 menu_sweep_speed
+0802b630 l     O .rodata	0000005a menu_level
+0802c3b4 l     O .rodata	00000014 menu_reffer
+0802b68c l     O .rodata	00000064 menu_trigger
 0801caf0 l     F .text	000004ac draw_menu_buttons
-0802b418 l     O .rodata	00000084 check_box
-0802cae8 l     O .rodata	000000c0 left_icons
-0802cbcc l     O .rodata	00000005 slider_bitmap
+0802b430 l     O .rodata	00000084 check_box
+0802cb00 l     O .rodata	000000c0 left_icons
+0802cbe4 l     O .rodata	00000005 slider_bitmap
 0801d0a0 l     F .text	00000740 browser_open_file
-0802be98 l     O .rodata	00000020 file_ext
+0802beb0 l     O .rodata	00000020 file_ext
 20006e64 l     O .bss	00000180 cmd_buffer.0
 0801d9d0 l     F .text	00000024 menu_output_curve_prepare_cb
-0802c2b4 l     O .rodata	0000001e menu_curve
+0802c2cc l     O .rodata	0000001e menu_curve
 0801da00 l     F .text	00000058 menu_calibrate_harmonic_acb
-0802c1e4 l     O .rodata	0000001e menu_calibrate_harmonic
+0802c1fc l     O .rodata	0000001e menu_calibrate_harmonic
 0801da60 l     F .text	00000058 menu_calibrate_normal_acb
-0802c1c4 l     O .rodata	0000001e menu_calibrate_normal
+0802c1dc l     O .rodata	0000001e menu_calibrate_normal
 0801dac0 l     F .text	000000bc menu_sweep_acb
-0802c168 l     O .rodata	00000032 menu_sweep
+0802c180 l     O .rodata	00000032 menu_sweep
 0801db80 l     F .text	00000094 menu_smodulation_acb
-0802c5bc l     O .rodata	00000064 menu_modulation
+0802c5d4 l     O .rodata	00000064 menu_modulation
 0801dc20 l     F .text	00000028 menu_sreffer_acb
 0801dc50 l     F .text	000000f8 menu_marker_modify_acb
-0802c360 l     O .rodata	00000014 menu_marker_ref_select
-0802c4fc l     O .rodata	00000014 menu_marker_trace
+0802c378 l     O .rodata	00000014 menu_marker_ref_select
+0802c514 l     O .rodata	00000014 menu_marker_trace
 0801dd50 l     F .text	000000e8 menu_limit_select_acb
-0802c4c0 l     O .rodata	00000028 menu_limit_modify
+0802c4d8 l     O .rodata	00000028 menu_limit_modify
 0801de40 l     F .text	000000cc menu_multi_band_acb
 0801df10 l     F .text	000000cc menu_band_select_acb
-0802c448 l     O .rodata	00000050 menu_band_modify
+0802c460 l     O .rodata	00000050 menu_band_modify
 0801e070 l     F .text	00000024 menu_hide_21MHz_acb
 0801e0a0 l     F .text	0000001c menu_debug_level_acb
 0801e0c0 l     F .text	0000001c menu_debug_spur_acb
 0801e0e0 l     F .text	0000001c menu_debug_avoid_acb
 0801e100 l     F .text	00000020 menu_debug_freq_acb
 0801e120 l     F .text	00000208 ui_mode_keypad
-0802c710 l     O .rodata	000001f8 keypads_mode_tbl
+0802c728 l     O .rodata	000001f8 keypads_mode_tbl
 0801e330 l     F .text	00000058 menu_internals_acb
 200070c4 l     O .bss	00000004 unlock_internals
-0802c088 l     O .rodata	0000006e menu_settings2
+0802c0a0 l     O .rodata	0000006e menu_settings2
 0801e390 l     F .text	0000023c menu_curve_acb
-0802c294 l     O .rodata	0000001e menu_curve_confirm
+0802c2ac l     O .rodata	0000001e menu_curve_confirm
 0801e5d0 l     F .text	00000054 menu_input_curve_prepare_cb
 0801e630 l     F .text	000000fc menu_output_level3_acb
 0801e730 l     F .text	000000d8 menu_output_level2_acb
@@ -748,7 +748,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 0801ea40 l     F .text	0000004c menu_settings_draw_line_acb
 0801ea90 l     F .text	00000484 sa_save_file
 200070a4 l     O .bss	00000002 file_mask
-0802beb8 l     O .rodata	0000007a bmp_header_v4
+0802bed0 l     O .rodata	0000007a bmp_header_v4
 0801ef20 l     F .text	00000006 menu_sdcard_cb
 0801ef30 l     F .text	00000024 menu_save_traces_cb
 0801ef60 l     F .text	00000034 menu_audio_agc_acb
@@ -761,28 +761,28 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 0801f1f0 l     F .text	0000005c menu_move_back
 0801f250 l     F .text	00000160 menu_lowoutput_settings_acb
 20006fe4 l     O .bss	0000001a mode_string.3
-0802c060 l     O .rodata	00000028 menu_lowoutput_settings
-0802c038 l     O .rodata	00000028 menu_lowoutput_settings_max
+0802c078 l     O .rodata	00000028 menu_lowoutput_settings
+0802c050 l     O .rodata	00000028 menu_lowoutput_settings_max
 0801f3b0 l     F .text	00000030 menu_mixer_drive_acb
 0801f3e0 l     F .text	0000003c menu_calibrate_cb
 0801f420 l     F .text	00000020 menu_level_in_dBuV
 0801f440 l     F .text	00000038 menu_reffer_acb
 0801f480 l     F .text	00000078 menu_mode_acb
-0802bfec l     O .rodata	00000008 item_to_mode
+0802c004 l     O .rodata	00000008 item_to_mode
 0801f540 l     F .text	00000040 menu_marker_trace_acb
 0801f580 l     F .text	00000058 menu_marker_ref_select_acb
 0801f5e0 l     F .text	00000054 menu_marker_delete_cb
 0801f640 l     F .text	00000094 menu_marker_select_acb
 0801f6e0 l     F .text	000000f8 menu_marker_op_cb
 0801f800 l     F .text	00000148 menu_trigger_level_acb
-0802c524 l     O .rodata	0000001e menu_trigger_level
-0802c498 l     O .rodata	00000028 menu_limit_select
+0802c53c l     O .rodata	0000001e menu_trigger_level
+0802c4b0 l     O .rodata	00000028 menu_limit_select
 0801f950 l     F .text	00000094 menu_limit_disable_cb
 0801f9f0 l     F .text	00000054 menu_vbw_acb
-0802bf40 l     O .rodata	0000000c vbwsel_x100
+0802bf58 l     O .rodata	0000000c vbwsel_x100
 0801fa50 l     F .text	00000040 menu_rbw_acb
-0802bf74 l     O .rodata	00000014 rbwsel_x10
-0802bf4c l     O .rodata	00000028 rbwsel_text
+0802bf8c l     O .rodata	00000014 rbwsel_x10
+0802bf64 l     O .rodata	00000028 rbwsel_text
 0801fa90 l     F .text	00000038 menu_atten_high_acb
 0801fad0 l     F .text	00000064 menu_atten_acb
 0801fb40 l     F .text	00000080 menu_BAND_disable_cb
@@ -794,7 +794,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 0801fd40 l     F .text	000000b4 menu_store_preset_acb
 0801fe00 l     F .text	00000094 menu_load_preset_acb
 0801ffa0 l     F .text	00000070 menu_config_cb
-0802c19c l     O .rodata	00000028 menu_calibrate
+0802c1b4 l     O .rodata	00000028 menu_calibrate
 08020040 l     F .text	00000024 menu_jog_jump_acb
 08020070 l     F .text	000000f8 browser_draw_page
 08020170 l     F .text	00000058 menu_sdcard_browse_cb
@@ -811,47 +811,47 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08020600 l     F .text	00000590 menu_measure_acb
 08020b90 l     F .text	000000a4 browser_key_press
 08020c50 l     F .text	00000194 menu_traces_acb
-0802c510 l     O .rodata	00000014 menu_trace
-0802c4e8 l     O .rodata	00000014 menu_subtract_trace
+0802c528 l     O .rodata	00000014 menu_trace
+0802c500 l     O .rodata	00000014 menu_subtract_trace
 20007018 l     O .bss	00000002 previous_button_state
-0802b308 l     O .rodata	00000110 extcfg
-0802cbbc l     O .rodata	00000010 gpt3cfg
-0802c544 l     O .rodata	00000078 menu_top
-0802b4fc l     O .rodata	00000064 menu_storage
-0802b560 l     O .rodata	00000028 menu_storage_config
-0802be5c l     O .rodata	00000014 menu_back
-0802b588 l     O .rodata	0000001e menu_storage_sd_icon
-0802c388 l     O .rodata	00000014 menu_sweep_points
-0802b868 l     O .rodata	0000001e menu_lock_display
-0802b78c l     O .rodata	00000064 menu_traces
-0802b7f0 l     O .rodata	00000014 menu_store_trace
-0802b804 l     O .rodata	00000064 menu_config2
-0802c338 l     O .rodata	00000028 menu_connection
-0802b9e4 l     O .rodata	00000032 menu_actual_power
-0802c0f8 l     O .rodata	0000006e menu_settings
-0802b940 l     O .rodata	00000046 menu_measure2
-0802b988 l     O .rodata	0000005a menu_settings4
-0802badc l     O .rodata	00000028 menu_actual_power2
-0802ba4c l     O .rodata	0000005a menu_actual_in_power
-0802ba18 l     O .rodata	00000032 menu_actual_out_power
-0802baa8 l     O .rodata	0000001e menu_curve2
-0802bac8 l     O .rodata	00000014 menu_curve3
-0802bb4c l     O .rodata	0000001e menu_scanning_speed
-0802bb6c l     O .rodata	0000003c menu_harmonic
-0802bba8 l     O .rodata	0000005a menu_marker
-0802bda4 l     O .rodata	0000003c menu_mixer_drive
-0802bde0 l     O .rodata	00000046 menu_load_preset
-0802be28 l     O .rodata	00000032 menu_store_preset
-0802c238 l     O .rodata	0000005a menu_settings3
-0802c374 l     O .rodata	00000014 menu_sweep_points_form
-0802ca10 l     O .rodata	00000022 keypads_freq
-0802c9a4 l     O .rodata	00000022 keypads_plusmin_unit
-0802c9c8 l     O .rodata	00000022 keypads_pos_unit
-0802c9ec l     O .rodata	00000022 keypads_positive
-0802c980 l     O .rodata	00000022 keypads_plusmin
-0802ca34 l     O .rodata	00000022 keypads_plusmin_freq
-0802c95c l     O .rodata	00000022 keypads_time
-0802c908 l     O .rodata	00000052 keypads_text
+0802b320 l     O .rodata	00000110 extcfg
+0802cbd4 l     O .rodata	00000010 gpt3cfg
+0802c55c l     O .rodata	00000078 menu_top
+0802b514 l     O .rodata	00000064 menu_storage
+0802b578 l     O .rodata	00000028 menu_storage_config
+0802be74 l     O .rodata	00000014 menu_back
+0802b5a0 l     O .rodata	0000001e menu_storage_sd_icon
+0802c3a0 l     O .rodata	00000014 menu_sweep_points
+0802b880 l     O .rodata	0000001e menu_lock_display
+0802b7a4 l     O .rodata	00000064 menu_traces
+0802b808 l     O .rodata	00000014 menu_store_trace
+0802b81c l     O .rodata	00000064 menu_config2
+0802c350 l     O .rodata	00000028 menu_connection
+0802b9fc l     O .rodata	00000032 menu_actual_power
+0802c110 l     O .rodata	0000006e menu_settings
+0802b958 l     O .rodata	00000046 menu_measure2
+0802b9a0 l     O .rodata	0000005a menu_settings4
+0802baf4 l     O .rodata	00000028 menu_actual_power2
+0802ba64 l     O .rodata	0000005a menu_actual_in_power
+0802ba30 l     O .rodata	00000032 menu_actual_out_power
+0802bac0 l     O .rodata	0000001e menu_curve2
+0802bae0 l     O .rodata	00000014 menu_curve3
+0802bb64 l     O .rodata	0000001e menu_scanning_speed
+0802bb84 l     O .rodata	0000003c menu_harmonic
+0802bbc0 l     O .rodata	0000005a menu_marker
+0802bdbc l     O .rodata	0000003c menu_mixer_drive
+0802bdf8 l     O .rodata	00000046 menu_load_preset
+0802be40 l     O .rodata	00000032 menu_store_preset
+0802c250 l     O .rodata	0000005a menu_settings3
+0802c38c l     O .rodata	00000014 menu_sweep_points_form
+0802ca28 l     O .rodata	00000022 keypads_freq
+0802c9bc l     O .rodata	00000022 keypads_plusmin_unit
+0802c9e0 l     O .rodata	00000022 keypads_pos_unit
+0802ca04 l     O .rodata	00000022 keypads_positive
+0802c998 l     O .rodata	00000022 keypads_plusmin
+0802ca4c l     O .rodata	00000022 keypads_plusmin_freq
+0802c974 l     O .rodata	00000022 keypads_time
+0802c920 l     O .rodata	00000052 keypads_text
 00000000 l    df *ABS*	00000000 ili9341.c
 08021960 l     F .text	00000030 dmaChannelWaitCompletionRxTx
 08021a10 l     F .text	00000014 SD_Unselect_SPI
@@ -859,7 +859,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08021ac0 l     F .text	0000008c SD_SendCmd
 08021b50 l     F .text	00000040 SD_WaitDataToken
 08021b90 l     F .text	0000004c SD_RxDataBlock
-0802cc0a l     O .rodata	00000002 dummy_tx
+0802cc22 l     O .rodata	00000002 dummy_tx
 08021be0 l     F .text	0000001a SD_WaitDataAccept
 08021c00 l     F .text	00000054 SD_TxDataBlock
 20007162 l     O .bss	00000002 current_spi_mode
@@ -871,7 +871,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 200014e4 l     O .data	00000001 Stat
 08021ee0 l     F .text	00000018 SD_Select_SPI
 20007161 l     O .bss	00000001 LCD_dma_status
-0802cbd4 l     O .rodata	00000035 ST7796S_init_seq
+0802cbec l     O .rodata	00000035 ST7796S_init_seq
 08022260 l     F .text	00000054 lcd_put_7x11b
 080222c0 l     F .text	00000050 lcd_put5x7
 200014e8 l     O .data	00000004 put_char
@@ -890,7 +890,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08022e00 l     F .text	0000001a si5351_read
 08022e20 l     F .text	00000062 si5351_wait_ready
 08022e90 l     F .text	00000080 si5351_wait_pll_lock
-0802cc0c l     O .rodata	00000029 si5351_configs
+0802cc24 l     O .rodata	00000029 si5351_configs
 00000000 l    df *ABS*	00000000 flash.c
 08022fe0 l     F .text	00000014 flash_wait_for_last_operation
 08023000 l     F .text	00000030 flash_erase_page0
@@ -910,35 +910,35 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 2000150c l     O .data	00000005 gpio_state
 20001514 l     O .data	00000004 SI4463_output_level
 20008185 l     O .bss	00000001 SI4463_in_tx_mode
-0802df0c l     O .rodata	00000003 CSWTCH.228
+0802df24 l     O .rodata	00000003 CSWTCH.228
 20008180 l     O .bss	00000004 buf_index
 2000817e l     O .bss	00000002 buf_end
 2000817c l     O .bss	00000001 buf_read
 20008170 l     O .bss	00000004 old_t.8
 20008178 l     O .bss	00000004 RSSI_RAW
 20001506 l     O .data	00000002 SI4463_RSSI_correction
-0802df20 l     O .rodata	00000006 if_freq_high.7
-0802df18 l     O .rodata	00000006 if_freq_low.6
-0802df10 l     O .rodata	00000005 data3.5
-0802df28 l     O .rodata	0000006c RBW_choices
+0802df38 l     O .rodata	00000006 if_freq_high.7
+0802df30 l     O .rodata	00000006 if_freq_low.6
+0802df28 l     O .rodata	00000005 data3.5
+0802df40 l     O .rodata	0000006c RBW_choices
 20001500 l     O .data	00000004 prev_band
 20008186 l     O .bss	00000001 SI4463_channel
 20001518 l     O .data	00000004 SI4463_band
-0802e360 l     O .rodata	00000213 SI4468_config
+0802e378 l     O .rodata	00000213 SI4468_config
 200014fc l     O .data	00000004 old_extra_lna.4
 200014f8 l     O .data	00000004 old_ultra.3
 200014f4 l     O .data	00000004 old_rx_mode.2
 200014f0 l     O .data	00000004 old_high.1
 200014ec l     O .data	00000004 old_direct.0
-0802e2d4 l     O .rodata	00000065 SI4463_RBW_02kHz
-0802e26c l     O .rodata	00000065 SI4463_RBW_1kHz
-0802e204 l     O .rodata	00000065 SI4463_RBW_3kHz
-0802e19c l     O .rodata	00000065 SI4463_RBW_10kHz
-0802e134 l     O .rodata	00000065 SI4463_RBW_30kHz
-0802e0cc l     O .rodata	00000065 SI4463_RBW_100kHz
-0802e064 l     O .rodata	00000065 SI4463_RBW_300kHz
-0802dffc l     O .rodata	00000065 SI4463_RBW_600kHz
-0802df94 l     O .rodata	00000065 SI4463_RBW_850kHz
+0802e2ec l     O .rodata	00000065 SI4463_RBW_02kHz
+0802e284 l     O .rodata	00000065 SI4463_RBW_1kHz
+0802e21c l     O .rodata	00000065 SI4463_RBW_3kHz
+0802e1b4 l     O .rodata	00000065 SI4463_RBW_10kHz
+0802e14c l     O .rodata	00000065 SI4463_RBW_30kHz
+0802e0e4 l     O .rodata	00000065 SI4463_RBW_100kHz
+0802e07c l     O .rodata	00000065 SI4463_RBW_300kHz
+0802e014 l     O .rodata	00000065 SI4463_RBW_600kHz
+0802dfac l     O .rodata	00000065 SI4463_RBW_850kHz
 00000000 l    df *ABS*	00000000 rtc.c
 08024910 l     F .text	00000010 rtc_exit_init
 08024920 l     F .text	00000028 rtc_enter_init
@@ -947,7 +947,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 00000000 l    df *ABS*	00000000 Font10x14.c
 00000000 l    df *ABS*	00000000 Font7x13b.c
 00000000 l    df *ABS*	00000000 impure.c
-08026698 g     O .rodata	000000a8 pal_default_config
+080266b0 g     O .rodata	000000a8 pal_default_config
 20001454 g     O .data	00000001 dirty
 200007d0 g     O .data	00000004 linear_averaging
 20003220 g     O .bss	00000001 calibration_stage
@@ -993,7 +993,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08001ef0  w    F .text	00000002 Vector11C
 200014b4 g     O .data	00000012 center_text
 00000000 g       .ram5	00000000 __ram5_clear__
-0802d390 g     O .rodata	00000b7c x10x14_bits
+0802d3a8 g     O .rodata	00000b7c x10x14_bits
 08003ba0 g     F .text	0000002a usbStartTransmitI
 080239f0 g     F .text	00000048 ADF4351_R_counter
 080196b0 g     F .text	000001e8 update_grid
@@ -1047,7 +1047,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 0801b740 g     F .text	0000088c set_numeric_value
 08001ef0  w    F .text	00000002 NMI_Handler
 08000000 g     O vectors	000001a0 _vectors
-0802ea00 g       .ARM.exidx	00000000 __exidx_end
+0802ea18 g       .ARM.exidx	00000000 __exidx_end
 08017ae0 g     F .text	00000028 markmap_all_markers
 0800bb90 g     F .text	00000018 set_modulation
 08022440 g     F .text	00000048 lcd_printf
@@ -1062,7 +1062,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08001b60 g     F .text	0000000c __errno
 2000818d g     O .bss	00000001 SI4463_frequency_changed
 08022aa0 g     F .text	00000042 i2c_write
-0802bfd0 g     O .rodata	0000001c menu_modulation_text
+0802bfe8 g     O .rodata	0000001c menu_modulation_text
 0800ce20 g     F .text	00000018 set_fast_speedup
 0800ca10 g     F .text	00000018 set_harmonic
 080050c0 g     F .text	00000124 pwm_lld_start
@@ -1073,7 +1073,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 20002338 g     O .bss	00000004 test_output_switch
 0800bbb0 g     F .text	0000001c set_deviation
 20001794 g     O .bss	00000008 EXTD1
-0802d0b0 g     O .rodata	000002df x5x7_bits
+0802d0c8 g     O .rodata	000002df x5x7_bits
 200081e0 g       .heap	00000000 __heap_base__
 08019630 g     F .text	00000074 set_level_meter_or_waterfall
 08000300 g     F .text	00000060 logf
@@ -1090,7 +1090,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 080240c0 g     F .text	0000000c si_set_offset
 0800e230 g     F .text	000000b0 marker_search_left_min
 20005c1c g     O .bss	00000020 marker_cache_index
-0802bc40 g     O .rodata	00000014 menu_marker_select
+0802bc58 g     O .rodata	00000014 menu_marker_select
 080198a0 g     F .text	00000010 disable_waterfall
 08003600 g     F .text	0000001c sduDisconnectI
 08001ef0  w    F .text	00000002 VectorC8
@@ -1102,17 +1102,17 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08009340 g     F .text	000000a0 ff_wtoupper
 08024280 g     F .text	00000068 SI4432_Listen
 20007164 g     O .bss	00000002 background_color
-0802c620 g     O .rodata	00000028 menu_mode
+0802c638 g     O .rodata	00000028 menu_mode
 20002330 g     O .bss	00000004 test_path
 2000322c g     O .bss	0000000c channel_power_watt
 080022f0 g     F .text	00000050 chSchWakeupS
 08019570 g     F .text	00000010 request_to_redraw_grid
 08004cf0 g     F .text	0000007c ext_lld_exti_irq_enable
 08010170 g     F .text	00000040 round_reflevel_to_scale
-0802c6ac g     O .rodata	00000064 menu_lowoutputmode
+0802c6c4 g     O .rodata	00000064 menu_lowoutputmode
 0800bbd0 g     F .text	00000018 set_depth
 08003390 g     F .text	00000028 sdIncomingDataI
-0802f8b4 g       *ABS*	00000000 __ram3_init_text__
+0802f8cc g       *ABS*	00000000 __ram3_init_text__
 080021a0 g     F .text	00000014 _scheduler_init
 08003ac0 g     F .text	0000002c usbObjectInit
 080024d0 g     F .text	00000058 chThdCreateStatic
@@ -1163,7 +1163,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08002080 g     F .text	0000001c _vt_init
 20008187 g     O .bss	00000001 SI4463_rbw_selected
 200081c2 g     O .bss	00000002 out_div
-0802e9f8 g       .rodata	00000000 __rodata_end__
+0802ea10 g       .rodata	00000000 __rodata_end__
 080037b0 g     F .text	00000056 sduDataReceived
 080220a0 g     F .text	00000078 ili9341_read_memory
 08000360 g     F .text	0000004c roundf
@@ -1190,7 +1190,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 20001538 g       .bss	00000000 _bss_start
 08002d50 g     F .text	00000038 iqPutI
 08001800 g     F .text	00000040 .hidden __fixunsdfsi
-08029664 g     O .rodata	0000004c si_drive_dBm
+0802967c g     O .rodata	0000004c si_drive_dBm
 0801b450 g     F .text	000000a4 touch_draw_test
 20001538 g     O .bss	00000148 ch_idle_thread_wa
 08023980 g     F .text	00000034 ADF4351_force_refresh
@@ -1201,7 +1201,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08000bf4 g     F .text	0000001e .hidden __aeabi_ui2d
 08021a30 g     F .text	00000028 spi_RxBuffer
 0800c0a0 g     F .text	0000000c get_level
-0802b158 g     O .rodata	00000180 ham_bands
+0802b170 g     O .rodata	00000180 ham_bands
 20001460 g     O .data	00000002 area_width
 00000000 g       *ABS*	00000000 __ram1_size__
 20001484 g     O .data	00000030 month
@@ -1235,13 +1235,13 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 20005b58 g     O .bss	00000008 NORMAL_MAX_FREQ
 200070bc g     O .bss	00000004 current_curve
 200081ac g     O .bss	00000004 reg_5
-0802bcb0 g     O .rodata	00000064 menu_marker_search
+0802bcc8 g     O .rodata	00000064 menu_marker_search
 08003060 g     F .text	00000012 adcStartConversionI
 0800ec70 g     F .text	00000024 getBand
 200014d4 g     O .data	0000000c mode_text
 0800ebf0 g     F .text	00000078 set_marker_time
 08003f20 g     F .text	00000048 hal_lld_init
-08029638 g     O .rodata	0000001c path_text
+08029650 g     O .rodata	0000001c path_text
 08024020 g     F .text	00000068 SI4463_start_rx
 0800b6f0 g     F .text	0000002c set_gridlines
 08000c38 g     F .text	00000042 .hidden __extendsfdf2
@@ -1250,12 +1250,12 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 00000000 g       .ram7	00000000 __ram7_free__
 00002000 g       *ABS*	00000000 __ram4_size__
 0800097c g     F .text	00000276 .hidden __adddf3
-08029600 g     O .rodata	00000005 unit_scale_text
+08029618 g     O .rodata	00000005 unit_scale_text
 00000000 g       *ABS*	00000000 __ram1_end__
 20005bf0 g     O .bss	00000008 frequencyStart
 20003925 g     O .bss	00000001 remote_mouse_down
 10002000 g       *ABS*	00000000 __ram4_end__
-0802e9f8 g       .ARM.exidx	00000000 __exidx_start
+0802ea10 g       .ARM.exidx	00000000 __exidx_start
 08000cf0 g     F .text	00000254 .hidden __aeabi_dmul
 08023e00 g     F .text	0000003c SI4463_set_output_level
 08002570 g     F .text	00000038 chThdExitS
@@ -1268,27 +1268,27 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08022040 g     F .text	00000014 ili9341_bulk_finish
 0800b9e0 g     F .text	00000020 toggle_draw_line
 20001520 g     O .data	00000002 bsDivider
-0802b8d0 g     O .rodata	00000014 menu_serial_speed
-0802f8b4 g       *ABS*	00000000 __ram0_init_text__
-0802bff4 g     O .rodata	00000044 measurement_text
+0802b8e8 g     O .rodata	00000014 menu_serial_speed
+0802f8cc g       *ABS*	00000000 __ram0_init_text__
+0802c00c g     O .rodata	00000044 measurement_text
 20005b88 g     O .bss	00000001 enable_after_complete
 08003810 g     F .text	00000002 sduInterruptTransmitted
 0800cca0 g     F .text	00000020 set_trigger_level
 0800bb60 g     F .text	0000002c toggle_below_IF
 0801b320 g     F .text	00000014 touch_set
-0802f8b4 g       *ABS*	00000000 __ram1_init_text__
+0802f8cc g       *ABS*	00000000 __ram1_init_text__
 080243d0 g     F .text	0000001e SI446x_set_AGC_LNA
 08003080 g     F .text	00000016 adcStartConversion
 20007115 g     O .bss	00000001 break_execute
 080243f0 g     F .text	0000000c getSI4463_RSSI_correction
 08004cc0 g     F .text	0000002c Vector148
-08029068 g     O .rodata	00000280 test_case
+08029080 g     O .rodata	00000280 test_case
 08001ef0  w    F .text	00000002 Vector188
 08003010 g     F .text	00000008 adcInit
 08000bf4 g     F .text	0000001e .hidden __floatunsidf
 08006580 g     F .text	0000003a plot_printf
 0000a000 g       *ABS*	00000000 __ram0_size__
-0802b888 g     O .rodata	0000001e menu_date_time
+0802b8a0 g     O .rodata	0000001e menu_date_time
 20007010 g     O .bss	00000008 time_since_start
 08021900 g     F .text	00000038 ui_init
 20005b89 g     O .bss	00000001 completed
@@ -1296,7 +1296,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 080031b0 g     F .text	00000012 gptPolledDelay
 08006080 g     F .text	000004ea chvprintf
 080091f0 g     F .text	000000dc f_unlink
-0802f8b4 g       *ABS*	00000000 __ram5_init_text__
+0802f8cc g       *ABS*	00000000 __ram5_init_text__
 20005b60 g     O .bss	00000008 ULTRA_THRESHOLD
 20003926 g     O .bss	00000001 remote_text
 080044d0 g     F .text	000000a8 adc_lld_start
@@ -1351,7 +1351,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08001ef0  w    F .text	00000002 Vector54
 08022140 g     F .text	00000080 ili9341_init
 08001360 g     F .text	0000007c .hidden __floatdisf
-0802ca68 g     O .rodata	00000080 right_icons
+0802ca80 g     O .rodata	00000080 right_icons
 08001ef0  w    F .text	00000002 Vector98
 20001744 g     O .bss	00000028 ADCD2
 2000176c g     O .bss	00000028 ADCD1
@@ -1362,7 +1362,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 00000000 g       .ram5	00000000 __ram5_free__
 08001ef0  w    F .text	00000002 VectorD8
 0800cba0 g     F .text	0000002c toggle_AGC
-0802f8b4 g       *ABS*	00000000 __ram6_init_text__
+0802f8cc g       *ABS*	00000000 __ram6_init_text__
 08011320 g     F .text	00000012 pwm_init
 08022420 g     F .text	0000001c lcd_set_font
 200032e0 g     O .bss	00000008 frequency_step_x10
@@ -1388,14 +1388,14 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08002eb0 g     F .text	00000018 oqResetI
 00000000 g       .ram7_init	00000000 __ram7_init__
 08001ef0  w    F .text	00000002 Vector178
-08029030 g     O .rodata	00000009 TINYSA_VERSION
+08029048 g     O .rodata	00000009 TINYSA_VERSION
 00000000 g       .ram6	00000000 __ram6_free__
 08003b30 g     F .text	00000036 usbInitEndpointI
 08002600 g     F .text	00000018 chThdSleep
 08002950 g     F .text	00000040 ibqGetTimeout
 0801d010 g     F .text	0000004c input_is_calibrated
 0800df10 g     F .text	00000044 clock_above_48MHz
-08026570 g     O .rodata	000000f0 _stm32_dma_streams
+08026588 g     O .rodata	000000f0 _stm32_dma_streams
 08004130 g     F .text	00000030 Vector84
 20001458 g     O .data	00000001 sweep_mode
 08009520 g     F .text	00000020 adc1_single_read
@@ -1418,7 +1418,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 080059a0 g     F .text	00000020 usb_lld_get_status_in
 08003f70 g     F .text	000000a0 stm32_clock_init
 10000000 g       .ram4_init	00000000 __ram4_init__
-08029730 g     O .rodata	000003c0 v4_6_correction_value
+08029748 g     O .rodata	000003c0 v4_6_correction_value
 08004d90 g     F .text	00000064 _pal_lld_init
 200007b8 g     O .data	00000004 spur_table_size
 20002344 g     O .bss	00000001 signal_is_AM
@@ -1469,9 +1469,9 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08001ef0  w    F .text	00000002 Vector158
 20000760 g     O .data	00000038 jump_freqs
 08004fb0 g     F .text	0000002e gpt_lld_start_timer
-0802bf88 g     O .rodata	00000028 averageText
-08028fe0 g     O .rodata	00000050 hw_version_text
-0802bc04 g     O .rodata	0000003c menu_marker_ops
+0802bfa0 g     O .rodata	00000028 averageText
+08028ff8 g     O .rodata	00000050 hw_version_text
+0802bc1c g     O .rodata	0000003c menu_marker_ops
 08004220 g     F .text	00000030 Vector130
 080002d0 g     F .text	00000000 _port_switch
 08006570 g     F .text	00000010 printObjectInit
@@ -1493,7 +1493,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08019580 g     F .text	00000018 redraw_frame
 200032d0 g     O .bss	00000002 current_band
 08003140 g     F .text	00000008 gptInit
-0802c648 g     O .rodata	00000064 menu_highoutputmode
+0802c660 g     O .rodata	00000064 menu_highoutputmode
 08020df0 g     F .text	00000030 set_interval_stop_time
 08002760 g     F .text	00000064 _port_irq_epilogue
 08009b50 g     F .text	00000024 shell_printf
@@ -1505,7 +1505,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08023a70 g     F .text	00000024 ADF4351_drive
 08005240 g     F .text	00000062 pwm_lld_serve_interrupt
 00000000 g       .ARM.exidx	00000000 __ram7_start__
-08028fa0 g     O .rodata	00000040 states
+08028fb8 g     O .rodata	00000040 states
 08021ff0 g     F .text	00000030 ili9341_bulk
 00000000 g       .ram6	00000000 __ram6_clear__
 08023490 g     F .text	00000024 ADF4351_Latch
@@ -1526,7 +1526,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08005210 g     F .text	0000002e pwm_lld_disable_channel
 0800c9a0 g     F .text	00000020 set_VBW
 0800be00 g     F .text	00000048 set_R
-08029af0 g     O .rodata	00000780 v4_6_correction_frequency
+08029b08 g     O .rodata	00000780 v4_6_correction_frequency
 20002208 g     O .bss	00000004 last_spur
 08001e20 g     F .text	0000005c memcmp
 200081b0 g     O .bss	00000004 reg_4
@@ -1561,14 +1561,14 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08001ef0  w    F .text	00000002 Vector100
 20007168 g     O .bss	00001000 spi_buffer
 08000cf0 g     F .text	00000254 .hidden __muldf3
-0802e574 g     O .rodata	00000483 x7x11b_bits
+0802e58c g     O .rodata	00000483 x7x11b_bits
 08004a90 g     F .text	00000080 VectorE0
 0800dc10 g     F .text	000000e8 update_rbw
 080226b0 g     F .text	00000008 get_fattime
 2000232a g     O .bss	00000001 depth_error
 0800cbd0 g     F .text	00000028 set_AGC_LNA
 20005b50 g     O .bss	00000004 last_auto_save
-0802b4c4 g     O .rodata	00000038 unit_string
+0802b4dc g     O .rodata	00000038 unit_string
 08001ef0  w    F .text	00000002 VectorF4
 2000232c g     O .bss	00000004 test_output_attenuate
 080001a0 g       vectors	00000000 __fini_array_start
@@ -1589,7 +1589,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08009540 g     F .text	000000bc adc_vbat_read
 08002ab0 g     F .text	0000001c obqResetI
 200014e0 g     O .data	00000001 previous_marker
-0802cc38 g     O .rodata	00000478 numfont16x22
+0802cc50 g     O .rodata	00000478 numfont16x22
 08001ab0 g     F .text	000000a2 memset
 08001ef0  w    F .text	00000002 MemManage_Handler
 08016e10 g     F .text	00000468 main
@@ -1612,19 +1612,19 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 080195a0 g     F .text	00000088 display_test
 080091a0 g     F .text	0000002e f_findnext
 080048f0 g     F .text	0000003a ext_lld_start
-0802f8b4 g       *ABS*	00000000 __ram2_init_text__
+0802f8cc g       *ABS*	00000000 __ram2_init_text__
 080100d0 g     F .text	00000094 set_reflevel
 08003020 g     F .text	00000012 adcObjectInit
 080110a0 g     F .text	00000050 VNAShell_parceLine
 08011390 g     F .text	00000048 set_audio_mode
-0802df26 g     O .rodata	00000001 SI4432_RBW_count
+0802df3e g     O .rodata	00000001 SI4432_RBW_count
 08002730 g     F .text	0000002c SVC_Handler
 08015f00 g     F .text	00000534 calibrate
 20002320 g     O .bss	00000008 test_freq
 200018cc g     O .bss	00000084 USBD1
 08001120 g     F .text	0000009e .hidden __truncdfsf2
 00000000 g       .ram3	00000000 __ram3_free__
-08029654 g     O .rodata	00000010 adf_drive_dBm
+0802966c g     O .rodata	00000010 adf_drive_dBm
 08024750 g     F .text	000000b0 SI4463_init_rx
 080001a0 g       vectors	00000000 __init_array_end
 08003360 g     F .text	0000002e sdStop
@@ -1640,7 +1640,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 080240e0 g     F .text	00000100 SI446x_trigger_fill
 08008840 g     F .text	00000050 f_mount
 08001ef0  w    F .text	00000002 Vector180
-0802f8b4 g       *ABS*	00000000 __ram4_init_text__
+0802f8cc g       *ABS*	00000000 __ram4_init_text__
 0800bfc0 g     F .text	000000e0 correct_high_output_level
 00000000 g       .ram1	00000000 __ram1_noinit__
 08022310 g     F .text	00000050 ili9341_drawstring
@@ -1657,7 +1657,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 0801b340 g     F .text	00000012 touch_wait_release
 08004340 g     F .text	0000002c VectorB0
 080113e0 g     F .text	00000030 my_microsecond_delay
-0802650c g     O .rodata	00000016 ch_debug
+08026524 g     O .rodata	00000016 ch_debug
 08010650 g     F .text	00000060 load_LCD_properties
 200081bc g     O .bss	00000004 reg_1
 0801b3c0 g     F .text	00000090 touch_position
@@ -1679,7 +1679,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08004990 g     F .text	0000002c Vector60
 08001ef0  w    F .text	00000002 Vector164
 08023080 g     F .text	00000018 flash_unlock
-0802bc54 g     O .rodata	0000005a menu_marker_modify
+0802bc6c g     O .rodata	0000005a menu_marker_modify
 08010070 g     F .text	00000028 set_trace_scale
 20002018 g     O .bss	00000001 global_abort
 08001ef0  w    F .text	00000002 Vector1C
@@ -1687,8 +1687,8 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 080014f0 g     F .text	0000003c .hidden __fixunsdfdi
 080239e0 g     F .text	00000002 ADF4351_spur_mode
 08002360 g     F .text	00000044 chSchDoRescheduleAhead
-0802961c g     O .rodata	0000001c reffer_freq
-0802e33c g     O .rodata	00000021 dBm_to_volt
+08029634 g     O .rodata	0000001c reffer_freq
+0802e354 g     O .rodata	00000021 dBm_to_volt
 08016d30 g     F .text	000000d8 set_freq_boundaries
 0800e390 g     F .text	000000dc cell_draw_test_info
 08023120 g     F .text	00000068 config_recall
@@ -1713,7 +1713,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08004580 g     F .text	0000009c adc_lld_start_conversion
 08011380 g     F .text	00000010 pwm_stop
 200007e0 g     O .data	00000002 vbwSteps
-08026bd0 g     O .rodata	00000008 serusbcfg
+08026be8 g     O .rodata	00000008 serusbcfg
 0800bdd0 g     F .text	00000024 set_IF2
 0801f7e0 g     F .text	00000018 menu_move_top
 08005730 g     F .text	000000a0 Vector16C
@@ -1733,19 +1733,19 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 200007e4 g     O .data	00000004 current_index
 08002120 g     F .text	00000080 chVTDoResetI
 0800a580 g     F .text	0000011c my_atoui
-0802903c g     O .rodata	0000001c atten_step
+08029054 g     O .rodata	0000001c atten_step
 20002748 g     O .bss	00000004 dynamic_spur_rbw
 08002530 g     F .text	00000034 chThdRelease
 08024830 g     F .text	00000028 enable_extra_lna
 200032bc g     O .bss	00000001 direct_test
-08029608 g     O .rodata	00000014 unit_scale_value
+08029620 g     O .rodata	00000014 unit_scale_value
 00000000 g       .ram3	00000000 __ram3_noinit__
 0800c420 g     F .text	000000c0 set_attenuation
 08002460 g     F .text	00000038 chThdCreateSuspendedI
 08023af0 g     F .text	00000030 ADF4351_enable_out
 08010790 g     F .text	000000d8 set_unit
 08002b50 g     F .text	0000002a obqPostFullBufferS
-0802adb0 g     O .rodata	00000030 info_about
+0802adc8 g     O .rodata	00000034 info_about
 20007116 g     O .bss	00000001 operation_requested
 080225d0 g     F .text	000000a4 ili9341_line
 0801c1b0 g     F .text	00000914 draw_cal_status
@@ -1783,7 +1783,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 20001504 g     O .data	00000001 SI4463_RSSI_correction_enabled
 080101b0 g     F .text	00000124 set_scale
 080234c0 g     F .text	00000298 sendConfig
-0802b8a8 g     O .rodata	00000028 menu_touch
+0802b8c0 g     O .rodata	00000028 menu_touch
 08022200 g     F .text	00000060 ili9341_blitBitmap
 08023390 g     F .text	00000034 start_PE4312_SPI_mode
 20001456 g     O .data	00000002 sweep_once_count
@@ -1803,7 +1803,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08023b80 g     F .text	000000a8 ADF4351_Setup
 20002760 g     O .bss	00000320 dynamic_spur_table
 200007e8 g     O .data	00000001 progress_bar
-0802bfb0 g     O .rodata	00000020 menu_reffer_text
+0802bfc8 g     O .rodata	00000020 menu_reffer_text
 200070a7 g     O .bss	00000001 active_limit
 08023b40 g     F .text	0000003c ADF4350_shift_ref
 080028a0 g     F .text	00000016 ibqGetEmptyBufferI
@@ -1832,7 +1832,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 080020a0 g     F .text	00000080 chVTDoSetI
 20005be8 g     O .bss	00000008 frequencyStop
 08003ab0 g     F .text	00000008 usbInit
-0802f8b4 g       *ABS*	00000000 __ram7_init_text__
+0802f8cc g       *ABS*	00000000 __ram7_init_text__
 00000000 g       .ram3_init	00000000 __ram3_init__
 200032b8 g     O .bss	00000004 noise_level
 08001ef0  w    F .text	00000002 Vector104
@@ -1870,7 +1870,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 08005a50 g     F .text	00000048 usb_lld_start_in
 20008174 g     O .bss	00000002 SI4463_noise_correction_x10
 0800bbf0 g     F .text	00000060 set_modulation_frequency
-0802ea00 g       *ABS*	00000000 _textdata_start
+0802ea18 g       *ABS*	00000000 _textdata_start
 080003c0 g     F .text	00000078 expf
 200017d8 g     O .bss	000000dc SD1
 08005970 g     F .text	00000024 usb_lld_get_status_out
@@ -1892,7 +1892,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 20001680 g     O .bss	0000005c ch
 08004620 g     F .text	00000020 adc_lld_stop_conversion
 08000924 g     F .text	0000000c .hidden __math_oflowf
-0802a270 g     O .rodata	000003c0 v5_2_correction_value
+0802a288 g     O .rodata	000003c0 v5_2_correction_value
 08010b80 g     F .text	0000007c get_hw_version_text
 080019d0 g     F .text	000000d8 strlen
 08022830 g     F .text	00000088 disk_read
@@ -1964,13 +1964,13 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 00000000 g       .ARM.exidx	00000000 __ram3_start__
 2000234c g     O .bss	00000004 start_of_sweep_timestamp
 08021f20 g     F .text	00000094 ili9341_fill
-08026bd8 g     O .rodata	00000010 usbcfg
+08026bf0 g     O .rodata	00000010 usbcfg
 080011cc g     F .text	00000160 .hidden __addsf3
 200007ec g     O .data	00000c68 config
 08005060 g     F .text	00000014 VectorA4
 08002880 g     F .text	0000001a ibqResetI
 00000480 g       *ABS*	00000000 __process_stack_size__
-0802a630 g     O .rodata	00000780 v5_2_correction_frequency
+0802a648 g     O .rodata	00000780 v5_2_correction_frequency
 20006e3c g     O .bss	00000014 freq_text
 20003228 g     O .bss	00000004 flatness
 0800bce0 g     F .text	00000018 set_repeat

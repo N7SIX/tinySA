@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccDpPpAR.s 			page 1
+ARM GAS  /tmp/ccaXC7EI.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
   55              	.LVL1:
   56              	.LFB234:
   57              		.loc 1 68 37 is_stmt 1 view -0
-ARM GAS  /tmp/ccDpPpAR.s 			page 2
+ARM GAS  /tmp/ccaXC7EI.s 			page 2
 
 
   58              		.cfi_startproc
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  112              		.file 4 "ChibiOS/os/common/ports/ARMCMx/chcore_v7m.h"
  113              		.loc 4 604 20 view .LVU19
  114              		.loc 4 612 3 view .LVU20
-ARM GAS  /tmp/ccDpPpAR.s 			page 3
+ARM GAS  /tmp/ccaXC7EI.s 			page 3
 
 
  115              	.LVL3:
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  169              		.loc 4 631 3 view .LVU45
  170              	.LVL6:
  171              	.LBB85:
-ARM GAS  /tmp/ccDpPpAR.s 			page 4
+ARM GAS  /tmp/ccaXC7EI.s 			page 4
 
 
  172              	.LBI85:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  226              	.LBB88:
  227              	.LBI88:
  228              		.loc 3 374 20 view .LVU59
-ARM GAS  /tmp/ccDpPpAR.s 			page 5
+ARM GAS  /tmp/ccaXC7EI.s 			page 5
 
 
  229              		.loc 3 376 3 view .LVU60
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  283              		.loc 4 628 20 view .LVU84
  284              		.loc 4 631 3 view .LVU85
  285              	.LVL12:
-ARM GAS  /tmp/ccDpPpAR.s 			page 6
+ARM GAS  /tmp/ccaXC7EI.s 			page 6
 
 
  286              	.LBB96:
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  340              	.LBB99:
  341              	.LBI99:
  342              		.loc 3 374 20 view .LVU99
-ARM GAS  /tmp/ccDpPpAR.s 			page 7
+ARM GAS  /tmp/ccaXC7EI.s 			page 7
 
 
  343              		.loc 3 376 3 view .LVU100
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  397              		.loc 5 546 57 view .LVU124
  398              	.LBB108:
  399              		.loc 5 548 3 view .LVU125
-ARM GAS  /tmp/ccDpPpAR.s 			page 8
+ARM GAS  /tmp/ccaXC7EI.s 			page 8
 
 
  400 000c 0023     		movs	r3, #0
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  454              		.loc 4 604 20 view .LVU138
  455              		.loc 4 612 3 view .LVU139
  456              	.LVL20:
-ARM GAS  /tmp/ccDpPpAR.s 			page 9
+ARM GAS  /tmp/ccaXC7EI.s 			page 9
 
 
  457              	.LBB112:
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  511 000e 83F31188 		MSR basepri, r3
  512              	@ 0 "" 2
  513              	.LVL23:
-ARM GAS  /tmp/ccDpPpAR.s 			page 10
+ARM GAS  /tmp/ccaXC7EI.s 			page 10
 
 
  514              		.loc 5 548 3 is_stmt 0 view .LVU163
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  568              		.loc 1 196 10 view .LVU179
  569 0010 8EE80300 		stm	lr, {r0, r1}
  570              		.loc 1 197 3 is_stmt 1 view .LVU180
-ARM GAS  /tmp/ccDpPpAR.s 			page 11
+ARM GAS  /tmp/ccaXC7EI.s 			page 11
 
 
  571 0014 6146     		mov	r1, ip
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  625 004a 01       		.byte	0x1
  626 004b 06       		.byte	0x6
  627 004c 32020000 		.4byte	.LASF4
-ARM GAS  /tmp/ccDpPpAR.s 			page 12
+ARM GAS  /tmp/ccaXC7EI.s 			page 12
 
 
  628 0050 05       		.uleb128 0x5
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  682 00b6 1D       		.byte	0x1d
  683 00b7 6A000000 		.4byte	0x6a
  684 00bb 03       		.uleb128 0x3
-ARM GAS  /tmp/ccDpPpAR.s 			page 13
+ARM GAS  /tmp/ccaXC7EI.s 			page 13
 
 
  685 00bc 0F000000 		.4byte	.LASF16
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  739 0125 1A       		.byte	0x1a
  740 0126 A0010000 		.4byte	0x1a0
  741 012a 10       		.byte	0x10
-ARM GAS  /tmp/ccDpPpAR.s 			page 14
+ARM GAS  /tmp/ccaXC7EI.s 			page 14
 
 
  742 012b 04       		.uleb128 0x4
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  796 018e A5010000 		.4byte	0x1a5
  797 0192 28       		.byte	0x28
  798 0193 00       		.byte	0
-ARM GAS  /tmp/ccDpPpAR.s 			page 15
+ARM GAS  /tmp/ccaXC7EI.s 			page 15
 
 
  799 0194 03       		.uleb128 0x3
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  853 01fd 00       		.byte	0
  854 01fe 1B       		.uleb128 0x1b
  855 01ff 04       		.byte	0x4
-ARM GAS  /tmp/ccDpPpAR.s 			page 16
+ARM GAS  /tmp/ccaXC7EI.s 			page 16
 
 
  856 0200 03       		.uleb128 0x3
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  910 0269 01       		.uleb128 0x1
  911 026a 73313900 		.ascii	"s19\000"
  912 026e 04       		.byte	0x4
-ARM GAS  /tmp/ccDpPpAR.s 			page 17
+ARM GAS  /tmp/ccaXC7EI.s 			page 17
 
 
  913 026f 6501     		.2byte	0x165
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  967 02da 73323700 		.ascii	"s27\000"
  968 02de 04       		.byte	0x4
  969 02df 6D01     		.2byte	0x16d
-ARM GAS  /tmp/ccDpPpAR.s 			page 18
+ARM GAS  /tmp/ccaXC7EI.s 			page 18
 
 
  970 02e1 11       		.byte	0x11
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  1024 034a 04       		.byte	0x4
  1025 034b 7601     		.2byte	0x176
  1026 034d 11       		.byte	0x11
-ARM GAS  /tmp/ccDpPpAR.s 			page 19
+ARM GAS  /tmp/ccaXC7EI.s 			page 19
 
 
  1027 034e 00020000 		.4byte	0x200
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  1081 03b6 19       		.byte	0x19
  1082 03b7 D3000000 		.4byte	0xd3
  1083 03bb 14       		.uleb128 0x14
-ARM GAS  /tmp/ccDpPpAR.s 			page 20
+ARM GAS  /tmp/ccaXC7EI.s 			page 20
 
 
  1084 03bc 39030000 		.4byte	.LASF44
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  1138 0428 1A       		.byte	0x1a
  1139 0429 2D040000 		.4byte	0x42d
  1140 042d 11       		.uleb128 0x11
-ARM GAS  /tmp/ccDpPpAR.s 			page 21
+ARM GAS  /tmp/ccaXC7EI.s 			page 21
 
 
  1141 042e 7D030000 		.4byte	.LASF52
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  1195 0497 84000000 		.4byte	0x84
  1196 049b 00       		.byte	0
  1197 049c 16       		.uleb128 0x16
-ARM GAS  /tmp/ccDpPpAR.s 			page 22
+ARM GAS  /tmp/ccaXC7EI.s 			page 22
 
 
  1198 049d 636200   		.ascii	"cb\000"
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  1252 050c 00       		.byte	0
  1253 050d 15       		.uleb128 0x15
  1254 050e C7010000 		.4byte	.LASF61
-ARM GAS  /tmp/ccDpPpAR.s 			page 23
+ARM GAS  /tmp/ccaXC7EI.s 			page 23
 
 
  1255 0512 91       		.byte	0x91
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  1309 0593 54000000 		.4byte	.LVUS17
  1310 0597 23       		.uleb128 0x23
  1311 0598 19010000 		.4byte	.LASF84
-ARM GAS  /tmp/ccDpPpAR.s 			page 24
+ARM GAS  /tmp/ccaXC7EI.s 			page 24
 
 
  1312 059c 01       		.byte	0x1
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  1366 05f9 5B000000 		.4byte	.LASF68
  1367 05fd 93       		.byte	0x93
  1368 05fe 00000000 		.4byte	.LFB238
-ARM GAS  /tmp/ccDpPpAR.s 			page 25
+ARM GAS  /tmp/ccaXC7EI.s 			page 25
 
 
  1369 0602 14000000 		.4byte	.LFE238-.LFB238
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  1423 0692 890B0000 		.4byte	0xb89
  1424 0696 C8000000 		.4byte	.LLST13
  1425 069a C6000000 		.4byte	.LVUS13
-ARM GAS  /tmp/ccDpPpAR.s 			page 26
+ARM GAS  /tmp/ccaXC7EI.s 			page 26
 
 
  1426 069e 00       		.byte	0
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  1480 0719 00       		.uleb128 0
  1481 071a 26       		.uleb128 0x26
  1482 071b A8       		.byte	0xa8
-ARM GAS  /tmp/ccDpPpAR.s 			page 27
+ARM GAS  /tmp/ccaXC7EI.s 			page 27
 
 
  1483 071c 2D       		.uleb128 0x2d
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  1537 078b 02000000 		.4byte	.LBI98
  1538 078f 04       		.byte	.LVU97
  1539 0790 02000000 		.4byte	.LBB98
-ARM GAS  /tmp/ccDpPpAR.s 			page 28
+ARM GAS  /tmp/ccaXC7EI.s 			page 28
 
 
  1540 0794 06000000 		.4byte	.LBE98-.LBB98
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  1594 0822 0A       		.byte	.LVU122
  1595 0823 0C000000 		.4byte	.LBB106
  1596 0827 06000000 		.4byte	.LBE106-.LBB106
-ARM GAS  /tmp/ccDpPpAR.s 			page 29
+ARM GAS  /tmp/ccaXC7EI.s 			page 29
 
 
  1597 082b 03       		.byte	0x3
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  1651 0887 10       		.byte	0x10
  1652 0888 00       		.byte	0
  1653 0889 08       		.uleb128 0x8
-ARM GAS  /tmp/ccDpPpAR.s 			page 30
+ARM GAS  /tmp/ccaXC7EI.s 			page 30
 
 
  1654 088a 79080000 		.4byte	0x879
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  1708 091d 46010000 		.4byte	.LVUS5
  1709 0921 00       		.byte	0
  1710 0922 00       		.byte	0
-ARM GAS  /tmp/ccDpPpAR.s 			page 31
+ARM GAS  /tmp/ccaXC7EI.s 			page 31
 
 
  1711 0923 00       		.byte	0
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  1765 099e E3030000 		.4byte	0x3e3
  1766 09a2 AD090000 		.4byte	0x9ad
  1767 09a6 0E       		.uleb128 0xe
-ARM GAS  /tmp/ccDpPpAR.s 			page 32
+ARM GAS  /tmp/ccaXC7EI.s 			page 32
 
 
  1768 09a7 2D000000 		.4byte	0x2d
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  1822 0a36 02       		.uleb128 0x2
  1823 0a37 7F0B0000 		.4byte	0xb7f
  1824 0a3b 04000000 		.4byte	.LBI79
-ARM GAS  /tmp/ccDpPpAR.s 			page 33
+ARM GAS  /tmp/ccaXC7EI.s 			page 33
 
 
  1825 0a3f 0A       		.byte	.LVU21
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  1879 0ac4 10000000 		.4byte	.LVL5
  1880 0ac8 32050000 		.4byte	0x532
  1881 0acc 0A       		.uleb128 0xa
-ARM GAS  /tmp/ccDpPpAR.s 			page 34
+ARM GAS  /tmp/ccaXC7EI.s 			page 34
 
 
  1882 0acd 01       		.uleb128 0x1
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  1936 0b3b 06030000 		.4byte	.LASF85
  1937 0b3f 03       		.byte	0x3
  1938 0b40 8201     		.2byte	0x182
-ARM GAS  /tmp/ccDpPpAR.s 			page 35
+ARM GAS  /tmp/ccaXC7EI.s 			page 35
 
 
  1939 0b42 14       		.byte	0x14
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  1993 000a 0B       		.uleb128 0xb
  1994 000b 49       		.uleb128 0x49
  1995 000c 13       		.uleb128 0x13
-ARM GAS  /tmp/ccDpPpAR.s 			page 36
+ARM GAS  /tmp/ccaXC7EI.s 			page 36
 
 
  1996 000d 38       		.uleb128 0x38
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  2050 0044 38       		.uleb128 0x38
  2051 0045 0B       		.uleb128 0xb
  2052 0046 00       		.byte	0
-ARM GAS  /tmp/ccDpPpAR.s 			page 37
+ARM GAS  /tmp/ccaXC7EI.s 			page 37
 
 
  2053 0047 00       		.byte	0
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  2107 007e 00       		.byte	0
  2108 007f 00       		.byte	0
  2109 0080 0A       		.uleb128 0xa
-ARM GAS  /tmp/ccDpPpAR.s 			page 38
+ARM GAS  /tmp/ccaXC7EI.s 			page 38
 
 
  2110 0081 49       		.uleb128 0x49
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  2164 00b9 21       		.uleb128 0x21
  2165 00ba 00       		.byte	0
  2166 00bb 49       		.uleb128 0x49
-ARM GAS  /tmp/ccDpPpAR.s 			page 39
+ARM GAS  /tmp/ccaXC7EI.s 			page 39
 
 
  2167 00bc 13       		.uleb128 0x13
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  2221 00f2 3B       		.uleb128 0x3b
  2222 00f3 0B       		.uleb128 0xb
  2223 00f4 39       		.uleb128 0x39
-ARM GAS  /tmp/ccDpPpAR.s 			page 40
+ARM GAS  /tmp/ccaXC7EI.s 			page 40
 
 
  2224 00f5 21       		.uleb128 0x21
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  2278 012b 19       		.uleb128 0x19
  2279 012c 03       		.uleb128 0x3
  2280 012d 0E       		.uleb128 0xe
-ARM GAS  /tmp/ccDpPpAR.s 			page 41
+ARM GAS  /tmp/ccaXC7EI.s 			page 41
 
 
  2281 012e 3A       		.uleb128 0x3a
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  2335 0164 17       		.uleb128 0x17
  2336 0165 11       		.uleb128 0x11
  2337 0166 01       		.uleb128 0x1
-ARM GAS  /tmp/ccDpPpAR.s 			page 42
+ARM GAS  /tmp/ccaXC7EI.s 			page 42
 
 
  2338 0167 10       		.uleb128 0x10
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  2392 019d 00       		.byte	0
  2393 019e 00       		.byte	0
  2394 019f 1D       		.uleb128 0x1d
-ARM GAS  /tmp/ccDpPpAR.s 			page 43
+ARM GAS  /tmp/ccaXC7EI.s 			page 43
 
 
  2395 01a0 17       		.uleb128 0x17
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  2449 01d6 13       		.uleb128 0x13
  2450 01d7 00       		.byte	0
  2451 01d8 00       		.byte	0
-ARM GAS  /tmp/ccDpPpAR.s 			page 44
+ARM GAS  /tmp/ccaXC7EI.s 			page 44
 
 
  2452 01d9 21       		.uleb128 0x21
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  2506 0210 05       		.uleb128 0x5
  2507 0211 00       		.byte	0
  2508 0212 03       		.uleb128 0x3
-ARM GAS  /tmp/ccDpPpAR.s 			page 45
+ARM GAS  /tmp/ccaXC7EI.s 			page 45
 
 
  2509 0213 0E       		.uleb128 0xe
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  2563 0249 20       		.uleb128 0x20
  2564 024a 0B       		.uleb128 0xb
  2565 024b 00       		.byte	0
-ARM GAS  /tmp/ccDpPpAR.s 			page 46
+ARM GAS  /tmp/ccaXC7EI.s 			page 46
 
 
  2566 024c 00       		.byte	0
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  2620 002a A8       		.byte	0xa8
  2621 002b 2D       		.uleb128 0x2d
  2622 002c A8       		.byte	0xa8
-ARM GAS  /tmp/ccDpPpAR.s 			page 47
+ARM GAS  /tmp/ccaXC7EI.s 			page 47
 
 
  2623 002d 00       		.uleb128 0
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  2677 0065 0A       		.uleb128 0xa
  2678 0066 A3       		.byte	0xa3
  2679 0067 03       		.uleb128 0x3
-ARM GAS  /tmp/ccDpPpAR.s 			page 48
+ARM GAS  /tmp/ccaXC7EI.s 			page 48
 
 
  2680 0068 A5       		.byte	0xa5
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  2734 00a0 A5       		.byte	0xa5
  2735 00a1 00       		.uleb128 0
  2736 00a2 26       		.uleb128 0x26
-ARM GAS  /tmp/ccDpPpAR.s 			page 49
+ARM GAS  /tmp/ccaXC7EI.s 			page 49
 
 
  2737 00a3 A8       		.byte	0xa8
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  2791 00dc 30       		.byte	0x30
  2792 00dd 9F       		.byte	0x9f
  2793 00de 00       		.byte	0
-ARM GAS  /tmp/ccDpPpAR.s 			page 50
+ARM GAS  /tmp/ccaXC7EI.s 			page 50
 
 
  2794              	.LVUS7:
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  2848 0117 9F       		.byte	0x9f
  2849 0118 00       		.byte	0
  2850              	.LVUS9:
-ARM GAS  /tmp/ccDpPpAR.s 			page 51
+ARM GAS  /tmp/ccaXC7EI.s 			page 51
 
 
  2851 0119 0A       		.uleb128 .LVU103
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  2905 0153 0C       		.uleb128 .LVU86
  2906 0154 00       		.uleb128 .LVU88
  2907              	.LLST6:
-ARM GAS  /tmp/ccDpPpAR.s 			page 52
+ARM GAS  /tmp/ccaXC7EI.s 			page 52
 
 
  2908 0155 08       		.byte	0x8
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  2962              	.LVUS2:
  2963 0190 0A       		.uleb128 .LVU21
  2964 0191 00       		.uleb128 .LVU23
-ARM GAS  /tmp/ccDpPpAR.s 			page 53
+ARM GAS  /tmp/ccaXC7EI.s 			page 53
 
 
  2965              	.LLST2:
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  3019 000c 07       		.byte	0x7
  3020 000d 00000000 		.4byte	.LFB233
  3021 0011 08       		.uleb128 .LFE233-.LFB233
-ARM GAS  /tmp/ccDpPpAR.s 			page 54
+ARM GAS  /tmp/ccaXC7EI.s 			page 54
 
 
  3022 0012 07       		.byte	0x7
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  3059              	.LASF67:
  3060 0048 65787453 		.ascii	"extSetChannelModeI\000"
  3060      65744368 
-ARM GAS  /tmp/ccDpPpAR.s 			page 55
+ARM GAS  /tmp/ccaXC7EI.s 			page 55
 
 
  3060      616E6E65 
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  3086 00e0 4558545F 		.ascii	"EXT_STOP\000"
  3086      53544F50 
  3086      00
-ARM GAS  /tmp/ccDpPpAR.s 			page 56
+ARM GAS  /tmp/ccaXC7EI.s 			page 56
 
 
  3087              	.LASF53:
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  3116 0177 6C6F6E67 		.ascii	"long int\000"
  3116      20696E74 
  3116      00
-ARM GAS  /tmp/ccDpPpAR.s 			page 57
+ARM GAS  /tmp/ccaXC7EI.s 			page 57
 
 
  3117              	.LASF64:
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  3143              	.LASF48:
  3144 0216 4558545F 		.ascii	"EXT_UNINIT\000"
  3144      554E494E 
-ARM GAS  /tmp/ccDpPpAR.s 			page 58
+ARM GAS  /tmp/ccaXC7EI.s 			page 58
 
 
  3144      495400
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  3168 02ae 696E7433 		.ascii	"int32_t\000"
  3168      325F7400 
  3169              	.LASF40:
-ARM GAS  /tmp/ccDpPpAR.s 			page 59
+ARM GAS  /tmp/ccaXC7EI.s 			page 59
 
 
  3170 02b6 706F7274 		.ascii	"port_context\000"
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  3196 0349 73746B61 		.ascii	"stkalign_t\000"
  3196      6C69676E 
  3196      5F7400
-ARM GAS  /tmp/ccDpPpAR.s 			page 60
+ARM GAS  /tmp/ccaXC7EI.s 			page 60
 
 
  3197              	.LASF43:
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  3217 0499 6374696F 		.ascii	"ctions -fno-common -fsingle-precision-constant\000"
  3217      6E73202D 
  3217      666E6F2D 
-ARM GAS  /tmp/ccDpPpAR.s 			page 61
+ARM GAS  /tmp/ccaXC7EI.s 			page 61
 
 
  3217      636F6D6D 
@@ -3618,25 +3618,25 @@ ARM GAS  /tmp/ccDpPpAR.s 			page 1
  3225      6C697374 
  3225      5F7400
  3226              		.ident	"GCC: (15:13.2.rel1-2) 13.2.1 20231009"
-ARM GAS  /tmp/ccDpPpAR.s 			page 62
+ARM GAS  /tmp/ccaXC7EI.s 			page 62
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 hal_ext.c
-     /tmp/ccDpPpAR.s:21     .text.extInit:00000000 $t
-     /tmp/ccDpPpAR.s:28     .text.extInit:00000000 extInit
-     /tmp/ccDpPpAR.s:47     .text.extObjectInit:00000000 $t
-     /tmp/ccDpPpAR.s:54     .text.extObjectInit:00000000 extObjectInit
-     /tmp/ccDpPpAR.s:76     .text.extStart:00000000 $t
-     /tmp/ccDpPpAR.s:83     .text.extStart:00000000 extStart
-     /tmp/ccDpPpAR.s:198    .text.extStop:00000000 $t
-     /tmp/ccDpPpAR.s:205    .text.extStop:00000000 extStop
-     /tmp/ccDpPpAR.s:313    .text.extChannelEnable:00000000 $t
-     /tmp/ccDpPpAR.s:320    .text.extChannelEnable:00000000 extChannelEnable
-     /tmp/ccDpPpAR.s:421    .text.extChannelDisable:00000000 $t
-     /tmp/ccDpPpAR.s:428    .text.extChannelDisable:00000000 extChannelDisable
-     /tmp/ccDpPpAR.s:529    .text.extSetChannelModeI:00000000 $t
-     /tmp/ccDpPpAR.s:536    .text.extSetChannelModeI:00000000 extSetChannelModeI
+     /tmp/ccaXC7EI.s:21     .text.extInit:00000000 $t
+     /tmp/ccaXC7EI.s:28     .text.extInit:00000000 extInit
+     /tmp/ccaXC7EI.s:47     .text.extObjectInit:00000000 $t
+     /tmp/ccaXC7EI.s:54     .text.extObjectInit:00000000 extObjectInit
+     /tmp/ccaXC7EI.s:76     .text.extStart:00000000 $t
+     /tmp/ccaXC7EI.s:83     .text.extStart:00000000 extStart
+     /tmp/ccaXC7EI.s:198    .text.extStop:00000000 $t
+     /tmp/ccaXC7EI.s:205    .text.extStop:00000000 extStop
+     /tmp/ccaXC7EI.s:313    .text.extChannelEnable:00000000 $t
+     /tmp/ccaXC7EI.s:320    .text.extChannelEnable:00000000 extChannelEnable
+     /tmp/ccaXC7EI.s:421    .text.extChannelDisable:00000000 $t
+     /tmp/ccaXC7EI.s:428    .text.extChannelDisable:00000000 extChannelDisable
+     /tmp/ccaXC7EI.s:529    .text.extSetChannelModeI:00000000 $t
+     /tmp/ccaXC7EI.s:536    .text.extSetChannelModeI:00000000 extSetChannelModeI
 
 UNDEFINED SYMBOLS
 ext_lld_init

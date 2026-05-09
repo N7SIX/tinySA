@@ -1,18 +1,20 @@
 ##############################################################################
 
+# Set PROJECT to versioned name for F303 at the very top
+ifeq ($(TARGET),F303)
+  COMMIT_COUNT := $(shell git rev-list --count HEAD 2>/dev/null || echo 0)
+  COMMIT_HASH := $(shell git rev-parse --short HEAD 2>/dev/null || echo 0000000)
+  PROJECT = tinySA4_N7SIX_v7.6.$(COMMIT_COUNT).$(COMMIT_HASH)
+else
+  PROJECT = tinySA
+endif
+
 # Default target: always build everything
-all: prebuild_clean PRE_MAKE_ALL_RULE_HOOK $(OBJS) $(OUTFILES) postbuild_rename POST_MAKE_ALL_RULE_HOOK
+all: prebuild_clean PRE_MAKE_ALL_RULE_HOOK $(OBJS) $(OUTFILES) POST_MAKE_ALL_RULE_HOOK
 
 # Build global options
 # NOTE: Can be overridden externally.
 #
-
-#Build target
-ifeq ($(TARGET),)
-  TARGET = F072
-else
-  TARGET = F303
-endif
 
 # Clean build directory before every build
 .PHONY: prebuild_clean
@@ -89,19 +91,6 @@ ifeq ($(VERSION),)
   VERSION := $(PROJECT)_$(shell git describe --tags --long 2>/dev/null || echo default-version)
 endif
 
-# New robust postbuild_rename target
-.PHONY: postbuild_rename
-postbuild_rename:
-	@if [ "$(TARGET)" = "F303" ]; then \
-		commit_count=$(shell git rev-list --count HEAD 2>/dev/null || echo 0); \
-		commit_hash=$(shell git rev-parse --short HEAD 2>/dev/null || echo 0000000); \
-		ver_name="tinySA4_N7SIX_v7.6.$$commit_count.$$commit_hash"; \
-		for ext in bin hex elf dmp list map; do \
-			if [ -f build/tinySA4.$$ext ]; then \
-				mv build/tinySA4.$$ext build/$$ver_name.$$ext; \
-			fi; \
-		done; \
-	fi
 
 ##############################################################################
 # Architecture or project specific options

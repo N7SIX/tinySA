@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc6lC3cQ.s 			page 1
+ARM GAS  /tmp/cc6y2ssy.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
   55              		.syntax unified
   56              		.thumb
   57              		.thumb_func
-ARM GAS  /tmp/cc6lC3cQ.s 			page 2
+ARM GAS  /tmp/cc6y2ssy.s 			page 2
 
 
   58              		.type	ext_lld_stop, %function
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  112 002c 00040140 		.word	1073808384
  113              		.cfi_endproc
  114              	.LFE235:
-ARM GAS  /tmp/cc6lC3cQ.s 			page 3
+ARM GAS  /tmp/cc6y2ssy.s 			page 3
 
 
  115              		.size	ext_lld_stop, .-ext_lld_stop
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  169              		.loc 1 135 14 view .LVU38
  170 0028 0CFA0EFC 		lsl	ip, ip, lr
  171              	.LVL8:
-ARM GAS  /tmp/cc6lC3cQ.s 			page 4
+ARM GAS  /tmp/cc6y2ssy.s 			page 4
 
 
  172              		.loc 1 142 5 is_stmt 1 view .LVU39
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  226              	.L18:
  227              		.loc 1 165 5 is_stmt 1 view .LVU63
  228              		.loc 1 165 13 is_stmt 0 view .LVU64
-ARM GAS  /tmp/cc6lC3cQ.s 			page 5
+ARM GAS  /tmp/cc6y2ssy.s 			page 5
 
 
  229 0072 4268     		ldr	r2, [r0, #4]
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  283              		.loc 1 171 11 is_stmt 0 view .LVU85
  284 00ae 1168     		ldr	r1, [r2]
  285              		.loc 1 171 17 view .LVU86
-ARM GAS  /tmp/cc6lC3cQ.s 			page 6
+ARM GAS  /tmp/cc6y2ssy.s 			page 6
 
 
  286 00b0 21EA0303 		bic	r3, r1, r3
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  340 00f0 116A     		ldr	r1, [r2, #32]
  341              	.LVL16:
  342              		.loc 1 193 18 view .LVU110
-ARM GAS  /tmp/cc6lC3cQ.s 			page 7
+ARM GAS  /tmp/cc6y2ssy.s 			page 7
 
 
  343 00f2 1943     		orrs	r1, r1, r3
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  397              	.LFE236:
  398              		.size	ext_lld_channel_enable, .-ext_lld_channel_enable
  399              		.section	.text.ext_lld_channel_disable,"ax",%progbits
-ARM GAS  /tmp/cc6lC3cQ.s 			page 8
+ARM GAS  /tmp/cc6y2ssy.s 			page 8
 
 
  400              		.align	1
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  454              		.loc 1 224 17 is_stmt 0 view .LVU148
  455 002e 5361     		str	r3, [r2, #20]
  456 0030 7047     		bx	lr
-ARM GAS  /tmp/cc6lC3cQ.s 			page 9
+ARM GAS  /tmp/cc6y2ssy.s 			page 9
 
 
  457              	.LVL24:
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  511              		@ frame_needed = 0, uses_anonymous_args = 0
  512              		.loc 1 85 37 is_stmt 0 view .LVU165
  513 0000 38B5     		push	{r3, r4, r5, lr}
-ARM GAS  /tmp/cc6lC3cQ.s 			page 10
+ARM GAS  /tmp/cc6y2ssy.s 			page 10
 
 
  514              		.cfi_def_cfa_offset 16
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  568              	.L41:
  569              		.loc 1 97 1 is_stmt 0 view .LVU181
  570 0038 38BD     		pop	{r3, r4, r5, pc}
-ARM GAS  /tmp/cc6lC3cQ.s 			page 11
+ARM GAS  /tmp/cc6y2ssy.s 			page 11
 
 
  571              		.loc 1 97 1 view .LVU182
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  624 0048 08       		.byte	0x8
  625 0049 05       		.byte	0x5
  626 004a C2000000 		.4byte	.LASF2
-ARM GAS  /tmp/cc6lC3cQ.s 			page 12
+ARM GAS  /tmp/cc6y2ssy.s 			page 12
 
 
  627 004e 02       		.uleb128 0x2
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  681 00bb 08       		.byte	0x8
  682 00bc 01       		.uleb128 0x1
  683 00bd 81010000 		.4byte	.LASF13
-ARM GAS  /tmp/cc6lC3cQ.s 			page 13
+ARM GAS  /tmp/cc6y2ssy.s 			page 13
 
 
  684 00c1 7901     		.2byte	0x179
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  738 0140 0F       		.uleb128 0xf
  739 0141 D0000000 		.4byte	.LASF22
  740 0145 8401     		.2byte	0x184
-ARM GAS  /tmp/cc6lC3cQ.s 			page 14
+ARM GAS  /tmp/cc6y2ssy.s 			page 14
 
 
  741 0147 02       		.byte	0x2
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  795 01bc 3F       		.byte	0x3f
  796 01bd 0E       		.byte	0xe
  797 01be D5010000 		.4byte	0x1d5
-ARM GAS  /tmp/cc6lC3cQ.s 			page 15
+ARM GAS  /tmp/cc6y2ssy.s 			page 15
 
 
  798 01c2 0A       		.uleb128 0xa
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  852 022b 0B       		.uleb128 0xb
  853 022c 30020000 		.4byte	0x230
  854 0230 1A       		.uleb128 0x1a
-ARM GAS  /tmp/cc6lC3cQ.s 			page 16
+ARM GAS  /tmp/cc6y2ssy.s 			page 16
 
 
  855 0231 40020000 		.4byte	0x240
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  909 029a 03       		.uleb128 0x3
  910 029b 06000000 		.4byte	.LASF41
  911 029f 06       		.byte	0x6
-ARM GAS  /tmp/cc6lC3cQ.s 			page 17
+ARM GAS  /tmp/cc6y2ssy.s 			page 17
 
 
  912 02a0 6E       		.byte	0x6e
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  966 030f 3C       		.byte	0x3c
  967 0310 13020000 		.4byte	0x213
  968 0314 14000000 		.4byte	.LLST5
-ARM GAS  /tmp/cc6lC3cQ.s 			page 18
+ARM GAS  /tmp/cc6y2ssy.s 			page 18
 
 
  969 0318 0C000000 		.4byte	.LVUS5
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  1023 0397 3F010000 		.4byte	.LLST3
  1024 039b 3D010000 		.4byte	.LVUS3
  1025 039f 05       		.uleb128 0x5
-ARM GAS  /tmp/cc6lC3cQ.s 			page 19
+ARM GAS  /tmp/cc6y2ssy.s 			page 19
 
 
  1026 03a0 07020000 		.4byte	.LASF51
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  1080 042d E8020000 		.4byte	0x2e8
  1081 0431 42040000 		.4byte	0x442
  1082 0435 06       		.uleb128 0x6
-ARM GAS  /tmp/cc6lC3cQ.s 			page 20
+ARM GAS  /tmp/cc6y2ssy.s 			page 20
 
 
  1083 0436 01       		.uleb128 0x1
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  1137 0002 00       		.byte	0
  1138 0003 03       		.uleb128 0x3
  1139 0004 0E       		.uleb128 0xe
-ARM GAS  /tmp/cc6lC3cQ.s 			page 21
+ARM GAS  /tmp/cc6y2ssy.s 			page 21
 
 
  1140 0005 3A       		.uleb128 0x3a
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  1194 003b 13       		.uleb128 0x13
  1195 003c 38       		.uleb128 0x38
  1196 003d 0B       		.uleb128 0xb
-ARM GAS  /tmp/cc6lC3cQ.s 			page 22
+ARM GAS  /tmp/cc6y2ssy.s 			page 22
 
 
  1197 003e 00       		.byte	0
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  1251 0075 03       		.uleb128 0x3
  1252 0076 0E       		.uleb128 0xe
  1253 0077 3A       		.uleb128 0x3a
-ARM GAS  /tmp/cc6lC3cQ.s 			page 23
+ARM GAS  /tmp/cc6y2ssy.s 			page 23
 
 
  1254 0078 21       		.uleb128 0x21
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  1308 00af 21       		.uleb128 0x21
  1309 00b0 04       		.sleb128 4
  1310 00b1 49       		.uleb128 0x49
-ARM GAS  /tmp/cc6lC3cQ.s 			page 24
+ARM GAS  /tmp/cc6y2ssy.s 			page 24
 
 
  1311 00b2 13       		.uleb128 0x13
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  1365 00e8 13       		.uleb128 0x13
  1366 00e9 01       		.uleb128 0x1
  1367 00ea 13       		.uleb128 0x13
-ARM GAS  /tmp/cc6lC3cQ.s 			page 25
+ARM GAS  /tmp/cc6y2ssy.s 			page 25
 
 
  1368 00eb 00       		.byte	0
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  1422 0121 01       		.uleb128 0x1
  1423 0122 7F       		.uleb128 0x7f
  1424 0123 13       		.uleb128 0x13
-ARM GAS  /tmp/cc6lC3cQ.s 			page 26
+ARM GAS  /tmp/cc6y2ssy.s 			page 26
 
 
  1425 0124 00       		.byte	0
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  1479 015a 39       		.uleb128 0x39
  1480 015b 0B       		.uleb128 0xb
  1481 015c 01       		.uleb128 0x1
-ARM GAS  /tmp/cc6lC3cQ.s 			page 27
+ARM GAS  /tmp/cc6y2ssy.s 			page 27
 
 
  1482 015d 13       		.uleb128 0x13
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  1536 0193 0B       		.uleb128 0xb
  1537 0194 49       		.uleb128 0x49
  1538 0195 13       		.uleb128 0x13
-ARM GAS  /tmp/cc6lC3cQ.s 			page 28
+ARM GAS  /tmp/cc6y2ssy.s 			page 28
 
 
  1539 0196 38       		.uleb128 0x38
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  1593 01cc 39       		.uleb128 0x39
  1594 01cd 0B       		.uleb128 0xb
  1595 01ce 02       		.uleb128 0x2
-ARM GAS  /tmp/cc6lC3cQ.s 			page 29
+ARM GAS  /tmp/cc6y2ssy.s 			page 29
 
 
  1596 01cf 18       		.uleb128 0x18
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  1650 0205 01       		.uleb128 0x1
  1651 0206 7F       		.uleb128 0x7f
  1652 0207 13       		.uleb128 0x13
-ARM GAS  /tmp/cc6lC3cQ.s 			page 30
+ARM GAS  /tmp/cc6y2ssy.s 			page 30
 
 
  1653 0208 01       		.uleb128 0x1
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  1707 001d 51       		.byte	0x51
  1708 001e 04       		.byte	0x4
  1709 001f 10       		.uleb128 .LVL23-.LVL21
-ARM GAS  /tmp/cc6lC3cQ.s 			page 31
+ARM GAS  /tmp/cc6y2ssy.s 			page 31
 
 
  1710 0020 32       		.uleb128 .LVL24-.LVL21
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  1764 0056 00       		.uleb128 .LVU115
  1765 0057 00       		.uleb128 .LVU115
  1766 0058 00       		.uleb128 .LVU123
-ARM GAS  /tmp/cc6lC3cQ.s 			page 32
+ARM GAS  /tmp/cc6y2ssy.s 			page 32
 
 
  1767 0059 00       		.uleb128 .LVU123
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  1821 009c A5       		.byte	0xa5
  1822 009d 01       		.uleb128 0x1
  1823 009e 26       		.uleb128 0x26
-ARM GAS  /tmp/cc6lC3cQ.s 			page 33
+ARM GAS  /tmp/cc6y2ssy.s 			page 33
 
 
  1824 009f A8       		.byte	0xa8
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  1878 00dd 31       		.byte	0x31
  1879 00de A3       		.byte	0xa3
  1880 00df 03       		.uleb128 0x3
-ARM GAS  /tmp/cc6lC3cQ.s 			page 34
+ARM GAS  /tmp/cc6y2ssy.s 			page 34
 
 
  1881 00e0 A5       		.byte	0xa5
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  1935 011e 1A       		.byte	0x1a
  1936 011f 24       		.byte	0x24
  1937 0120 9F       		.byte	0x9f
-ARM GAS  /tmp/cc6lC3cQ.s 			page 35
+ARM GAS  /tmp/cc6y2ssy.s 			page 35
 
 
  1938 0121 04       		.byte	0x4
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  1992 015c 00       		.uleb128 .LVU20
  1993 015d 00       		.uleb128 0
  1994              	.LLST0:
-ARM GAS  /tmp/cc6lC3cQ.s 			page 36
+ARM GAS  /tmp/cc6y2ssy.s 			page 36
 
 
  1995 015e 06       		.byte	0x6
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  2049 0198 00       		.uleb128 .LVL26-.LVL26
  2050 0199 0A       		.uleb128 .LVL27-.LVL26
  2051 019a 01       		.uleb128 0x1
-ARM GAS  /tmp/cc6lC3cQ.s 			page 37
+ARM GAS  /tmp/cc6y2ssy.s 			page 37
 
 
  2052 019b 50       		.byte	0x50
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  2106 0007 00       		.byte	0
  2107 0008 00000000 		.4byte	0
  2108              	.LLRL9:
-ARM GAS  /tmp/cc6lC3cQ.s 			page 38
+ARM GAS  /tmp/cc6y2ssy.s 			page 38
 
 
  2109 000c 07       		.byte	0x7
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  2144      7420696E 
  2144      7400
  2145              	.LASF9:
-ARM GAS  /tmp/cc6lC3cQ.s 			page 39
+ARM GAS  /tmp/cc6y2ssy.s 			page 39
 
 
  2146 0056 73697A65 		.ascii	"size_t\000"
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  2173              	.LASF48:
  2174 00e6 65787470 		.ascii	"extp\000"
  2174      00
-ARM GAS  /tmp/cc6lC3cQ.s 			page 40
+ARM GAS  /tmp/cc6y2ssy.s 			page 40
 
 
  2175              	.LASF37:
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  2199              	.LASF8:
  2200 0186 73686F72 		.ascii	"short unsigned int\000"
  2200      7420756E 
-ARM GAS  /tmp/cc6lC3cQ.s 			page 41
+ARM GAS  /tmp/cc6y2ssy.s 			page 41
 
 
  2200      7369676E 
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  2226      7400
  2227              	.LASF17:
  2228 021e 494D5232 		.ascii	"IMR2\000"
-ARM GAS  /tmp/cc6lC3cQ.s 			page 42
+ARM GAS  /tmp/cc6y2ssy.s 			page 42
 
 
  2228      00
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  2249      3D313620 
  2249      2D667374 
  2249      61636B2D 
-ARM GAS  /tmp/cc6lC3cQ.s 			page 43
+ARM GAS  /tmp/cc6y2ssy.s 			page 43
 
 
  2249      75736167 
@@ -2536,27 +2536,27 @@ ARM GAS  /tmp/cc6lC3cQ.s 			page 1
  2254 03cd 53574945 		.ascii	"SWIER\000"
  2254      5200
  2255              		.ident	"GCC: (15:13.2.rel1-2) 13.2.1 20231009"
-ARM GAS  /tmp/cc6lC3cQ.s 			page 44
+ARM GAS  /tmp/cc6y2ssy.s 			page 44
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 hal_ext_lld.c
-     /tmp/cc6lC3cQ.s:21     .text.ext_lld_init:00000000 $t
-     /tmp/cc6lC3cQ.s:28     .text.ext_lld_init:00000000 ext_lld_init
-     /tmp/cc6lC3cQ.s:47     .text.ext_lld_init:0000000c $d
-     /tmp/cc6lC3cQ.s:580    .bss.EXTD1:00000000 EXTD1
-     /tmp/cc6lC3cQ.s:52     .text.ext_lld_stop:00000000 $t
-     /tmp/cc6lC3cQ.s:59     .text.ext_lld_stop:00000000 ext_lld_stop
-     /tmp/cc6lC3cQ.s:112    .text.ext_lld_stop:0000002c $d
-     /tmp/cc6lC3cQ.s:117    .text.ext_lld_channel_enable:00000000 $t
-     /tmp/cc6lC3cQ.s:124    .text.ext_lld_channel_enable:00000000 ext_lld_channel_enable
-     /tmp/cc6lC3cQ.s:394    .text.ext_lld_channel_enable:0000012c $d
-     /tmp/cc6lC3cQ.s:400    .text.ext_lld_channel_disable:00000000 $t
-     /tmp/cc6lC3cQ.s:407    .text.ext_lld_channel_disable:00000000 ext_lld_channel_disable
-     /tmp/cc6lC3cQ.s:493    .text.ext_lld_channel_disable:00000058 $d
-     /tmp/cc6lC3cQ.s:498    .text.ext_lld_start:00000000 $t
-     /tmp/cc6lC3cQ.s:505    .text.ext_lld_start:00000000 ext_lld_start
-     /tmp/cc6lC3cQ.s:577    .bss.EXTD1:00000000 $d
+     /tmp/cc6y2ssy.s:21     .text.ext_lld_init:00000000 $t
+     /tmp/cc6y2ssy.s:28     .text.ext_lld_init:00000000 ext_lld_init
+     /tmp/cc6y2ssy.s:47     .text.ext_lld_init:0000000c $d
+     /tmp/cc6y2ssy.s:580    .bss.EXTD1:00000000 EXTD1
+     /tmp/cc6y2ssy.s:52     .text.ext_lld_stop:00000000 $t
+     /tmp/cc6y2ssy.s:59     .text.ext_lld_stop:00000000 ext_lld_stop
+     /tmp/cc6y2ssy.s:112    .text.ext_lld_stop:0000002c $d
+     /tmp/cc6y2ssy.s:117    .text.ext_lld_channel_enable:00000000 $t
+     /tmp/cc6y2ssy.s:124    .text.ext_lld_channel_enable:00000000 ext_lld_channel_enable
+     /tmp/cc6y2ssy.s:394    .text.ext_lld_channel_enable:0000012c $d
+     /tmp/cc6y2ssy.s:400    .text.ext_lld_channel_disable:00000000 $t
+     /tmp/cc6y2ssy.s:407    .text.ext_lld_channel_disable:00000000 ext_lld_channel_disable
+     /tmp/cc6y2ssy.s:493    .text.ext_lld_channel_disable:00000058 $d
+     /tmp/cc6y2ssy.s:498    .text.ext_lld_start:00000000 $t
+     /tmp/cc6y2ssy.s:505    .text.ext_lld_start:00000000 ext_lld_start
+     /tmp/cc6y2ssy.s:577    .bss.EXTD1:00000000 $d
 
 UNDEFINED SYMBOLS
 extObjectInit

@@ -4417,7 +4417,7 @@ xtors           0x080001a0        0x0
 .iplt           0x08024a8c        0x0
  .iplt          0x08024a8c        0x0 build/obj/crt0_v7m.o
 
-.rodata         0x08024a90     0x9f68
+.rodata         0x08024a90     0x9f80
                 0x08024a90                        . = ALIGN (0x4)
                 0x08024a90                        __rodata_base__ = .
  *(.rodata)
@@ -4426,943 +4426,942 @@ xtors           0x080001a0        0x0
  .rodata.ram_areas
                 0x08024aa8       0x80 build/obj/crt1.o
  .rodata.str1.4
-                0x08024b28     0x19cc build/obj/chsys.o
+                0x08024b28     0x19e4 build/obj/chsys.o
                                   0x5 (size before relaxing)
  .rodata.idle_descriptor.0
-                0x080264f4       0x18 build/obj/chsys.o
+                0x0802650c       0x18 build/obj/chsys.o
  .rodata.chSchGoSleepS.str1.4
-                0x0802650c        0xf build/obj/chschd.o
+                0x08026524        0xf build/obj/chschd.o
  .rodata.chThdCreateStatic.str1.4
-                0x0802650c        0x7 build/obj/chthreads.o
+                0x08026524        0x7 build/obj/chthreads.o
  .rodata.ch_debug
-                0x0802650c       0x16 build/obj/chregistry.o
-                0x0802650c                ch_debug
- *fill*         0x08026522        0x2 
- .rodata.vmt    0x08026524       0x20 build/obj/hal_serial.o
- .rodata.vmt    0x08026544       0x20 build/obj/hal_serial_usb.o
+                0x08026524       0x16 build/obj/chregistry.o
+                0x08026524                ch_debug
+ *fill*         0x0802653a        0x2 
+ .rodata.vmt    0x0802653c       0x20 build/obj/hal_serial.o
+ .rodata.vmt    0x0802655c       0x20 build/obj/hal_serial_usb.o
  .rodata.halted_status
-                0x08026564        0x2 build/obj/hal_usb.o
- *fill*         0x08026566        0x2 
+                0x0802657c        0x2 build/obj/hal_usb.o
+ *fill*         0x0802657e        0x2 
  .rodata.active_status
-                0x08026568        0x2 build/obj/hal_usb.o
- *fill*         0x0802656a        0x2 
+                0x08026580        0x2 build/obj/hal_usb.o
+ *fill*         0x08026582        0x2 
  .rodata.zero_status
-                0x0802656c        0x2 build/obj/hal_usb.o
- *fill*         0x0802656e        0x2 
+                0x08026584        0x2 build/obj/hal_usb.o
+ *fill*         0x08026586        0x2 
  .rodata._stm32_dma_streams
-                0x08026570       0xf0 build/obj/stm32_dma.o
-                0x08026570                _stm32_dma_streams
+                0x08026588       0xf0 build/obj/stm32_dma.o
+                0x08026588                _stm32_dma_streams
  .rodata.default_config
-                0x08026660        0x4 build/obj/hal_adc_lld.o
+                0x08026678        0x4 build/obj/hal_adc_lld.o
  .rodata.default_config
-                0x08026664       0x10 build/obj/hal_serial_lld.o
+                0x0802667c       0x10 build/obj/hal_serial_lld.o
  .rodata.ep0config
-                0x08026674       0x24 build/obj/hal_usb_lld.o
+                0x0802668c       0x24 build/obj/hal_usb_lld.o
  .rodata.pal_default_config
-                0x08026698       0xa8 build/obj/board.o
-                0x08026698                pal_default_config
+                0x080266b0       0xa8 build/obj/board.o
+                0x080266b0                pal_default_config
  .rodata.chvprintf.str1.4
-                0x08026740        0x7 build/obj/chprintf.o
- .rodata.vmt    0x08026740       0x10 build/obj/chprintf.o
+                0x08026758        0x7 build/obj/chprintf.o
+ .rodata.vmt    0x08026758       0x10 build/obj/chprintf.o
  .rodata.smallPrefix
-                0x08026750        0x9 build/obj/chprintf.o
- *fill*         0x08026759        0x3 
+                0x08026768        0x9 build/obj/chprintf.o
+ *fill*         0x08026771        0x3 
  .rodata.bigPrefix
-                0x0802675c        0xa build/obj/chprintf.o
- *fill*         0x08026766        0x2 
- .rodata.pow10  0x08026768       0x28 build/obj/chprintf.o
+                0x08026774        0xa build/obj/chprintf.o
+ *fill*         0x0802677e        0x2 
+ .rodata.pow10  0x08026780       0x28 build/obj/chprintf.o
  .rodata.check_fs.str1.4
-                0x08026790       0x15 build/obj/ff.o
+                0x080267a8       0x15 build/obj/ff.o
  .rodata.create_name.str1.4
-                0x08026790       0x13 build/obj/ff.o
- .rodata.ExCvt  0x08026790       0x80 build/obj/ff.o
+                0x080267a8       0x13 build/obj/ff.o
+ .rodata.ExCvt  0x080267a8       0x80 build/obj/ff.o
  .rodata.LfnOfs
-                0x08026810        0xd build/obj/ff.o
- *fill*         0x0802681d        0x3 
+                0x08026828        0xd build/obj/ff.o
+ *fill*         0x08026835        0x3 
  .rodata.cvt2.0
-                0x08026820       0xbc build/obj/ffunicode.o
+                0x08026838       0xbc build/obj/ffunicode.o
  .rodata.cvt1.1
-                0x080268dc      0x1f2 build/obj/ffunicode.o
- *fill*         0x08026ace        0x2 
- .rodata.uc866  0x08026ad0      0x100 build/obj/ffunicode.o
+                0x080268f4      0x1f2 build/obj/ffunicode.o
+ *fill*         0x08026ae6        0x2 
+ .rodata.uc866  0x08026ae8      0x100 build/obj/ffunicode.o
  .rodata.serusbcfg
-                0x08026bd0        0x8 build/obj/usbcfg.o
-                0x08026bd0                serusbcfg
+                0x08026be8        0x8 build/obj/usbcfg.o
+                0x08026be8                serusbcfg
  .rodata.usbcfg
-                0x08026bd8       0x10 build/obj/usbcfg.o
-                0x08026bd8                usbcfg
+                0x08026bf0       0x10 build/obj/usbcfg.o
+                0x08026bf0                usbcfg
  .rodata.ep2config
-                0x08026be8       0x24 build/obj/usbcfg.o
+                0x08026c00       0x24 build/obj/usbcfg.o
  .rodata.ep1config
-                0x08026c0c       0x24 build/obj/usbcfg.o
+                0x08026c24       0x24 build/obj/usbcfg.o
  .rodata.vcom_strings
-                0x08026c30       0x20 build/obj/usbcfg.o
+                0x08026c48       0x20 build/obj/usbcfg.o
  .rodata.vcom_string3
-                0x08026c50        0x8 build/obj/usbcfg.o
+                0x08026c68        0x8 build/obj/usbcfg.o
  .rodata.vcom_string2
-                0x08026c58       0x10 build/obj/usbcfg.o
+                0x08026c70       0x10 build/obj/usbcfg.o
  .rodata.vcom_string1
-                0x08026c68       0x16 build/obj/usbcfg.o
- *fill*         0x08026c7e        0x2 
+                0x08026c80       0x16 build/obj/usbcfg.o
+ *fill*         0x08026c96        0x2 
  .rodata.vcom_string0
-                0x08026c80        0x4 build/obj/usbcfg.o
+                0x08026c98        0x4 build/obj/usbcfg.o
  .rodata.vcom_configuration_descriptor
-                0x08026c84        0x8 build/obj/usbcfg.o
+                0x08026c9c        0x8 build/obj/usbcfg.o
  .rodata.vcom_configuration_descriptor_data
-                0x08026c8c       0x43 build/obj/usbcfg.o
- *fill*         0x08026ccf        0x1 
+                0x08026ca4       0x43 build/obj/usbcfg.o
+ *fill*         0x08026ce7        0x1 
  .rodata.vcom_device_descriptor
-                0x08026cd0        0x8 build/obj/usbcfg.o
+                0x08026ce8        0x8 build/obj/usbcfg.o
  .rodata.vcom_device_descriptor_data
-                0x08026cd8       0x12 build/obj/usbcfg.o
- *fill*         0x08026cea        0x2 
+                0x08026cf0       0x12 build/obj/usbcfg.o
+ *fill*         0x08026d02        0x2 
  .rodata.adcgrpcfgTouch
-                0x08026cec       0x2c build/obj/adc.o
+                0x08026d04       0x2c build/obj/adc.o
  .rodata.adcgrpcfgVersion
-                0x08026d18       0x2c build/obj/adc.o
+                0x08026d30       0x2c build/obj/adc.o
  .rodata.adcgrpcfgVBAT
-                0x08026d44       0x2c build/obj/adc.o
+                0x08026d5c       0x2c build/obj/adc.o
  .rodata.cmd_s.str1.1
-                0x08026d70     0x1b29 build/obj/main.o
+                0x08026d88     0x1b29 build/obj/main.o
                                   0x7 (size before relaxing)
  .rodata.cmd_e.str1.1
-                0x08028899        0x7 build/obj/main.o
+                0x080288b1        0x7 build/obj/main.o
  .rodata.cmd_k.str1.1
-                0x08028899        0x7 build/obj/main.o
+                0x080288b1        0x7 build/obj/main.o
  .rodata.cmd_v.str1.1
-                0x08028899        0xe build/obj/main.o
+                0x080288b1        0xe build/obj/main.o
  .rodata.cmd_threads.str1.1
-                0x08028899       0x6f build/obj/main.o
+                0x080288b1       0x6f build/obj/main.o
  .rodata.cmd_sd_card_mount.str1.1
-                0x08028899       0x14 build/obj/main.o
+                0x080288b1       0x14 build/obj/main.o
  .rodata.cmd_info.str1.1
-                0x08028899        0x7 build/obj/main.o
+                0x080288b1        0x7 build/obj/main.o
  .rodata.cmd_help.str1.1
-                0x08028899       0x23 build/obj/main.o
+                0x080288b1       0x23 build/obj/main.o
  .rodata.cmd_vbat.str1.1
-                0x08028899        0x8 build/obj/main.o
+                0x080288b1        0x8 build/obj/main.o
  .rodata.cmd_channel.str1.1
-                0x08028899       0x2e build/obj/main.o
+                0x080288b1       0x2e build/obj/main.o
  .rodata.cmd_save.str1.1
-                0x08028899        0xc build/obj/main.o
+                0x080288b1        0xc build/obj/main.o
  .rodata.cmd_status.str1.1
-                0x08028899       0x13 build/obj/main.o
+                0x080288b1       0x13 build/obj/main.o
  .rodata.cmd_touchcal.str1.1
-                0x08028899       0x4a build/obj/main.o
+                0x080288b1       0x4a build/obj/main.o
  .rodata.cmd_test.str1.1
-                0x08028899        0xf build/obj/main.o
+                0x080288b1        0xf build/obj/main.o
  .rodata.cmd_abort.str1.1
-                0x08028899       0x14 build/obj/main.o
+                0x080288b1       0x14 build/obj/main.o
  .rodata.cmd_saveconfig.str1.1
-                0x08028899       0x10 build/obj/main.o
+                0x080288b1       0x10 build/obj/main.o
  .rodata.cmd_reset.str1.1
-                0x08028899       0x13 build/obj/main.o
+                0x080288b1       0x13 build/obj/main.o
  .rodata.usage_printf.str1.1
-                0x08028899        0x8 build/obj/main.o
+                0x080288b1        0x8 build/obj/main.o
  .rodata.cmd_z.str1.1
-                0x08028899       0x11 build/obj/main.o
+                0x080288b1       0x11 build/obj/main.o
  .rodata.cmd_q.str1.1
-                0x08028899       0x23 build/obj/main.o
+                0x080288b1       0x23 build/obj/main.o
  .rodata.cmd_sd_delete.str1.1
-                0x08028899       0x2e build/obj/main.o
+                0x080288b1       0x2e build/obj/main.o
  .rodata.cmd_sd_read.str1.1
-                0x08028899       0x30 build/obj/main.o
+                0x080288b1       0x30 build/obj/main.o
  .rodata.cmd_sd_list.str1.1
-                0x08028899       0x2c build/obj/main.o
+                0x080288b1       0x2c build/obj/main.o
  .rodata.cmd_agc.str1.1
-                0x08028899       0x15 build/obj/main.o
+                0x080288b1       0x15 build/obj/main.o
  .rodata.cmd_lna2.str1.1
-                0x08028899       0x11 build/obj/main.o
+                0x080288b1       0x11 build/obj/main.o
  .rodata.cmd_waitscan.str1.1
-                0x08028899       0x15 build/obj/main.o
+                0x080288b1       0x15 build/obj/main.o
  .rodata.cmd_wait.str1.1
-                0x08028899       0x11 build/obj/main.o
+                0x080288b1       0x11 build/obj/main.o
  .rodata.cmd_zero.str1.1
-                0x08028899       0x16 build/obj/main.o
+                0x080288b1       0x16 build/obj/main.o
  .rodata.cmd_data.str1.1
-                0x08028899       0x12 build/obj/main.o
+                0x080288b1       0x12 build/obj/main.o
  .rodata.cmd_clearconfig.str1.1
-                0x08028899       0x97 build/obj/main.o
+                0x080288b1       0x97 build/obj/main.o
  .rodata.cmd_b.str1.1
-                0x08028899        0x7 build/obj/main.o
+                0x080288b1        0x7 build/obj/main.o
  .rodata.cmd_a.str1.1
-                0x08028899        0x7 build/obj/main.o
+                0x080288b1        0x7 build/obj/main.o
  .rodata.cmd_selftest.str1.1
-                0x08028899       0x17 build/obj/main.o
+                0x080288b1       0x17 build/obj/main.o
  .rodata.cmd_deviceid.str1.1
-                0x08028899       0x24 build/obj/main.o
+                0x080288b1       0x24 build/obj/main.o
  .rodata.cmd_direct.str1.1
-                0x08028899       0x19 build/obj/main.o
+                0x080288b1       0x19 build/obj/main.o
  .rodata.cmd_if1.str1.1
-                0x08028899       0x19 build/obj/main.o
+                0x080288b1       0x19 build/obj/main.o
  .rodata.cmd_color.str1.1
-                0x08028899       0x24 build/obj/main.o
+                0x080288b1       0x24 build/obj/main.o
  .rodata.cmd_dac.str1.1
-                0x08028899       0x29 build/obj/main.o
+                0x080288b1       0x29 build/obj/main.o
  .rodata.cmd_time.str1.1
-                0x08028899       0x4f build/obj/main.o
+                0x080288b1       0x4f build/obj/main.o
  .rodata.cmd_freq.str1.1
-                0x08028899       0x17 build/obj/main.o
+                0x080288b1       0x17 build/obj/main.o
  .rodata.cmd_correction.str1.1
-                0x08028899       0xaf build/obj/main.o
+                0x080288b1       0xaf build/obj/main.o
  .rodata.cmd_leveloffset.str1.1
-                0x08028899       0xf9 build/obj/main.o
+                0x080288b1       0xf9 build/obj/main.o
  .rodata.cmd_nf.str1.1
-                0x08028899       0x11 build/obj/main.o
+                0x080288b1       0x11 build/obj/main.o
  .rodata.cmd_levelchange.str1.1
-                0x08028899       0x1e build/obj/main.o
+                0x080288b1       0x1e build/obj/main.o
  .rodata.send_region.str1.1
-                0x08028899        0x5 build/obj/main.o
+                0x080288b1        0x5 build/obj/main.o
  .rodata.update_min_max_freq.str1.1
-                0x08028899       0x1e build/obj/main.o
+                0x080288b1       0x1e build/obj/main.o
  .rodata.cmd_ultra.str1.1
-                0x08028899       0x29 build/obj/main.o
+                0x080288b1       0x29 build/obj/main.o
  .rodata.cmd_caloutput.str1.1
-                0x08028899        0xf build/obj/main.o
+                0x080288b1        0xf build/obj/main.o
  .rodata.cmd_freq_correction.str1.1
-                0x08028899        0x9 build/obj/main.o
+                0x080288b1        0x9 build/obj/main.o
  .rodata.cmd_actual_freq.str1.1
-                0x08028899        0x5 build/obj/main.o
+                0x080288b1        0x5 build/obj/main.o
  .rodata.cmd_sweeptime.str1.1
-                0x08028899       0x1e build/obj/main.o
+                0x080288b1       0x1e build/obj/main.o
  .rodata.cmd_modulation.str1.1
-                0x08028899       0x1a build/obj/main.o
+                0x080288b1       0x1a build/obj/main.o
  .rodata.cmd_if.str1.1
-                0x08028899       0x2f build/obj/main.o
+                0x080288b1       0x2f build/obj/main.o
  .rodata.cmd_attenuate.str1.1
-                0x08028899       0x1e build/obj/main.o
+                0x080288b1       0x1e build/obj/main.o
  .rodata.cmd_calc.str1.1
-                0x08028899       0x19 build/obj/main.o
+                0x080288b1       0x19 build/obj/main.o
  .rodata.set_external_gain.str1.1
-                0x08028899        0x9 build/obj/main.o
+                0x080288b1        0x9 build/obj/main.o
  .rodata.cmd_ext_gain.str1.1
-                0x08028899       0x1a build/obj/main.o
+                0x080288b1       0x1a build/obj/main.o
  .rodata.cmd_line.str1.1
-                0x08028899       0x13 build/obj/main.o
+                0x080288b1       0x13 build/obj/main.o
  .rodata.cmd_trigger.str1.1
-                0x08028899       0x20 build/obj/main.o
+                0x080288b1       0x20 build/obj/main.o
  .rodata.set_output_path.str1.1
-                0x08028899       0x3a build/obj/main.o
+                0x080288b1       0x3a build/obj/main.o
  .rodata.cmd_rbw.str1.1
-                0x08028899       0x23 build/obj/main.o
+                0x080288b1       0x23 build/obj/main.o
  .rodata.cell_draw_test_info.str1.1
-                0x08028899       0x3c build/obj/main.o
+                0x080288b1       0x3c build/obj/main.o
  .rodata.validate_signal_within.str1.1
-                0x08028899       0x23 build/obj/main.o
+                0x080288b1       0x23 build/obj/main.o
  .rodata.validate_below.str1.1
-                0x08028899        0x7 build/obj/main.o
+                0x080288b1        0x7 build/obj/main.o
  .rodata.validate_flatness.str1.1
-                0x08028899        0xa build/obj/main.o
+                0x080288b1        0xa build/obj/main.o
  .rodata.validate_display.str1.1
-                0x08028899        0x9 build/obj/main.o
+                0x080288b1        0x9 build/obj/main.o
  .rodata.calibration_busy.str1.1
-                0x08028899       0x11 build/obj/main.o
+                0x080288b1       0x11 build/obj/main.o
  .rodata.cmd_marker.str1.1
-                0x08028899       0x3a build/obj/main.o
+                0x080288b1       0x3a build/obj/main.o
  .rodata.cmd_frequencies.str1.1
-                0x08028899        0x5 build/obj/main.o
+                0x080288b1        0x5 build/obj/main.o
  .rodata.cmd_level.str1.1
-                0x08028899       0x20 build/obj/main.o
+                0x080288b1       0x20 build/obj/main.o
  .rodata.cmd_recall.str1.1
-                0x08028899       0x22 build/obj/main.o
+                0x080288b1       0x22 build/obj/main.o
  .rodata.cmd_sweep.str1.1
-                0x08028899       0x58 build/obj/main.o
+                0x080288b1       0x58 build/obj/main.o
  .rodata.cmd_mode.str1.1
-                0x08028899       0x17 build/obj/main.o
+                0x080288b1       0x17 build/obj/main.o
  .rodata.cmd_load.str1.1
-                0x08028899        0xc build/obj/main.o
+                0x080288b1        0xc build/obj/main.o
  .rodata.cmd_trace.str1.1
-                0x08028899       0xb0 build/obj/main.o
+                0x080288b1       0xb0 build/obj/main.o
  .rodata.get_hw_version_text.str1.1
-                0x08028899        0x8 build/obj/main.o
+                0x080288b1        0x8 build/obj/main.o
  .rodata.cmd_version.str1.1
-                0x08028899       0x1f build/obj/main.o
+                0x080288b1       0x1f build/obj/main.o
  .rodata.generic_option_cmd.str1.1
-                0x08028899        0x8 build/obj/main.o
+                0x080288b1        0x8 build/obj/main.o
  .rodata.cmd_output.str1.1
-                0x08028899       0x14 build/obj/main.o
+                0x080288b1       0x14 build/obj/main.o
  .rodata.cmd_avoid.str1.1
-                0x08028899       0x1b build/obj/main.o
+                0x080288b1       0x1b build/obj/main.o
  .rodata.cmd_spur.str1.1
-                0x08028899       0x11 build/obj/main.o
+                0x080288b1       0x11 build/obj/main.o
  .rodata.cmd_refresh.str1.1
-                0x08028899        0x8 build/obj/main.o
+                0x080288b1        0x8 build/obj/main.o
  .rodata.cmd_x.str1.1
-                0x08028899       0x1d build/obj/main.o
+                0x080288b1       0x1d build/obj/main.o
  .rodata.cmd_y.str1.1
-                0x08028899       0x27 build/obj/main.o
+                0x080288b1       0x27 build/obj/main.o
  .rodata.cmd_usart_cfg.str1.1
-                0x08028899       0x12 build/obj/main.o
+                0x080288b1       0x12 build/obj/main.o
  .rodata.parse_line.str1.1
-                0x08028899        0x5 build/obj/main.o
+                0x080288b1        0x5 build/obj/main.o
  .rodata.VNAShell_parceLine.str1.1
-                0x08028899       0x1c build/obj/main.o
+                0x080288b1       0x1c build/obj/main.o
  .rodata.myshellThread.str1.1
-                0x08028899       0x2f build/obj/main.o
+                0x080288b1       0x2f build/obj/main.o
  .rodata.perform.str1.1
-                0x08028899       0x77 build/obj/main.o
+                0x080288b1       0x77 build/obj/main.o
  .rodata.sweep.str1.1
-                0x08028899       0x1d build/obj/main.o
+                0x080288b1       0x1d build/obj/main.o
  .rodata.validate_atten.str1.1
-                0x08028899        0xc build/obj/main.o
+                0x080288b1        0xc build/obj/main.o
  .rodata.test_validate.str1.1
-                0x08028899        0xa build/obj/main.o
+                0x080288b1        0xa build/obj/main.o
  .rodata.calibrate_harmonic.str1.1
-                0x08028899       0x57 build/obj/main.o
+                0x080288b1       0x57 build/obj/main.o
  .rodata.cmd_scan.str1.1
-                0x08028899       0x7a build/obj/main.o
+                0x080288b1       0x7a build/obj/main.o
  .rodata.selftest.str1.1
-                0x08028899      0x323 build/obj/main.o
+                0x080288b1      0x323 build/obj/main.o
  .rodata.calibrate.str1.1
-                0x08028899       0x36 build/obj/main.o
+                0x080288b1       0x36 build/obj/main.o
  .rodata.cmd_scanraw.str1.1
-                0x08028899       0x34 build/obj/main.o
+                0x080288b1       0x34 build/obj/main.o
  .rodata.cmd_hop.str1.1
-                0x08028899       0x3f build/obj/main.o
+                0x080288b1       0x3f build/obj/main.o
  .rodata.Thread1.str1.4
-                0x08028899        0x6 build/obj/main.o
+                0x080288b1        0x6 build/obj/main.o
  .rodata.main.str1.4
-                0x08028899        0xc build/obj/main.o
+                0x080288b1        0xc build/obj/main.o
  .rodata.hard_fault_handler_c.str1.4
-                0x08028899      0x11a build/obj/main.o
- *fill*         0x08028899        0x3 
+                0x080288b1      0x11a build/obj/main.o
+ *fill*         0x080288b1        0x3 
  .rodata.CSWTCH.1378
-                0x0802889c        0x3 build/obj/main.o
- *fill*         0x0802889f        0x1 
+                0x080288b4        0x3 build/obj/main.o
+ *fill*         0x080288b7        0x1 
  .rodata.idx_to_time.1
-                0x080288a0        0x6 build/obj/main.o
- *fill*         0x080288a6        0x2 
+                0x080288b8        0x6 build/obj/main.o
+ *fill*         0x080288be        0x2 
  .rodata.time_cmd.2
-                0x080288a8       0x10 build/obj/main.o
+                0x080288c0       0x10 build/obj/main.o
  .rodata.sel_conv.3
-                0x080288b8        0x3 build/obj/main.o
- *fill*         0x080288bb        0x1 
+                0x080288d0        0x3 build/obj/main.o
+ *fill*         0x080288d3        0x1 
  .rodata.cmd_on_off.4
-                0x080288bc        0x7 build/obj/main.o
- *fill*         0x080288c3        0x1 
+                0x080288d4        0x7 build/obj/main.o
+ *fill*         0x080288db        0x1 
  .rodata.sweep_cmd2.5
-                0x080288c4       0x23 build/obj/main.o
- *fill*         0x080288e7        0x1 
+                0x080288dc       0x23 build/obj/main.o
+ *fill*         0x080288ff        0x1 
  .rodata.sweep_cmd.6
-                0x080288e8       0x1a build/obj/main.o
- *fill*         0x08028902        0x2 
- .rodata.cmd.7  0x08028904       0x15 build/obj/main.o
- *fill*         0x08028919        0x3 
+                0x08028900       0x1a build/obj/main.o
+ *fill*         0x0802891a        0x2 
+ .rodata.cmd.7  0x0802891c       0x15 build/obj/main.o
+ *fill*         0x08028931        0x3 
  .rodata.cmd_load_list.8
-                0x0802891c       0x20 build/obj/main.o
+                0x08028934       0x20 build/obj/main.o
  .rodata.cmd_value_list.9
-                0x0802893c        0x6 build/obj/main.o
- *fill*         0x08028942        0x2 
+                0x08028954        0x6 build/obj/main.o
+ *fill*         0x0802895a        0x2 
  .rodata.cmd_scale_ref_list.10
-                0x08028944        0xf build/obj/main.o
- *fill*         0x08028953        0x1 
+                0x0802895c        0xf build/obj/main.o
+ *fill*         0x0802896b        0x1 
  .rodata.cmd_type_list.11
-                0x08028954       0x1a build/obj/main.o
- *fill*         0x0802896e        0x2 
+                0x0802896c       0x1a build/obj/main.o
+ *fill*         0x08028986        0x2 
  .rodata.cmd_trigger_list.12
-                0x08028970       0x13 build/obj/main.o
- *fill*         0x08028983        0x1 
+                0x08028988       0x13 build/obj/main.o
+ *fill*         0x0802899b        0x1 
  .rodata.cmd_marker_on_off.13
-                0x08028984        0x7 build/obj/main.o
- *fill*         0x0802898b        0x1 
+                0x0802899c        0x7 build/obj/main.o
+ *fill*         0x080289a3        0x1 
  .rodata.cmd_marker_list.14
-                0x0802898c       0x32 build/obj/main.o
- *fill*         0x080289be        0x2 
+                0x080289a4       0x32 build/obj/main.o
+ *fill*         0x080289d6        0x2 
  .rodata.cmd_mode_list.15
-                0x080289c0       0xb5 build/obj/main.o
- *fill*         0x08028a75        0x3 
+                0x080289d8       0xb5 build/obj/main.o
+ *fill*         0x08028a8d        0x3 
  .rodata.cmd_mod_val.16
-                0x08028a78       0x18 build/obj/main.o
+                0x08028a90       0x18 build/obj/main.o
  .rodata.cmd_mod.17
-                0x08028a90       0x1f build/obj/main.o
- *fill*         0x08028aaf        0x1 
+                0x08028aa8       0x1f build/obj/main.o
+ *fill*         0x08028ac7        0x1 
  .rodata.cmd_low_high.18
-                0x08028ab0        0x4 build/obj/main.o
+                0x08028ac8        0x4 build/obj/main.o
  .rodata.cmd_in_out.19
-                0x08028ab4        0xd build/obj/main.o
- *fill*         0x08028ac1        0x3 
+                0x08028acc        0xd build/obj/main.o
+ *fill*         0x08028ad9        0x3 
  .rodata.direct_cmd.20
-                0x08028ac4       0x12 build/obj/main.o
- *fill*         0x08028ad6        0x2 
+                0x08028adc       0x12 build/obj/main.o
+ *fill*         0x08028aee        0x2 
  .rodata.range.21
-                0x08028ad8        0x5 build/obj/main.o
- *fill*         0x08028add        0x3 
+                0x08028af0        0x5 build/obj/main.o
+ *fill*         0x08028af5        0x3 
  .rodata.cmd.22
-                0x08028ae0       0x60 build/obj/main.o
+                0x08028af8       0x60 build/obj/main.o
  .rodata.cmd_cal.23
-                0x08028b40       0x33 build/obj/main.o
- *fill*         0x08028b73        0x1 
+                0x08028b58       0x33 build/obj/main.o
+ *fill*         0x08028b8b        0x1 
  .rodata.R_table.24
-                0x08028b74       0x14 build/obj/main.o
+                0x08028b8c       0x14 build/obj/main.o
  .rodata.gpt4cfg
-                0x08028b88       0x10 build/obj/main.o
+                0x08028ba0       0x10 build/obj/main.o
  .rodata.str1.4
-                0x08028b98      0x55f build/obj/main.o
+                0x08028bb0      0x577 build/obj/main.o
  .rodata.commands
-                0x08028b98      0x406 build/obj/main.o
- *fill*         0x08028f9e        0x2 
+                0x08028bb0      0x406 build/obj/main.o
+ *fill*         0x08028fb6        0x2 
  .rodata.states
-                0x08028fa0       0x40 build/obj/main.o
-                0x08028fa0                states
+                0x08028fb8       0x40 build/obj/main.o
+                0x08028fb8                states
  .rodata.hw_version_text
-                0x08028fe0       0x50 build/obj/main.o
-                0x08028fe0                hw_version_text
+                0x08028ff8       0x50 build/obj/main.o
+                0x08028ff8                hw_version_text
  .rodata.TINYSA_VERSION
-                0x08029030        0x9 build/obj/main.o
-                0x08029030                TINYSA_VERSION
- *fill*         0x08029039        0x3 
+                0x08029048        0x9 build/obj/main.o
+                0x08029048                TINYSA_VERSION
+ *fill*         0x08029051        0x3 
  .rodata.atten_step
-                0x0802903c       0x1c build/obj/main.o
-                0x0802903c                atten_step
+                0x08029054       0x1c build/obj/main.o
+                0x08029054                atten_step
  .rodata.test_text
-                0x08029058       0x10 build/obj/main.o
+                0x08029070       0x10 build/obj/main.o
  .rodata.test_case
-                0x08029068      0x280 build/obj/main.o
-                0x08029068                test_case
+                0x08029080      0x280 build/obj/main.o
+                0x08029080                test_case
  .rodata.sine_wave
-                0x080292e8       0x84 build/obj/main.o
- *fill*         0x0802936c        0x4 
+                0x08029300       0x84 build/obj/main.o
+ *fill*         0x08029384        0x4 
  .rodata.additional_spur_table
-                0x08029370       0x40 build/obj/main.o
+                0x08029388       0x40 build/obj/main.o
  .rodata.static_spur_table
-                0x080293b0      0x1c0 build/obj/main.o
+                0x080293c8      0x1c0 build/obj/main.o
  .rodata.step_delay_table
-                0x08029570       0x90 build/obj/main.o
+                0x08029588       0x90 build/obj/main.o
  .rodata.unit_scale_text
-                0x08029600        0x5 build/obj/main.o
-                0x08029600                unit_scale_text
- *fill*         0x08029605        0x3 
+                0x08029618        0x5 build/obj/main.o
+                0x08029618                unit_scale_text
+ *fill*         0x0802961d        0x3 
  .rodata.unit_scale_value
-                0x08029608       0x14 build/obj/main.o
-                0x08029608                unit_scale_value
+                0x08029620       0x14 build/obj/main.o
+                0x08029620                unit_scale_value
  .rodata.reffer_freq
-                0x0802961c       0x1c build/obj/main.o
-                0x0802961c                reffer_freq
+                0x08029634       0x1c build/obj/main.o
+                0x08029634                reffer_freq
  .rodata.path_text
-                0x08029638       0x1c build/obj/main.o
-                0x08029638                path_text
+                0x08029650       0x1c build/obj/main.o
+                0x08029650                path_text
  .rodata.adf_drive_dBm
-                0x08029654       0x10 build/obj/main.o
-                0x08029654                adf_drive_dBm
+                0x0802966c       0x10 build/obj/main.o
+                0x0802966c                adf_drive_dBm
  .rodata.si_drive_dBm
-                0x08029664       0x4c build/obj/main.o
-                0x08029664                si_drive_dBm
+                0x0802967c       0x4c build/obj/main.o
+                0x0802967c                si_drive_dBm
  .rodata.def_markers
-                0x080296b0       0x80 build/obj/main.o
+                0x080296c8       0x80 build/obj/main.o
  .rodata.v4_6_correction_value
-                0x08029730      0x3c0 build/obj/main.o
-                0x08029730                v4_6_correction_value
+                0x08029748      0x3c0 build/obj/main.o
+                0x08029748                v4_6_correction_value
  .rodata.v4_6_correction_frequency
-                0x08029af0      0x780 build/obj/main.o
-                0x08029af0                v4_6_correction_frequency
+                0x08029b08      0x780 build/obj/main.o
+                0x08029b08                v4_6_correction_frequency
  .rodata.v5_2_correction_value
-                0x0802a270      0x3c0 build/obj/main.o
-                0x0802a270                v5_2_correction_value
+                0x0802a288      0x3c0 build/obj/main.o
+                0x0802a288                v5_2_correction_value
  .rodata.v5_2_correction_frequency
-                0x0802a630      0x780 build/obj/main.o
-                0x0802a630                v5_2_correction_frequency
+                0x0802a648      0x780 build/obj/main.o
+                0x0802a648                v5_2_correction_frequency
  .rodata.info_about
-                0x0802adb0       0x30 build/obj/main.o
-                0x0802adb0                info_about
+                0x0802adc8       0x34 build/obj/main.o
+                0x0802adc8                info_about
  .rodata.draw_all_cells.str1.1
-                0x0802ade0      0x127 build/obj/plot.o
+                0x0802adfc      0x127 build/obj/plot.o
  .rodata.draw_frequencies.str1.1
-                0x0802ade0       0x9e build/obj/plot.o
+                0x0802adfc       0x9e build/obj/plot.o
  .rodata.draw_all.str1.1
-                0x0802ade0        0x6 build/obj/plot.o
+                0x0802adfc        0x6 build/obj/plot.o
  .rodata.CSWTCH.161
-                0x0802ade0       0x1c build/obj/plot.o
- .rodata.CSWTCH.160
                 0x0802adfc       0x1c build/obj/plot.o
- .rodata.CSWTCH.159
+ .rodata.CSWTCH.160
                 0x0802ae18       0x1c build/obj/plot.o
+ .rodata.CSWTCH.159
+                0x0802ae34       0x1c build/obj/plot.o
  .rodata.sd_icon.0
-                0x0802ae34       0x20 build/obj/plot.o
+                0x0802ae50       0x20 build/obj/plot.o
  .rodata.waterfall_palette
-                0x0802ae54      0x202 build/obj/plot.o
- *fill*         0x0802b056        0x2 
+                0x0802ae70      0x202 build/obj/plot.o
+ *fill*         0x0802b072        0x2 
  .rodata.marker_bitmap
-                0x0802b058       0xfc build/obj/plot.o
- *fill*         0x0802b154        0x4 
+                0x0802b074       0xfc build/obj/plot.o
  .rodata.ham_bands
-                0x0802b158      0x180 build/obj/plot.o
-                0x0802b158                ham_bands
+                0x0802b170      0x180 build/obj/plot.o
+                0x0802b170                ham_bands
  .rodata.browser_draw_buttons.str1.1
-                0x0802b2d8        0xa build/obj/ui.o
+                0x0802b2f0        0xa build/obj/ui.o
  .rodata.menu_restart_acb.str1.1
-                0x0802b2d8       0x2d build/obj/ui.o
+                0x0802b2f0       0x2d build/obj/ui.o
  .rodata.menu_modulation_acb.str1.1
-                0x0802b2d8        0x3 build/obj/ui.o
+                0x0802b2f0        0x3 build/obj/ui.o
  .rodata.menu_outputmode_acb.str1.1
-                0x0802b2d8        0x7 build/obj/ui.o
+                0x0802b2f0        0x7 build/obj/ui.o
  .rodata.fetch_numeric_target.str1.1
-                0x0802b2d8       0xba build/obj/ui.o
+                0x0802b2f0       0xba build/obj/ui.o
  .rodata.getTouchPoint.str1.1
-                0x0802b2d8        0xb build/obj/ui.o
+                0x0802b2f0        0xb build/obj/ui.o
  .rodata.touch_cal_exec.str1.1
-                0x0802b2d8       0x17 build/obj/ui.o
+                0x0802b2f0       0x17 build/obj/ui.o
  .rodata.touch_draw_test.str1.1
-                0x0802b2d8       0x3d build/obj/ui.o
+                0x0802b2f0       0x3d build/obj/ui.o
  .rodata.touch_notepad.str1.1
-                0x0802b2d8       0x40 build/obj/ui.o
+                0x0802b2f0       0x40 build/obj/ui.o
  .rodata.show_version.str1.1
-                0x0802b2d8       0x6f build/obj/ui.o
+                0x0802b2f0       0x6f build/obj/ui.o
  .rodata.draw_cal_status.str1.1
-                0x0802b2d8      0x11e build/obj/ui.o
+                0x0802b2f0      0x11e build/obj/ui.o
  .rodata.draw_menu_buttons.str1.1
-                0x0802b2d8       0x13 build/obj/ui.o
+                0x0802b2f0       0x13 build/obj/ui.o
  .rodata.input_is_calibrated.str1.1
-                0x0802b2d8       0x56 build/obj/ui.o
+                0x0802b2f0       0x56 build/obj/ui.o
  .rodata.output_is_calibrated.str1.1
-                0x0802b2d8       0x1d build/obj/ui.o
+                0x0802b2f0       0x1d build/obj/ui.o
  .rodata.browser_open_file.str1.1
-                0x0802b2d8       0x39 build/obj/ui.o
+                0x0802b2f0       0x39 build/obj/ui.o
  .rodata.menu_calibrate_harmonic_acb.str1.1
-                0x0802b2d8        0x5 build/obj/ui.o
+                0x0802b2f0        0x5 build/obj/ui.o
  .rodata.menu_sweep_acb.str1.1
-                0x0802b2d8       0x23 build/obj/ui.o
+                0x0802b2f0       0x23 build/obj/ui.o
  .rodata.menu_smodulation_acb.str1.1
-                0x0802b2d8       0x33 build/obj/ui.o
+                0x0802b2f0       0x33 build/obj/ui.o
  .rodata.menu_limit_select_acb.str1.1
-                0x0802b2d8        0xe build/obj/ui.o
+                0x0802b2f0        0xe build/obj/ui.o
  .rodata.menu_band_select_acb.str1.1
-                0x0802b2d8        0xe build/obj/ui.o
+                0x0802b2f0        0xe build/obj/ui.o
  .rodata.menu_internals_acb.str1.1
-                0x0802b2d8       0x16 build/obj/ui.o
+                0x0802b2f0       0x16 build/obj/ui.o
  .rodata.menu_curve_acb.str1.1
-                0x0802b2d8       0x28 build/obj/ui.o
+                0x0802b2f0       0x28 build/obj/ui.o
  .rodata.menu_input_curve_prepare_cb.str1.1
-                0x0802b2d8       0x19 build/obj/ui.o
+                0x0802b2f0       0x19 build/obj/ui.o
  .rodata.menu_output_level3_acb.str1.1
-                0x0802b2d8       0x24 build/obj/ui.o
+                0x0802b2f0       0x24 build/obj/ui.o
  .rodata.menu_output_level2_acb.str1.1
-                0x0802b2d8       0x22 build/obj/ui.o
+                0x0802b2f0       0x22 build/obj/ui.o
  .rodata.menu_output_level_acb.str1.1
-                0x0802b2d8       0x23 build/obj/ui.o
+                0x0802b2f0       0x23 build/obj/ui.o
  .rodata.menu_clearconfig_cb.str1.1
-                0x0802b2d8       0x2b build/obj/ui.o
+                0x0802b2f0       0x2b build/obj/ui.o
  .rodata.menu_enter_marker_acb.str1.1
-                0x0802b2d8        0xf build/obj/ui.o
+                0x0802b2f0        0xf build/obj/ui.o
  .rodata.menu_settings_draw_line_acb.str1.1
-                0x0802b2d8        0x6 build/obj/ui.o
+                0x0802b2f0        0x6 build/obj/ui.o
  .rodata.sa_save_file.str1.1
-                0x0802b2d8       0x5a build/obj/ui.o
+                0x0802b2f0       0x5a build/obj/ui.o
  .rodata.menu_ultra_acb.str1.1
-                0x0802b2d8       0x39 build/obj/ui.o
+                0x0802b2f0       0x39 build/obj/ui.o
  .rodata.menu_brightness_acb.str1.1
-                0x0802b2d8       0x29 build/obj/ui.o
+                0x0802b2f0       0x29 build/obj/ui.o
  .rodata.menu_spur_acb.str1.1
-                0x0802b2d8       0x1c build/obj/ui.o
+                0x0802b2f0       0x1c build/obj/ui.o
  .rodata.menu_lowoutput_settings_acb.str1.1
-                0x0802b2d8       0x2b build/obj/ui.o
+                0x0802b2f0       0x2b build/obj/ui.o
  .rodata.menu_mode_acb.str1.1
-                0x0802b2d8        0xe build/obj/ui.o
+                0x0802b2f0        0xe build/obj/ui.o
  .rodata.menu_trigger_level_acb.str1.1
-                0x0802b2d8       0x39 build/obj/ui.o
+                0x0802b2f0       0x39 build/obj/ui.o
  .rodata.menu_limit_disable_cb.str1.1
-                0x0802b2d8       0x13 build/obj/ui.o
+                0x0802b2f0       0x13 build/obj/ui.o
  .rodata.menu_atten_acb.str1.1
-                0x0802b2d8        0x4 build/obj/ui.o
+                0x0802b2f0        0x4 build/obj/ui.o
  .rodata.menu_store_trace_acb.str1.1
-                0x0802b2d8        0xa build/obj/ui.o
+                0x0802b2f0        0xa build/obj/ui.o
  .rodata.menu_subtract_trace_acb.str1.1
-                0x0802b2d8       0x1f build/obj/ui.o
+                0x0802b2f0       0x1f build/obj/ui.o
  .rodata.menu_trace_acb.str1.1
-                0x0802b2d8       0x1c build/obj/ui.o
+                0x0802b2f0       0x1c build/obj/ui.o
  .rodata.menu_store_preset_acb.str1.1
-                0x0802b2d8       0x1f build/obj/ui.o
+                0x0802b2f0       0x1f build/obj/ui.o
  .rodata.menu_load_preset_acb.str1.1
-                0x0802b2d8       0x12 build/obj/ui.o
+                0x0802b2f0       0x12 build/obj/ui.o
  .rodata.browser_draw_page.str1.1
-                0x0802b2d8       0x1a build/obj/ui.o
+                0x0802b2f0       0x1a build/obj/ui.o
  .rodata.menu_trigger_acb.str1.1
-                0x0802b2d8        0x8 build/obj/ui.o
+                0x0802b2f0        0x8 build/obj/ui.o
  .rodata.menu_scale_cb.str1.1
-                0x0802b2d8        0xc build/obj/ui.o
+                0x0802b2f0        0xc build/obj/ui.o
  .rodata.menu_waterfall_acb.str1.1
-                0x0802b2d8       0x18 build/obj/ui.o
+                0x0802b2f0       0x18 build/obj/ui.o
  .rodata.menu_shift_acb.str1.1
-                0x0802b2d8       0x2f build/obj/ui.o
+                0x0802b2f0       0x2f build/obj/ui.o
  .rodata.menu_measure_acb.str1.1
-                0x0802b2d8      0x156 build/obj/ui.o
+                0x0802b2f0      0x156 build/obj/ui.o
  .rodata.menu_traces_acb.str1.1
-                0x0802b2d8       0x28 build/obj/ui.o
+                0x0802b2f0       0x28 build/obj/ui.o
  .rodata.ui_process.str1.1
-                0x0802b2d8       0x15 build/obj/ui.o
+                0x0802b2f0       0x15 build/obj/ui.o
  .rodata.fscan.1
-                0x0802b2d8        0x5 build/obj/ui.o
- *fill*         0x0802b2dd        0x3 
+                0x0802b2f0        0x5 build/obj/ui.o
+ *fill*         0x0802b2f5        0x3 
  .rodata.usart_speed.2
-                0x0802b2e0       0x28 build/obj/ui.o
+                0x0802b2f8       0x28 build/obj/ui.o
  .rodata.extcfg
-                0x0802b308      0x110 build/obj/ui.o
+                0x0802b320      0x110 build/obj/ui.o
  .rodata.check_box
-                0x0802b418       0x84 build/obj/ui.o
+                0x0802b430       0x84 build/obj/ui.o
  .rodata.str1.4
-                0x0802b49c     0x1371 build/obj/ui.o
+                0x0802b4b4     0x1371 build/obj/ui.o
  .rodata.keypad_scale_text
-                0x0802b49c       0x28 build/obj/ui.o
+                0x0802b4b4       0x28 build/obj/ui.o
  .rodata.unit_string
-                0x0802b4c4       0x38 build/obj/ui.o
-                0x0802b4c4                unit_string
+                0x0802b4dc       0x38 build/obj/ui.o
+                0x0802b4dc                unit_string
  .rodata.menu_storage
-                0x0802b4fc       0x64 build/obj/ui.o
+                0x0802b514       0x64 build/obj/ui.o
  .rodata.menu_storage_config
-                0x0802b560       0x28 build/obj/ui.o
+                0x0802b578       0x28 build/obj/ui.o
  .rodata.menu_storage_sd_icon
-                0x0802b588       0x1e build/obj/ui.o
- *fill*         0x0802b5a6        0x2 
+                0x0802b5a0       0x1e build/obj/ui.o
+ *fill*         0x0802b5be        0x2 
  .rodata.menu_stimulus
-                0x0802b5a8       0x6e build/obj/ui.o
- *fill*         0x0802b616        0x2 
+                0x0802b5c0       0x6e build/obj/ui.o
+ *fill*         0x0802b62e        0x2 
  .rodata.menu_level
-                0x0802b618       0x5a build/obj/ui.o
- *fill*         0x0802b672        0x2 
+                0x0802b630       0x5a build/obj/ui.o
+ *fill*         0x0802b68a        0x2 
  .rodata.menu_trigger
-                0x0802b674       0x64 build/obj/ui.o
+                0x0802b68c       0x64 build/obj/ui.o
  .rodata.menu_unit
-                0x0802b6d8       0x50 build/obj/ui.o
+                0x0802b6f0       0x50 build/obj/ui.o
  .rodata.menu_display
-                0x0802b728       0x64 build/obj/ui.o
+                0x0802b740       0x64 build/obj/ui.o
  .rodata.menu_traces
-                0x0802b78c       0x64 build/obj/ui.o
+                0x0802b7a4       0x64 build/obj/ui.o
  .rodata.menu_store_trace
-                0x0802b7f0       0x14 build/obj/ui.o
+                0x0802b808       0x14 build/obj/ui.o
  .rodata.menu_config2
-                0x0802b804       0x64 build/obj/ui.o
+                0x0802b81c       0x64 build/obj/ui.o
  .rodata.menu_lock_display
-                0x0802b868       0x1e build/obj/ui.o
- *fill*         0x0802b886        0x2 
+                0x0802b880       0x1e build/obj/ui.o
+ *fill*         0x0802b89e        0x2 
  .rodata.menu_date_time
-                0x0802b888       0x1e build/obj/ui.o
-                0x0802b888                menu_date_time
- *fill*         0x0802b8a6        0x2 
+                0x0802b8a0       0x1e build/obj/ui.o
+                0x0802b8a0                menu_date_time
+ *fill*         0x0802b8be        0x2 
  .rodata.menu_touch
-                0x0802b8a8       0x28 build/obj/ui.o
-                0x0802b8a8                menu_touch
+                0x0802b8c0       0x28 build/obj/ui.o
+                0x0802b8c0                menu_touch
  .rodata.menu_serial_speed
-                0x0802b8d0       0x14 build/obj/ui.o
-                0x0802b8d0                menu_serial_speed
+                0x0802b8e8       0x14 build/obj/ui.o
+                0x0802b8e8                menu_serial_speed
  .rodata.menu_measure
-                0x0802b8e4       0x5a build/obj/ui.o
- *fill*         0x0802b93e        0x2 
+                0x0802b8fc       0x5a build/obj/ui.o
+ *fill*         0x0802b956        0x2 
  .rodata.menu_measure2
-                0x0802b940       0x46 build/obj/ui.o
- *fill*         0x0802b986        0x2 
+                0x0802b958       0x46 build/obj/ui.o
+ *fill*         0x0802b99e        0x2 
  .rodata.menu_settings4
-                0x0802b988       0x5a build/obj/ui.o
- *fill*         0x0802b9e2        0x2 
+                0x0802b9a0       0x5a build/obj/ui.o
+ *fill*         0x0802b9fa        0x2 
  .rodata.menu_actual_power
-                0x0802b9e4       0x32 build/obj/ui.o
- *fill*         0x0802ba16        0x2 
+                0x0802b9fc       0x32 build/obj/ui.o
+ *fill*         0x0802ba2e        0x2 
  .rodata.menu_actual_out_power
-                0x0802ba18       0x32 build/obj/ui.o
- *fill*         0x0802ba4a        0x2 
+                0x0802ba30       0x32 build/obj/ui.o
+ *fill*         0x0802ba62        0x2 
  .rodata.menu_actual_in_power
-                0x0802ba4c       0x5a build/obj/ui.o
- *fill*         0x0802baa6        0x2 
+                0x0802ba64       0x5a build/obj/ui.o
+ *fill*         0x0802babe        0x2 
  .rodata.menu_curve2
-                0x0802baa8       0x1e build/obj/ui.o
- *fill*         0x0802bac6        0x2 
+                0x0802bac0       0x1e build/obj/ui.o
+ *fill*         0x0802bade        0x2 
  .rodata.menu_curve3
-                0x0802bac8       0x14 build/obj/ui.o
+                0x0802bae0       0x14 build/obj/ui.o
  .rodata.menu_actual_power2
-                0x0802badc       0x28 build/obj/ui.o
+                0x0802baf4       0x28 build/obj/ui.o
  .rodata.menu_sweep_speed
-                0x0802bb04       0x46 build/obj/ui.o
- *fill*         0x0802bb4a        0x2 
+                0x0802bb1c       0x46 build/obj/ui.o
+ *fill*         0x0802bb62        0x2 
  .rodata.menu_scanning_speed
-                0x0802bb4c       0x1e build/obj/ui.o
- *fill*         0x0802bb6a        0x2 
+                0x0802bb64       0x1e build/obj/ui.o
+ *fill*         0x0802bb82        0x2 
  .rodata.menu_harmonic
-                0x0802bb6c       0x3c build/obj/ui.o
+                0x0802bb84       0x3c build/obj/ui.o
  .rodata.menu_marker
-                0x0802bba8       0x5a build/obj/ui.o
- *fill*         0x0802bc02        0x2 
+                0x0802bbc0       0x5a build/obj/ui.o
+ *fill*         0x0802bc1a        0x2 
  .rodata.menu_marker_ops
-                0x0802bc04       0x3c build/obj/ui.o
-                0x0802bc04                menu_marker_ops
+                0x0802bc1c       0x3c build/obj/ui.o
+                0x0802bc1c                menu_marker_ops
  .rodata.menu_marker_select
-                0x0802bc40       0x14 build/obj/ui.o
-                0x0802bc40                menu_marker_select
+                0x0802bc58       0x14 build/obj/ui.o
+                0x0802bc58                menu_marker_select
  .rodata.menu_marker_modify
-                0x0802bc54       0x5a build/obj/ui.o
-                0x0802bc54                menu_marker_modify
- *fill*         0x0802bcae        0x2 
+                0x0802bc6c       0x5a build/obj/ui.o
+                0x0802bc6c                menu_marker_modify
+ *fill*         0x0802bcc6        0x2 
  .rodata.menu_marker_search
-                0x0802bcb0       0x64 build/obj/ui.o
-                0x0802bcb0                menu_marker_search
+                0x0802bcc8       0x64 build/obj/ui.o
+                0x0802bcc8                menu_marker_search
  .rodata.menu_reflevel
-                0x0802bd14       0x28 build/obj/ui.o
+                0x0802bd2c       0x28 build/obj/ui.o
  .rodata.menu_atten
-                0x0802bd3c       0x28 build/obj/ui.o
+                0x0802bd54       0x28 build/obj/ui.o
  .rodata.menu_vbw
-                0x0802bd64       0x1e build/obj/ui.o
- *fill*         0x0802bd82        0x2 
+                0x0802bd7c       0x1e build/obj/ui.o
+ *fill*         0x0802bd9a        0x2 
  .rodata.menu_rbw
-                0x0802bd84       0x1e build/obj/ui.o
- *fill*         0x0802bda2        0x2 
+                0x0802bd9c       0x1e build/obj/ui.o
+ *fill*         0x0802bdba        0x2 
  .rodata.menu_mixer_drive
-                0x0802bda4       0x3c build/obj/ui.o
+                0x0802bdbc       0x3c build/obj/ui.o
  .rodata.menu_load_preset
-                0x0802bde0       0x46 build/obj/ui.o
- *fill*         0x0802be26        0x2 
+                0x0802bdf8       0x46 build/obj/ui.o
+ *fill*         0x0802be3e        0x2 
  .rodata.menu_store_preset
-                0x0802be28       0x32 build/obj/ui.o
- *fill*         0x0802be5a        0x2 
+                0x0802be40       0x32 build/obj/ui.o
+ *fill*         0x0802be72        0x2 
  .rodata.menu_back
-                0x0802be5c       0x14 build/obj/ui.o
+                0x0802be74       0x14 build/obj/ui.o
  .rodata.browser_btn
-                0x0802be70       0x28 build/obj/ui.o
+                0x0802be88       0x28 build/obj/ui.o
  .rodata.file_ext
-                0x0802be98       0x20 build/obj/ui.o
+                0x0802beb0       0x20 build/obj/ui.o
  .rodata.bmp_header_v4
-                0x0802beb8       0x7a build/obj/ui.o
- *fill*         0x0802bf32        0x2 
+                0x0802bed0       0x7a build/obj/ui.o
+ *fill*         0x0802bf4a        0x2 
  .rodata.points_setting
-                0x0802bf34        0xc build/obj/ui.o
+                0x0802bf4c        0xc build/obj/ui.o
  .rodata.vbwsel_x100
-                0x0802bf40        0xc build/obj/ui.o
+                0x0802bf58        0xc build/obj/ui.o
  .rodata.rbwsel_text
-                0x0802bf4c       0x28 build/obj/ui.o
+                0x0802bf64       0x28 build/obj/ui.o
  .rodata.rbwsel_x10
-                0x0802bf74       0x14 build/obj/ui.o
+                0x0802bf8c       0x14 build/obj/ui.o
  .rodata.averageText
-                0x0802bf88       0x28 build/obj/ui.o
-                0x0802bf88                averageText
+                0x0802bfa0       0x28 build/obj/ui.o
+                0x0802bfa0                averageText
  .rodata.menu_reffer_text
-                0x0802bfb0       0x20 build/obj/ui.o
-                0x0802bfb0                menu_reffer_text
+                0x0802bfc8       0x20 build/obj/ui.o
+                0x0802bfc8                menu_reffer_text
  .rodata.menu_modulation_text
-                0x0802bfd0       0x1c build/obj/ui.o
-                0x0802bfd0                menu_modulation_text
+                0x0802bfe8       0x1c build/obj/ui.o
+                0x0802bfe8                menu_modulation_text
  .rodata.item_to_mode
-                0x0802bfec        0x8 build/obj/ui.o
+                0x0802c004        0x8 build/obj/ui.o
  .rodata.measurement_text
-                0x0802bff4       0x44 build/obj/ui.o
-                0x0802bff4                measurement_text
+                0x0802c00c       0x44 build/obj/ui.o
+                0x0802c00c                measurement_text
  .rodata.menu_lowoutput_settings_max
-                0x0802c038       0x28 build/obj/ui.o
+                0x0802c050       0x28 build/obj/ui.o
  .rodata.menu_lowoutput_settings
-                0x0802c060       0x28 build/obj/ui.o
+                0x0802c078       0x28 build/obj/ui.o
  .rodata.menu_settings2
-                0x0802c088       0x6e build/obj/ui.o
- *fill*         0x0802c0f6        0x2 
+                0x0802c0a0       0x6e build/obj/ui.o
+ *fill*         0x0802c10e        0x2 
  .rodata.menu_settings
-                0x0802c0f8       0x6e build/obj/ui.o
- *fill*         0x0802c166        0x2 
+                0x0802c110       0x6e build/obj/ui.o
+ *fill*         0x0802c17e        0x2 
  .rodata.menu_sweep
-                0x0802c168       0x32 build/obj/ui.o
- *fill*         0x0802c19a        0x2 
+                0x0802c180       0x32 build/obj/ui.o
+ *fill*         0x0802c1b2        0x2 
  .rodata.menu_calibrate
-                0x0802c19c       0x28 build/obj/ui.o
+                0x0802c1b4       0x28 build/obj/ui.o
  .rodata.menu_calibrate_normal
-                0x0802c1c4       0x1e build/obj/ui.o
- *fill*         0x0802c1e2        0x2 
+                0x0802c1dc       0x1e build/obj/ui.o
+ *fill*         0x0802c1fa        0x2 
  .rodata.menu_calibrate_harmonic
-                0x0802c1e4       0x1e build/obj/ui.o
- *fill*         0x0802c202        0x2 
+                0x0802c1fc       0x1e build/obj/ui.o
+ *fill*         0x0802c21a        0x2 
  .rodata.menu_measure_noise_figure
-                0x0802c204       0x32 build/obj/ui.o
- *fill*         0x0802c236        0x2 
+                0x0802c21c       0x32 build/obj/ui.o
+ *fill*         0x0802c24e        0x2 
  .rodata.menu_settings3
-                0x0802c238       0x5a build/obj/ui.o
- *fill*         0x0802c292        0x2 
+                0x0802c250       0x5a build/obj/ui.o
+ *fill*         0x0802c2aa        0x2 
  .rodata.menu_curve_confirm
-                0x0802c294       0x1e build/obj/ui.o
- *fill*         0x0802c2b2        0x2 
+                0x0802c2ac       0x1e build/obj/ui.o
+ *fill*         0x0802c2ca        0x2 
  .rodata.menu_curve
-                0x0802c2b4       0x1e build/obj/ui.o
- *fill*         0x0802c2d2        0x2 
+                0x0802c2cc       0x1e build/obj/ui.o
+ *fill*         0x0802c2ea        0x2 
  .rodata.menu_config
-                0x0802c2d4       0x64 build/obj/ui.o
+                0x0802c2ec       0x64 build/obj/ui.o
  .rodata.menu_connection
-                0x0802c338       0x28 build/obj/ui.o
+                0x0802c350       0x28 build/obj/ui.o
  .rodata.menu_marker_ref_select
-                0x0802c360       0x14 build/obj/ui.o
+                0x0802c378       0x14 build/obj/ui.o
  .rodata.menu_sweep_points_form
-                0x0802c374       0x14 build/obj/ui.o
+                0x0802c38c       0x14 build/obj/ui.o
  .rodata.menu_sweep_points
-                0x0802c388       0x14 build/obj/ui.o
+                0x0802c3a0       0x14 build/obj/ui.o
  .rodata.menu_reffer
-                0x0802c39c       0x14 build/obj/ui.o
+                0x0802c3b4       0x14 build/obj/ui.o
  .rodata.menu_average
-                0x0802c3b0       0x64 build/obj/ui.o
+                0x0802c3c8       0x64 build/obj/ui.o
  .rodata.menu_band_select
-                0x0802c414       0x32 build/obj/ui.o
- *fill*         0x0802c446        0x2 
+                0x0802c42c       0x32 build/obj/ui.o
+ *fill*         0x0802c45e        0x2 
  .rodata.menu_band_modify
-                0x0802c448       0x50 build/obj/ui.o
+                0x0802c460       0x50 build/obj/ui.o
  .rodata.menu_limit_select
-                0x0802c498       0x28 build/obj/ui.o
+                0x0802c4b0       0x28 build/obj/ui.o
  .rodata.menu_limit_modify
-                0x0802c4c0       0x28 build/obj/ui.o
+                0x0802c4d8       0x28 build/obj/ui.o
  .rodata.menu_subtract_trace
-                0x0802c4e8       0x14 build/obj/ui.o
+                0x0802c500       0x14 build/obj/ui.o
  .rodata.menu_marker_trace
-                0x0802c4fc       0x14 build/obj/ui.o
+                0x0802c514       0x14 build/obj/ui.o
  .rodata.menu_trace
-                0x0802c510       0x14 build/obj/ui.o
+                0x0802c528       0x14 build/obj/ui.o
  .rodata.menu_trigger_level
-                0x0802c524       0x1e build/obj/ui.o
- *fill*         0x0802c542        0x2 
+                0x0802c53c       0x1e build/obj/ui.o
+ *fill*         0x0802c55a        0x2 
  .rodata.menu_top
-                0x0802c544       0x78 build/obj/ui.o
+                0x0802c55c       0x78 build/obj/ui.o
  .rodata.menu_modulation
-                0x0802c5bc       0x64 build/obj/ui.o
+                0x0802c5d4       0x64 build/obj/ui.o
  .rodata.menu_mode
-                0x0802c620       0x28 build/obj/ui.o
-                0x0802c620                menu_mode
+                0x0802c638       0x28 build/obj/ui.o
+                0x0802c638                menu_mode
  .rodata.menu_highoutputmode
-                0x0802c648       0x64 build/obj/ui.o
-                0x0802c648                menu_highoutputmode
+                0x0802c660       0x64 build/obj/ui.o
+                0x0802c660                menu_highoutputmode
  .rodata.menu_lowoutputmode
-                0x0802c6ac       0x64 build/obj/ui.o
-                0x0802c6ac                menu_lowoutputmode
+                0x0802c6c4       0x64 build/obj/ui.o
+                0x0802c6c4                menu_lowoutputmode
  .rodata.keypads_mode_tbl
-                0x0802c710      0x1f8 build/obj/ui.o
+                0x0802c728      0x1f8 build/obj/ui.o
  .rodata.keypads_text
-                0x0802c908       0x52 build/obj/ui.o
- *fill*         0x0802c95a        0x2 
+                0x0802c920       0x52 build/obj/ui.o
+ *fill*         0x0802c972        0x2 
  .rodata.keypads_time
-                0x0802c95c       0x22 build/obj/ui.o
- *fill*         0x0802c97e        0x2 
+                0x0802c974       0x22 build/obj/ui.o
+ *fill*         0x0802c996        0x2 
  .rodata.keypads_plusmin
-                0x0802c980       0x22 build/obj/ui.o
- *fill*         0x0802c9a2        0x2 
+                0x0802c998       0x22 build/obj/ui.o
+ *fill*         0x0802c9ba        0x2 
  .rodata.keypads_plusmin_unit
-                0x0802c9a4       0x22 build/obj/ui.o
- *fill*         0x0802c9c6        0x2 
+                0x0802c9bc       0x22 build/obj/ui.o
+ *fill*         0x0802c9de        0x2 
  .rodata.keypads_pos_unit
-                0x0802c9c8       0x22 build/obj/ui.o
- *fill*         0x0802c9ea        0x2 
+                0x0802c9e0       0x22 build/obj/ui.o
+ *fill*         0x0802ca02        0x2 
  .rodata.keypads_positive
-                0x0802c9ec       0x22 build/obj/ui.o
- *fill*         0x0802ca0e        0x2 
+                0x0802ca04       0x22 build/obj/ui.o
+ *fill*         0x0802ca26        0x2 
  .rodata.keypads_freq
-                0x0802ca10       0x22 build/obj/ui.o
- *fill*         0x0802ca32        0x2 
+                0x0802ca28       0x22 build/obj/ui.o
+ *fill*         0x0802ca4a        0x2 
  .rodata.keypads_plusmin_freq
-                0x0802ca34       0x22 build/obj/ui.o
- *fill*         0x0802ca56        0x2 
+                0x0802ca4c       0x22 build/obj/ui.o
+ *fill*         0x0802ca6e        0x2 
  .rodata.key_pos
-                0x0802ca58       0x10 build/obj/ui.o
+                0x0802ca70       0x10 build/obj/ui.o
  .rodata.right_icons
-                0x0802ca68       0x80 build/obj/ui.o
-                0x0802ca68                right_icons
+                0x0802ca80       0x80 build/obj/ui.o
+                0x0802ca80                right_icons
  .rodata.left_icons
-                0x0802cae8       0xc0 build/obj/ui.o
+                0x0802cb00       0xc0 build/obj/ui.o
  .rodata.touch_bitmap
-                0x0802cba8       0x12 build/obj/ui.o
- *fill*         0x0802cbba        0x2 
+                0x0802cbc0       0x12 build/obj/ui.o
+ *fill*         0x0802cbd2        0x2 
  .rodata.gpt3cfg
-                0x0802cbbc       0x10 build/obj/ui.o
+                0x0802cbd4       0x10 build/obj/ui.o
  .rodata.slider_bitmap
-                0x0802cbcc        0x5 build/obj/ui.o
+                0x0802cbe4        0x5 build/obj/ui.o
  .rodata.ili9341_DMA_bulk.str1.4
-                0x0802cbd1        0x7 build/obj/ili9341.o
+                0x0802cbe9        0x7 build/obj/ili9341.o
  .rodata.ili9341_fill.str1.4
-                0x0802cbd1        0x7 build/obj/ili9341.o
- *fill*         0x0802cbd1        0x3 
+                0x0802cbe9        0x7 build/obj/ili9341.o
+ *fill*         0x0802cbe9        0x3 
  .rodata.ST7796S_init_seq
-                0x0802cbd4       0x35 build/obj/ili9341.o
- *fill*         0x0802cc09        0x1 
+                0x0802cbec       0x35 build/obj/ili9341.o
+ *fill*         0x0802cc21        0x1 
  .rodata.dummy_tx
-                0x0802cc0a        0x2 build/obj/ili9341.o
+                0x0802cc22        0x2 build/obj/ili9341.o
  .rodata.si5351_setupMultisynth.str1.4
-                0x0802cc0c        0x8 build/obj/si5351.o
+                0x0802cc24        0x8 build/obj/si5351.o
  .rodata.si5351_configs
-                0x0802cc0c       0x29 build/obj/si5351.o
- *fill*         0x0802cc35        0x3 
+                0x0802cc24       0x29 build/obj/si5351.o
+ *fill*         0x0802cc4d        0x3 
  .rodata.numfont16x22
-                0x0802cc38      0x478 build/obj/numfont20x22.o
-                0x0802cc38                numfont16x22
+                0x0802cc50      0x478 build/obj/numfont20x22.o
+                0x0802cc50                numfont16x22
  .rodata.x5x7_bits
-                0x0802d0b0      0x2df build/obj/Font5x7.o
-                0x0802d0b0                x5x7_bits
- *fill*         0x0802d38f        0x1 
+                0x0802d0c8      0x2df build/obj/Font5x7.o
+                0x0802d0c8                x5x7_bits
+ *fill*         0x0802d3a7        0x1 
  .rodata.x10x14_bits
-                0x0802d390      0xb7c build/obj/Font10x14.o
-                0x0802d390                x10x14_bits
+                0x0802d3a8      0xb7c build/obj/Font10x14.o
+                0x0802d3a8                x10x14_bits
  .rodata.set_RSSI_comp.str1.1
-                0x0802df0c        0x6 build/obj/si4468.o
+                0x0802df24        0x6 build/obj/si4468.o
  .rodata.SI4463_init_rx.str1.1
-                0x0802df0c       0x3a build/obj/si4468.o
+                0x0802df24       0x3a build/obj/si4468.o
  .rodata.CSWTCH.228
-                0x0802df0c        0x3 build/obj/si4468.o
- *fill*         0x0802df0f        0x1 
- .rodata.data3.5
-                0x0802df10        0x5 build/obj/si4468.o
- *fill*         0x0802df15        0x3 
- .rodata.if_freq_low.6
-                0x0802df18        0x6 build/obj/si4468.o
- *fill*         0x0802df1e        0x2 
- .rodata.if_freq_high.7
-                0x0802df20        0x6 build/obj/si4468.o
- .rodata.SI4432_RBW_count
-                0x0802df26        0x1 build/obj/si4468.o
-                0x0802df26                SI4432_RBW_count
+                0x0802df24        0x3 build/obj/si4468.o
  *fill*         0x0802df27        0x1 
+ .rodata.data3.5
+                0x0802df28        0x5 build/obj/si4468.o
+ *fill*         0x0802df2d        0x3 
+ .rodata.if_freq_low.6
+                0x0802df30        0x6 build/obj/si4468.o
+ *fill*         0x0802df36        0x2 
+ .rodata.if_freq_high.7
+                0x0802df38        0x6 build/obj/si4468.o
+ .rodata.SI4432_RBW_count
+                0x0802df3e        0x1 build/obj/si4468.o
+                0x0802df3e                SI4432_RBW_count
+ *fill*         0x0802df3f        0x1 
  .rodata.RBW_choices
-                0x0802df28       0x6c build/obj/si4468.o
+                0x0802df40       0x6c build/obj/si4468.o
  .rodata.SI4463_RBW_850kHz
-                0x0802df94       0x65 build/obj/si4468.o
- *fill*         0x0802dff9        0x3 
+                0x0802dfac       0x65 build/obj/si4468.o
+ *fill*         0x0802e011        0x3 
  .rodata.SI4463_RBW_600kHz
-                0x0802dffc       0x65 build/obj/si4468.o
- *fill*         0x0802e061        0x3 
+                0x0802e014       0x65 build/obj/si4468.o
+ *fill*         0x0802e079        0x3 
  .rodata.SI4463_RBW_300kHz
-                0x0802e064       0x65 build/obj/si4468.o
- *fill*         0x0802e0c9        0x3 
+                0x0802e07c       0x65 build/obj/si4468.o
+ *fill*         0x0802e0e1        0x3 
  .rodata.SI4463_RBW_100kHz
-                0x0802e0cc       0x65 build/obj/si4468.o
- *fill*         0x0802e131        0x3 
+                0x0802e0e4       0x65 build/obj/si4468.o
+ *fill*         0x0802e149        0x3 
  .rodata.SI4463_RBW_30kHz
-                0x0802e134       0x65 build/obj/si4468.o
- *fill*         0x0802e199        0x3 
+                0x0802e14c       0x65 build/obj/si4468.o
+ *fill*         0x0802e1b1        0x3 
  .rodata.SI4463_RBW_10kHz
-                0x0802e19c       0x65 build/obj/si4468.o
- *fill*         0x0802e201        0x3 
+                0x0802e1b4       0x65 build/obj/si4468.o
+ *fill*         0x0802e219        0x3 
  .rodata.SI4463_RBW_3kHz
-                0x0802e204       0x65 build/obj/si4468.o
- *fill*         0x0802e269        0x3 
+                0x0802e21c       0x65 build/obj/si4468.o
+ *fill*         0x0802e281        0x3 
  .rodata.SI4463_RBW_1kHz
-                0x0802e26c       0x65 build/obj/si4468.o
- *fill*         0x0802e2d1        0x3 
+                0x0802e284       0x65 build/obj/si4468.o
+ *fill*         0x0802e2e9        0x3 
  .rodata.SI4463_RBW_02kHz
-                0x0802e2d4       0x65 build/obj/si4468.o
- *fill*         0x0802e339        0x3 
+                0x0802e2ec       0x65 build/obj/si4468.o
+ *fill*         0x0802e351        0x3 
  .rodata.dBm_to_volt
-                0x0802e33c       0x21 build/obj/si4468.o
-                0x0802e33c                dBm_to_volt
- *fill*         0x0802e35d        0x3 
+                0x0802e354       0x21 build/obj/si4468.o
+                0x0802e354                dBm_to_volt
+ *fill*         0x0802e375        0x3 
  .rodata.SI4468_config
-                0x0802e360      0x213 build/obj/si4468.o
- *fill*         0x0802e573        0x1 
+                0x0802e378      0x213 build/obj/si4468.o
+ *fill*         0x0802e58b        0x1 
  .rodata.x7x11b_bits
-                0x0802e574      0x483 build/obj/Font7x13b.o
-                0x0802e574                x7x11b_bits
+                0x0802e58c      0x483 build/obj/Font7x13b.o
+                0x0802e58c                x7x11b_bits
  .rodata.str1.4
-                0x0802e9f7        0x1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_log.o)
-                0x0802e9f8                        . = ALIGN (0x4)
- *fill*         0x0802e9f7        0x1 
-                0x0802e9f8                        __rodata_end__ = .
+                0x0802ea0f        0x1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_log.o)
+                0x0802ea10                        . = ALIGN (0x4)
+ *fill*         0x0802ea0f        0x1 
+                0x0802ea10                        __rodata_end__ = .
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM.exidx      0x0802e9f8        0x8
-                0x0802e9f8                        __exidx_start = .
+.ARM.exidx      0x0802ea10        0x8
+                0x0802ea10                        __exidx_start = .
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x0802e9f8        0x8 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
- .ARM.exidx     0x0802ea00        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-strlen.o)
+ .ARM.exidx     0x0802ea10        0x8 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x0802ea18        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-strlen.o)
                                   0x8 (size before relaxing)
- .ARM.exidx     0x0802ea00        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memcpy.o)
+ .ARM.exidx     0x0802ea18        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memcpy.o)
                                   0x8 (size before relaxing)
-                0x0802ea00                        __exidx_end = .
+                0x0802ea18                        __exidx_end = .
 
-.rel.dyn        0x0802ea00        0x0
- .rel.iplt      0x0802ea00        0x0 build/obj/crt0_v7m.o
+.rel.dyn        0x0802ea18        0x0
+ .rel.iplt      0x0802ea18        0x0 build/obj/crt0_v7m.o
 
 .eh_frame_hdr
  *(.eh_frame_hdr)
@@ -5394,11 +5393,11 @@ xtors           0x080001a0        0x0
                 0x00000000                        __ram7_size__ = LENGTH (ram7)
                 0x00000000                        __ram7_end__ = (__ram7_start__ + __ram7_size__)
 
-.data           0x20000680      0xeb4 load address 0x0802ea00
+.data           0x20000680      0xeb4 load address 0x0802ea18
                 0x20000680                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (_textdata = LOADADDR (.data))
                 [!provide]                        PROVIDE (_data = .)
-                0x0802ea00                        _textdata_start = LOADADDR (.data)
+                0x0802ea18                        _textdata_start = LOADADDR (.data)
                 0x20000680                        _data_start = .
  *(.data)
  .data          0x20000680       0x50 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
@@ -5587,10 +5586,10 @@ xtors           0x080001a0        0x0
                 [!provide]                        PROVIDE (_edata = .)
                 0x20001534                        _data_end = .
 
-.igot.plt       0x20001534        0x0 load address 0x0802f8b4
+.igot.plt       0x20001534        0x0 load address 0x0802f8cc
  .igot.plt      0x20001534        0x0 build/obj/crt0_v7m.o
 
-.bss            0x20001538     0x6ca4 load address 0x0802f8b4
+.bss            0x20001538     0x6ca4 load address 0x0802f8cc
                 0x20001538                        . = ALIGN (0x4)
                 0x20001538                        _bss_start = .
  *(.bss)
@@ -6225,15 +6224,15 @@ xtors           0x080001a0        0x0
                 0x200081dc                        _bss_end = .
                 [!provide]                        PROVIDE (end = .)
 
-.ram0_init      0x200081dc        0x0 load address 0x0802f8b4
+.ram0_init      0x200081dc        0x0 load address 0x0802f8cc
                 0x200081dc                        . = ALIGN (0x4)
-                0x0802f8b4                        __ram0_init_text__ = LOADADDR (.ram0_init)
+                0x0802f8cc                        __ram0_init_text__ = LOADADDR (.ram0_init)
                 0x200081dc                        __ram0_init__ = .
  *(.ram0_init)
  *(.ram0_init.*)
                 0x200081dc                        . = ALIGN (0x4)
 
-.ram0           0x200081dc        0x0 load address 0x0802f8b4
+.ram0           0x200081dc        0x0 load address 0x0802f8cc
                 0x200081dc                        . = ALIGN (0x4)
                 0x200081dc                        __ram0_clear__ = .
  *(.ram0_clear)
@@ -6245,15 +6244,15 @@ xtors           0x080001a0        0x0
                 0x200081dc                        . = ALIGN (0x4)
                 0x200081dc                        __ram0_free__ = .
 
-.ram1_init      0x00000000        0x0 load address 0x0802f8b4
+.ram1_init      0x00000000        0x0 load address 0x0802f8cc
                 0x00000000                        . = ALIGN (0x4)
-                0x0802f8b4                        __ram1_init_text__ = LOADADDR (.ram1_init)
+                0x0802f8cc                        __ram1_init_text__ = LOADADDR (.ram1_init)
                 0x00000000                        __ram1_init__ = .
  *(.ram1_init)
  *(.ram1_init.*)
                 0x00000000                        . = ALIGN (0x4)
 
-.ram1           0x00000000        0x0 load address 0x0802f8b4
+.ram1           0x00000000        0x0 load address 0x0802f8cc
                 0x00000000                        . = ALIGN (0x4)
                 0x00000000                        __ram1_clear__ = .
  *(.ram1_clear)
@@ -6265,15 +6264,15 @@ xtors           0x080001a0        0x0
                 0x00000000                        . = ALIGN (0x4)
                 0x00000000                        __ram1_free__ = .
 
-.ram2_init      0x00000000        0x0 load address 0x0802f8b4
+.ram2_init      0x00000000        0x0 load address 0x0802f8cc
                 0x00000000                        . = ALIGN (0x4)
-                0x0802f8b4                        __ram2_init_text__ = LOADADDR (.ram2_init)
+                0x0802f8cc                        __ram2_init_text__ = LOADADDR (.ram2_init)
                 0x00000000                        __ram2_init__ = .
  *(.ram2_init)
  *(.ram2_init.*)
                 0x00000000                        . = ALIGN (0x4)
 
-.ram2           0x00000000        0x0 load address 0x0802f8b4
+.ram2           0x00000000        0x0 load address 0x0802f8cc
                 0x00000000                        . = ALIGN (0x4)
                 0x00000000                        __ram2_clear__ = .
  *(.ram2_clear)
@@ -6285,15 +6284,15 @@ xtors           0x080001a0        0x0
                 0x00000000                        . = ALIGN (0x4)
                 0x00000000                        __ram2_free__ = .
 
-.ram3_init      0x00000000        0x0 load address 0x0802f8b4
+.ram3_init      0x00000000        0x0 load address 0x0802f8cc
                 0x00000000                        . = ALIGN (0x4)
-                0x0802f8b4                        __ram3_init_text__ = LOADADDR (.ram3_init)
+                0x0802f8cc                        __ram3_init_text__ = LOADADDR (.ram3_init)
                 0x00000000                        __ram3_init__ = .
  *(.ram3_init)
  *(.ram3_init.*)
                 0x00000000                        . = ALIGN (0x4)
 
-.ram3           0x00000000        0x0 load address 0x0802f8b4
+.ram3           0x00000000        0x0 load address 0x0802f8cc
                 0x00000000                        . = ALIGN (0x4)
                 0x00000000                        __ram3_clear__ = .
  *(.ram3_clear)
@@ -6305,15 +6304,15 @@ xtors           0x080001a0        0x0
                 0x00000000                        . = ALIGN (0x4)
                 0x00000000                        __ram3_free__ = .
 
-.ram4_init      0x10000000        0x0 load address 0x0802f8b4
+.ram4_init      0x10000000        0x0 load address 0x0802f8cc
                 0x10000000                        . = ALIGN (0x4)
-                0x0802f8b4                        __ram4_init_text__ = LOADADDR (.ram4_init)
+                0x0802f8cc                        __ram4_init_text__ = LOADADDR (.ram4_init)
                 0x10000000                        __ram4_init__ = .
  *(.ram4_init)
  *(.ram4_init.*)
                 0x10000000                        . = ALIGN (0x4)
 
-.ram4           0x10000000        0x0 load address 0x0802f8b4
+.ram4           0x10000000        0x0 load address 0x0802f8cc
                 0x10000000                        . = ALIGN (0x4)
                 0x10000000                        __ram4_clear__ = .
  *(.ram4_clear)
@@ -6325,15 +6324,15 @@ xtors           0x080001a0        0x0
                 0x10000000                        . = ALIGN (0x4)
                 0x10000000                        __ram4_free__ = .
 
-.ram5_init      0x00000000        0x0 load address 0x0802f8b4
+.ram5_init      0x00000000        0x0 load address 0x0802f8cc
                 0x00000000                        . = ALIGN (0x4)
-                0x0802f8b4                        __ram5_init_text__ = LOADADDR (.ram5_init)
+                0x0802f8cc                        __ram5_init_text__ = LOADADDR (.ram5_init)
                 0x00000000                        __ram5_init__ = .
  *(.ram5_init)
  *(.ram5_init.*)
                 0x00000000                        . = ALIGN (0x4)
 
-.ram5           0x00000000        0x0 load address 0x0802f8b4
+.ram5           0x00000000        0x0 load address 0x0802f8cc
                 0x00000000                        . = ALIGN (0x4)
                 0x00000000                        __ram5_clear__ = .
  *(.ram5_clear)
@@ -6345,15 +6344,15 @@ xtors           0x080001a0        0x0
                 0x00000000                        . = ALIGN (0x4)
                 0x00000000                        __ram5_free__ = .
 
-.ram6_init      0x00000000        0x0 load address 0x0802f8b4
+.ram6_init      0x00000000        0x0 load address 0x0802f8cc
                 0x00000000                        . = ALIGN (0x4)
-                0x0802f8b4                        __ram6_init_text__ = LOADADDR (.ram6_init)
+                0x0802f8cc                        __ram6_init_text__ = LOADADDR (.ram6_init)
                 0x00000000                        __ram6_init__ = .
  *(.ram6_init)
  *(.ram6_init.*)
                 0x00000000                        . = ALIGN (0x4)
 
-.ram6           0x00000000        0x0 load address 0x0802f8b4
+.ram6           0x00000000        0x0 load address 0x0802f8cc
                 0x00000000                        . = ALIGN (0x4)
                 0x00000000                        __ram6_clear__ = .
  *(.ram6_clear)
@@ -6365,15 +6364,15 @@ xtors           0x080001a0        0x0
                 0x00000000                        . = ALIGN (0x4)
                 0x00000000                        __ram6_free__ = .
 
-.ram7_init      0x00000000        0x0 load address 0x0802f8b4
+.ram7_init      0x00000000        0x0 load address 0x0802f8cc
                 0x00000000                        . = ALIGN (0x4)
-                0x0802f8b4                        __ram7_init_text__ = LOADADDR (.ram7_init)
+                0x0802f8cc                        __ram7_init_text__ = LOADADDR (.ram7_init)
                 0x00000000                        __ram7_init__ = .
  *(.ram7_init)
  *(.ram7_init.*)
                 0x00000000                        . = ALIGN (0x4)
 
-.ram7           0x00000000        0x0 load address 0x0802f8b4
+.ram7           0x00000000        0x0 load address 0x0802f8cc
                 0x00000000                        . = ALIGN (0x4)
                 0x00000000                        __ram7_clear__ = .
  *(.ram7_clear)

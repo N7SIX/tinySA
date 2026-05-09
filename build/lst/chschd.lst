@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccELESml.s 			page 1
+ARM GAS  /tmp/cc1MtXAT.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
   55 0006 0022     		movs	r2, #0
   56 0008 9A60     		str	r2, [r3, #8]
   57              		.loc 1 70 3 is_stmt 1 view .LVU10
-ARM GAS  /tmp/ccELESml.s 			page 2
+ARM GAS  /tmp/cc1MtXAT.s 			page 2
 
 
   58              		.loc 1 70 18 is_stmt 0 view .LVU11
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  112              		.loc 1 231 14 is_stmt 0 discriminator 1 view .LVU32
  113 000a 9968     		ldr	r1, [r3, #8]
  114              		.loc 1 231 26 discriminator 1 view .LVU33
-ARM GAS  /tmp/ccELESml.s 			page 3
+ARM GAS  /tmp/cc1MtXAT.s 			page 3
 
 
  115 000c 8268     		ldr	r2, [r0, #8]
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  169              		.loc 3 416 3 view .LVU51
  170              	.LBB89:
  171              	.LBI89:
-ARM GAS  /tmp/ccELESml.s 			page 4
+ARM GAS  /tmp/cc1MtXAT.s 			page 4
 
 
  172              		.file 4 "ChibiOS/os/common/ports/ARMCMx/chcore_v7m.h"
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  226              	.LVL9:
  227              	.LBB97:
  228              	.LBI97:
-ARM GAS  /tmp/ccELESml.s 			page 5
+ARM GAS  /tmp/cc1MtXAT.s 			page 5
 
 
  229              		.loc 5 546 57 view .LVU73
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  283              	.LBI104:
  284              		.loc 4 628 20 view .LVU93
  285              		.loc 4 631 3 view .LVU94
-ARM GAS  /tmp/ccELESml.s 			page 6
+ARM GAS  /tmp/cc1MtXAT.s 			page 6
 
 
  286              	.LBB105:
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  340              		.cfi_endproc
  341              	.LFE206:
  342              		.size	wakeup, .-wakeup
-ARM GAS  /tmp/ccELESml.s 			page 7
+ARM GAS  /tmp/cc1MtXAT.s 			page 7
 
 
  343              		.section	.text.chSchReadyAheadI,"ax",%progbits
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  397 0016 4260     		str	r2, [r0, #4]
  398              		.loc 1 274 3 is_stmt 1 view .LVU137
  399              		.loc 1 274 30 is_stmt 0 view .LVU138
-ARM GAS  /tmp/ccELESml.s 			page 8
+ARM GAS  /tmp/cc1MtXAT.s 			page 8
 
 
  400 0018 1060     		str	r0, [r2]
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  451              		.loc 2 617 25 view .LVU151
  452              	.LBB112:
  453              		.loc 2 618 3 view .LVU152
-ARM GAS  /tmp/ccELESml.s 			page 9
+ARM GAS  /tmp/cc1MtXAT.s 			page 9
 
 
  454              		.loc 2 618 13 is_stmt 0 view .LVU153
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  508 0022 9342     		cmp	r3, r2
  509 0024 05D3     		bcc	.L21
  510              	.LVL26:
-ARM GAS  /tmp/ccELESml.s 			page 10
+ARM GAS  /tmp/cc1MtXAT.s 			page 10
 
 
  511              	.L19:
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  565 0004 0446     		mov	r4, r0
  566              		.loc 1 376 21 is_stmt 1 view .LVU188
  567              		.loc 1 378 3 view .LVU189
-ARM GAS  /tmp/ccELESml.s 			page 11
+ARM GAS  /tmp/cc1MtXAT.s 			page 11
 
 
  568              		.loc 1 378 6 is_stmt 0 view .LVU190
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  622              		.loc 1 388 5 is_stmt 1 view .LVU206
  623 0032 FFF7FEFF 		bl	chSchGoSleepS
  624              	.LVL38:
-ARM GAS  /tmp/ccELESml.s 			page 12
+ARM GAS  /tmp/cc1MtXAT.s 			page 12
 
 
  625              		.loc 1 388 5 is_stmt 0 view .LVU207
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  679              		.loc 1 429 12 is_stmt 0 view .LVU223
  680 0012 2046     		mov	r0, r4
  681              	.LVL41:
-ARM GAS  /tmp/ccELESml.s 			page 13
+ARM GAS  /tmp/cc1MtXAT.s 			page 13
 
 
  682              		.loc 1 429 12 view .LVU224
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  736 0030 C269     		ldr	r2, [r0, #28]
  737 0032 9342     		cmp	r3, r2
  738 0034 04D3     		bcc	.L36
-ARM GAS  /tmp/ccELESml.s 			page 14
+ARM GAS  /tmp/cc1MtXAT.s 			page 14
 
 
  739              	.LVL48:
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  793              		.loc 1 479 3 is_stmt 1 view .LVU259
  794              		.loc 1 479 16 is_stmt 0 view .LVU260
  795 0006 9B69     		ldr	r3, [r3, #24]
-ARM GAS  /tmp/ccELESml.s 			page 15
+ARM GAS  /tmp/cc1MtXAT.s 			page 15
 
 
  796              		.loc 1 479 11 view .LVU261
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  850              		.loc 2 620 25 view .LVU274
  851 000a 1960     		str	r1, [r3]
  852              		.loc 2 621 3 is_stmt 1 view .LVU275
-ARM GAS  /tmp/ccELESml.s 			page 16
+ARM GAS  /tmp/cc1MtXAT.s 			page 16
 
 
  853              		.loc 2 621 25 is_stmt 0 view .LVU276
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  907              	.LVL63:
  908              	.L43:
  909              		.loc 1 525 3 is_stmt 1 discriminator 3 view .LVU300
-ARM GAS  /tmp/ccELESml.s 			page 17
+ARM GAS  /tmp/cc1MtXAT.s 			page 17
 
 
  910 0028 2146     		mov	r1, r4
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  964              	.LBB130:
  965              	.LBI130:
  966              		.loc 2 617 25 view .LVU311
-ARM GAS  /tmp/ccELESml.s 			page 18
+ARM GAS  /tmp/cc1MtXAT.s 			page 18
 
 
  967              	.LBB131:
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  1021              		.thumb
  1022              		.syntax unified
  1023              	.LBE134:
-ARM GAS  /tmp/ccELESml.s 			page 19
+ARM GAS  /tmp/cc1MtXAT.s 			page 19
 
 
  1024              	.LBE133:
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  1078              		@ frame_needed = 0, uses_anonymous_args = 0
  1079 0000 08B5     		push	{r3, lr}
  1080              		.cfi_def_cfa_offset 8
-ARM GAS  /tmp/ccELESml.s 			page 20
+ARM GAS  /tmp/cc1MtXAT.s 			page 20
 
 
  1081              		.cfi_offset 3, -8
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  1135              		.cfi_def_cfa_offset 8
  1136              		.cfi_offset 4, -8
  1137              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccELESml.s 			page 21
+ARM GAS  /tmp/cc1MtXAT.s 			page 21
 
 
  1138              		.loc 1 567 3 view .LVU363
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  1192              		.loc 5 430 3 view .LVU392
  1193              		.syntax unified
  1194              	@ 430 "ChibiOS/os/common/ext/CMSIS/include/core_cmFunc.h" 1
-ARM GAS  /tmp/ccELESml.s 			page 22
+ARM GAS  /tmp/cc1MtXAT.s 			page 22
 
 
  1195 001c EFF30983 		MRS r3, psp
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  1249              		.size	ch, 92
  1250              	ch:
  1251 0000 00000000 		.space	92
-ARM GAS  /tmp/ccELESml.s 			page 23
+ARM GAS  /tmp/cc1MtXAT.s 			page 23
 
 
  1251      00000000 
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  1302 0058 02       		.byte	0x2
  1303 0059 05       		.byte	0x5
  1304 005a 28040000 		.4byte	.LASF6
-ARM GAS  /tmp/ccELESml.s 			page 24
+ARM GAS  /tmp/cc1MtXAT.s 			page 24
 
 
  1305 005e 02       		.uleb128 0x2
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  1359 00c7 02       		.uleb128 0x2
  1360 00c8 3F020000 		.4byte	.LASF17
  1361 00cc 08       		.byte	0x8
-ARM GAS  /tmp/ccELESml.s 			page 25
+ARM GAS  /tmp/cc1MtXAT.s 			page 25
 
 
  1362 00cd 40       		.byte	0x40
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  1416 0139 A0       		.byte	0xa0
  1417 013a 1A       		.byte	0x1a
  1418 013b A2010000 		.4byte	0x1a2
-ARM GAS  /tmp/ccELESml.s 			page 26
+ARM GAS  /tmp/cc1MtXAT.s 			page 26
 
 
  1419 013f 14       		.byte	0x14
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  1473 01a8 7B010000 		.4byte	.LASF32
  1474 01ac 09       		.byte	0x9
  1475 01ad 49       		.byte	0x49
-ARM GAS  /tmp/ccELESml.s 			page 27
+ARM GAS  /tmp/cc1MtXAT.s 			page 27
 
 
  1476 01ae 20       		.byte	0x20
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  1530 021b 6B01     		.2byte	0x16b
  1531 021d 19       		.byte	0x19
  1532 021e CC010000 		.4byte	0x1cc
-ARM GAS  /tmp/ccELESml.s 			page 28
+ARM GAS  /tmp/cc1MtXAT.s 			page 28
 
 
  1533 0222 00       		.byte	0
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  1587 0290 10       		.uleb128 0x10
  1588 0291 47020000 		.4byte	.LASF44
  1589 0295 14       		.byte	0x14
-ARM GAS  /tmp/ccELESml.s 			page 29
+ARM GAS  /tmp/cc1MtXAT.s 			page 29
 
 
  1590 0296 02       		.byte	0x2
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  1644 0307 DA010000 		.4byte	.LASF38
  1645 030b 5801     		.2byte	0x158
  1646 030d 1A       		.byte	0x1a
-ARM GAS  /tmp/ccELESml.s 			page 30
+ARM GAS  /tmp/cc1MtXAT.s 			page 30
 
 
  1647 030e 95050000 		.4byte	0x595
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  1701 0380 A401     		.2byte	0x1a4
  1702 0382 19       		.byte	0x19
  1703 0383 E0020000 		.4byte	0x2e0
-ARM GAS  /tmp/ccELESml.s 			page 31
+ARM GAS  /tmp/cc1MtXAT.s 			page 31
 
 
  1704 0387 1C       		.byte	0x1c
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  1758 03f0 01       		.uleb128 0x1
  1759 03f1 73313700 		.ascii	"s17\000"
  1760 03f5 04       		.byte	0x4
-ARM GAS  /tmp/ccELESml.s 			page 32
+ARM GAS  /tmp/cc1MtXAT.s 			page 32
 
 
  1761 03f6 6301     		.2byte	0x163
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  1815 0461 73323500 		.ascii	"s25\000"
  1816 0465 04       		.byte	0x4
  1817 0466 6B01     		.2byte	0x16b
-ARM GAS  /tmp/ccELESml.s 			page 33
+ARM GAS  /tmp/cc1MtXAT.s 			page 33
 
 
  1818 0468 11       		.byte	0x11
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  1872 04d3 04       		.byte	0x4
  1873 04d4 7401     		.2byte	0x174
  1874 04d6 11       		.byte	0x11
-ARM GAS  /tmp/ccELESml.s 			page 34
+ARM GAS  /tmp/cc1MtXAT.s 			page 34
 
 
  1875 04d7 A4030000 		.4byte	0x3a4
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  1929 053f 29       		.uleb128 0x29
  1930 0540 04       		.byte	0x4
  1931 0541 02       		.byte	0x2
-ARM GAS  /tmp/ccELESml.s 			page 35
+ARM GAS  /tmp/cc1MtXAT.s 			page 35
 
 
  1932 0542 D2       		.byte	0xd2
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  1986 05b4 21       		.uleb128 0x21
  1987 05b5 A8030000 		.4byte	.LASF67
  1988 05b9 BE       		.byte	0xbe
-ARM GAS  /tmp/ccELESml.s 			page 36
+ARM GAS  /tmp/cc1MtXAT.s 			page 36
 
 
  1989 05ba C4050000 		.4byte	0x5c4
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  2043 063f 72313300 		.ascii	"r13\000"
  2044 0643 5A02     		.2byte	0x25a
  2045 0645 03       		.byte	0x3
-ARM GAS  /tmp/ccELESml.s 			page 37
+ARM GAS  /tmp/cc1MtXAT.s 			page 37
 
 
  2046 0646 3A050000 		.4byte	0x53a
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  2100 06cc 73000000 		.4byte	.LLST43
  2101 06d0 71000000 		.4byte	.LVUS43
  2102 06d4 00       		.byte	0
-ARM GAS  /tmp/ccELESml.s 			page 38
+ARM GAS  /tmp/cc1MtXAT.s 			page 38
 
 
  2103 06d5 12       		.uleb128 0x12
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  2157 0760 0F       		.uleb128 0xf
  2158 0761 3A000000 		.4byte	.LVL79
  2159 0765 FA050000 		.4byte	0x5fa
-ARM GAS  /tmp/ccELESml.s 			page 39
+ARM GAS  /tmp/cc1MtXAT.s 			page 39
 
 
  2160 0769 04       		.uleb128 0x4
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  2214 07f4 15010000 		.4byte	.LVUS33
  2215 07f8 08       		.uleb128 0x8
  2216 07f9 3F0F0000 		.4byte	0xf3f
-ARM GAS  /tmp/ccELESml.s 			page 40
+ARM GAS  /tmp/cc1MtXAT.s 			page 40
 
 
  2217 07fd 1C000000 		.4byte	.LBI127
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  2271 0880 CB0D0000 		.4byte	0xdcb
  2272 0884 00       		.byte	0
  2273 0885 19       		.uleb128 0x19
-ARM GAS  /tmp/ccELESml.s 			page 41
+ARM GAS  /tmp/cc1MtXAT.s 			page 41
 
 
  2274 0886 76020000 		.4byte	.LASF77
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  2328 0911 01       		.uleb128 0x1
  2329 0912 9C       		.byte	0x9c
  2330 0913 EC090000 		.4byte	0x9ec
-ARM GAS  /tmp/ccELESml.s 			page 42
+ARM GAS  /tmp/cc1MtXAT.s 			page 42
 
 
  2331 0917 1A       		.uleb128 0x1a
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  2385 09af 50       		.byte	0x50
  2386 09b0 02       		.uleb128 0x2
  2387 09b1 74       		.byte	0x74
-ARM GAS  /tmp/ccELESml.s 			page 43
+ARM GAS  /tmp/cc1MtXAT.s 			page 43
 
 
  2388 09b2 00       		.sleb128 0
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  2442 0a1c 08050000 		.4byte	.LASF79
  2443 0a20 7601     		.2byte	0x176
  2444 0a22 25       		.byte	0x25
-ARM GAS  /tmp/ccELESml.s 			page 44
+ARM GAS  /tmp/cc1MtXAT.s 			page 44
 
 
  2445 0a23 AF000000 		.4byte	0xaf
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  2499 0aa0 01       		.uleb128 0x1
  2500 0aa1 26       		.uleb128 0x26
  2501 0aa2 A8       		.byte	0xa8
-ARM GAS  /tmp/ccELESml.s 			page 45
+ARM GAS  /tmp/cc1MtXAT.s 			page 45
 
 
  2502 0aa3 2D       		.uleb128 0x2d
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  2556 0b09 747000   		.ascii	"tp\000"
  2557 0b0c 4001     		.2byte	0x140
  2558 0b0e 0D       		.byte	0xd
-ARM GAS  /tmp/ccELESml.s 			page 46
+ARM GAS  /tmp/cc1MtXAT.s 			page 46
 
 
  2559 0b0f A2010000 		.4byte	0x1a2
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  2613 0b98 EF0B0000 		.4byte	0xbef
  2614 0b9c 0A       		.uleb128 0xa
  2615 0b9d 040F0000 		.4byte	0xf04
-ARM GAS  /tmp/ccELESml.s 			page 47
+ARM GAS  /tmp/cc1MtXAT.s 			page 47
 
 
  2616 0ba1 16000000 		.4byte	.LBI95
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  2670 0c27 07       		.byte	.LVU93
  2671 0c28 2C000000 		.4byte	.LBB104
  2672 0c2c 06000000 		.4byte	.LBE104-.LBB104
-ARM GAS  /tmp/ccELESml.s 			page 48
+ARM GAS  /tmp/cc1MtXAT.s 			page 48
 
 
  2673 0c30 04       		.byte	0x4
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  2727 0c9d 00000000 		.4byte	.LFB205
  2728 0ca1 44000000 		.4byte	.LFE205-.LFB205
  2729 0ca5 01       		.uleb128 0x1
-ARM GAS  /tmp/ccELESml.s 			page 49
+ARM GAS  /tmp/cc1MtXAT.s 			page 49
 
 
  2730 0ca6 9C       		.byte	0x9c
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  2784 0d34 04       		.uleb128 0x4
  2785 0d35 01       		.uleb128 0x1
  2786 0d36 50       		.byte	0x50
-ARM GAS  /tmp/ccELESml.s 			page 50
+ARM GAS  /tmp/cc1MtXAT.s 			page 50
 
 
  2787 0d37 05       		.uleb128 0x5
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  2841 0db7 8B050000 		.4byte	0x58b
  2842 0dbb C60D0000 		.4byte	0xdc6
  2843 0dbf 1D       		.uleb128 0x1d
-ARM GAS  /tmp/ccELESml.s 			page 51
+ARM GAS  /tmp/cc1MtXAT.s 			page 51
 
 
  2844 0dc0 2D000000 		.4byte	0x2d
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  2898 0e36 5E0E0000 		.4byte	0xe5e
  2899 0e3a 36       		.uleb128 0x36
  2900 0e3b E90E0000 		.4byte	0xee9
-ARM GAS  /tmp/ccELESml.s 			page 52
+ARM GAS  /tmp/cc1MtXAT.s 			page 52
 
 
  2901 0e3f 00000000 		.4byte	.LBI86
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  2955 0eb4 A2010000 		.4byte	0x1a2
  2956 0eb8 00       		.byte	0
  2957 0eb9 1F       		.uleb128 0x1f
-ARM GAS  /tmp/ccELESml.s 			page 53
+ARM GAS  /tmp/cc1MtXAT.s 			page 53
 
 
  2958 0eba C5030000 		.4byte	.LASF90
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  3012 0f2c 39       		.byte	0x39
  3013 0f2d 3F0F0000 		.4byte	0xf3f
  3014 0f31 39       		.uleb128 0x39
-ARM GAS  /tmp/ccELESml.s 			page 54
+ARM GAS  /tmp/cc1MtXAT.s 			page 54
 
 
  3015 0f32 B2020000 		.4byte	.LASF97
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  3069 001f 00       		.byte	0
  3070 0020 03       		.uleb128 0x3
  3071 0021 0D       		.uleb128 0xd
-ARM GAS  /tmp/ccELESml.s 			page 55
+ARM GAS  /tmp/cc1MtXAT.s 			page 55
 
 
  3072 0022 00       		.byte	0
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  3126 0059 00       		.byte	0
  3127 005a 00       		.byte	0
  3128 005b 07       		.uleb128 0x7
-ARM GAS  /tmp/ccELESml.s 			page 56
+ARM GAS  /tmp/cc1MtXAT.s 			page 56
 
 
  3129 005c 0D       		.uleb128 0xd
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  3183 0094 01       		.byte	0x1
  3184 0095 31       		.uleb128 0x31
  3185 0096 13       		.uleb128 0x13
-ARM GAS  /tmp/ccELESml.s 			page 57
+ARM GAS  /tmp/cc1MtXAT.s 			page 57
 
 
  3186 0097 52       		.uleb128 0x52
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  3240 00cf 00       		.byte	0
  3241 00d0 0F       		.uleb128 0xf
  3242 00d1 48       		.uleb128 0x48
-ARM GAS  /tmp/ccELESml.s 			page 58
+ARM GAS  /tmp/cc1MtXAT.s 			page 58
 
 
  3243 00d2 01       		.byte	0x1
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  3297 0108 12       		.uleb128 0x12
  3298 0109 48       		.uleb128 0x48
  3299 010a 00       		.byte	0
-ARM GAS  /tmp/ccELESml.s 			page 59
+ARM GAS  /tmp/cc1MtXAT.s 			page 59
 
 
  3300 010b 7D       		.uleb128 0x7d
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  3354 0141 00       		.byte	0
  3355 0142 03       		.uleb128 0x3
  3356 0143 0E       		.uleb128 0xe
-ARM GAS  /tmp/ccELESml.s 			page 60
+ARM GAS  /tmp/cc1MtXAT.s 			page 60
 
 
  3357 0144 3A       		.uleb128 0x3a
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  3411 017a 06       		.uleb128 0x6
  3412 017b 40       		.uleb128 0x40
  3413 017c 18       		.uleb128 0x18
-ARM GAS  /tmp/ccELESml.s 			page 61
+ARM GAS  /tmp/cc1MtXAT.s 			page 61
 
 
  3414 017d 7A       		.uleb128 0x7a
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  3468 01b4 00       		.byte	0
  3469 01b5 1E       		.uleb128 0x1e
  3470 01b6 05       		.uleb128 0x5
-ARM GAS  /tmp/ccELESml.s 			page 62
+ARM GAS  /tmp/cc1MtXAT.s 			page 62
 
 
  3471 01b7 00       		.byte	0
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  3525 01ee 0B       		.uleb128 0xb
  3526 01ef 00       		.byte	0
  3527 01f0 00       		.byte	0
-ARM GAS  /tmp/ccELESml.s 			page 63
+ARM GAS  /tmp/cc1MtXAT.s 			page 63
 
 
  3528 01f1 21       		.uleb128 0x21
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  3582 0228 55       		.uleb128 0x55
  3583 0229 17       		.uleb128 0x17
  3584 022a 58       		.uleb128 0x58
-ARM GAS  /tmp/ccELESml.s 			page 64
+ARM GAS  /tmp/cc1MtXAT.s 			page 64
 
 
  3585 022b 21       		.uleb128 0x21
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  3639 0261 3E       		.uleb128 0x3e
  3640 0262 0B       		.uleb128 0xb
  3641 0263 03       		.uleb128 0x3
-ARM GAS  /tmp/ccELESml.s 			page 65
+ARM GAS  /tmp/cc1MtXAT.s 			page 65
 
 
  3642 0264 08       		.uleb128 0x8
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  3696 029a 3F       		.uleb128 0x3f
  3697 029b 19       		.uleb128 0x19
  3698 029c 3C       		.uleb128 0x3c
-ARM GAS  /tmp/ccELESml.s 			page 66
+ARM GAS  /tmp/cc1MtXAT.s 			page 66
 
 
  3699 029d 19       		.uleb128 0x19
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  3753 02d4 08       		.uleb128 0x8
  3754 02d5 3A       		.uleb128 0x3a
  3755 02d6 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccELESml.s 			page 67
+ARM GAS  /tmp/cc1MtXAT.s 			page 67
 
 
  3756 02d7 3B       		.uleb128 0x3b
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  3810 030d 01       		.byte	0x1
  3811 030e 3F       		.uleb128 0x3f
  3812 030f 19       		.uleb128 0x19
-ARM GAS  /tmp/ccELESml.s 			page 68
+ARM GAS  /tmp/cc1MtXAT.s 			page 68
 
 
  3813 0310 03       		.uleb128 0x3
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  3867 0346 02       		.uleb128 0x2
  3868 0347 17       		.uleb128 0x17
  3869 0348 B742     		.uleb128 0x2137
-ARM GAS  /tmp/ccELESml.s 			page 69
+ARM GAS  /tmp/cc1MtXAT.s 			page 69
 
 
  3870 034a 17       		.uleb128 0x17
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  3924 0381 03       		.uleb128 0x3
  3925 0382 0E       		.uleb128 0xe
  3926 0383 3A       		.uleb128 0x3a
-ARM GAS  /tmp/ccELESml.s 			page 70
+ARM GAS  /tmp/cc1MtXAT.s 			page 70
 
 
  3927 0384 0B       		.uleb128 0xb
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  3981 03ba 27       		.uleb128 0x27
  3982 03bb 19       		.uleb128 0x19
  3983 03bc 49       		.uleb128 0x49
-ARM GAS  /tmp/ccELESml.s 			page 71
+ARM GAS  /tmp/cc1MtXAT.s 			page 71
 
 
  3984 03bd 13       		.uleb128 0x13
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  4038 0026 22       		.uleb128 .LVL88-.LVL81
  4039 0027 2E       		.uleb128 .LVL90-.LVL81
  4040 0028 01       		.uleb128 0x1
-ARM GAS  /tmp/ccELESml.s 			page 72
+ARM GAS  /tmp/cc1MtXAT.s 			page 72
 
 
  4041 0029 54       		.byte	0x54
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  4095 0062 01       		.uleb128 .LVU375
  4096              	.LLST42:
  4097 0063 08       		.byte	0x8
-ARM GAS  /tmp/ccELESml.s 			page 73
+ARM GAS  /tmp/cc1MtXAT.s 			page 73
 
 
  4098 0064 06000000 		.4byte	.LVL81
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  4152 00a2 01       		.uleb128 0x1
  4153 00a3 54       		.byte	0x54
  4154 00a4 00       		.byte	0
-ARM GAS  /tmp/ccELESml.s 			page 74
+ARM GAS  /tmp/cc1MtXAT.s 			page 74
 
 
  4155              	.LVUS39:
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  4209 00e2 01       		.uleb128 .LVU320
  4210              	.LLST37:
  4211 00e3 08       		.byte	0x8
-ARM GAS  /tmp/ccELESml.s 			page 75
+ARM GAS  /tmp/cc1MtXAT.s 			page 75
 
 
  4212 00e4 08000000 		.4byte	.LVL69
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  4266 011c 20000000 		.4byte	.LVL61
  4267 0120 04       		.byte	0x4
  4268 0121 00       		.uleb128 .LVL61-.LVL61
-ARM GAS  /tmp/ccELESml.s 			page 76
+ARM GAS  /tmp/cc1MtXAT.s 			page 76
 
 
  4269 0122 02       		.uleb128 .LVL62-.LVL61
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  4323 015f 00       		.uleb128 0
  4324              	.LLST27:
  4325 0160 06       		.byte	0x6
-ARM GAS  /tmp/ccELESml.s 			page 77
+ARM GAS  /tmp/cc1MtXAT.s 			page 77
 
 
  4326 0161 06000000 		.4byte	.LVL53
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  4380 019d 04       		.byte	0x4
  4381 019e 00       		.uleb128 .LVL39-.LVL39
  4382 019f 17       		.uleb128 .LVL42-1-.LVL39
-ARM GAS  /tmp/ccELESml.s 			page 78
+ARM GAS  /tmp/cc1MtXAT.s 			page 78
 
 
  4383 01a0 01       		.uleb128 0x1
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  4437 01d7 0C       		.uleb128 .LVL41-.LVL40
  4438 01d8 01       		.uleb128 0x1
  4439 01d9 50       		.byte	0x50
-ARM GAS  /tmp/ccELESml.s 			page 79
+ARM GAS  /tmp/cc1MtXAT.s 			page 79
 
 
  4440 01da 04       		.byte	0x4
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  4494 0213 9F       		.byte	0x9f
  4495 0214 00       		.byte	0
  4496              	.LVUS26:
-ARM GAS  /tmp/ccELESml.s 			page 80
+ARM GAS  /tmp/cc1MtXAT.s 			page 80
 
 
  4497 0215 00       		.uleb128 .LVU244
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  4551 024f 04       		.byte	0x4
  4552 0250 00       		.uleb128 .LVL31-.LVL31
  4553 0251 17       		.uleb128 .LVL33-1-.LVL31
-ARM GAS  /tmp/ccELESml.s 			page 81
+ARM GAS  /tmp/cc1MtXAT.s 			page 81
 
 
  4554 0252 01       		.uleb128 0x1
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  4608 0288 00       		.uleb128 0
  4609              	.LLST2:
  4610 0289 06       		.byte	0x6
-ARM GAS  /tmp/ccELESml.s 			page 82
+ARM GAS  /tmp/cc1MtXAT.s 			page 82
 
 
  4611 028a 00000000 		.4byte	.LVL6
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  4665 02c4 9F       		.byte	0x9f
  4666 02c5 04       		.byte	0x4
  4667 02c6 32       		.uleb128 .LVL13-.LVL7
-ARM GAS  /tmp/ccELESml.s 			page 83
+ARM GAS  /tmp/cc1MtXAT.s 			page 83
 
 
  4668 02c7 3E       		.uleb128 .LFE206-.LVL7
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  4722 0300 00       		.uleb128 .LVU184
  4723 0301 00       		.uleb128 .LVU184
  4724 0302 00       		.uleb128 0
-ARM GAS  /tmp/ccELESml.s 			page 84
+ARM GAS  /tmp/cc1MtXAT.s 			page 84
 
 
  4725              	.LLST11:
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  4779 033b 00       		.uleb128 .LVU178
  4780 033c 00       		.uleb128 .LVU178
  4781 033d 00       		.uleb128 .LVU179
-ARM GAS  /tmp/ccELESml.s 			page 85
+ARM GAS  /tmp/cc1MtXAT.s 			page 85
 
 
  4782 033e 00       		.uleb128 .LVU183
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  4836 037e 01       		.uleb128 0x1
  4837 037f 52       		.byte	0x52
  4838 0380 00       		.byte	0
-ARM GAS  /tmp/ccELESml.s 			page 86
+ARM GAS  /tmp/cc1MtXAT.s 			page 86
 
 
  4839              	.LVUS10:
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  4893              	.Ldebug_loc3:
  4894              		.section	.debug_aranges,"",%progbits
  4895 0000 74000000 		.4byte	0x74
-ARM GAS  /tmp/ccELESml.s 			page 87
+ARM GAS  /tmp/cc1MtXAT.s 			page 87
 
 
  4896 0004 0200     		.2byte	0x2
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  4950 001e 00       		.uleb128 .LBB107-.LBB107
  4951 001f 0A       		.uleb128 .LBE107-.LBB107
  4952 0020 04       		.byte	0x4
-ARM GAS  /tmp/ccELESml.s 			page 88
+ARM GAS  /tmp/cc1MtXAT.s 			page 88
 
 
  4953 0021 0A       		.uleb128 .LBB110-.LBB107
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  5007 0060 07       		.byte	0x7
  5008 0061 00000000 		.4byte	.LFB202
  5009 0065 14       		.uleb128 .LFE202-.LFB202
-ARM GAS  /tmp/ccELESml.s 			page 89
+ARM GAS  /tmp/cc1MtXAT.s 			page 89
 
 
  5010 0066 07       		.byte	0x7
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  5053 0022 474E5520 		.ascii	"GNU C11 13.2.1 20231009 -mcpu=cortex-m4 -mfloat-abi"
  5053      43313120 
  5053      31332E32 
-ARM GAS  /tmp/ccELESml.s 			page 90
+ARM GAS  /tmp/cc1MtXAT.s 			page 90
 
 
  5053      2E312032 
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  5073              	.LASF64:
  5074 018f 77746F62 		.ascii	"wtobjp\000"
  5074      6A7000
-ARM GAS  /tmp/ccELESml.s 			page 91
+ARM GAS  /tmp/cc1MtXAT.s 			page 91
 
 
  5075              	.LASF94:
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  5099              	.LASF85:
  5100 0226 5F736368 		.ascii	"_scheduler_init\000"
  5100      6564756C 
-ARM GAS  /tmp/ccELESml.s 			page 92
+ARM GAS  /tmp/cc1MtXAT.s 			page 92
 
 
  5100      65725F69 
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  5124      61645F74 
  5124      00
  5125              	.LASF86:
-ARM GAS  /tmp/ccELESml.s 			page 93
+ARM GAS  /tmp/cc1MtXAT.s 			page 93
 
 
  5126 02d8 63685379 		.ascii	"chSysUnlockFromISR\000"
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  5152 036a 63685363 		.ascii	"chSchReadyAheadI\000"
  5152      68526561 
  5152      64794168 
-ARM GAS  /tmp/ccELESml.s 			page 94
+ARM GAS  /tmp/cc1MtXAT.s 			page 94
 
 
  5152      65616449 
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  5176      20646F75 
  5176      626C6500 
  5177              	.LASF102:
-ARM GAS  /tmp/ccELESml.s 			page 95
+ARM GAS  /tmp/cc1MtXAT.s 			page 95
 
 
  5178 0415 2F776F72 		.ascii	"/workspaces/tinySA\000"
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  5202      6C656570 
  5202      5300
  5203              	.LASF16:
-ARM GAS  /tmp/ccELESml.s 			page 96
+ARM GAS  /tmp/cc1MtXAT.s 			page 96
 
 
  5204 04b3 74726566 		.ascii	"trefs_t\000"
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  5229              	.LASF47:
  5230 054d 76697274 		.ascii	"virtual_timers_list_t\000"
  5230      75616C5F 
-ARM GAS  /tmp/ccELESml.s 			page 97
+ARM GAS  /tmp/cc1MtXAT.s 			page 97
 
 
  5230      74696D65 
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  5256      5F756E6C 
  5256      6F636B00 
  5257              	.LASF24:
-ARM GAS  /tmp/ccELESml.s 			page 98
+ARM GAS  /tmp/cc1MtXAT.s 			page 98
 
 
  5258 05f6 6F6C6465 		.ascii	"older\000"
@@ -5832,49 +5832,49 @@ ARM GAS  /tmp/ccELESml.s 			page 1
  5262      745F5053 
  5262      5000
  5263              		.ident	"GCC: (15:13.2.rel1-2) 13.2.1 20231009"
-ARM GAS  /tmp/ccELESml.s 			page 99
+ARM GAS  /tmp/cc1MtXAT.s 			page 99
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 chschd.c
-     /tmp/ccELESml.s:21     .text._scheduler_init:00000000 $t
-     /tmp/ccELESml.s:28     .text._scheduler_init:00000000 _scheduler_init
-     /tmp/ccELESml.s:68     .text._scheduler_init:00000010 $d
-     /tmp/ccELESml.s:1250   .bss.ch:00000000 ch
-     /tmp/ccELESml.s:73     .text.chSchReadyI:00000000 $t
-     /tmp/ccELESml.s:80     .text.chSchReadyI:00000000 chSchReadyI
-     /tmp/ccELESml.s:139    .text.chSchReadyI:00000020 $d
-     /tmp/ccELESml.s:144    .text.wakeup:00000000 $t
-     /tmp/ccELESml.s:150    .text.wakeup:00000000 wakeup
-     /tmp/ccELESml.s:344    .text.chSchReadyAheadI:00000000 $t
-     /tmp/ccELESml.s:351    .text.chSchReadyAheadI:00000000 chSchReadyAheadI
-     /tmp/ccELESml.s:410    .text.chSchReadyAheadI:00000020 $d
-     /tmp/ccELESml.s:415    .rodata.chSchGoSleepS.str1.4:00000000 $d
-     /tmp/ccELESml.s:419    .text.chSchGoSleepS:00000000 $t
-     /tmp/ccELESml.s:426    .text.chSchGoSleepS:00000000 chSchGoSleepS
-     /tmp/ccELESml.s:537    .text.chSchGoSleepS:0000003c $d
-     /tmp/ccELESml.s:544    .text.chSchGoSleepTimeoutS:00000000 $t
-     /tmp/ccELESml.s:551    .text.chSchGoSleepTimeoutS:00000000 chSchGoSleepTimeoutS
-     /tmp/ccELESml.s:630    .text.chSchGoSleepTimeoutS:00000038 $d
-     /tmp/ccELESml.s:636    .text.chSchWakeupS:00000000 $t
-     /tmp/ccELESml.s:643    .text.chSchWakeupS:00000000 chSchWakeupS
-     /tmp/ccELESml.s:765    .text.chSchWakeupS:00000048 $d
-     /tmp/ccELESml.s:772    .text.chSchIsPreemptionRequired:00000000 $t
-     /tmp/ccELESml.s:779    .text.chSchIsPreemptionRequired:00000000 chSchIsPreemptionRequired
-     /tmp/ccELESml.s:811    .text.chSchIsPreemptionRequired:00000014 $d
-     /tmp/ccELESml.s:816    .text.chSchDoRescheduleBehind:00000000 $t
-     /tmp/ccELESml.s:823    .text.chSchDoRescheduleBehind:00000000 chSchDoRescheduleBehind
-     /tmp/ccELESml.s:934    .text.chSchDoRescheduleBehind:0000003c $d
-     /tmp/ccELESml.s:941    .text.chSchDoRescheduleAhead:00000000 $t
-     /tmp/ccELESml.s:948    .text.chSchDoRescheduleAhead:00000000 chSchDoRescheduleAhead
-     /tmp/ccELESml.s:1059   .text.chSchDoRescheduleAhead:0000003c $d
-     /tmp/ccELESml.s:1066   .text.chSchRescheduleS:00000000 $t
-     /tmp/ccELESml.s:1073   .text.chSchRescheduleS:00000000 chSchRescheduleS
-     /tmp/ccELESml.s:1116   .text.chSchRescheduleS:00000018 $d
-     /tmp/ccELESml.s:1121   .text.chSchDoReschedule:00000000 $t
-     /tmp/ccELESml.s:1128   .text.chSchDoReschedule:00000000 chSchDoReschedule
-     /tmp/ccELESml.s:1239   .text.chSchDoReschedule:0000003c $d
-     /tmp/ccELESml.s:1247   .bss.ch:00000000 $d
+     /tmp/cc1MtXAT.s:21     .text._scheduler_init:00000000 $t
+     /tmp/cc1MtXAT.s:28     .text._scheduler_init:00000000 _scheduler_init
+     /tmp/cc1MtXAT.s:68     .text._scheduler_init:00000010 $d
+     /tmp/cc1MtXAT.s:1250   .bss.ch:00000000 ch
+     /tmp/cc1MtXAT.s:73     .text.chSchReadyI:00000000 $t
+     /tmp/cc1MtXAT.s:80     .text.chSchReadyI:00000000 chSchReadyI
+     /tmp/cc1MtXAT.s:139    .text.chSchReadyI:00000020 $d
+     /tmp/cc1MtXAT.s:144    .text.wakeup:00000000 $t
+     /tmp/cc1MtXAT.s:150    .text.wakeup:00000000 wakeup
+     /tmp/cc1MtXAT.s:344    .text.chSchReadyAheadI:00000000 $t
+     /tmp/cc1MtXAT.s:351    .text.chSchReadyAheadI:00000000 chSchReadyAheadI
+     /tmp/cc1MtXAT.s:410    .text.chSchReadyAheadI:00000020 $d
+     /tmp/cc1MtXAT.s:415    .rodata.chSchGoSleepS.str1.4:00000000 $d
+     /tmp/cc1MtXAT.s:419    .text.chSchGoSleepS:00000000 $t
+     /tmp/cc1MtXAT.s:426    .text.chSchGoSleepS:00000000 chSchGoSleepS
+     /tmp/cc1MtXAT.s:537    .text.chSchGoSleepS:0000003c $d
+     /tmp/cc1MtXAT.s:544    .text.chSchGoSleepTimeoutS:00000000 $t
+     /tmp/cc1MtXAT.s:551    .text.chSchGoSleepTimeoutS:00000000 chSchGoSleepTimeoutS
+     /tmp/cc1MtXAT.s:630    .text.chSchGoSleepTimeoutS:00000038 $d
+     /tmp/cc1MtXAT.s:636    .text.chSchWakeupS:00000000 $t
+     /tmp/cc1MtXAT.s:643    .text.chSchWakeupS:00000000 chSchWakeupS
+     /tmp/cc1MtXAT.s:765    .text.chSchWakeupS:00000048 $d
+     /tmp/cc1MtXAT.s:772    .text.chSchIsPreemptionRequired:00000000 $t
+     /tmp/cc1MtXAT.s:779    .text.chSchIsPreemptionRequired:00000000 chSchIsPreemptionRequired
+     /tmp/cc1MtXAT.s:811    .text.chSchIsPreemptionRequired:00000014 $d
+     /tmp/cc1MtXAT.s:816    .text.chSchDoRescheduleBehind:00000000 $t
+     /tmp/cc1MtXAT.s:823    .text.chSchDoRescheduleBehind:00000000 chSchDoRescheduleBehind
+     /tmp/cc1MtXAT.s:934    .text.chSchDoRescheduleBehind:0000003c $d
+     /tmp/cc1MtXAT.s:941    .text.chSchDoRescheduleAhead:00000000 $t
+     /tmp/cc1MtXAT.s:948    .text.chSchDoRescheduleAhead:00000000 chSchDoRescheduleAhead
+     /tmp/cc1MtXAT.s:1059   .text.chSchDoRescheduleAhead:0000003c $d
+     /tmp/cc1MtXAT.s:1066   .text.chSchRescheduleS:00000000 $t
+     /tmp/cc1MtXAT.s:1073   .text.chSchRescheduleS:00000000 chSchRescheduleS
+     /tmp/cc1MtXAT.s:1116   .text.chSchRescheduleS:00000018 $d
+     /tmp/cc1MtXAT.s:1121   .text.chSchDoReschedule:00000000 $t
+     /tmp/cc1MtXAT.s:1128   .text.chSchDoReschedule:00000000 chSchDoReschedule
+     /tmp/cc1MtXAT.s:1239   .text.chSchDoReschedule:0000003c $d
+     /tmp/cc1MtXAT.s:1247   .bss.ch:00000000 $d
 
 UNDEFINED SYMBOLS
 _port_switch

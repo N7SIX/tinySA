@@ -98,7 +98,7 @@ Disassembly of section .text:
  8000298:	20000000 	.word	0x20000000
  800029c:	20000200 	.word	0x20000200
  80002a0:	20000200 	.word	0x20000200
- 80002a4:	0802ea00 	.word	0x0802ea00
+ 80002a4:	0802ea18 	.word	0x0802ea18
  80002a8:	20000680 	.word	0x20000680
  80002ac:	20001534 	.word	0x20001534
  80002b0:	20001538 	.word	0x20001538
@@ -2865,9 +2865,9 @@ void chSysInit(void) {
 }
  8002016:	bd10      	pop	{r4, pc}
  8002018:	200016b0 	.word	0x200016b0
- 800201c:	0802650c 	.word	0x0802650c
+ 800201c:	08026524 	.word	0x08026524
  8002020:	20000200 	.word	0x20000200
- 8002024:	080264f4 	.word	0x080264f4
+ 8002024:	0802650c 	.word	0x0802650c
 	...
 
 08002030 <chSysHalt>:
@@ -4580,7 +4580,7 @@ void halInit(void) {
 }
  8002804:	bd08      	pop	{r3, pc}
  8002806:	bf00      	nop
- 8002808:	08026698 	.word	0x08026698
+ 8002808:	080266b0 	.word	0x080266b0
  800280c:	00000000 	.word	0x00000000
 
 08002810 <stInit>:
@@ -6957,7 +6957,7 @@ static inline void osalEventObjectInit(event_source_t *esp) {
  8003336:	b003      	add	sp, #12
  8003338:	bd30      	pop	{r4, r5, pc}
  800333a:	bf00      	nop
- 800333c:	08026524 	.word	0x08026524
+ 800333c:	0802653c 	.word	0x0802653c
 
 08003340 <sdStart>:
  *                      If this parameter is set to @p NULL then a default
@@ -7383,7 +7383,7 @@ void sduObjectInit(SerialUSBDriver *sdup) {
 }
  80035ac:	b002      	add	sp, #8
  80035ae:	bd10      	pop	{r4, pc}
- 80035b0:	08026544 	.word	0x08026544
+ 80035b0:	0802655c 	.word	0x0802655c
  80035b4:	08003411 	.word	0x08003411
  80035b8:	080033c1 	.word	0x080033c1
  80035bc:	00000000 	.word	0x00000000
@@ -8133,10 +8133,10 @@ static bool default_handler(USBDriver *usbp) {
       return false;
  8003a60:	2000      	movs	r0, #0
  8003a62:	e707      	b.n	8003874 <default_handler+0x44>
- 8003a64:	0802656c 	.word	0x0802656c
+ 8003a64:	08026584 	.word	0x08026584
  8003a68:	08003a81 	.word	0x08003a81
- 8003a6c:	08026564 	.word	0x08026564
- 8003a70:	08026568 	.word	0x08026568
+ 8003a6c:	0802657c 	.word	0x0802657c
+ 8003a70:	08026580 	.word	0x08026580
 	...
 
 08003a80 <set_address>:
@@ -9639,7 +9639,7 @@ void dmaInit(void) {
 }
  8004282:	4770      	bx	lr
  8004284:	200016dc 	.word	0x200016dc
- 8004288:	08026570 	.word	0x08026570
+ 8004288:	08026588 	.word	0x08026588
  800428c:	200016e0 	.word	0x200016e0
  8004290:	40020000 	.word	0x40020000
 	...
@@ -10057,7 +10057,7 @@ void adc_lld_init(void) {
  80044ac:	20001740 	.word	0x20001740
  80044b0:	2000176c 	.word	0x2000176c
  80044b4:	50000300 	.word	0x50000300
- 80044b8:	08026570 	.word	0x08026570
+ 80044b8:	08026588 	.word	0x08026588
  80044bc:	20001744 	.word	0x20001744
  80044c0:	50000100 	.word	0x50000100
  80044c4:	40021000 	.word	0x40021000
@@ -10161,7 +10161,7 @@ void adc_lld_start(ADCDriver *adcp) {
  800455a:	6153      	str	r3, [r2, #20]
  800455c:	e7c9      	b.n	80044f2 <adc_lld_start+0x22>
  800455e:	bf00      	nop
- 8004560:	08026660 	.word	0x08026660
+ 8004560:	08026678 	.word	0x08026678
  8004564:	2000176c 	.word	0x2000176c
  8004568:	20001744 	.word	0x20001744
  800456c:	08004641 	.word	0x08004641
@@ -12859,7 +12859,7 @@ void sd_lld_start(SerialDriver *sdp, const SerialConfig *config) {
  80054c2:	6193      	str	r3, [r2, #24]
  80054c4:	e7f1      	b.n	80054aa <sd_lld_start+0xa>
  80054c6:	bf00      	nop
- 80054c8:	08026664 	.word	0x08026664
+ 80054c8:	0802667c 	.word	0x0802667c
  80054cc:	200017d8 	.word	0x200017d8
  80054d0:	40021000 	.word	0x40021000
 	...
@@ -13662,7 +13662,7 @@ void usb_lld_reset(USBDriver *usbp) {
  8005962:	f44f 421c 	mov.w	r2, #39936	@ 0x9c00
  8005966:	e7f0      	b.n	800594a <usb_lld_reset+0x1a>
  8005968:	40005c00 	.word	0x40005c00
- 800596c:	08026674 	.word	0x08026674
+ 800596c:	0802668c 	.word	0x0802668c
 
 08005970 <usb_lld_get_status_out>:
  * @notapi
@@ -14355,7 +14355,7 @@ ulong_freq(char *p, ulong_t freq, uint32_t width, uint32_t precision)
  8005dfa:	b003      	add	sp, #12
  8005dfc:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
  8005e00:	cccccccd 	.word	0xcccccccd
- 8005e04:	0802675c 	.word	0x0802675c
+ 8005e04:	08026774 	.word	0x08026774
 	...
 
 08005e10 <ftoa>:
@@ -14425,7 +14425,7 @@ static char *ftoa(char *p, float num, uint32_t precision) {
   return p;
  8005e84:	e7f2      	b.n	8005e6c <ftoa+0x5c>
  8005e86:	bf00      	nop
- 8005e88:	08026768 	.word	0x08026768
+ 8005e88:	08026780 	.word	0x08026780
  8005e8c:	00000000 	.word	0x00000000
 
 08005e90 <ftoaS>:
@@ -14552,9 +14552,9 @@ static char *ftoaS(char *p, float num, int precision) {
  8005f54:	e7cd      	b.n	8005ef2 <ftoaS+0x62>
  8005f56:	bf00      	nop
  8005f58:	447a0000 	.word	0x447a0000
- 8005f5c:	0802675d 	.word	0x0802675d
+ 8005f5c:	08026775 	.word	0x08026775
  8005f60:	3a83126f 	.word	0x3a83126f
- 8005f64:	08026750 	.word	0x08026750
+ 8005f64:	08026768 	.word	0x08026768
 	...
 
 08005f70 <etoa>:
@@ -15290,7 +15290,7 @@ void printObjectInit(printStream *ps, int size, uint8_t *buffer){
 }
  8006578:	4770      	bx	lr
  800657a:	bf00      	nop
- 800657c:	08026740 	.word	0x08026740
+ 800657c:	08026758 	.word	0x08026758
 
 08006580 <plot_printf>:
 // Simple print in buffer function
@@ -15526,7 +15526,7 @@ static LBA_t clst2sect (	/* !=0:Sector number, 0:Failed (invalid cluster#) */
 		if (i >= FF_MAX_LFN + 1) return 0;	/* Buffer overflow? */
  80066a4:	2000      	movs	r0, #0
  80066a6:	e7f9      	b.n	800669c <pick_lfn+0x6c>
- 80066a8:	08026810 	.word	0x08026810
+ 80066a8:	08026828 	.word	0x08026828
  80066ac:	00000000 	.word	0x00000000
 
 080066b0 <put_lfn>:
@@ -15594,7 +15594,7 @@ static LBA_t clst2sect (	/* !=0:Sector number, 0:Failed (invalid cluster#) */
 }
  800670c:	bd30      	pop	{r4, r5, pc}
  800670e:	bf00      	nop
- 8006710:	08026810 	.word	0x08026810
+ 8006710:	08026828 	.word	0x08026828
 	...
 
 08006720 <sum_sfn>:
@@ -15733,7 +15733,7 @@ static void init_alloc_info (
 	return chr;
 }
  80067ce:	4770      	bx	lr
- 80067d0:	08026790 	.word	0x08026790
+ 80067d0:	080267a8 	.word	0x080267a8
 	...
 
 080067e0 <pattern_match>:
@@ -18877,7 +18877,7 @@ static FRESULT validate (	/* Returns FR_OK or FR_INVALID_OBJECT */
  8007e36:	e7a0      	b.n	8007d7a <create_name+0x19a>
  8007e38:	08024b68 	.word	0x08024b68
  8007e3c:	08024b74 	.word	0x08024b74
- 8007e40:	08026790 	.word	0x08026790
+ 8007e40:	080267a8 	.word	0x080267a8
 	...
 
 08007e50 <xname_sum>:
@@ -19060,7 +19060,7 @@ static FRESULT validate (	/* Returns FR_OK or FR_INVALID_OBJECT */
  8007f9a:	2000      	movs	r0, #0
  8007f9c:	e7f9      	b.n	8007f92 <cmp_lfn+0x82>
  8007f9e:	bf00      	nop
- 8007fa0:	08026810 	.word	0x08026810
+ 8007fa0:	08026828 	.word	0x08026828
 	...
 
 08007fb0 <load_xdir>:
@@ -21936,7 +21936,7 @@ FRESULT f_unlink (
 }
  8009308:	4770      	bx	lr
  800930a:	bf00      	nop
- 800930c:	08026ad0 	.word	0x08026ad0
+ 800930c:	08026ae8 	.word	0x08026ae8
 
 08009310 <ff_oem2uni>:
 {
@@ -21974,7 +21974,7 @@ FRESULT f_unlink (
 }
  8009334:	4770      	bx	lr
  8009336:	bf00      	nop
- 8009338:	08026ad0 	.word	0x08026ad0
+ 8009338:	08026ae8 	.word	0x08026ae8
  800933c:	00000000 	.word	0x00000000
 
 08009340 <ff_wtoupper>:
@@ -22083,8 +22083,8 @@ FRESULT f_unlink (
  80093d4:	e7e1      	b.n	800939a <ff_wtoupper+0x5a>
 }
  80093d6:	4770      	bx	lr
- 80093d8:	080268dc 	.word	0x080268dc
- 80093dc:	08026820 	.word	0x08026820
+ 80093d8:	080268f4 	.word	0x080268f4
+ 80093dc:	08026838 	.word	0x08026838
 
 080093e0 <get_descriptor>:
                                            uint8_t dindex,
@@ -22123,9 +22123,9 @@ FRESULT f_unlink (
  8009404:	2000      	movs	r0, #0
 }
  8009406:	4770      	bx	lr
- 8009408:	08026cd0 	.word	0x08026cd0
- 800940c:	08026c30 	.word	0x08026c30
- 8009410:	08026c84 	.word	0x08026c84
+ 8009408:	08026ce8 	.word	0x08026ce8
+ 800940c:	08026c48 	.word	0x08026c48
+ 8009410:	08026c9c 	.word	0x08026c9c
 	...
 
 08009420 <sof_handler>:
@@ -22192,8 +22192,8 @@ static void usb_event(USBDriver *usbp, usbevent_t event) {
  8009484:	bd10      	pop	{r4, pc}
  8009486:	bf00      	nop
  8009488:	20001a78 	.word	0x20001a78
- 800948c:	08026c0c 	.word	0x08026c0c
- 8009490:	08026be8 	.word	0x08026be8
+ 800948c:	08026c24 	.word	0x08026c24
+ 8009490:	08026c00 	.word	0x08026c00
 	...
 
 080094a0 <adc_interrupt>:
@@ -22288,7 +22288,7 @@ static inline void adc_interrupt(void)
  8009530:	8820      	ldrh	r0, [r4, #0]
  8009532:	bd10      	pop	{r4, pc}
  8009534:	20001d04 	.word	0x20001d04
- 8009538:	08026d18 	.word	0x08026d18
+ 8009538:	08026d30 	.word	0x08026d30
  800953c:	2000176c 	.word	0x2000176c
 
 08009540 <adc_vbat_read>:
@@ -22381,7 +22381,7 @@ static inline void adc_interrupt(void)
  80095e0:	200006d8 	.word	0x200006d8
  80095e4:	1ffff700 	.word	0x1ffff700
  80095e8:	20001d08 	.word	0x20001d08
- 80095ec:	08026d44 	.word	0x08026d44
+ 80095ec:	08026d5c 	.word	0x08026d5c
  80095f0:	2000176c 	.word	0x2000176c
  80095f4:	20001d00 	.word	0x20001d00
  80095f8:	200007ec 	.word	0x200007ec
@@ -22399,7 +22399,7 @@ static inline void adc_interrupt(void)
 }
  800960e:	bd08      	pop	{r3, pc}
  8009610:	20001d04 	.word	0x20001d04
- 8009614:	08026cec 	.word	0x08026cec
+ 8009614:	08026d04 	.word	0x08026d04
  8009618:	20001744 	.word	0x20001744
  800961c:	00000000 	.word	0x00000000
 
@@ -23285,7 +23285,7 @@ void set_repeat(int r)
  8009b9c:	bd10      	pop	{r4, pc}
  8009b9e:	bf00      	nop
  8009ba0:	20000758 	.word	0x20000758
- 8009ba4:	0802750c 	.word	0x0802750c
+ 8009ba4:	08027524 	.word	0x08027524
 	...
 
 08009bb0 <cmd_e>:
@@ -23319,7 +23319,7 @@ void set_repeat(int r)
 }
  8009bde:	bd38      	pop	{r3, r4, r5, pc}
  8009be0:	200032f0 	.word	0x200032f0
- 8009be4:	08026d70 	.word	0x08026d70
+ 8009be4:	08026d88 	.word	0x08026d88
 	...
 
 08009bf0 <cmd_k>:
@@ -23343,7 +23343,7 @@ VNA_SHELL_FUNCTION(cmd_k)
  8009c04:	460b      	mov	r3, r1
  8009c06:	4801      	ldr	r0, [pc, #4]	@ (8009c0c <cmd_k+0x1c>)
  8009c08:	f7ff bfa2 	b.w	8009b50 <shell_printf>
- 8009c0c:	08027709 	.word	0x08027709
+ 8009c0c:	08027721 	.word	0x08027721
 
 08009c10 <cmd_v>:
     if (argc != 1) {
@@ -23375,8 +23375,8 @@ VNA_SHELL_FUNCTION(cmd_k)
     shell_printf("VFO %d\r\n", VFO);
  8009c3a:	e7ef      	b.n	8009c1c <cmd_v+0xc>
  8009c3c:	2000201c 	.word	0x2000201c
- 8009c40:	08026f08 	.word	0x08026f08
- 8009c44:	08026d77 	.word	0x08026d77
+ 8009c40:	08026f20 	.word	0x08026f20
+ 8009c44:	08026d8f 	.word	0x08026d8f
 	...
 
 08009c50 <cmd_threads>:
@@ -23437,10 +23437,10 @@ VNA_SHELL_FUNCTION(cmd_k)
  8009cb2:	3301      	adds	r3, #1
  8009cb4:	e7db      	b.n	8009c6e <cmd_threads+0x1e>
  8009cb6:	bf00      	nop
- 8009cb8:	08026d80 	.word	0x08026d80
- 8009cbc:	08027857 	.word	0x08027857
- 8009cc0:	08026dc7 	.word	0x08026dc7
- 8009cc4:	08028fa0 	.word	0x08028fa0
+ 8009cb8:	08026d98 	.word	0x08026d98
+ 8009cbc:	0802786f 	.word	0x0802786f
+ 8009cc0:	08026ddf 	.word	0x08026ddf
+ 8009cc4:	08028fb8 	.word	0x08028fb8
 	...
 
 08009cd0 <cmd_sd_card_mount>:
@@ -23461,9 +23461,9 @@ static FRESULT cmd_sd_card_mount(void){
 }
  8009ce8:	4620      	mov	r0, r4
  8009cea:	bd10      	pop	{r4, pc}
- 8009cec:	08027857 	.word	0x08027857
+ 8009cec:	0802786f 	.word	0x0802786f
  8009cf0:	20007f2c 	.word	0x20007f2c
- 8009cf4:	08026dee 	.word	0x08026dee
+ 8009cf4:	08026e06 	.word	0x08026e06
 	...
 
 08009d00 <cmd_info>:
@@ -23492,10 +23492,10 @@ static FRESULT cmd_sd_card_mount(void){
     shell_printf("%s%s\r\n", info_about[i], (i == 0 ? hw_text : ""));
  8009d28:	4642      	mov	r2, r8
  8009d2a:	e7f8      	b.n	8009d1e <cmd_info+0x1e>
- 8009d2c:	0802adb0 	.word	0x0802adb0
+ 8009d2c:	0802adc8 	.word	0x0802adc8
  8009d30:	2000075c 	.word	0x2000075c
- 8009d34:	08026e02 	.word	0x08026e02
- 8009d38:	08027857 	.word	0x08027857
+ 8009d34:	08026e1a 	.word	0x08026e1a
+ 8009d38:	0802786f 	.word	0x0802786f
  8009d3c:	00000000 	.word	0x00000000
 
 08009d40 <cmd_help>:
@@ -23562,12 +23562,12 @@ static FRESULT cmd_sd_card_mount(void){
     scp++;
  8009d94:	340a      	adds	r4, #10
  8009d96:	e7e2      	b.n	8009d5e <cmd_help+0x1e>
- 8009d98:	08026e11 	.word	0x08026e11
- 8009d9c:	08028b98 	.word	0x08028b98
+ 8009d98:	08026e29 	.word	0x08026e29
+ 8009d9c:	08028bb0 	.word	0x08028bb0
  8009da0:	08010e61 	.word	0x08010e61
- 8009da4:	080280f6 	.word	0x080280f6
- 8009da8:	08026e09 	.word	0x08026e09
- 8009dac:	080276f4 	.word	0x080276f4
+ 8009da4:	0802810e 	.word	0x0802810e
+ 8009da8:	08026e21 	.word	0x08026e21
+ 8009dac:	0802770c 	.word	0x0802770c
 
 08009db0 <cmd_vbat_offset>:
   if (argc != 1 || argv[0][0] == '?') {
@@ -23594,7 +23594,7 @@ static FRESULT cmd_sd_card_mount(void){
 }
  8009dd6:	bd10      	pop	{r4, pc}
  8009dd8:	200007ec 	.word	0x200007ec
- 8009ddc:	08026f08 	.word	0x08026f08
+ 8009ddc:	08026f20 	.word	0x08026f20
 
 08009de0 <cmd_vbat>:
 {
@@ -23608,7 +23608,7 @@ static FRESULT cmd_sd_card_mount(void){
  8009dec:	4801      	ldr	r0, [pc, #4]	@ (8009df4 <cmd_vbat+0x14>)
  8009dee:	f7ff beaf 	b.w	8009b50 <shell_printf>
  8009df2:	bf00      	nop
- 8009df4:	08026e1b 	.word	0x08026e1b
+ 8009df4:	08026e33 	.word	0x08026e33
 	...
 
 08009e00 <cmd_channel>:
@@ -23665,9 +23665,9 @@ static FRESULT cmd_sd_card_mount(void){
  8009e5a:	4804      	ldr	r0, [pc, #16]	@ (8009e6c <cmd_channel+0x6c>)
  8009e5c:	f7ff be78 	b.w	8009b50 <shell_printf>
  8009e60:	20003238 	.word	0x20003238
- 8009e64:	08026e23 	.word	0x08026e23
- 8009e68:	08026e31 	.word	0x08026e31
- 8009e6c:	08026e39 	.word	0x08026e39
+ 8009e64:	08026e3b 	.word	0x08026e3b
+ 8009e68:	08026e49 	.word	0x08026e49
+ 8009e6c:	08026e51 	.word	0x08026e51
 
 08009e70 <cmd_save>:
   if (argc != 1 || argv[0][0] == '?')
@@ -23703,7 +23703,7 @@ static FRESULT cmd_sd_card_mount(void){
  8009ea4:	e7fb      	b.n	8009e9e <cmd_save+0x2e>
  8009ea6:	bf00      	nop
  8009ea8:	20005b8a 	.word	0x20005b8a
- 8009eac:	08026e49 	.word	0x08026e49
+ 8009eac:	08026e61 	.word	0x08026e61
 
 08009eb0 <cmd_status>:
 {
@@ -23720,8 +23720,8 @@ static FRESULT cmd_sd_card_mount(void){
  8009ec2:	4802      	ldr	r0, [pc, #8]	@ (8009ecc <cmd_status+0x1c>)
  8009ec4:	e7f9      	b.n	8009eba <cmd_status+0xa>
  8009ec6:	bf00      	nop
- 8009ec8:	08026e55 	.word	0x08026e55
- 8009ecc:	08026e5e 	.word	0x08026e5e
+ 8009ec8:	08026e6d 	.word	0x08026e6d
+ 8009ecc:	08026e76 	.word	0x08026e76
 
 08009ed0 <cmd_touchcal>:
 {
@@ -23758,12 +23758,12 @@ static FRESULT cmd_sd_card_mount(void){
   shell_printf("\r\n");
  8009f02:	4806      	ldr	r0, [pc, #24]	@ (8009f1c <cmd_touchcal+0x4c>)
  8009f04:	f7ff be24 	b.w	8009b50 <shell_printf>
- 8009f08:	08026e68 	.word	0x08026e68
+ 8009f08:	08026e80 	.word	0x08026e80
  8009f0c:	20000832 	.word	0x20000832
- 8009f10:	08027ccc 	.word	0x08027ccc
- 8009f14:	08026e94 	.word	0x08026e94
- 8009f18:	08026e9b 	.word	0x08026e9b
- 8009f1c:	080276f4 	.word	0x080276f4
+ 8009f10:	08027ce4 	.word	0x08027ce4
+ 8009f14:	08026eac 	.word	0x08026eac
+ 8009f18:	08026eb3 	.word	0x08026eb3
+ 8009f1c:	0802770c 	.word	0x0802770c
 
 08009f20 <cmd_test>:
   while (argc > 1) {
@@ -23788,7 +23788,7 @@ static FRESULT cmd_sd_card_mount(void){
  8009f42:	e7f1      	b.n	8009f28 <cmd_test+0x8>
  8009f44:	4770      	bx	lr
  8009f46:	bf00      	nop
- 8009f48:	08026eae 	.word	0x08026eae
+ 8009f48:	08026ec6 	.word	0x08026ec6
  8009f4c:	00000000 	.word	0x00000000
 
 08009f50 <cmd_abort>:
@@ -23828,8 +23828,8 @@ static FRESULT cmd_sd_card_mount(void){
  8009f82:	2204      	movs	r2, #4
  8009f84:	701a      	strb	r2, [r3, #0]
  8009f86:	e7fa      	b.n	8009f7e <cmd_abort+0x2e>
- 8009f88:	080288bc 	.word	0x080288bc
- 8009f8c:	08026ebd 	.word	0x08026ebd
+ 8009f88:	080288d4 	.word	0x080288d4
+ 8009f8c:	08026ed5 	.word	0x08026ed5
  8009f90:	20007114 	.word	0x20007114
  8009f94:	20007116 	.word	0x20007116
 	...
@@ -23844,7 +23844,7 @@ static FRESULT cmd_sd_card_mount(void){
   shell_printf("Config saved.\r\n");
  8009faa:	4801      	ldr	r0, [pc, #4]	@ (8009fb0 <cmd_saveconfig+0x10>)
  8009fac:	f7ff bdd0 	b.w	8009b50 <shell_printf>
- 8009fb0:	08026ed1 	.word	0x08026ed1
+ 8009fb0:	08026ee9 	.word	0x08026ee9
 	...
 
 08009fc0 <cmd_reset>:
@@ -23868,7 +23868,7 @@ static FRESULT cmd_sd_card_mount(void){
   while (1)
  8009fdc:	e7fe      	b.n	8009fdc <cmd_reset+0x1c>
  8009fde:	bf00      	nop
- 8009fe0:	08026ee1 	.word	0x08026ee1
+ 8009fe0:	08026ef9 	.word	0x08026ef9
  8009fe4:	40021000 	.word	0x40021000
  8009fe8:	40002c00 	.word	0x40002c00
  8009fec:	00000000 	.word	0x00000000
@@ -23900,7 +23900,7 @@ static FRESULT cmd_sd_card_mount(void){
  800a014:	b004      	add	sp, #16
  800a016:	4770      	bx	lr
  800a018:	20005be0 	.word	0x20005be0
- 800a01c:	08026ef4 	.word	0x08026ef4
+ 800a01c:	08026f0c 	.word	0x08026f0c
 
 0800a020 <cmd_z>:
   if (argc != 1) {
@@ -23925,7 +23925,7 @@ static FRESULT cmd_sd_card_mount(void){
 }
  800a042:	bd10      	pop	{r4, pc}
  800a044:	20001530 	.word	0x20001530
- 800a048:	08026efc 	.word	0x08026efc
+ 800a048:	08026f14 	.word	0x08026f14
  800a04c:	200032f0 	.word	0x200032f0
  800a050:	20001454 	.word	0x20001454
 	...
@@ -23953,7 +23953,7 @@ static FRESULT cmd_sd_card_mount(void){
 }
  800a082:	bd10      	pop	{r4, pc}
  800a084:	2000152c 	.word	0x2000152c
- 800a088:	08026efc 	.word	0x08026efc
+ 800a088:	08026f14 	.word	0x08026f14
  800a08c:	200032f0 	.word	0x200032f0
  800a090:	20001454 	.word	0x20001454
 	...
@@ -24048,7 +24048,7 @@ static FRESULT cmd_sd_card_mount(void){
  800a11a:	bf00      	nop
  800a11c:	2000233c 	.word	0x2000233c
  800a120:	20001454 	.word	0x20001454
- 800a124:	08026f0d 	.word	0x08026f0d
+ 800a124:	08026f25 	.word	0x08026f25
  800a128:	20002338 	.word	0x20002338
  800a12c:	20002334 	.word	0x20002334
  800a130:	2000232c 	.word	0x2000232c
@@ -24118,11 +24118,11 @@ static FRESULT cmd_sd_card_mount(void){
  800a1a6:	4801      	ldr	r0, [pc, #4]	@ (800a1ac <cmd_sd_delete+0x6c>)
  800a1a8:	e7d7      	b.n	800a15a <cmd_sd_delete+0x1a>
  800a1aa:	bf00      	nop
- 800a1ac:	08026f33 	.word	0x08026f33
- 800a1b0:	08027857 	.word	0x08027857
- 800a1b4:	080282e7 	.word	0x080282e7
- 800a1b8:	08026f30 	.word	0x08026f30
- 800a1bc:	08026f4a 	.word	0x08026f4a
+ 800a1ac:	08026f4b 	.word	0x08026f4b
+ 800a1b0:	0802786f 	.word	0x0802786f
+ 800a1b4:	080282ff 	.word	0x080282ff
+ 800a1b8:	08026f48 	.word	0x08026f48
+ 800a1bc:	08026f62 	.word	0x08026f62
 
 0800a1c0 <cmd_sd_read>:
   if (argc != 1 || argv[0][0] == '?')
@@ -24203,9 +24203,9 @@ static FRESULT cmd_sd_card_mount(void){
  800a23e:	4798      	blx	r3
  800a240:	e7e9      	b.n	800a216 <cmd_sd_read+0x56>
  800a242:	bf00      	nop
- 800a244:	08026f5a 	.word	0x08026f5a
+ 800a244:	08026f72 	.word	0x08026f72
  800a248:	20007cdc 	.word	0x20007cdc
- 800a24c:	08026f76 	.word	0x08026f76
+ 800a24c:	08026f8e 	.word	0x08026f8e
  800a250:	20005be0 	.word	0x20005be0
  800a254:	20007168 	.word	0x20007168
 	...
@@ -24269,11 +24269,11 @@ static FRESULT cmd_sd_card_mount(void){
  800a2c0:	4805      	ldr	r0, [pc, #20]	@ (800a2d8 <cmd_sd_list+0x78>)
  800a2c2:	f7ff fc45 	bl	8009b50 <shell_printf>
  800a2c6:	e7e1      	b.n	800a28c <cmd_sd_list+0x2c>
- 800a2c8:	08027857 	.word	0x08027857
- 800a2cc:	08026fa2 	.word	0x08026fa2
- 800a2d0:	08026f8e 	.word	0x08026f8e
- 800a2d4:	08026f8a 	.word	0x08026f8a
- 800a2d8:	08026faa 	.word	0x08026faa
+ 800a2c8:	0802786f 	.word	0x0802786f
+ 800a2cc:	08026fba 	.word	0x08026fba
+ 800a2d0:	08026fa6 	.word	0x08026fa6
+ 800a2d4:	08026fa2 	.word	0x08026fa2
+ 800a2d8:	08026fc2 	.word	0x08026fc2
  800a2dc:	00000000 	.word	0x00000000
 
 0800a2e0 <cmd_agc>:
@@ -24322,8 +24322,8 @@ static FRESULT cmd_sd_card_mount(void){
  800a326:	4801      	ldr	r0, [pc, #4]	@ (800a32c <cmd_agc+0x4c>)
  800a328:	e7e4      	b.n	800a2f4 <cmd_agc+0x14>
  800a32a:	bf00      	nop
- 800a32c:	08026fb6 	.word	0x08026fb6
- 800a330:	080277eb 	.word	0x080277eb
+ 800a32c:	08026fce 	.word	0x08026fce
+ 800a330:	08027803 	.word	0x08027803
  800a334:	20002020 	.word	0x20002020
 	...
 
@@ -24372,8 +24372,8 @@ static FRESULT cmd_sd_card_mount(void){
     usage_printf("lna2 0..7|auto\r\n");
  800a384:	4800      	ldr	r0, [pc, #0]	@ (800a388 <cmd_lna2+0x48>)
  800a386:	e7e5      	b.n	800a354 <cmd_lna2+0x14>
- 800a388:	08026fc6 	.word	0x08026fc6
- 800a38c:	080277eb 	.word	0x080277eb
+ 800a388:	08026fde 	.word	0x08026fde
+ 800a38c:	08027803 	.word	0x08027803
  800a390:	20002020 	.word	0x20002020
 	...
 
@@ -24426,7 +24426,7 @@ static FRESULT cmd_sd_card_mount(void){
  800a3ea:	f44f 707a 	mov.w	r0, #1000	@ 0x3e8
  800a3ee:	f7f8 f907 	bl	8002600 <chThdSleep>
  800a3f2:	e7ec      	b.n	800a3ce <cmd_waitscan+0x2e>
- 800a3f4:	08026fd7 	.word	0x08026fd7
+ 800a3f4:	08026fef 	.word	0x08026fef
  800a3f8:	20007115 	.word	0x20007115
  800a3fc:	20005b8a 	.word	0x20005b8a
 
@@ -24492,7 +24492,7 @@ static FRESULT cmd_sd_card_mount(void){
       t -= 1;
  800a464:	3c01      	subs	r4, #1
  800a466:	e7ef      	b.n	800a448 <cmd_wait+0x48>
- 800a468:	08026fec 	.word	0x08026fec
+ 800a468:	08027004 	.word	0x08027004
  800a46c:	20007115 	.word	0x20007115
  800a470:	20005b8a 	.word	0x20005b8a
 	...
@@ -24522,7 +24522,7 @@ static FRESULT cmd_sd_card_mount(void){
 }
  800a4a6:	bd10      	pop	{r4, pc}
  800a4a8:	200007ec 	.word	0x200007ec
- 800a4ac:	08026ffd 	.word	0x08026ffd
+ 800a4ac:	08027015 	.word	0x08027015
 
 0800a4b0 <cmd_data>:
   if (argc != 1 || argv[0][0] == '?')
@@ -24577,11 +24577,11 @@ static FRESULT cmd_sd_card_mount(void){
  800a508:	f7ff bd72 	b.w	8009ff0 <usage_printf>
  800a50c:	4804      	ldr	r0, [pc, #16]	@ (800a520 <cmd_data+0x70>)
  800a50e:	e7fb      	b.n	800a508 <cmd_data+0x58>
- 800a510:	080288b8 	.word	0x080288b8
+ 800a510:	080288d0 	.word	0x080288d0
  800a514:	20003928 	.word	0x20003928
  800a518:	200032f0 	.word	0x200032f0
- 800a51c:	08027013 	.word	0x08027013
- 800a520:	08027018 	.word	0x08027018
+ 800a51c:	0802702b 	.word	0x0802702b
+ 800a520:	08027030 	.word	0x08027030
 	...
 
 0800a530 <cmd_clearconfig>:
@@ -24619,10 +24619,10 @@ static FRESULT cmd_sd_card_mount(void){
  800a562:	4801      	ldr	r0, [pc, #4]	@ (800a568 <cmd_clearconfig+0x38>)
  800a564:	e7ee      	b.n	800a544 <cmd_clearconfig+0x14>
  800a566:	bf00      	nop
- 800a568:	08027025 	.word	0x08027025
- 800a56c:	08028476 	.word	0x08028476
- 800a570:	08027044 	.word	0x08027044
- 800a574:	08027055 	.word	0x08027055
+ 800a568:	0802703d 	.word	0x0802703d
+ 800a56c:	0802848e 	.word	0x0802848e
+ 800a570:	0802705c 	.word	0x0802705c
+ 800a574:	0802706d 	.word	0x0802706d
 	...
 
 0800a580 <my_atoui>:
@@ -24796,7 +24796,7 @@ calculate:
  800a6c0:	bd10      	pop	{r4, pc}
  800a6c2:	bf00      	nop
  800a6c4:	20005be8 	.word	0x20005be8
- 800a6c8:	080270b7 	.word	0x080270b7
+ 800a6c8:	080270cf 	.word	0x080270cf
  800a6cc:	00000000 	.word	0x00000000
 
 0800a6d0 <cmd_a>:
@@ -24823,7 +24823,7 @@ calculate:
  800a6f0:	bd10      	pop	{r4, pc}
  800a6f2:	bf00      	nop
  800a6f4:	20005bf0 	.word	0x20005bf0
- 800a6f8:	080270be 	.word	0x080270be
+ 800a6f8:	080270d6 	.word	0x080270d6
  800a6fc:	00000000 	.word	0x00000000
 
 0800a700 <cmd_selftest>:
@@ -24869,7 +24869,7 @@ calculate:
  800a742:	4601      	mov	r1, r0
  800a744:	e7f5      	b.n	800a732 <cmd_selftest+0x32>
  800a746:	bf00      	nop
- 800a748:	080270c5 	.word	0x080270c5
+ 800a748:	080270dd 	.word	0x080270dd
  800a74c:	200032f0 	.word	0x200032f0
  800a750:	20003910 	.word	0x20003910
  800a754:	20001458 	.word	0x20001458
@@ -24910,8 +24910,8 @@ calculate:
  800a78e:	f7ff bc2f 	b.w	8009ff0 <usage_printf>
  800a792:	bf00      	nop
  800a794:	200007ec 	.word	0x200007ec
- 800a798:	080270dc 	.word	0x080270dc
- 800a79c:	080270ea 	.word	0x080270ea
+ 800a798:	080270f4 	.word	0x080270f4
+ 800a79c:	08027102 	.word	0x08027102
 
 0800a7a0 <cmd_direct>:
   if (argc<1 || argc>2)
@@ -24978,10 +24978,10 @@ calculate:
  800a80a:	4804      	ldr	r0, [pc, #16]	@ (800a81c <cmd_direct+0x7c>)
  800a80c:	e7fa      	b.n	800a804 <cmd_direct+0x64>
  800a80e:	bf00      	nop
- 800a810:	08028ac4 	.word	0x08028ac4
+ 800a810:	08028adc 	.word	0x08028adc
  800a814:	2000141c 	.word	0x2000141c
  800a818:	200007ec 	.word	0x200007ec
- 800a81c:	08027100 	.word	0x08027100
+ 800a81c:	08027118 	.word	0x08027118
 
 0800a820 <cmd_if1>:
   if (argc != 1 || argv[0][0] == '?') {
@@ -25026,7 +25026,7 @@ calculate:
  800a86a:	f018 bc29 	b.w	80230c0 <config_save>
  800a86e:	bf00      	nop
  800a870:	200007ec 	.word	0x200007ec
- 800a874:	08027119 	.word	0x08027119
+ 800a874:	08027131 	.word	0x08027131
  800a878:	ca82c340 	.word	0xca82c340
  800a87c:	09896800 	.word	0x09896800
  800a880:	200013fc 	.word	0x200013fc
@@ -25110,9 +25110,9 @@ calculate:
  800a912:	8013      	strh	r3, [r2, #0]
  800a914:	e7dc      	b.n	800a8d0 <cmd_color+0x40>
  800a916:	bf00      	nop
- 800a918:	08027132 	.word	0x08027132
+ 800a918:	0802714a 	.word	0x0802714a
  800a91c:	200007f2 	.word	0x200007f2
- 800a920:	08027147 	.word	0x08027147
+ 800a920:	0802715f 	.word	0x0802715f
  800a924:	200007ec 	.word	0x200007ec
  800a928:	20005b8a 	.word	0x20005b8a
  800a92c:	00000000 	.word	0x00000000
@@ -25187,7 +25187,7 @@ calculate:
  800a9a8:	200017e4 	.word	0x200017e4
  800a9ac:	20001808 	.word	0x20001808
  800a9b0:	20001a78 	.word	0x20001a78
- 800a9b4:	080276f4 	.word	0x080276f4
+ 800a9b4:	0802770c 	.word	0x0802770c
 	...
 
 0800a9c0 <cmd_dac>:
@@ -25222,7 +25222,7 @@ calculate:
 }
  800a9ee:	bd10      	pop	{r4, pc}
  800a9f0:	200007ec 	.word	0x200007ec
- 800a9f4:	08027156 	.word	0x08027156
+ 800a9f4:	0802716e 	.word	0x0802716e
  800a9f8:	40007400 	.word	0x40007400
  800a9fc:	00000000 	.word	0x00000000
 
@@ -25321,10 +25321,10 @@ calculate:
  800aab8:	e8bd 83f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, pc}
  800aabc:	40002800 	.word	0x40002800
  800aac0:	00ff1f3f 	.word	0x00ff1f3f
- 800aac4:	0802717f 	.word	0x0802717f
- 800aac8:	080288a8 	.word	0x080288a8
- 800aacc:	080288a0 	.word	0x080288a0
- 800aad0:	08027181 	.word	0x08027181
+ 800aac4:	08027197 	.word	0x08027197
+ 800aac8:	080288c0 	.word	0x080288c0
+ 800aacc:	080288b8 	.word	0x080288b8
+ 800aad0:	08027199 	.word	0x08027199
 	...
 
 0800aae0 <cmd_freq>:
@@ -25352,7 +25352,7 @@ calculate:
   usage_printf("freq {frequency(Hz)}\r\n");
  800ab04:	4800      	ldr	r0, [pc, #0]	@ (800ab08 <cmd_freq+0x28>)
  800ab06:	e7f5      	b.n	800aaf4 <cmd_freq+0x14>
- 800ab08:	080271ce 	.word	0x080271ce
+ 800ab08:	080271e6 	.word	0x080271e6
  800ab0c:	00000000 	.word	0x00000000
 
 0800ab10 <my_atof>:
@@ -25743,21 +25743,21 @@ calculate:
  800ade4:	480e      	ldr	r0, [pc, #56]	@ (800ae20 <cmd_correction+0x170>)
  800ade6:	f7fe feb3 	bl	8009b50 <shell_printf>
  800adea:	e7ad      	b.n	800ad48 <cmd_correction+0x98>
- 800adec:	08028ae0 	.word	0x08028ae0
+ 800adec:	08028af8 	.word	0x08028af8
  800adf0:	200032f0 	.word	0x200032f0
- 800adf4:	08027714 	.word	0x08027714
+ 800adf4:	0802772c 	.word	0x0802772c
  800adf8:	20001454 	.word	0x20001454
- 800adfc:	080271e9 	.word	0x080271e9
- 800ae00:	080271e5 	.word	0x080271e5
- 800ae04:	080271f9 	.word	0x080271f9
+ 800adfc:	08027201 	.word	0x08027201
+ 800ae00:	080271fd 	.word	0x080271fd
+ 800ae04:	08027211 	.word	0x08027211
  800ae08:	200007ec 	.word	0x200007ec
- 800ae0c:	0802722c 	.word	0x0802722c
- 800ae10:	08027232 	.word	0x08027232
- 800ae14:	08028ad8 	.word	0x08028ad8
- 800ae18:	0802724e 	.word	0x0802724e
+ 800ae0c:	08027244 	.word	0x08027244
+ 800ae10:	0802724a 	.word	0x0802724a
+ 800ae14:	08028af0 	.word	0x08028af0
+ 800ae18:	08027266 	.word	0x08027266
  800ae1c:	20005b8a 	.word	0x20005b8a
- 800ae20:	08027279 	.word	0x08027279
- 800ae24:	08027211 	.word	0x08027211
+ 800ae20:	08027291 	.word	0x08027291
+ 800ae24:	08027229 	.word	0x08027229
 	...
 
 0800ae30 <cmd_leveloffset>:
@@ -26068,30 +26068,30 @@ calculate:
  800b0de:	ed83 0a19 	vstr	s0, [r3, #100]	@ 0x64
  800b0e2:	e7ab      	b.n	800b03c <cmd_leveloffset+0x20c>
  800b0e4:	200007ec 	.word	0x200007ec
- 800b0e8:	08027291 	.word	0x08027291
- 800b0ec:	08027a16 	.word	0x08027a16
- 800b0f0:	080272a7 	.word	0x080272a7
- 800b0f4:	080272ba 	.word	0x080272ba
- 800b0f8:	080272b2 	.word	0x080272b2
- 800b0fc:	080272c1 	.word	0x080272c1
- 800b100:	08027337 	.word	0x08027337
- 800b104:	080272cc 	.word	0x080272cc
- 800b108:	080272d5 	.word	0x080272d5
- 800b10c:	080272e2 	.word	0x080272e2
- 800b110:	080272e8 	.word	0x080272e8
- 800b114:	080272ef 	.word	0x080272ef
- 800b118:	080272f6 	.word	0x080272f6
- 800b11c:	080272fd 	.word	0x080272fd
- 800b120:	08027304 	.word	0x08027304
- 800b124:	0802730b 	.word	0x0802730b
- 800b128:	08027312 	.word	0x08027312
- 800b12c:	08027319 	.word	0x08027319
- 800b130:	08027320 	.word	0x08027320
- 800b134:	0802732b 	.word	0x0802732b
- 800b138:	08027331 	.word	0x08027331
- 800b13c:	0802733b 	.word	0x0802733b
- 800b140:	0802733f 	.word	0x0802733f
- 800b144:	080289c0 	.word	0x080289c0
+ 800b0e8:	080272a9 	.word	0x080272a9
+ 800b0ec:	08027a2e 	.word	0x08027a2e
+ 800b0f0:	080272bf 	.word	0x080272bf
+ 800b0f4:	080272d2 	.word	0x080272d2
+ 800b0f8:	080272ca 	.word	0x080272ca
+ 800b0fc:	080272d9 	.word	0x080272d9
+ 800b100:	0802734f 	.word	0x0802734f
+ 800b104:	080272e4 	.word	0x080272e4
+ 800b108:	080272ed 	.word	0x080272ed
+ 800b10c:	080272fa 	.word	0x080272fa
+ 800b110:	08027300 	.word	0x08027300
+ 800b114:	08027307 	.word	0x08027307
+ 800b118:	0802730e 	.word	0x0802730e
+ 800b11c:	08027315 	.word	0x08027315
+ 800b120:	0802731c 	.word	0x0802731c
+ 800b124:	08027323 	.word	0x08027323
+ 800b128:	0802732a 	.word	0x0802732a
+ 800b12c:	08027331 	.word	0x08027331
+ 800b130:	08027338 	.word	0x08027338
+ 800b134:	08027343 	.word	0x08027343
+ 800b138:	08027349 	.word	0x08027349
+ 800b13c:	08027353 	.word	0x08027353
+ 800b140:	08027357 	.word	0x08027357
+ 800b144:	080289d8 	.word	0x080289d8
  800b148:	20001454 	.word	0x20001454
  800b14c:	20001440 	.word	0x20001440
   if (argc == 3 && get_str_index(argv[1], "output") == 0){
@@ -26130,10 +26130,10 @@ calculate:
  800b190:	4903      	ldr	r1, [pc, #12]	@ (800b1a0 <cmd_leveloffset+0x370>)
  800b192:	4804      	ldr	r0, [pc, #16]	@ (800b1a4 <cmd_leveloffset+0x374>)
  800b194:	f7fe bcdc 	b.w	8009b50 <shell_printf>
- 800b198:	08028426 	.word	0x08028426
+ 800b198:	0802843e 	.word	0x0802843e
  800b19c:	200007ec 	.word	0x200007ec
- 800b1a0:	080289c0 	.word	0x080289c0
- 800b1a4:	0802734d 	.word	0x0802734d
+ 800b1a0:	080289d8 	.word	0x080289d8
+ 800b1a4:	08027365 	.word	0x08027365
 	...
 
 0800b1b0 <cmd_nf>:
@@ -26171,7 +26171,7 @@ calculate:
  800b1e4:	bd70      	pop	{r4, r5, r6, pc}
  800b1e6:	bf00      	nop
  800b1e8:	200007ec 	.word	0x200007ec
- 800b1ec:	08027374 	.word	0x08027374
+ 800b1ec:	0802738c 	.word	0x0802738c
  800b1f0:	20001454 	.word	0x20001454
 	...
 
@@ -26196,7 +26196,7 @@ calculate:
  800b21c:	701c      	strb	r4, [r3, #0]
 }
  800b21e:	bd10      	pop	{r4, pc}
- 800b220:	08027385 	.word	0x08027385
+ 800b220:	0802739d 	.word	0x0802739d
  800b224:	200032f0 	.word	0x200032f0
  800b228:	20001454 	.word	0x20001454
  800b22c:	00000000 	.word	0x00000000
@@ -26248,7 +26248,7 @@ calculate:
  800b27e:	bf00      	nop
  800b280:	20001a78 	.word	0x20001a78
  800b284:	20005be0 	.word	0x20005be0
- 800b288:	080273a3 	.word	0x080273a3
+ 800b288:	080273bb 	.word	0x080273bb
  800b28c:	20003924 	.word	0x20003924
 
 0800b290 <clear_frequency_cache>:
@@ -26450,8 +26450,8 @@ calculate:
  800b438:	20005b78 	.word	0x20005b78
  800b43c:	c5be0f40 	.word	0xc5be0f40
  800b440:	200070c8 	.word	0x200070c8
- 800b444:	080273a8 	.word	0x080273a8
- 800b448:	080273b5 	.word	0x080273b5
+ 800b444:	080273c0 	.word	0x080273c0
+ 800b448:	080273cd 	.word	0x080273cd
  800b44c:	20005b80 	.word	0x20005b80
  800b450:	20005b58 	.word	0x20005b58
  800b454:	03938700 	.word	0x03938700
@@ -26538,13 +26538,13 @@ calculate:
  800b4e8:	4901      	ldr	r1, [pc, #4]	@ (800b4f0 <cmd_ultra+0x90>)
  800b4ea:	4807      	ldr	r0, [pc, #28]	@ (800b508 <cmd_ultra+0xa8>)
  800b4ec:	f7fe bd80 	b.w	8009ff0 <usage_printf>
- 800b4f0:	080273c6 	.word	0x080273c6
+ 800b4f0:	080273de 	.word	0x080273de
  800b4f4:	200007ec 	.word	0x200007ec
  800b4f8:	2000140c 	.word	0x2000140c
  800b4fc:	200032c8 	.word	0x200032c8
  800b500:	20001454 	.word	0x20001454
  800b504:	540be400 	.word	0x540be400
- 800b508:	080273dd 	.word	0x080273dd
+ 800b508:	080273f5 	.word	0x080273f5
  800b50c:	00000000 	.word	0x00000000
 
 0800b510 <calc_min_sweep_time_us>:
@@ -26666,8 +26666,8 @@ calculate:
  800b5e2:	f7ff bfdd 	b.w	800b5a0 <set_refer_output>
 }
  800b5e6:	bd08      	pop	{r3, pc}
- 800b5e8:	08028904 	.word	0x08028904
- 800b5ec:	080273ef 	.word	0x080273ef
+ 800b5e8:	0802891c 	.word	0x0802891c
+ 800b5ec:	08027407 	.word	0x08027407
 
 0800b5f0 <set_decay>:
   if (d < 0 || d > 1000000)
@@ -26869,7 +26869,7 @@ calculate:
  800b7c0:	f7ff bfae 	b.w	800b720 <set_freq_corr>
  800b7c4:	200007ec 	.word	0x200007ec
  800b7c8:	4d2fa200 	.word	0x4d2fa200
- 800b7cc:	080273fe 	.word	0x080273fe
+ 800b7cc:	08027416 	.word	0x08027416
 
 0800b7d0 <set_actual_freq>:
   if (f < 3000000000 - 30000 || f > 3000000000 + 30000)
@@ -26933,7 +26933,7 @@ calculate:
  800b846:	f7ff bfc3 	b.w	800b7d0 <set_actual_freq>
  800b84a:	bf00      	nop
  800b84c:	200007ec 	.word	0x200007ec
- 800b850:	08027407 	.word	0x08027407
+ 800b850:	0802741f 	.word	0x0802741f
 	...
 
 0800b860 <set_measurement>:
@@ -27090,7 +27090,7 @@ calculate:
  800b98e:	bf00      	nop
  800b990:	49742400 	.word	0x49742400
  800b994:	200032f0 	.word	0x200032f0
- 800b998:	0802740c 	.word	0x0802740c
+ 800b998:	08027424 	.word	0x08027424
  800b99c:	00000000 	.word	0x00000000
 
 0800b9a0 <toggle_tracking_output>:
@@ -27500,9 +27500,9 @@ calculate:
     case 5: set_deviation(a); break;
  800bcba:	f7ff bf79 	b.w	800bbb0 <set_deviation>
  800bcbe:	bf00      	nop
- 800bcc0:	08028a90 	.word	0x08028a90
- 800bcc4:	0802742a 	.word	0x0802742a
- 800bcc8:	08028a78 	.word	0x08028a78
+ 800bcc0:	08028aa8 	.word	0x08028aa8
+ 800bcc4:	08027442 	.word	0x08027442
+ 800bcc8:	08028a90 	.word	0x08028a90
  800bccc:	200032f0 	.word	0x200032f0
  800bcd0:	20001454 	.word	0x20001454
 	...
@@ -27624,9 +27624,9 @@ void set_IF(int f)
  800bdaa:	bf00      	nop
  800bdac:	20002022 	.word	0x20002022
  800bdb0:	200032f0 	.word	0x200032f0
- 800bdb4:	0802744f 	.word	0x0802744f
- 800bdb8:	08027444 	.word	0x08027444
- 800bdbc:	0802745c 	.word	0x0802745c
+ 800bdb4:	08027467 	.word	0x08027467
+ 800bdb8:	0802745c 	.word	0x0802745c
+ 800bdbc:	08027474 	.word	0x08027474
  800bdc0:	3a41f0c0 	.word	0x3a41f0c0
  800bdc4:	3fc86e20 	.word	0x3fc86e20
  800bdc8:	ffb3b4c0 	.word	0xffb3b4c0
@@ -28575,8 +28575,8 @@ static void calculate_static_correction(void)                   // Calculate the
  800c548:	f7ff ff6a 	bl	800c420 <set_attenuation>
  800c54c:	e7e6      	b.n	800c51c <cmd_attenuate+0x3c>
  800c54e:	bf00      	nop
- 800c550:	08027473 	.word	0x08027473
- 800c554:	080277eb 	.word	0x080277eb
+ 800c550:	0802748b 	.word	0x0802748b
+ 800c554:	08027803 	.word	0x08027803
  800c558:	200032f0 	.word	0x200032f0
  800c55c:	20005b8a 	.word	0x20005b8a
 
@@ -29345,9 +29345,9 @@ void set_actual_correction_value(int current_curve,int current_curve_index, floa
   set_average(t, m);
  800cb4c:	f7ff bfa0 	b.w	800ca90 <set_average>
  800cb50:	200032f0 	.word	0x200032f0
- 800cb54:	08028b40 	.word	0x08028b40
- 800cb58:	08027491 	.word	0x08027491
- 800cb5c:	0802bf88 	.word	0x0802bf88
+ 800cb54:	08028b58 	.word	0x08028b58
+ 800cb58:	080274a9 	.word	0x080274a9
+ 800cb5c:	0802bfa0 	.word	0x0802bfa0
  800cb60:	200007d0 	.word	0x200007d0
 	...
 
@@ -29473,7 +29473,7 @@ void set_actual_correction_value(int current_curve,int current_curve_index, floa
  800cc5a:	bf00      	nop
  800cc5c:	200032f0 	.word	0x200032f0
  800cc60:	200014c8 	.word	0x200014c8
- 800cc64:	080274aa 	.word	0x080274aa
+ 800cc64:	080274c2 	.word	0x080274c2
  800cc68:	20005b8a 	.word	0x20005b8a
  800cc6c:	20001454 	.word	0x20001454
 
@@ -29502,7 +29502,7 @@ void set_actual_correction_value(int current_curve,int current_curve_index, floa
     usage_printf("ext_gain -100.0..+100.0\r\n");
  800cc94:	4800      	ldr	r0, [pc, #0]	@ (800cc98 <cmd_ext_gain+0x28>)
  800cc96:	e7f5      	b.n	800cc84 <cmd_ext_gain+0x14>
- 800cc98:	080274b3 	.word	0x080274b3
+ 800cc98:	080274cb 	.word	0x080274cb
  800cc9c:	00000000 	.word	0x00000000
 
 0800cca0 <set_trigger_level>:
@@ -29632,8 +29632,8 @@ void set_actual_correction_value(int current_curve,int current_curve_index, floa
  800cd76:	4802      	ldr	r0, [pc, #8]	@ (800cd80 <cmd_line+0x60>)
  800cd78:	e7e4      	b.n	800cd44 <cmd_line+0x24>
  800cd7a:	bf00      	nop
- 800cd7c:	080271e5 	.word	0x080271e5
- 800cd80:	080274cd 	.word	0x080274cd
+ 800cd7c:	080271fd 	.word	0x080271fd
+ 800cd80:	080274e5 	.word	0x080274e5
  800cd84:	200032f0 	.word	0x200032f0
  800cd88:	20005b8a 	.word	0x20005b8a
  800cd8c:	00000000 	.word	0x00000000
@@ -29705,8 +29705,8 @@ void set_actual_correction_value(int current_curve,int current_curve_index, floa
  800ce00:	200032f0 	.word	0x200032f0
  800ce04:	20005b8a 	.word	0x20005b8a
  800ce08:	20005b89 	.word	0x20005b89
- 800ce0c:	08028970 	.word	0x08028970
- 800ce10:	080274e0 	.word	0x080274e0
+ 800ce0c:	08028988 	.word	0x08028988
+ 800ce10:	080274f8 	.word	0x080274f8
 	...
 
 0800ce20 <set_fast_speedup>:
@@ -29889,7 +29889,7 @@ void set_actual_correction_value(int current_curve,int current_curve_index, floa
  800cf6c:	20001530 	.word	0x20001530
  800cf70:	2000152c 	.word	0x2000152c
  800cf74:	200032e8 	.word	0x200032e8
- 800cf78:	08029570 	.word	0x08029570
+ 800cf78:	08029588 	.word	0x08029588
  800cf7c:	200007d4 	.word	0x200007d4
  800cf80:	3d000000 	.word	0x3d000000
  800cf84:	200032b8 	.word	0x200032b8
@@ -30557,20 +30557,20 @@ void set_actual_correction_value(int current_curve,int current_curve_index, floa
  800d554:	2000232c 	.word	0x2000232c
  800d558:	20003920 	.word	0x20003920
  800d55c:	20001a78 	.word	0x20001a78
- 800d560:	08027500 	.word	0x08027500
+ 800d560:	08027518 	.word	0x08027518
  800d564:	435a6e80 	.word	0x435a6e80
  800d568:	200007ec 	.word	0x200007ec
  800d56c:	540be400 	.word	0x540be400
  800d570:	20005b80 	.word	0x20005b80
  800d574:	3d000000 	.word	0x3d000000
  800d578:	200007c4 	.word	0x200007c4
- 800d57c:	08029654 	.word	0x08029654
+ 800d57c:	0802966c 	.word	0x0802966c
  800d580:	00000000 	.word	0x00000000
  800d584:	42000000 	.word	0x42000000
  800d588:	00000006 	.word	0x00000006
  800d58c:	20005b78 	.word	0x20005b78
  800d590:	310dfbc0 	.word	0x310dfbc0
- 800d594:	08029664 	.word	0x08029664
+ 800d594:	0802967c 	.word	0x0802967c
  800d598:	42080000 	.word	0x42080000
  800d59c:	3d8d4fdf 	.word	0x3d8d4fdf
  800d5a0:	3d656042 	.word	0x3d656042
@@ -30810,7 +30810,7 @@ void set_actual_correction_value(int current_curve,int current_curve_index, floa
  800d7c4:	00000000 	.word	0x00000000
  800d7c8:	20003920 	.word	0x20003920
  800d7cc:	20001a78 	.word	0x20001a78
- 800d7d0:	08027513 	.word	0x08027513
+ 800d7d0:	0802752b 	.word	0x0802752b
  800d7d4:	c1fc0000 	.word	0xc1fc0000
 	...
 
@@ -31276,7 +31276,7 @@ void set_actual_correction_value(int current_curve,int current_curve_index, floa
  800dba8:	200007b8 	.word	0x200007b8
  800dbac:	200032e8 	.word	0x200032e8
  800dbb0:	20002022 	.word	0x20002022
- 800dbb4:	080293b0 	.word	0x080293b0
+ 800dbb4:	080293c8 	.word	0x080293c8
  800dbb8:	200007b0 	.word	0x200007b0
  800dbbc:	200032f0 	.word	0x200032f0
  800dbc0:	20002750 	.word	0x20002750
@@ -31531,8 +31531,8 @@ void set_actual_correction_value(int current_curve,int current_curve_index, floa
  800ddbe:	bd10      	pop	{r4, pc}
  800ddc0:	200032e8 	.word	0x200032e8
  800ddc4:	42c80000 	.word	0x42c80000
- 800ddc8:	0802753a 	.word	0x0802753a
- 800ddcc:	08027556 	.word	0x08027556
+ 800ddc8:	08027552 	.word	0x08027552
+ 800ddcc:	0802756e 	.word	0x0802756e
  800ddd0:	200032f0 	.word	0x200032f0
  800ddd4:	3e4ccccd 	.word	0x3e4ccccd
  800ddd8:	44548000 	.word	0x44548000
@@ -32433,14 +32433,14 @@ void cell_draw_test_info(int x0, int y0)
  800e442:	bf00      	nop
  800e444:	20002218 	.word	0x20002218
  800e448:	20002218 	.word	0x20002218
- 800e44c:	0802755d 	.word	0x0802755d
+ 800e44c:	08027575 	.word	0x08027575
  800e450:	20002214 	.word	0x20002214
- 800e454:	08027570 	.word	0x08027570
- 800e458:	08029058 	.word	0x08029058
+ 800e454:	08027588 	.word	0x08027588
+ 800e458:	08029070 	.word	0x08029070
  800e45c:	2000229c 	.word	0x2000229c
- 800e460:	0802758a 	.word	0x0802758a
- 800e464:	08029068 	.word	0x08029068
- 800e468:	0802889c 	.word	0x0802889c
+ 800e460:	080275a2 	.word	0x080275a2
+ 800e464:	08029080 	.word	0x08029080
+ 800e468:	080288b4 	.word	0x080288b4
  800e46c:	00000000 	.word	0x00000000
 
 0800e470 <validate_signal_within>:
@@ -32613,20 +32613,20 @@ int validate_signal_within(int i, float margin)
  800e5c0:	2003      	movs	r0, #3
  800e5c2:	e7be      	b.n	800e542 <validate_signal_within+0xd2>
  800e5c4:	2000229c 	.word	0x2000229c
- 800e5c8:	08027599 	.word	0x08027599
- 800e5cc:	08029068 	.word	0x08029068
+ 800e5c8:	080275b1 	.word	0x080275b1
+ 800e5cc:	08029080 	.word	0x08029080
  800e5d0:	2000220c 	.word	0x2000220c
  800e5d4:	200007ec 	.word	0x200007ec
  800e5d8:	20002a98 	.word	0x20002a98
  800e5dc:	200032f0 	.word	0x200032f0
  800e5e0:	20002a90 	.word	0x20002a90
  800e5e4:	20003228 	.word	0x20003228
- 800e5e8:	080275a7 	.word	0x080275a7
+ 800e5e8:	080275bf 	.word	0x080275bf
  800e5ec:	20000798 	.word	0x20000798
- 800e5f0:	080275b1 	.word	0x080275b1
+ 800e5f0:	080275c9 	.word	0x080275c9
  800e5f4:	fff85ee0 	.word	0xfff85ee0
  800e5f8:	0007a120 	.word	0x0007a120
- 800e5fc:	08027857 	.word	0x08027857
+ 800e5fc:	0802786f 	.word	0x0802786f
  800e600:	49742400 	.word	0x49742400
  800e604:	20002022 	.word	0x20002022
  800e608:	3689cac0 	.word	0x3689cac0
@@ -32710,7 +32710,7 @@ int validate_below(int tc, int from, int to) {
  800e680:	20003928 	.word	0x20003928
  800e684:	00000000 	.word	0x00000000
  800e688:	2000229c 	.word	0x2000229c
- 800e68c:	080275bc 	.word	0x080275bc
+ 800e68c:	080275d4 	.word	0x080275d4
 
 0800e690 <validate_flatness>:
 
@@ -32811,13 +32811,13 @@ int validate_flatness(int i) {          // This assumes only trace 1 is active
  800e73c:	2002      	movs	r0, #2
  800e73e:	e7db      	b.n	800e6f8 <validate_flatness+0x68>
  800e740:	2000229c 	.word	0x2000229c
- 800e744:	080275c3 	.word	0x080275c3
+ 800e744:	080275db 	.word	0x080275db
  800e748:	20002a8c 	.word	0x20002a8c
  800e74c:	20003928 	.word	0x20003928
  800e750:	200032f0 	.word	0x200032f0
  800e754:	20002a98 	.word	0x20002a98
- 800e758:	08029068 	.word	0x08029068
- 800e75c:	08027857 	.word	0x08027857
+ 800e758:	08029080 	.word	0x08029080
+ 800e75c:	0802786f 	.word	0x0802786f
 
 0800e760 <validate_display>:
     test_fail_cause[i] = "";
@@ -32849,8 +32849,8 @@ int validate_display(int tc)
  800e77c:	2002      	movs	r0, #2
  800e77e:	e7fc      	b.n	800e77a <validate_display+0x1a>
  800e780:	2000229c 	.word	0x2000229c
- 800e784:	080275cd 	.word	0x080275cd
- 800e788:	08027857 	.word	0x08027857
+ 800e784:	080275e5 	.word	0x080275e5
+ 800e788:	0802786f 	.word	0x0802786f
  800e78c:	00000000 	.word	0x00000000
 
 0800e790 <validate_above>:
@@ -32909,7 +32909,7 @@ int validate_above(int tc) {
  800e7e0:	200032f0 	.word	0x200032f0
  800e7e4:	20003928 	.word	0x20003928
  800e7e8:	2000229c 	.word	0x2000229c
- 800e7ec:	080275bc 	.word	0x080275bc
+ 800e7ec:	080275d4 	.word	0x080275d4
 
 0800e7f0 <measure_jump>:
 }
@@ -33508,7 +33508,7 @@ void calibration_busy(void) {
  800ebe0:	2128      	movs	r1, #40	@ 0x28
  800ebe2:	f013 bbbd 	b.w	8022360 <ili9341_drawstring_7x13>
  800ebe6:	bf00      	nop
- 800ebe8:	080275d6 	.word	0x080275d6
+ 800ebe8:	080275ee 	.word	0x080275ee
  800ebec:	00000000 	.word	0x00000000
 
 0800ebf0 <set_marker_time>:
@@ -35077,12 +35077,12 @@ void add_to_peak_finding(float *trace_data, int i) {
  800f914:	e7d8      	b.n	800f8c8 <cmd_marker+0x228>
  800f916:	bf00      	nop
  800f918:	200032f0 	.word	0x200032f0
- 800f91c:	080275e7 	.word	0x080275e7
+ 800f91c:	080275ff 	.word	0x080275ff
  800f920:	20005b8a 	.word	0x20005b8a
- 800f924:	080271e5 	.word	0x080271e5
- 800f928:	0802898c 	.word	0x0802898c
- 800f92c:	08028984 	.word	0x08028984
- 800f930:	080275f7 	.word	0x080275f7
+ 800f924:	080271fd 	.word	0x080271fd
+ 800f928:	080289a4 	.word	0x080289a4
+ 800f92c:	0802899c 	.word	0x0802899c
+ 800f930:	0802760f 	.word	0x0802760f
 	...
 
 0800f940 <cmd_frequencies>:
@@ -35111,7 +35111,7 @@ void add_to_peak_finding(float *trace_data, int i) {
  800f964:	e7f0      	b.n	800f948 <cmd_frequencies+0x8>
  800f966:	bf00      	nop
  800f968:	200032f0 	.word	0x200032f0
- 800f96c:	080270c0 	.word	0x080270c0
+ 800f96c:	080270d8 	.word	0x080270d8
 
 0800f970 <get_sweep_frequency>:
 {
@@ -35309,8 +35309,8 @@ void add_to_peak_finding(float *trace_data, int i) {
  800fb0c:	bd10      	pop	{r4, pc}
  800fb0e:	bf00      	nop
  800fb10:	200032f0 	.word	0x200032f0
- 800fb14:	08027621 	.word	0x08027621
- 800fb18:	08027631 	.word	0x08027631
+ 800fb14:	08027639 	.word	0x08027639
+ 800fb18:	08027649 	.word	0x08027649
  800fb1c:	00000000 	.word	0x00000000
 
 0800fb20 <update_frequencies>:
@@ -35787,9 +35787,9 @@ void add_to_peak_finding(float *trace_data, int i) {
  800ff0c:	f7f9 be20 	b.w	8009b50 <shell_printf>
  800ff10:	4802      	ldr	r0, [pc, #8]	@ (800ff1c <cmd_recall+0x4c>)
  800ff12:	e7fb      	b.n	800ff0c <cmd_recall+0x3c>
- 800ff14:	08027641 	.word	0x08027641
+ 800ff14:	08027659 	.word	0x08027659
  800ff18:	20005b8a 	.word	0x20005b8a
- 800ff1c:	08027655 	.word	0x08027655
+ 800ff1c:	0802766d 	.word	0x0802766d
 
 0800ff20 <cmd_resume>:
 {
@@ -35967,11 +35967,11 @@ void add_to_peak_finding(float *trace_data, int i) {
  8010052:	f7f9 bfcd 	b.w	8009ff0 <usage_printf>
  8010056:	bf00      	nop
  8010058:	200032f0 	.word	0x200032f0
- 801005c:	08027663 	.word	0x08027663
- 8010060:	080288e8 	.word	0x080288e8
+ 801005c:	0802767b 	.word	0x0802767b
+ 8010060:	08028900 	.word	0x08028900
  8010064:	20001454 	.word	0x20001454
- 8010068:	080288c4 	.word	0x080288c4
- 801006c:	0802766e 	.word	0x0802766e
+ 8010068:	080288dc 	.word	0x080288dc
+ 801006c:	08027686 	.word	0x08027686
 
 08010070 <set_trace_scale>:
   if (setting.trace_scale == scale) return;
@@ -36079,7 +36079,7 @@ void add_to_peak_finding(float *trace_data, int i) {
  8010154:	200032f0 	.word	0x200032f0
  8010158:	2b8cbccc 	.word	0x2b8cbccc
  801015c:	461c3c00 	.word	0x461c3c00
- 8010160:	08029608 	.word	0x08029608
+ 8010160:	08029620 	.word	0x08029620
 	...
 
 08010170 <round_reflevel_to_scale>:
@@ -36635,8 +36635,8 @@ void set_scale(float t) {
  80105f4:	540be400 	.word	0x540be400
  80105f8:	20005b60 	.word	0x20005b60
  80105fc:	200032c8 	.word	0x200032c8
- 8010600:	08029654 	.word	0x08029654
- 8010604:	08029664 	.word	0x08029664
+ 8010600:	0802966c 	.word	0x0802966c
+ 8010604:	0802967c 	.word	0x0802967c
  8010608:	2000233c 	.word	0x2000233c
  801060c:	20001458 	.word	0x20001458
  8010610:	200007c4 	.word	0x200007c4
@@ -36705,7 +36705,7 @@ void set_scale(float t) {
  801069e:	f7ff be1f 	b.w	80102e0 <reset_settings>
  80106a2:	bf00      	nop
  80106a4:	200032f0 	.word	0x200032f0
- 80106a8:	080296b0 	.word	0x080296b0
+ 80106a8:	080296c8 	.word	0x080296c8
  80106ac:	41200000 	.word	0x41200000
 
 080106b0 <set_mode>:
@@ -36789,9 +36789,9 @@ void set_scale(float t) {
     menu_push_lowoutput();
  801072e:	f00d bc57 	b.w	801dfe0 <menu_push_lowoutput>
  8010732:	bf00      	nop
- 8010734:	08028ab4 	.word	0x08028ab4
- 8010738:	080276bb 	.word	0x080276bb
- 801073c:	08028ab0 	.word	0x08028ab0
+ 8010734:	08028acc 	.word	0x08028acc
+ 8010738:	080276d3 	.word	0x080276d3
+ 801073c:	08028ac8 	.word	0x08028ac8
 
 08010740 <cmd_load>:
   if (argc != 1 || argv[0][0] == '?') {
@@ -36834,7 +36834,7 @@ void set_scale(float t) {
 }
  8010780:	bd10      	pop	{r4, pc}
  8010782:	bf00      	nop
- 8010784:	080276d2 	.word	0x080276d2
+ 8010784:	080276ea 	.word	0x080276ea
  8010788:	200032f0 	.word	0x200032f0
  801078c:	00000000 	.word	0x00000000
 
@@ -37289,21 +37289,21 @@ redraw_request |= REDRAW_CAL_STATUS;
  8010b40:	2301      	movs	r3, #1
   if (argc >= 2) {
  8010b42:	e762      	b.n	8010a0a <cmd_trace+0xea>
- 8010b44:	0802891c 	.word	0x0802891c
- 8010b48:	08028944 	.word	0x08028944
- 8010b4c:	08028954 	.word	0x08028954
- 8010b50:	08027717 	.word	0x08027717
+ 8010b44:	08028934 	.word	0x08028934
+ 8010b48:	0802895c 	.word	0x0802895c
+ 8010b4c:	0802896c 	.word	0x0802896c
+ 8010b50:	0802772f 	.word	0x0802772f
  8010b54:	200032f0 	.word	0x200032f0
- 8010b58:	08027857 	.word	0x08027857
- 8010b5c:	080276e7 	.word	0x080276e7
+ 8010b58:	0802786f 	.word	0x0802786f
+ 8010b5c:	080276ff 	.word	0x080276ff
  8010b60:	20005b8a 	.word	0x20005b8a
- 8010b64:	080277eb 	.word	0x080277eb
- 8010b68:	0802893c 	.word	0x0802893c
+ 8010b64:	08027803 	.word	0x08027803
+ 8010b68:	08028954 	.word	0x08028954
  8010b6c:	20003928 	.word	0x20003928
- 8010b70:	080276f7 	.word	0x080276f7
- 8010b74:	08027710 	.word	0x08027710
- 8010b78:	0802b4c4 	.word	0x0802b4c4
- 8010b7c:	080276de 	.word	0x080276de
+ 8010b70:	0802770f 	.word	0x0802770f
+ 8010b74:	08027728 	.word	0x08027728
+ 8010b78:	0802b4dc 	.word	0x0802b4dc
+ 8010b7c:	080276f6 	.word	0x080276f6
 
 08010b80 <get_hw_version_text>:
 {
@@ -37374,11 +37374,11 @@ redraw_request |= REDRAW_CAL_STATUS;
   return "Unknown";
  8010be4:	e7f2      	b.n	8010bcc <get_hw_version_text+0x4c>
  8010be6:	bf00      	nop
- 8010be8:	08028fe0 	.word	0x08028fe0
+ 8010be8:	08028ff8 	.word	0x08028ff8
  8010bec:	20002024 	.word	0x20002024
  8010bf0:	20002022 	.word	0x20002022
  8010bf4:	2000075c 	.word	0x2000075c
- 8010bf8:	0802778e 	.word	0x0802778e
+ 8010bf8:	080277a6 	.word	0x080277a6
  8010bfc:	00000000 	.word	0x00000000
 
 08010c00 <cmd_version>:
@@ -37402,10 +37402,10 @@ redraw_request |= REDRAW_CAL_STATUS;
  8010c1e:	f7f8 bf97 	b.w	8009b50 <shell_printf>
  8010c22:	bf00      	nop
  8010c24:	20005b54 	.word	0x20005b54
- 8010c28:	08027796 	.word	0x08027796
- 8010c2c:	08027857 	.word	0x08027857
- 8010c30:	08029030 	.word	0x08029030
- 8010c34:	0802779e 	.word	0x0802779e
+ 8010c28:	080277ae 	.word	0x080277ae
+ 8010c2c:	0802786f 	.word	0x0802786f
+ 8010c30:	08029048 	.word	0x08029048
+ 8010c34:	080277b6 	.word	0x080277b6
 	...
 
 08010c40 <generic_option_cmd>:
@@ -37434,7 +37434,7 @@ redraw_request |= REDRAW_CAL_STATUS;
  8010c62:	daf9      	bge.n	8010c58 <generic_option_cmd+0x18>
  8010c64:	e7f1      	b.n	8010c4a <generic_option_cmd+0xa>
  8010c66:	bf00      	nop
- 8010c68:	08026f52 	.word	0x08026f52
+ 8010c68:	08026f6a 	.word	0x08026f6a
  8010c6c:	00000000 	.word	0x00000000
 
 08010c70 <cmd_output>:
@@ -37474,8 +37474,8 @@ redraw_request |= REDRAW_CAL_STATUS;
  8010ca8:	7218      	strb	r0, [r3, #8]
     break;
  8010caa:	e7ec      	b.n	8010c86 <cmd_output+0x16>
- 8010cac:	08028426 	.word	0x08028426
- 8010cb0:	080277b5 	.word	0x080277b5
+ 8010cac:	0802843e 	.word	0x0802843e
+ 8010cb0:	080277cd 	.word	0x080277cd
  8010cb4:	20001454 	.word	0x20001454
  8010cb8:	200032f0 	.word	0x200032f0
  8010cbc:	00000000 	.word	0x00000000
@@ -37502,8 +37502,8 @@ redraw_request |= REDRAW_CAL_STATUS;
 }
  8010ce0:	bd08      	pop	{r3, pc}
  8010ce2:	bf00      	nop
- 8010ce4:	08027337 	.word	0x08027337
- 8010ce8:	08027710 	.word	0x08027710
+ 8010ce4:	0802734f 	.word	0x0802734f
+ 8010ce8:	08027728 	.word	0x08027728
  8010cec:	20005b8a 	.word	0x20005b8a
 
 08010cf0 <cmd_avoid>:
@@ -37555,11 +37555,11 @@ redraw_request |= REDRAW_CAL_STATUS;
 }
  8010d38:	e7ea      	b.n	8010d10 <cmd_avoid+0x20>
  8010d3a:	bf00      	nop
- 8010d3c:	080277da 	.word	0x080277da
- 8010d40:	080277c9 	.word	0x080277c9
+ 8010d3c:	080277f2 	.word	0x080277f2
+ 8010d40:	080277e1 	.word	0x080277e1
  8010d44:	20002760 	.word	0x20002760
  8010d48:	20002758 	.word	0x20002758
- 8010d4c:	080277e0 	.word	0x080277e0
+ 8010d4c:	080277f8 	.word	0x080277f8
  8010d50:	20002740 	.word	0x20002740
  8010d54:	20005b8a 	.word	0x20005b8a
 	...
@@ -37586,8 +37586,8 @@ redraw_request |= REDRAW_CAL_STATUS;
 }
  8010d80:	bd08      	pop	{r3, pc}
  8010d82:	bf00      	nop
- 8010d84:	080277f0 	.word	0x080277f0
- 8010d88:	080277e4 	.word	0x080277e4
+ 8010d84:	08027808 	.word	0x08027808
+ 8010d88:	080277fc 	.word	0x080277fc
  8010d8c:	20005b8a 	.word	0x20005b8a
 
 08010d90 <cmd_refresh>:
@@ -37607,8 +37607,8 @@ redraw_request |= REDRAW_CAL_STATUS;
  8010da4:	7018      	strbge	r0, [r3, #0]
 }
  8010da6:	bd08      	pop	{r3, pc}
- 8010da8:	080277f5 	.word	0x080277f5
- 8010dac:	08027710 	.word	0x08027710
+ 8010da8:	0802780d 	.word	0x0802780d
+ 8010dac:	08027728 	.word	0x08027728
  8010db0:	20003924 	.word	0x20003924
 	...
 
@@ -37697,9 +37697,9 @@ redraw_request |= REDRAW_CAL_STATUS;
   shell_printf("x=%x\r\n", reg);
  8010e4e:	f7f8 be7f 	b.w	8009b50 <shell_printf>
  8010e52:	bf00      	nop
- 8010e54:	080277fd 	.word	0x080277fd
+ 8010e54:	08027815 	.word	0x08027815
  8010e58:	2000201c 	.word	0x2000201c
- 8010e5c:	08027813 	.word	0x08027813
+ 8010e5c:	0802782b 	.word	0x0802782b
 
 08010e60 <cmd_y>:
 {
@@ -37761,9 +37761,9 @@ redraw_request |= REDRAW_CAL_STATUS;
   for (int i=1; i < argc; i++) {
  8010ec4:	e7df      	b.n	8010e86 <cmd_y+0x26>
  8010ec6:	bf00      	nop
- 8010ec8:	0802781a 	.word	0x0802781a
- 8010ecc:	0802783b 	.word	0x0802783b
- 8010ed0:	080276f4 	.word	0x080276f4
+ 8010ec8:	08027832 	.word	0x08027832
+ 8010ecc:	08027853 	.word	0x08027853
+ 8010ed0:	0802770c 	.word	0x0802770c
 	...
 
 08010ee0 <shell_update_speed>:
@@ -37825,7 +37825,7 @@ void shell_update_speed(void){
   shell_printf("Serial: %u baud\r\n", config._serial_speed);
  8010f3c:	f7f8 be08 	b.w	8009b50 <shell_printf>
  8010f40:	200007ec 	.word	0x200007ec
- 8010f44:	08027841 	.word	0x08027841
+ 8010f44:	08027859 	.word	0x08027859
 	...
 
 08010f50 <shell_init_connection>:
@@ -37882,8 +37882,8 @@ static void shell_init_connection(void) {
  8010fb6:	bf00      	nop
  8010fb8:	20005bd8 	.word	0x20005bd8
  8010fbc:	20001a78 	.word	0x20001a78
- 8010fc0:	08026bd0 	.word	0x08026bd0
- 8010fc4:	08026bd8 	.word	0x08026bd8
+ 8010fc0:	08026be8 	.word	0x08026be8
+ 8010fc4:	08026bf0 	.word	0x08026bf0
  8010fc8:	200018cc 	.word	0x200018cc
  8010fcc:	200007ec 	.word	0x200007ec
  8010fd0:	200017d8 	.word	0x200017d8
@@ -37988,8 +37988,8 @@ int parse_line(char *line, char* args[], int max_cnt) {
     lp++;
  801108c:	3301      	adds	r3, #1
  801108e:	e7d7      	b.n	8011040 <parse_line+0x10>
- 8011090:	08027855 	.word	0x08027855
- 8011094:	08027853 	.word	0x08027853
+ 8011090:	0802786d 	.word	0x0802786d
+ 8011094:	0802786b 	.word	0x0802786b
 	...
 
 080110a0 <VNAShell_parceLine>:
@@ -38037,8 +38037,8 @@ const VNAShellCommand *VNAShell_parceLine(char *line){
  80110de:	bf00      	nop
  80110e0:	20005b94 	.word	0x20005b94
  80110e4:	20005b90 	.word	0x20005b90
- 80110e8:	08027858 	.word	0x08027858
- 80110ec:	08028b98 	.word	0x08028b98
+ 80110e8:	08027870 	.word	0x08027870
+ 80110ec:	08028bb0 	.word	0x08028bb0
 
 080110f0 <myshellThread>:
 {
@@ -38244,20 +38244,20 @@ const VNAShellCommand *VNAShell_parceLine(char *line){
  8011268:	f043 0326 	orr.w	r3, r3, #38	@ 0x26
  801126c:	8013      	strh	r3, [r2, #0]
  801126e:	e74e      	b.n	801110e <myshellThread+0x1e>
- 8011270:	08027874 	.word	0x08027874
+ 8011270:	0802788c 	.word	0x0802788c
  8011274:	200007ec 	.word	0x200007ec
  8011278:	20005be0 	.word	0x20005be0
  801127c:	20005ba8 	.word	0x20005ba8
- 8011280:	0802787a 	.word	0x0802787a
- 8011284:	080273a3 	.word	0x080273a3
+ 8011280:	08027892 	.word	0x08027892
+ 8011284:	080273bb 	.word	0x080273bb
  8011288:	200017d8 	.word	0x200017d8
  801128c:	20001a78 	.word	0x20001a78
- 8011290:	080276f4 	.word	0x080276f4
+ 8011290:	0802770c 	.word	0x0802770c
  8011294:	20005b94 	.word	0x20005b94
- 8011298:	0802789d 	.word	0x0802789d
+ 8011298:	080278b5 	.word	0x080278b5
  801129c:	20001458 	.word	0x20001458
  80112a0:	20007114 	.word	0x20007114
- 80112a4:	0802788b 	.word	0x0802788b
+ 80112a4:	080278a3 	.word	0x080278a3
  80112a8:	20005b90 	.word	0x20005b90
  80112ac:	20005b98 	.word	0x20005b98
  80112b0:	20001454 	.word	0x20001454
@@ -39197,7 +39197,7 @@ void pwm_init(void) {
  8011a70:	200007a8 	.word	0x200007a8
  8011a74:	20002518 	.word	0x20002518
  8011a78:	43ad8000 	.word	0x43ad8000
- 8011a7c:	080292e8 	.word	0x080292e8
+ 8011a7c:	08029300 	.word	0x08029300
       if (setting.modulation == MO_WFM) {
  8011a80:	2a05      	cmp	r2, #5
  8011a82:	f47f ad80 	bne.w	8011586 <perform+0x146>
@@ -39566,7 +39566,7 @@ void pwm_init(void) {
  8011d90:	20002518 	.word	0x20002518
  8011d94:	437f0000 	.word	0x437f0000
  8011d98:	447a0000 	.word	0x447a0000
- 8011d9c:	080292e8 	.word	0x080292e8
+ 8011d9c:	08029300 	.word	0x08029300
  8011da0:	2000233c 	.word	0x2000233c
  8011da4:	20002338 	.word	0x20002338
  8011da8:	20002334 	.word	0x20002334
@@ -39889,7 +39889,7 @@ void pwm_init(void) {
  80120a4:	004e2bb8 	.word	0x004e2bb8
  80120a8:	200007b0 	.word	0x200007b0
  80120ac:	200032f0 	.word	0x200032f0
- 80120b0:	0802961c 	.word	0x0802961c
+ 80120b0:	08029634 	.word	0x08029634
  80120b4:	200007ec 	.word	0x200007ec
  80120b8:	fff85ee0 	.word	0xfff85ee0
  80120bc:	200032c8 	.word	0x200032c8
@@ -40221,7 +40221,7 @@ void pwm_init(void) {
  80123a0:	c2b40000 	.word	0xc2b40000
  80123a4:	001e847f 	.word	0x001e847f
  80123a8:	200007ec 	.word	0x200007ec
- 80123ac:	08029370 	.word	0x08029370
+ 80123ac:	08029388 	.word	0x08029388
  80123b0:	2000324c 	.word	0x2000324c
  80123b4:	20003244 	.word	0x20003244
  80123b8:	20008168 	.word	0x20008168
@@ -41092,7 +41092,7 @@ void pwm_init(void) {
  8012b1c:	2000818c 	.word	0x2000818c
  8012b20:	2000152a 	.word	0x2000152a
  8012b24:	200081a8 	.word	0x200081a8
- 8012b28:	080278a3 	.word	0x080278a3
+ 8012b28:	080278bb 	.word	0x080278bb
  8012b2c:	2000234c 	.word	0x2000234c
     if (MODE_OUTPUT(setting.mode)) {               // No substepping and no RSSI in output mode
  8012b30:	f898 3198 	ldrb.w	r3, [r8, #408]	@ 0x198
@@ -42324,7 +42324,7 @@ void determine_lpf_test_level(void) {
  8013564:	00000000 	.word	0x00000000
  8013568:	2000233c 	.word	0x2000233c
  801356c:	200032f0 	.word	0x200032f0
- 8013570:	08029068 	.word	0x08029068
+ 8013570:	08029080 	.word	0x08029080
  8013574:	20004030 	.word	0x20004030
  8013578:	20003928 	.word	0x20003928
  801357c:	2000220c 	.word	0x2000220c
@@ -43101,8 +43101,8 @@ void determine_lpf_test_level(void) {
  8013c2a:	e016      	b.n	8013c5a <sweep+0x65a>
  8013c2c:	20003922 	.word	0x20003922
  8013c30:	2000232b 	.word	0x2000232b
- 8013c34:	0802791a 	.word	0x0802791a
- 8013c38:	0802792f 	.word	0x0802792f
+ 8013c34:	08027932 	.word	0x08027932
+ 8013c38:	08027947 	.word	0x08027947
  8013c3c:	200032fb 	.word	0x200032fb
  8013c40:	20003921 	.word	0x20003921
  8013c44:	20003928 	.word	0x20003928
@@ -44526,7 +44526,7 @@ void determine_lpf_test_level(void) {
     sweep(false);
  8014966:	f7fe fe4b 	bl	8013600 <sweep>
  801496a:	e7e5      	b.n	8014938 <test_acquire+0x88>
- 801496c:	08029068 	.word	0x08029068
+ 801496c:	08029080 	.word	0x08029080
  8014970:	200032f0 	.word	0x200032f0
  8014974:	200039f0 	.word	0x200039f0
  8014978:	00000000 	.word	0x00000000
@@ -44607,10 +44607,10 @@ int validate_atten(int i) {
  8014a18:	2402      	movs	r4, #2
  8014a1a:	e7dc      	b.n	80149d6 <validate_atten+0x46>
  8014a1c:	2000229c 	.word	0x2000229c
- 8014a20:	08027937 	.word	0x08027937
+ 8014a20:	0802794f 	.word	0x0802794f
  8014a24:	00000000 	.word	0x00000000
- 8014a28:	08027857 	.word	0x08027857
- 8014a2c:	0802903c 	.word	0x0802903c
+ 8014a28:	0802786f 	.word	0x0802786f
+ 8014a2c:	08029054 	.word	0x08029054
  8014a30:	200032f0 	.word	0x200032f0
  8014a34:	20002a98 	.word	0x20002a98
 	...
@@ -44773,16 +44773,16 @@ int validate_atten(int i) {
  8014b70:	e7e6      	b.n	8014b40 <test_validate+0x100>
  8014b72:	bf00      	nop
  8014b74:	200032bc 	.word	0x200032bc
- 8014b78:	08029068 	.word	0x08029068
+ 8014b78:	08029080 	.word	0x08029080
  8014b7c:	20002210 	.word	0x20002210
  8014b80:	200032f0 	.word	0x200032f0
  8014b84:	2000229c 	.word	0x2000229c
- 8014b88:	08027943 	.word	0x08027943
+ 8014b88:	0802795b 	.word	0x0802795b
  8014b8c:	20002214 	.word	0x20002214
  8014b90:	20002a98 	.word	0x20002a98
  8014b94:	20005b8a 	.word	0x20005b8a
  8014b98:	2000221c 	.word	0x2000221c
- 8014b9c:	08027857 	.word	0x08027857
+ 8014b9c:	0802786f 	.word	0x0802786f
 
 08014ba0 <calibrate_harmonic>:
 
@@ -44957,12 +44957,12 @@ void calibrate_harmonic(void)
  8014cd8:	20002320 	.word	0x20002320
  8014cdc:	20002a98 	.word	0x20002a98
  8014ce0:	c2700000 	.word	0xc2700000
- 8014ce4:	0802794d 	.word	0x0802794d
- 8014ce8:	08027571 	.word	0x08027571
+ 8014ce4:	08027965 	.word	0x08027965
+ 8014ce8:	08027589 	.word	0x08027589
  8014cec:	20003224 	.word	0x20003224
  8014cf0:	20002214 	.word	0x20002214
  8014cf4:	2000233c 	.word	0x2000233c
- 8014cf8:	08027976 	.word	0x08027976
+ 8014cf8:	0802798e 	.word	0x0802798e
  8014cfc:	00000000 	.word	0x00000000
 
 08014d00 <cmd_scan>:
@@ -45161,14 +45161,14 @@ void calibrate_harmonic(void)
  8014e7c:	3704      	adds	r7, #4
  8014e7e:	e7b3      	b.n	8014de8 <cmd_scan+0xe8>
  8014e80:	200032f0 	.word	0x200032f0
- 8014e84:	0802798b 	.word	0x0802798b
- 8014e88:	080279bc 	.word	0x080279bc
- 8014e8c:	080279d9 	.word	0x080279d9
+ 8014e84:	080279a3 	.word	0x080279a3
+ 8014e88:	080279d4 	.word	0x080279d4
+ 8014e8c:	080279f1 	.word	0x080279f1
  8014e90:	20007116 	.word	0x20007116
  8014e94:	20003928 	.word	0x20003928
- 8014e98:	080279fa 	.word	0x080279fa
- 8014e9c:	080279fe 	.word	0x080279fe
- 8014ea0:	080276f4 	.word	0x080276f4
+ 8014e98:	08027a12 	.word	0x08027a12
+ 8014e9c:	08027a16 	.word	0x08027a16
+ 8014ea0:	0802770c 	.word	0x0802770c
 	...
 
 08014eb0 <selftest>:
@@ -45474,22 +45474,22 @@ void calibrate_harmonic(void)
  80150dc:	20002214 	.word	0x20002214
  80150e0:	20002204 	.word	0x20002204
  80150e4:	20003910 	.word	0x20003910
- 80150e8:	08027a49 	.word	0x08027a49
- 80150ec:	08027571 	.word	0x08027571
+ 80150e8:	08027a61 	.word	0x08027a61
+ 80150ec:	08027589 	.word	0x08027589
  80150f0:	20003224 	.word	0x20003224
  80150f4:	20003223 	.word	0x20003223
  80150f8:	2000221c 	.word	0x2000221c
  80150fc:	2000229c 	.word	0x2000229c
- 8015100:	08027857 	.word	0x08027857
+ 8015100:	0802786f 	.word	0x0802786f
  8015104:	20002218 	.word	0x20002218
  8015108:	20002a98 	.word	0x20002a98
  801510c:	c2700000 	.word	0xc2700000
- 8015110:	08027a05 	.word	0x08027a05
- 8015114:	08027a1a 	.word	0x08027a1a
+ 8015110:	08027a1d 	.word	0x08027a1d
+ 8015114:	08027a32 	.word	0x08027a32
  8015118:	20002a90 	.word	0x20002a90
  801511c:	20001458 	.word	0x20001458
  8015120:	200032f0 	.word	0x200032f0
- 8015124:	08029068 	.word	0x08029068
+ 8015124:	08029080 	.word	0x08029080
     freq_t start = get_sweep_frequency(ST_START);
  8015128:	2000      	movs	r0, #0
  801512a:	f7fa fc21 	bl	800f970 <get_sweep_frequency>
@@ -45871,24 +45871,24 @@ void calibrate_harmonic(void)
  8015466:	e71d      	b.n	80152a4 <selftest+0x3f4>
  8015468:	20003923 	.word	0x20003923
  801546c:	20003224 	.word	0x20003224
- 8015470:	08027a5c 	.word	0x08027a5c
+ 8015470:	08027a74 	.word	0x08027a74
  8015474:	20003910 	.word	0x20003910
- 8015478:	08027a65 	.word	0x08027a65
+ 8015478:	08027a7d 	.word	0x08027a7d
  801547c:	20002758 	.word	0x20002758
  8015480:	20002208 	.word	0x20002208
  8015484:	3d000000 	.word	0x3d000000
  8015488:	200007e0 	.word	0x200007e0
- 801548c:	08027aa7 	.word	0x08027aa7
+ 801548c:	08027abf 	.word	0x08027abf
  8015490:	200032f0 	.word	0x200032f0
  8015494:	20002018 	.word	0x20002018
- 8015498:	08027b36 	.word	0x08027b36
+ 8015498:	08027b4e 	.word	0x08027b4e
  801549c:	20004030 	.word	0x20004030
- 80154a0:	08027b5c 	.word	0x08027b5c
+ 80154a0:	08027b74 	.word	0x08027b74
  80154a4:	20002744 	.word	0x20002744
- 80154a8:	08027a7e 	.word	0x08027a7e
- 80154ac:	08027af4 	.word	0x08027af4
- 80154b0:	08027b06 	.word	0x08027b06
- 80154b4:	08027b94 	.word	0x08027b94
+ 80154a8:	08027a96 	.word	0x08027a96
+ 80154ac:	08027b0c 	.word	0x08027b0c
+ 80154b0:	08027b1e 	.word	0x08027b1e
+ 80154b4:	08027bac 	.word	0x08027bac
       if ((int)stored_t[j] >= 1 && j < MAX_DYNAMIC_SPUR_TABLE_SIZE && (int)stored_t[j] > SPUR_CHECK_COUNT-2 && stored_t[j] - stored2_t[j] > 2) {
  80154b8:	ecf5 7a01 	vldmia	r5!, {s15}
  80154bc:	eebd 7ae7 	vcvt.s32.f32	s14, s15
@@ -46287,21 +46287,21 @@ void calibrate_harmonic(void)
  8015820:	0112a880 	.word	0x0112a880
  8015824:	00000000 	.word	0x00000000
  8015828:	20002760 	.word	0x20002760
- 801582c:	0802df26 	.word	0x0802df26
+ 801582c:	0802df3e 	.word	0x0802df3e
  8015830:	20003910 	.word	0x20003910
  8015834:	20003222 	.word	0x20003222
  8015838:	42480000 	.word	0x42480000
  801583c:	20003224 	.word	0x20003224
- 8015840:	08028b74 	.word	0x08028b74
- 8015844:	08027bab 	.word	0x08027bab
+ 8015840:	08028b8c 	.word	0x08028b8c
+ 8015844:	08027bc3 	.word	0x08027bc3
  8015848:	20003928 	.word	0x20003928
  801584c:	00000000 	.word	0x00000000
- 8015850:	08027bbe 	.word	0x08027bbe
+ 8015850:	08027bd6 	.word	0x08027bd6
  8015854:	20002210 	.word	0x20002210
  8015858:	20002a98 	.word	0x20002a98
- 801585c:	08027bea 	.word	0x08027bea
- 8015860:	08027c35 	.word	0x08027c35
- 8015864:	08027c65 	.word	0x08027c65
+ 801585c:	08027c02 	.word	0x08027c02
+ 8015860:	08027c4d 	.word	0x08027c4d
+ 8015864:	08027c7d 	.word	0x08027c7d
     in_selftest = true;               // MCU Spur search
  8015868:	4b93      	ldr	r3, [pc, #588]	@ (8015ab8 <selftest+0xc08>)
       hsical = (RCC->CR & 0xff00) >> 8;
@@ -46594,17 +46594,17 @@ void calibrate_harmonic(void)
  8015abc:	200007a4 	.word	0x200007a4
  8015ac0:	40021000 	.word	0x40021000
  8015ac4:	20002a90 	.word	0x20002a90
- 8015ac8:	08027c92 	.word	0x08027c92
+ 8015ac8:	08027caa 	.word	0x08027caa
  8015acc:	20003910 	.word	0x20003910
- 8015ad0:	08027c62 	.word	0x08027c62
- 8015ad4:	0802df26 	.word	0x0802df26
+ 8015ad0:	08027c7a 	.word	0x08027c7a
+ 8015ad4:	0802df3e 	.word	0x0802df3e
  8015ad8:	c20c0000 	.word	0xc20c0000
  8015adc:	20002a98 	.word	0x20002a98
- 8015ae0:	08027cca 	.word	0x08027cca
- 8015ae4:	08027cd0 	.word	0x08027cd0
+ 8015ae0:	08027ce2 	.word	0x08027ce2
+ 8015ae4:	08027ce8 	.word	0x08027ce8
  8015ae8:	20007116 	.word	0x20007116
  8015aec:	200032e8 	.word	0x200032e8
- 8015af0:	08027c9e 	.word	0x08027c9e
+ 8015af0:	08027cb6 	.word	0x08027cb6
     in_selftest = true;
  8015af4:	4baf      	ldr	r3, [pc, #700]	@ (8015db4 <selftest+0xf04>)
     float first_level=-166.0;
@@ -46925,19 +46925,19 @@ void calibrate_harmonic(void)
  8015db8:	c3260000 	.word	0xc3260000
  8015dbc:	c2c80000 	.word	0xc2c80000
  8015dc0:	20003910 	.word	0x20003910
- 8015dc4:	08027c62 	.word	0x08027c62
- 8015dc8:	0802df26 	.word	0x0802df26
- 8015dcc:	08027cca 	.word	0x08027cca
+ 8015dc4:	08027c7a 	.word	0x08027c7a
+ 8015dc8:	0802df3e 	.word	0x0802df3e
+ 8015dcc:	08027ce2 	.word	0x08027ce2
  8015dd0:	200032e8 	.word	0x200032e8
  8015dd4:	42c80000 	.word	0x42c80000
  8015dd8:	20008174 	.word	0x20008174
  8015ddc:	20002a98 	.word	0x20002a98
  8015de0:	408af967 	.word	0x408af967
- 8015de4:	08027cd0 	.word	0x08027cd0
- 8015de8:	08027c9e 	.word	0x08027c9e
+ 8015de4:	08027ce8 	.word	0x08027ce8
+ 8015de8:	08027cb6 	.word	0x08027cb6
  8015dec:	42340000 	.word	0x42340000
  8015df0:	c1bc0000 	.word	0xc1bc0000
- 8015df4:	08027cd7 	.word	0x08027cd7
+ 8015df4:	08027cef 	.word	0x08027cef
  8015df8:	20007116 	.word	0x20007116
     if (setting.test_argument > 0)
  8015dfc:	4d37      	ldr	r5, [pc, #220]	@ (8015edc <selftest+0x102c>)
@@ -47040,7 +47040,7 @@ void calibrate_harmonic(void)
  8015ee4:	00000000 	.word	0x00000000
  8015ee8:	49742400 	.word	0x49742400
  8015eec:	20002a98 	.word	0x20002a98
- 8015ef0:	08027d04 	.word	0x08027d04
+ 8015ef0:	08027d1c 	.word	0x08027d1c
  8015ef4:	20007116 	.word	0x20007116
  8015ef8:	35a4e8ff 	.word	0x35a4e8ff
  8015efc:	20002a90 	.word	0x20002a90
@@ -47517,9 +47517,9 @@ low_level:
  8016268:	fe54c0ff 	.word	0xfe54c0ff
  801626c:	fe363c80 	.word	0xfe363c80
  8016270:	c2340000 	.word	0xc2340000
- 8016274:	08027d25 	.word	0x08027d25
- 8016278:	08027d3c 	.word	0x08027d3c
- 801627c:	08027571 	.word	0x08027571
+ 8016274:	08027d3d 	.word	0x08027d3d
+ 8016278:	08027d54 	.word	0x08027d54
+ 801627c:	08027589 	.word	0x08027589
  8016280:	20003224 	.word	0x20003224
  8016284:	20002214 	.word	0x20002214
  8016288:	20003221 	.word	0x20003221
@@ -47530,7 +47530,7 @@ low_level:
  801629c:	20005b8a 	.word	0x20005b8a
  80162a0:	00000000 	.word	0x00000000
  80162a4:	20003220 	.word	0x20003220
- 80162a8:	08027976 	.word	0x08027976
+ 80162a8:	0802798e 	.word	0x0802798e
  80162ac:	c2700000 	.word	0xc2700000
  80162b0:	20000798 	.word	0x20000798
  80162b4:	20002a98 	.word	0x20002a98
@@ -48077,8 +48077,8 @@ low_level:
  8016760:	2b00      	cmp	r3, #0
  8016762:	f43f af5c 	beq.w	801661e <cmd_scanraw+0xae>
  8016766:	e7a5      	b.n	80166b4 <cmd_scanraw+0x144>
- 8016768:	08027d5b 	.word	0x08027d5b
- 801676c:	080279bc 	.word	0x080279bc
+ 8016768:	08027d73 	.word	0x08027d73
+ 801676c:	080279d4 	.word	0x080279d4
  8016770:	20007116 	.word	0x20007116
  8016774:	20001454 	.word	0x20001454
  8016778:	200007ec 	.word	0x200007ec
@@ -48284,16 +48284,16 @@ low_level:
  801690c:	19a6      	adds	r6, r4, r6
  801690e:	eb45 0707 	adc.w	r7, r5, r7
  8016912:	e7ba      	b.n	801688a <cmd_hop+0xfa>
- 8016914:	08027d8f 	.word	0x08027d8f
+ 8016914:	08027da7 	.word	0x08027da7
  8016918:	20001458 	.word	0x20001458
- 801691c:	080279bc 	.word	0x080279bc
+ 801691c:	080279d4 	.word	0x080279d4
  8016920:	20001454 	.word	0x20001454
  8016924:	200032f0 	.word	0x200032f0
  8016928:	200007e0 	.word	0x200007e0
- 801692c:	080279fa 	.word	0x080279fa
+ 801692c:	08027a12 	.word	0x08027a12
  8016930:	3d000000 	.word	0x3d000000
- 8016934:	08027a01 	.word	0x08027a01
- 8016938:	080276f4 	.word	0x080276f4
+ 8016934:	08027a19 	.word	0x08027a19
+ 8016938:	0802770c 	.word	0x0802770c
  801693c:	20007116 	.word	0x20007116
 
 08016940 <Thread1>:
@@ -48749,7 +48749,7 @@ low_level:
  8016d0c:	20001458 	.word	0x20001458
  8016d10:	200032f0 	.word	0x200032f0
  8016d14:	20005b89 	.word	0x20005b89
- 8016d18:	080273a3 	.word	0x080273a3
+ 8016d18:	080273bb 	.word	0x080273bb
  8016d1c:	20005bd8 	.word	0x20005bd8
  8016d20:	20005b8a 	.word	0x20005b8a
 	...
@@ -49280,7 +49280,7 @@ int main(void)
  8017094:	00000000 	.word	0x00000000
  8017098:	29b92700 	.word	0x29b92700
  801709c:	00000000 	.word	0x00000000
- 80170a0:	08028b88 	.word	0x08028b88
+ 80170a0:	08028ba0 	.word	0x08028ba0
  80170a4:	2000179c 	.word	0x2000179c
  80170a8:	40007400 	.word	0x40007400
  80170ac:	08024b84 	.word	0x08024b84
@@ -49300,11 +49300,11 @@ int main(void)
  80170e4:	3a41f0c0 	.word	0x3a41f0c0
  80170e8:	20005b54 	.word	0x20005b54
  80170ec:	20000c68 	.word	0x20000c68
- 80170f0:	0802a630 	.word	0x0802a630
- 80170f4:	0802a270 	.word	0x0802a270
+ 80170f0:	0802a648 	.word	0x0802a648
+ 80170f4:	0802a288 	.word	0x0802a288
  80170f8:	77825f00 	.word	0x77825f00
- 80170fc:	08029af0 	.word	0x08029af0
- 8017100:	08029730 	.word	0x08029730
+ 80170fc:	08029b08 	.word	0x08029b08
+ 8017100:	08029748 	.word	0x08029748
  8017104:	08016941 	.word	0x08016941
  8017108:	20005550 	.word	0x20005550
  801710c:	40002850 	.word	0x40002850
@@ -49471,9 +49471,9 @@ int main(void)
  801725c:	e7f6      	b.n	801724c <main+0x43c>
  801725e:	bf00      	nop
  8017260:	200032f0 	.word	0x200032f0
- 8017264:	0802c620 	.word	0x0802c620
- 8017268:	0802c6ac 	.word	0x0802c6ac
- 801726c:	0802c648 	.word	0x0802c648
+ 8017264:	0802c638 	.word	0x0802c638
+ 8017268:	0802c6c4 	.word	0x0802c6c4
+ 801726c:	0802c660 	.word	0x0802c660
  8017270:	080110f1 	.word	0x080110f1
  8017274:	20001d18 	.word	0x20001d18
 	...
@@ -49721,9 +49721,9 @@ void hard_fault_handler_c(uint32_t *sp)
  801741c:	08024c38 	.word	0x08024c38
  8017420:	08024c44 	.word	0x08024c44
  8017424:	08024c50 	.word	0x08024c50
- 8017428:	08028fa0 	.word	0x08028fa0
+ 8017428:	08028fb8 	.word	0x08028fb8
  801742c:	08024c5c 	.word	0x08024c5c
- 8017430:	08027857 	.word	0x08027857
+ 8017430:	0802786f 	.word	0x0802786f
  8017434:	08024c84 	.word	0x08024c84
 	...
 
@@ -49859,10 +49859,10 @@ trace_into_index_y_array(index_y_t *y, float *array, int points)
  8017526:	e7c5      	b.n	80174b4 <trace_into_index_y_array+0x64>
  8017528:	200032f0 	.word	0x200032f0
  801752c:	20001464 	.word	0x20001464
- 8017530:	0802ae18 	.word	0x0802ae18
+ 8017530:	0802ae34 	.word	0x0802ae34
  8017534:	4b38aa3b 	.word	0x4b38aa3b
- 8017538:	0802ade0 	.word	0x0802ade0
- 801753c:	0802adfc 	.word	0x0802adfc
+ 8017538:	0802adfc 	.word	0x0802adfc
+ 801753c:	0802ae18 	.word	0x0802ae18
 
 08017540 <invalidate_rect_func>:
 /*
@@ -50134,7 +50134,7 @@ static msg_t cellPut(void *ip, uint8_t ch) {
  8017706:	b002      	add	sp, #8
  8017708:	bd10      	pop	{r4, pc}
  801770a:	bf00      	nop
- 801770c:	0802d0b0 	.word	0x0802d0b0
+ 801770c:	0802d0c8 	.word	0x0802d0c8
 
 08017710 <cellPut7x13>:
 
@@ -50174,7 +50174,7 @@ static msg_t cellPut7x13(void *ip, uint8_t ch) {
  8017742:	2000      	movs	r0, #0
  8017744:	b003      	add	sp, #12
  8017746:	bd30      	pop	{r4, r5, pc}
- 8017748:	0802e574 	.word	0x0802e574
+ 8017748:	0802e58c 	.word	0x0802e58c
  801774c:	00000000 	.word	0x00000000
 
 08017750 <get_trigger_level>:
@@ -50282,7 +50282,7 @@ static msg_t cellPut7x13(void *ip, uint8_t ch) {
  8017822:	bf00      	nop
  8017824:	200032f0 	.word	0x200032f0
  8017828:	fa0a1f00 	.word	0xfa0a1f00
- 801782c:	0802b158 	.word	0x0802b158
+ 801782c:	0802b170 	.word	0x0802b170
 
 08017830 <clear_marker_cache>:
     marker_cache_valid[i] = false;
@@ -51315,7 +51315,7 @@ static void cell_grid_line_info(int x0, int y0)
  8018038:	20006e38 	.word	0x20006e38
  801803c:	20006e3a 	.word	0x20006e3a
  8018040:	20001464 	.word	0x20001464
- 8018044:	08027df3 	.word	0x08027df3
+ 8018044:	08027e0b 	.word	0x08027e0b
  8018048:	20006a74 	.word	0x20006a74
   if (setting.multi_band && !setting.multi_trace) {
  801804c:	4ba0      	ldr	r3, [pc, #640]	@ (80182d0 <draw_all_cells+0x570>)
@@ -51653,10 +51653,10 @@ static void cell_grid_line_info(int x0, int y0)
  80182dc:	2000145c 	.word	0x2000145c
  80182e0:	20006a74 	.word	0x20006a74
  80182e4:	20005c64 	.word	0x20005c64
- 80182e8:	08027dfb 	.word	0x08027dfb
+ 80182e8:	08027e13 	.word	0x08027e13
  80182ec:	2000322c 	.word	0x2000322c
  80182f0:	42c80000 	.word	0x42c80000
- 80182f4:	08027e6b 	.word	0x08027e6b
+ 80182f4:	08027e83 	.word	0x08027e83
  80182f8:	20006e50 	.word	0x20006e50
  80182fc:	20000800 	.word	0x20000800
  8018300:	20003238 	.word	0x20003238
@@ -52125,21 +52125,21 @@ static void cell_grid_line_info(int x0, int y0)
  80186c6:	bf00      	nop
  80186c8:	200032f0 	.word	0x200032f0
  80186cc:	20005c64 	.word	0x20005c64
- 80186d0:	0802b058 	.word	0x0802b058
+ 80186d0:	0802b074 	.word	0x0802b074
  80186d4:	20003238 	.word	0x20003238
- 80186d8:	08027e0a 	.word	0x08027e0a
+ 80186d8:	08027e22 	.word	0x08027e22
  80186dc:	2000145c 	.word	0x2000145c
- 80186e0:	08027e1b 	.word	0x08027e1b
- 80186e4:	08027eaf 	.word	0x08027eaf
- 80186e8:	08027e28 	.word	0x08027e28
- 80186ec:	08027e37 	.word	0x08027e37
+ 80186e0:	08027e33 	.word	0x08027e33
+ 80186e4:	08027ec7 	.word	0x08027ec7
+ 80186e8:	08027e40 	.word	0x08027e40
+ 80186ec:	08027e4f 	.word	0x08027e4f
  80186f0:	20006e50 	.word	0x20006e50
  80186f4:	20003928 	.word	0x20003928
  80186f8:	c28c0000 	.word	0xc28c0000
  80186fc:	3debc8e3 	.word	0x3debc8e3
  8018700:	4347fc7a 	.word	0x4347fc7a
- 8018704:	08027e3d 	.word	0x08027e3d
- 8018708:	08027e44 	.word	0x08027e44
+ 8018704:	08027e55 	.word	0x08027e55
+ 8018708:	08027e5c 	.word	0x08027e5c
  801870c:	200007c0 	.word	0x200007c0
  8018710:	200007e0 	.word	0x200007e0
         freq_t dev = markers[1].frequency + actual_rbw_x10*100.0;      // Temp value to prevent calculation of negative deviation
@@ -52478,22 +52478,22 @@ __attribute__((always_inline)) __STATIC_INLINE float sa_sqrtf(float x){__asm__ (
  80189ee:	e7e1      	b.n	80189b4 <draw_all_cells+0xc54>
  80189f0:	200032e8 	.word	0x200032e8
  80189f4:	42c80000 	.word	0x42c80000
- 80189f8:	08027e4a 	.word	0x08027e4a
- 80189fc:	08027e5c 	.word	0x08027e5c
+ 80189f8:	08027e62 	.word	0x08027e62
+ 80189fc:	08027e74 	.word	0x08027e74
  8018a00:	00000000 	.word	0x00000000
  8018a04:	200032f0 	.word	0x200032f0
- 8018a08:	08027e62 	.word	0x08027e62
- 8018a0c:	08027e6b 	.word	0x08027e6b
+ 8018a08:	08027e7a 	.word	0x08027e7a
+ 8018a0c:	08027e83 	.word	0x08027e83
  8018a10:	20006e50 	.word	0x20006e50
  8018a14:	200070b4 	.word	0x200070b4
  8018a18:	200070ac 	.word	0x200070ac
  8018a1c:	432dee14 	.word	0x432dee14
  8018a20:	40135d8e 	.word	0x40135d8e
  8018a24:	200007ec 	.word	0x200007ec
- 8018a28:	08027e73 	.word	0x08027e73
- 8018a2c:	08027eaf 	.word	0x08027eaf
- 8018a30:	08027e84 	.word	0x08027e84
- 8018a34:	08027e9b 	.word	0x08027e9b
+ 8018a28:	08027e8b 	.word	0x08027e8b
+ 8018a2c:	08027ec7 	.word	0x08027ec7
+ 8018a30:	08027e9c 	.word	0x08027e9c
+ 8018a34:	08027eb3 	.word	0x08027eb3
     if (i >= 2 && setting.measurement == M_OIP3 && markers[2].enabled && markers[3].enabled) {
  8018a38:	2802      	cmp	r0, #2
  8018a3a:	f47f adfc 	bne.w	8018636 <draw_all_cells+0x8d6>
@@ -52878,21 +52878,21 @@ __attribute__((always_inline)) __STATIC_INLINE float sa_sqrtf(float x){__asm__ (
  8018d4c:	191c      	adds	r4, r3, r4
  8018d4e:	eb47 0702 	adc.w	r7, r7, r2
  8018d52:	e772      	b.n	8018c3a <draw_all_cells+0xeda>
- 8018d54:	08027eb5 	.word	0x08027eb5
- 8018d58:	08027eaf 	.word	0x08027eaf
+ 8018d54:	08027ecd 	.word	0x08027ecd
+ 8018d58:	08027ec7 	.word	0x08027ec7
  8018d5c:	20006e50 	.word	0x20006e50
  8018d60:	ff800000 	.word	0xff800000
- 8018d64:	08027ec5 	.word	0x08027ec5
+ 8018d64:	08027edd 	.word	0x08027edd
  8018d68:	000f4240 	.word	0x000f4240
- 8018d6c:	08028330 	.word	0x08028330
+ 8018d6c:	08028348 	.word	0x08028348
  8018d70:	20006e3c 	.word	0x20006e3c
- 8018d74:	08027dca 	.word	0x08027dca
- 8018d78:	08027ddb 	.word	0x08027ddb
- 8018d7c:	08027e19 	.word	0x08027e19
- 8018d80:	08027dec 	.word	0x08027dec
- 8018d84:	0802b4c4 	.word	0x0802b4c4
- 8018d88:	08027857 	.word	0x08027857
- 8018d8c:	08027df0 	.word	0x08027df0
+ 8018d74:	08027de2 	.word	0x08027de2
+ 8018d78:	08027df3 	.word	0x08027df3
+ 8018d7c:	08027e31 	.word	0x08027e31
+ 8018d80:	08027e04 	.word	0x08027e04
+ 8018d84:	0802b4dc 	.word	0x0802b4dc
+ 8018d88:	0802786f 	.word	0x0802786f
+ 8018d8c:	08027e08 	.word	0x08027e08
  8018d90:	fa0a1f00 	.word	0xfa0a1f00
     freq_t step = getFrequency(1)-getFrequency(0);
  8018d94:	2001      	movs	r0, #1
@@ -52982,7 +52982,7 @@ __attribute__((always_inline)) __STATIC_INLINE float sa_sqrtf(float x){__asm__ (
  8018e4c:	f7ff ba97 	b.w	801837e <draw_all_cells+0x61e>
  8018e50:	000f4240 	.word	0x000f4240
  8018e54:	3b9ac9ff 	.word	0x3b9ac9ff
- 8018e58:	08027ecc 	.word	0x08027ecc
+ 8018e58:	08027ee4 	.word	0x08027ee4
  8018e5c:	000f423f 	.word	0x000f423f
 
 08018e60 <redraw_marker>:
@@ -53326,23 +53326,23 @@ draw_frequencies(void)
  8019144:	200032f0 	.word	0x200032f0
  8019148:	20003224 	.word	0x20003224
  801914c:	fa0a1f00 	.word	0xfa0a1f00
- 8019150:	0802864f 	.word	0x0802864f
- 8019154:	080273bf 	.word	0x080273bf
- 8019158:	08027edc 	.word	0x08027edc
+ 8019150:	08028667 	.word	0x08028667
+ 8019154:	080273d7 	.word	0x080273d7
+ 8019158:	08027ef4 	.word	0x08027ef4
  801915c:	05f5e100 	.word	0x05f5e100
- 8019160:	08027857 	.word	0x08027857
- 8019164:	08027ed4 	.word	0x08027ed4
- 8019168:	08027eec 	.word	0x08027eec
+ 8019160:	0802786f 	.word	0x0802786f
+ 8019164:	08027eec 	.word	0x08027eec
+ 8019168:	08027f04 	.word	0x08027f04
  801916c:	49742400 	.word	0x49742400
- 8019170:	08027ef5 	.word	0x08027ef5
+ 8019170:	08027f0d 	.word	0x08027f0d
  8019174:	20007128 	.word	0x20007128
  8019178:	77359400 	.word	0x77359400
- 801917c:	08027f56 	.word	0x08027f56
+ 801917c:	08027f6e 	.word	0x08027f6e
  8019180:	20006e30 	.word	0x20006e30
- 8019184:	08027f01 	.word	0x08027f01
- 8019188:	08027f1e 	.word	0x08027f1e
- 801918c:	08027f2b 	.word	0x08027f2b
- 8019190:	08027f49 	.word	0x08027f49
+ 8019184:	08027f19 	.word	0x08027f19
+ 8019188:	08027f36 	.word	0x08027f36
+ 801918c:	08027f43 	.word	0x08027f43
+ 8019190:	08027f61 	.word	0x08027f61
 	...
 
 080191a0 <draw_all>:
@@ -53799,10 +53799,10 @@ static void update_level_meter(void){
  80194e0:	20005c64 	.word	0x20005c64
  80194e4:	20001462 	.word	0x20001462
  80194e8:	200007ec 	.word	0x200007ec
- 80194ec:	0802ae34 	.word	0x0802ae34
+ 80194ec:	0802ae50 	.word	0x0802ae50
  80194f0:	ff3c3c00 	.word	0xff3c3c00
  80194f4:	447a0000 	.word	0x447a0000
- 80194f8:	08027f68 	.word	0x08027f68
+ 80194f8:	08027f80 	.word	0x08027f80
  80194fc:	20007168 	.word	0x20007168
       if (IS_TRACE_ENABLE(t)) {
  8019500:	0790      	lsls	r0, r2, #30
@@ -53855,7 +53855,7 @@ static void update_level_meter(void){
  8019562:	e6f9      	b.n	8019358 <draw_all+0x1b8>
  8019564:	2081      	movs	r0, #129	@ 0x81
  8019566:	e711      	b.n	801938c <draw_all+0x1ec>
- 8019568:	0802ae54 	.word	0x0802ae54
+ 8019568:	0802ae70 	.word	0x0802ae70
  801956c:	20007168 	.word	0x20007168
 
 08019570 <request_to_redraw_grid>:
@@ -54514,7 +54514,7 @@ static void browser_get_button_pos(int idx, browser_btn_t *b) {
   }
 }
  8019a12:	bdf0      	pop	{r4, r5, r6, r7, pc}
- 8019a14:	0802be70 	.word	0x0802be70
+ 8019a14:	0802be88 	.word	0x0802be88
 	...
 
 08019a20 <browser_get_max>:
@@ -55378,8 +55378,8 @@ draw_keypad_button(int id) {
  801a016:	4770      	bx	lr
  801a018:	200070e8 	.word	0x200070e8
  801a01c:	200070dc 	.word	0x200070dc
- 801a020:	0802ca58 	.word	0x0802ca58
- 801a024:	0802b49c 	.word	0x0802b49c
+ 801a020:	0802ca70 	.word	0x0802ca70
+ 801a024:	0802b4b4 	.word	0x0802b4b4
 	...
 
 0801a030 <browser_draw_button>:
@@ -55477,10 +55477,10 @@ static void browser_draw_buttons(void) {
  801a0e0:	2002      	movs	r0, #2
  801a0e2:	f7ff bfa5 	b.w	801a030 <browser_draw_button>
  801a0e6:	bf00      	nop
- 801a0e8:	08027f6e 	.word	0x08027f6e
- 801a0ec:	08027f72 	.word	0x08027f72
- 801a0f0:	08027f74 	.word	0x08027f74
- 801a0f4:	08027f76 	.word	0x08027f76
+ 801a0e8:	08027f86 	.word	0x08027f86
+ 801a0ec:	08027f8a 	.word	0x08027f8a
+ 801a0f0:	08027f8c 	.word	0x08027f8c
+ 801a0f4:	08027f8e 	.word	0x08027f8e
 	...
 
 0801a100 <draw_numeric_input>:
@@ -55726,9 +55726,9 @@ static UI_FUNCTION_ADV_CALLBACK(menu_restart_acb){
  801a2ea:	bf00      	nop
  801a2ec:	200032f0 	.word	0x200032f0
  801a2f0:	200007e4 	.word	0x200007e4
- 801a2f4:	08027f78 	.word	0x08027f78
- 801a2f8:	08027f8e 	.word	0x08027f8e
- 801a2fc:	08027f99 	.word	0x08027f99
+ 801a2f4:	08027f90 	.word	0x08027f90
+ 801a2f8:	08027fa6 	.word	0x08027fa6
+ 801a2fc:	08027fb1 	.word	0x08027fb1
  801a300:	20001454 	.word	0x20001454
 	...
 
@@ -55882,7 +55882,7 @@ __attribute__((always_inline)) __STATIC_INLINE int32_t __REVSH(int32_t value)
  801a42a:	4770      	bx	lr
   set_sweep_points(points_setting[data]);
  801a42c:	f7f5 bbf8 	b.w	800fc20 <set_sweep_points>
- 801a430:	0802bf34 	.word	0x0802bf34
+ 801a430:	0802bf4c 	.word	0x0802bf4c
  801a434:	200032f0 	.word	0x200032f0
 	...
 
@@ -55927,8 +55927,8 @@ __attribute__((always_inline)) __STATIC_INLINE int32_t __REVSH(int32_t value)
   set_modulation(data);
  801a486:	f7f1 bb83 	b.w	800bb90 <set_modulation>
  801a48a:	bf00      	nop
- 801a48c:	0802bfd0 	.word	0x0802bfd0
- 801a490:	0802864f 	.word	0x0802864f
+ 801a48c:	0802bfe8 	.word	0x0802bfe8
+ 801a490:	08028667 	.word	0x08028667
  801a494:	200032f0 	.word	0x200032f0
 	...
 
@@ -55949,8 +55949,8 @@ __attribute__((always_inline)) __STATIC_INLINE int32_t __REVSH(int32_t value)
   toggle_mute();
  801a4b4:	f7f1 bb34 	b.w	800bb20 <toggle_mute>
  801a4b8:	200032f0 	.word	0x200032f0
- 801a4bc:	080281fc 	.word	0x080281fc
- 801a4c0:	080281b2 	.word	0x080281b2
+ 801a4bc:	08028214 	.word	0x08028214
+ 801a4c0:	080281ca 	.word	0x080281ca
 	...
 
 0801a4d0 <menu_markers_reset_acb>:
@@ -56220,7 +56220,7 @@ __attribute__((always_inline)) __STATIC_INLINE int32_t __REVSH(int32_t value)
  801a6ca:	650b      	str	r3, [r1, #80]	@ 0x50
   shell_update_speed();
  801a6cc:	f7f6 bc08 	b.w	8010ee0 <shell_update_speed>
- 801a6d0:	0802b2e0 	.word	0x0802b2e0
+ 801a6d0:	0802b2f8 	.word	0x0802b2f8
  801a6d4:	200007ec 	.word	0x200007ec
 	...
 
@@ -56664,26 +56664,26 @@ __attribute__((always_inline)) __STATIC_INLINE int32_t __REVSH(int32_t value)
  801aa98:	20007128 	.word	0x20007128
  801aa9c:	3b023380 	.word	0x3b023380
  801aaa0:	000f1b30 	.word	0x000f1b30
- 801aaa4:	080273bf 	.word	0x080273bf
+ 801aaa4:	080273d7 	.word	0x080273d7
  801aaa8:	2000713e 	.word	0x2000713e
  801aaac:	4e6e6b28 	.word	0x4e6e6b28
- 801aab0:	08027fa5 	.word	0x08027fa5
- 801aab4:	08027faa 	.word	0x08027faa
- 801aab8:	08027fc0 	.word	0x08027fc0
- 801aabc:	08027fc4 	.word	0x08027fc4
- 801aac0:	08027fc9 	.word	0x08027fc9
- 801aac4:	08027fce 	.word	0x08027fce
+ 801aab0:	08027fbd 	.word	0x08027fbd
+ 801aab4:	08027fc2 	.word	0x08027fc2
+ 801aab8:	08027fd8 	.word	0x08027fd8
+ 801aabc:	08027fdc 	.word	0x08027fdc
+ 801aac0:	08027fe1 	.word	0x08027fe1
+ 801aac4:	08027fe6 	.word	0x08027fe6
  801aac8:	200007ec 	.word	0x200007ec
- 801aacc:	080285cb 	.word	0x080285cb
+ 801aacc:	080285e3 	.word	0x080285e3
  801aad0:	2000321c 	.word	0x2000321c
- 801aad4:	08027fd3 	.word	0x08027fd3
+ 801aad4:	08027feb 	.word	0x08027feb
  801aad8:	42d60000 	.word	0x42d60000
- 801aadc:	08027fd8 	.word	0x08027fd8
- 801aae0:	08027fb4 	.word	0x08027fb4
- 801aae4:	08027857 	.word	0x08027857
- 801aae8:	08027fe8 	.word	0x08027fe8
- 801aaec:	08027fb1 	.word	0x08027fb1
- 801aaf0:	08027fe6 	.word	0x08027fe6
+ 801aadc:	08027ff0 	.word	0x08027ff0
+ 801aae0:	08027fcc 	.word	0x08027fcc
+ 801aae4:	0802786f 	.word	0x0802786f
+ 801aae8:	08028000 	.word	0x08028000
+ 801aaec:	08027fc9 	.word	0x08027fc9
+ 801aaf0:	08027ffe 	.word	0x08027ffe
     uistat.value = get_level();           // compensation for dB offset during low output mode
  801aaf4:	f7f1 fad4 	bl	800c0a0 <get_level>
     uistat.value += setting.external_gain;
@@ -57014,29 +57014,29 @@ __attribute__((always_inline)) __STATIC_INLINE int32_t __REVSH(int32_t value)
  801adbc:	200032f0 	.word	0x200032f0
  801adc0:	20007128 	.word	0x20007128
  801adc4:	42d60000 	.word	0x42d60000
- 801adc8:	08027fb1 	.word	0x08027fb1
- 801adcc:	08027ff5 	.word	0x08027ff5
+ 801adc8:	08027fc9 	.word	0x08027fc9
+ 801adcc:	0802800d 	.word	0x0802800d
  801add0:	2000713e 	.word	0x2000713e
- 801add4:	08027fe6 	.word	0x08027fe6
+ 801add4:	08027ffe 	.word	0x08027ffe
  801add8:	200007ec 	.word	0x200007ec
  801addc:	540be400 	.word	0x540be400
- 801ade0:	080273bf 	.word	0x080273bf
+ 801ade0:	080273d7 	.word	0x080273d7
  801ade4:	20005b80 	.word	0x20005b80
  801ade8:	200070a7 	.word	0x200070a7
  801adec:	200070a8 	.word	0x200070a8
- 801adf0:	08027fff 	.word	0x08027fff
+ 801adf0:	08028017 	.word	0x08028017
  801adf4:	200070a6 	.word	0x200070a6
  801adf8:	fa0a1f00 	.word	0xfa0a1f00
  801adfc:	3b023380 	.word	0x3b023380
- 801ae00:	08027fa5 	.word	0x08027fa5
- 801ae04:	0802864f 	.word	0x0802864f
+ 801ae00:	08027fbd 	.word	0x08027fbd
+ 801ae04:	08028667 	.word	0x08028667
  801ae08:	20003900 	.word	0x20003900
  801ae0c:	b2d05dff 	.word	0xb2d05dff
  801ae10:	4d2fa200 	.word	0x4d2fa200
  801ae14:	b2d05e00 	.word	0xb2d05e00
- 801ae18:	08028004 	.word	0x08028004
+ 801ae18:	0802801c 	.word	0x0802801c
  801ae1c:	49742400 	.word	0x49742400
- 801ae20:	08028330 	.word	0x08028330
+ 801ae20:	08028348 	.word	0x08028348
     uistat.value = value(setting.trigger_level);
  801ae24:	4c51      	ldr	r4, [pc, #324]	@ (801af6c <fetch_numeric_target+0x82c>)
  801ae26:	4d52      	ldr	r5, [pc, #328]	@ (801af70 <fetch_numeric_target+0x830>)
@@ -57187,17 +57187,17 @@ __attribute__((always_inline)) __STATIC_INLINE int32_t __REVSH(int32_t value)
  801af6a:	e7e5      	b.n	801af38 <fetch_numeric_target+0x7f8>
  801af6c:	200032f0 	.word	0x200032f0
  801af70:	20007128 	.word	0x20007128
- 801af74:	080285a9 	.word	0x080285a9
- 801af78:	080285b7 	.word	0x080285b7
- 801af7c:	0802b4c4 	.word	0x0802b4c4
+ 801af74:	080285c1 	.word	0x080285c1
+ 801af78:	080285cf 	.word	0x080285cf
+ 801af7c:	0802b4dc 	.word	0x0802b4dc
  801af80:	461c4000 	.word	0x461c4000
- 801af84:	0802800b 	.word	0x0802800b
- 801af88:	08028013 	.word	0x08028013
- 801af8c:	08028017 	.word	0x08028017
+ 801af84:	08028023 	.word	0x08028023
+ 801af88:	0802802b 	.word	0x0802802b
+ 801af8c:	0802802f 	.word	0x0802802f
  801af90:	200007ec 	.word	0x200007ec
- 801af94:	0802801e 	.word	0x0802801e
+ 801af94:	08028036 	.word	0x08028036
  801af98:	2000713e 	.word	0x2000713e
- 801af9c:	0802802d 	.word	0x0802802d
+ 801af9c:	08028045 	.word	0x08028045
 
 0801afa0 <lever_move>:
   set_sweep_time_us(time);
@@ -57580,8 +57580,8 @@ static void getTouchPoint(uint16_t x, uint16_t y, const char *name, int16_t *dat
  801b25a:	b003      	add	sp, #12
  801b25c:	bdf0      	pop	{r4, r5, r6, r7, pc}
  801b25e:	bf00      	nop
- 801b260:	0802cba8 	.word	0x0802cba8
- 801b264:	0802803e 	.word	0x0802803e
+ 801b260:	0802cbc0 	.word	0x0802cbc0
+ 801b264:	08028056 	.word	0x08028056
  801b268:	200070e2 	.word	0x200070e2
  801b26c:	200070e0 	.word	0x200070e0
 
@@ -57750,8 +57750,8 @@ static FRESULT sd_findnext(DIR* dp, FILINFO* fno) {
   config_save();            // Auto save touch calibration
  801b3a4:	f007 be8c 	b.w	80230c0 <config_save>
  801b3a8:	200007ec 	.word	0x200007ec
- 801b3ac:	08028049 	.word	0x08028049
- 801b3b0:	08028054 	.word	0x08028054
+ 801b3ac:	08028061 	.word	0x08028061
+ 801b3b0:	0802806c 	.word	0x0802806c
 	...
 
 0801b3c0 <touch_position>:
@@ -57911,8 +57911,8 @@ static FRESULT sd_findnext(DIR* dp, FILINFO* fno) {
  801b4e6:	4625      	mov	r5, r4
  801b4e8:	e7c7      	b.n	801b47a <touch_draw_test+0x2a>
  801b4ea:	bf00      	nop
- 801b4ec:	08028060 	.word	0x08028060
- 801b4f0:	08028090 	.word	0x08028090
+ 801b4ec:	08028078 	.word	0x08028078
+ 801b4f0:	080280a8 	.word	0x080280a8
 	...
 
 0801b500 <touch_notepad>:
@@ -57985,7 +57985,7 @@ static FRESULT sd_findnext(DIR* dp, FILINFO* fno) {
   while (true) {
  801b584:	e7cf      	b.n	801b526 <touch_notepad+0x26>
  801b586:	bf00      	nop
- 801b588:	0802809d 	.word	0x0802809d
+ 801b588:	080280b5 	.word	0x080280b5
  801b58c:	00000000 	.word	0x00000000
 
 0801b590 <show_version>:
@@ -58175,15 +58175,15 @@ static FRESULT sd_findnext(DIR* dp, FILINFO* fno) {
  801b708:	e8bd 47f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
   lcd_set_font(FONT_SMALL);
  801b70c:	f006 be88 	b.w	8022420 <lcd_set_font>
- 801b710:	0802adb0 	.word	0x0802adb0
+ 801b710:	0802adc8 	.word	0x0802adc8
  801b714:	2000075c 	.word	0x2000075c
  801b718:	20008168 	.word	0x20008168
- 801b71c:	08027857 	.word	0x08027857
- 801b720:	080280dd 	.word	0x080280dd
- 801b724:	080280e4 	.word	0x080280e4
- 801b728:	0802811f 	.word	0x0802811f
- 801b72c:	08028fa0 	.word	0x08028fa0
- 801b730:	080280fa 	.word	0x080280fa
+ 801b71c:	0802786f 	.word	0x0802786f
+ 801b720:	080280f5 	.word	0x080280f5
+ 801b724:	080280fc 	.word	0x080280fc
+ 801b728:	08028137 	.word	0x08028137
+ 801b72c:	08028fb8 	.word	0x08028fb8
+ 801b730:	08028112 	.word	0x08028112
  801b734:	40021000 	.word	0x40021000
 	...
 
@@ -58844,7 +58844,7 @@ static FRESULT sd_findnext(DIR* dp, FILINFO* fno) {
  801bd44:	05f5e100 	.word	0x05f5e100
  801bd48:	200070a6 	.word	0x200070a6
  801bd4c:	200070f8 	.word	0x200070f8
- 801bd50:	0802864f 	.word	0x0802864f
+ 801bd50:	08028667 	.word	0x08028667
  801bd54:	49742400 	.word	0x49742400
  801bd58:	20005b89 	.word	0x20005b89
  801bd5c:	3851b717 	.word	0x3851b717
@@ -59130,7 +59130,7 @@ static FRESULT sd_findnext(DIR* dp, FILINFO* fno) {
  801bfac:	200032f0 	.word	0x200032f0
  801bfb0:	200007ec 	.word	0x200007ec
  801bfb4:	200070f8 	.word	0x200070f8
- 801bfb8:	0802864f 	.word	0x0802864f
+ 801bfb8:	08028667 	.word	0x08028667
  801bfbc:	20003900 	.word	0x20003900
  801bfc0:	40002800 	.word	0x40002800
  801bfc4:	00ff1f3f 	.word	0x00ff1f3f
@@ -59389,7 +59389,7 @@ keypad_click(int key) {
  801c160:	200070dc 	.word	0x200070dc
  801c164:	200070f8 	.word	0x200070f8
  801c168:	20007128 	.word	0x20007128
- 801c16c:	0802b49c 	.word	0x0802b49c
+ 801c16c:	0802b4b4 	.word	0x0802b4b4
 
 0801c170 <add_quick_menu>:
   y += YSTEP*item_space/2 + YSTEP;
@@ -59495,11 +59495,11 @@ keypad_click(int key) {
  801c228:	ecbd 8b02 	vpop	{d8}
  801c22c:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
  801c230:	200032f0 	.word	0x200032f0
- 801c234:	0802b4c4 	.word	0x0802b4c4
+ 801c234:	0802b4dc 	.word	0x0802b4dc
  801c238:	2000232b 	.word	0x2000232b
- 801c23c:	0802814c 	.word	0x0802814c
+ 801c23c:	08028164 	.word	0x08028164
  801c240:	2000232a 	.word	0x2000232a
- 801c244:	08028158 	.word	0x08028158
+ 801c244:	08028170 	.word	0x08028170
  801c248:	20007021 	.word	0x20007021
  801c24c:	20001454 	.word	0x20001454
   float yMax = setting.reflevel;
@@ -59871,44 +59871,44 @@ keypad_click(int key) {
  801c584:	f7e4 fb58 	bl	8000c38 <__aeabi_f2d>
  801c588:	e04e      	b.n	801c628 <draw_cal_status+0x478>
  801c58a:	bf00      	nop
- 801c58c:	08028164 	.word	0x08028164
- 801c590:	0802bd14 	.word	0x0802bd14
- 801c594:	08029600 	.word	0x08029600
- 801c598:	08028170 	.word	0x08028170
- 801c59c:	0802b6d8 	.word	0x0802b6d8
- 801c5a0:	08028175 	.word	0x08028175
- 801c5a4:	0802817b 	.word	0x0802817b
- 801c5a8:	08028182 	.word	0x08028182
+ 801c58c:	0802817c 	.word	0x0802817c
+ 801c590:	0802bd2c 	.word	0x0802bd2c
+ 801c594:	08029618 	.word	0x08029618
+ 801c598:	08028188 	.word	0x08028188
+ 801c59c:	0802b6f0 	.word	0x0802b6f0
+ 801c5a0:	0802818d 	.word	0x0802818d
+ 801c5a4:	08028193 	.word	0x08028193
+ 801c5a8:	0802819a 	.word	0x0802819a
  801c5ac:	20002344 	.word	0x20002344
- 801c5b0:	08028188 	.word	0x08028188
+ 801c5b0:	080281a0 	.word	0x080281a0
  801c5b4:	20007074 	.word	0x20007074
  801c5b8:	20007024 	.word	0x20007024
- 801c5bc:	0802859c 	.word	0x0802859c
- 801c5c0:	0802c414 	.word	0x0802c414
- 801c5c4:	0802bff4 	.word	0x0802bff4
- 801c5c8:	0802b8e4 	.word	0x0802b8e4
- 801c5cc:	0802c204 	.word	0x0802c204
- 801c5d0:	0802818b 	.word	0x0802818b
- 801c5d4:	0802bd3c 	.word	0x0802bd3c
- 801c5d8:	0802bf88 	.word	0x0802bf88
- 801c5dc:	0802819a 	.word	0x0802819a
- 801c5e0:	0802c3b0 	.word	0x0802c3b0
- 801c5e4:	080281b2 	.word	0x080281b2
- 801c5e8:	080281fc 	.word	0x080281fc
- 801c5ec:	080281a3 	.word	0x080281a3
- 801c5f0:	0802c2d4 	.word	0x0802c2d4
- 801c5f4:	080281ac 	.word	0x080281ac
- 801c5f8:	0802b5a8 	.word	0x0802b5a8
- 801c5fc:	080281b5 	.word	0x080281b5
- 801c600:	0802b728 	.word	0x0802b728
+ 801c5bc:	080285b4 	.word	0x080285b4
+ 801c5c0:	0802c42c 	.word	0x0802c42c
+ 801c5c4:	0802c00c 	.word	0x0802c00c
+ 801c5c8:	0802b8fc 	.word	0x0802b8fc
+ 801c5cc:	0802c21c 	.word	0x0802c21c
+ 801c5d0:	080281a3 	.word	0x080281a3
+ 801c5d4:	0802bd54 	.word	0x0802bd54
+ 801c5d8:	0802bfa0 	.word	0x0802bfa0
+ 801c5dc:	080281b2 	.word	0x080281b2
+ 801c5e0:	0802c3c8 	.word	0x0802c3c8
+ 801c5e4:	080281ca 	.word	0x080281ca
+ 801c5e8:	08028214 	.word	0x08028214
+ 801c5ec:	080281bb 	.word	0x080281bb
+ 801c5f0:	0802c2ec 	.word	0x0802c2ec
+ 801c5f4:	080281c4 	.word	0x080281c4
+ 801c5f8:	0802b5c0 	.word	0x0802b5c0
+ 801c5fc:	080281cd 	.word	0x080281cd
+ 801c600:	0802b740 	.word	0x0802b740
  801c604:	200032e8 	.word	0x200032e8
  801c608:	42c80000 	.word	0x42c80000
- 801c60c:	080281bb 	.word	0x080281bb
- 801c610:	0802bd84 	.word	0x0802bd84
- 801c614:	080281c7 	.word	0x080281c7
- 801c618:	0802bd64 	.word	0x0802bd64
- 801c61c:	0802b2d8 	.word	0x0802b2d8
- 801c620:	080281d3 	.word	0x080281d3
+ 801c60c:	080281d3 	.word	0x080281d3
+ 801c610:	0802bd9c 	.word	0x0802bd9c
+ 801c614:	080281df 	.word	0x080281df
+ 801c618:	0802bd7c 	.word	0x0802bd7c
+ 801c61c:	0802b2f0 	.word	0x0802b2f0
+ 801c620:	080281eb 	.word	0x080281eb
  801c624:	49742400 	.word	0x49742400
  801c628:	4ac0      	ldr	r2, [pc, #768]	@ (801c92c <draw_cal_status+0x77c>)
  801c62a:	e9cd 0100 	strd	r0, r1, [sp]
@@ -60280,40 +60280,40 @@ keypad_click(int key) {
  801c926:	4628      	mov	r0, r5
  801c928:	e5d2      	b.n	801c4d0 <draw_cal_status+0x320>
  801c92a:	bf00      	nop
- 801c92c:	080281db 	.word	0x080281db
- 801c930:	0802bb04 	.word	0x0802bb04
- 801c934:	080281e2 	.word	0x080281e2
- 801c938:	0802b618 	.word	0x0802b618
+ 801c92c:	080281f3 	.word	0x080281f3
+ 801c930:	0802bb1c 	.word	0x0802bb1c
+ 801c934:	080281fa 	.word	0x080281fa
+ 801c938:	0802b630 	.word	0x0802b630
  801c93c:	200007ec 	.word	0x200007ec
  801c940:	540be400 	.word	0x540be400
  801c944:	200032c8 	.word	0x200032c8
- 801c948:	080281e9 	.word	0x080281e9
- 801c94c:	0802c2d4 	.word	0x0802c2d4
- 801c950:	080281f6 	.word	0x080281f6
+ 801c948:	08028201 	.word	0x08028201
+ 801c94c:	0802c2ec 	.word	0x0802c2ec
+ 801c950:	0802820e 	.word	0x0802820e
  801c954:	2000233c 	.word	0x2000233c
  801c958:	200032c0 	.word	0x200032c0
  801c95c:	20003244 	.word	0x20003244
- 801c960:	08029638 	.word	0x08029638
- 801c964:	08028200 	.word	0x08028200
- 801c968:	0802961c 	.word	0x0802961c
+ 801c960:	08029650 	.word	0x08029650
+ 801c964:	08028218 	.word	0x08028218
+ 801c968:	08029634 	.word	0x08029634
  801c96c:	000f4240 	.word	0x000f4240
- 801c970:	08028209 	.word	0x08028209
- 801c974:	0802c39c 	.word	0x0802c39c
- 801c978:	08028214 	.word	0x08028214
- 801c97c:	08028222 	.word	0x08028222
+ 801c970:	08028221 	.word	0x08028221
+ 801c974:	0802c3b4 	.word	0x0802c3b4
+ 801c978:	0802822c 	.word	0x0802822c
+ 801c97c:	0802823a 	.word	0x0802823a
  801c980:	200032f0 	.word	0x200032f0
- 801c984:	0802822e 	.word	0x0802822e
- 801c988:	08028234 	.word	0x08028234
- 801c98c:	0802b674 	.word	0x0802b674
- 801c990:	08028240 	.word	0x08028240
- 801c994:	08029039 	.word	0x08029039
+ 801c984:	08028246 	.word	0x08028246
+ 801c988:	0802824c 	.word	0x0802824c
+ 801c98c:	0802b68c 	.word	0x0802b68c
+ 801c990:	08028258 	.word	0x08028258
+ 801c994:	08029051 	.word	0x08029051
  801c998:	20001484 	.word	0x20001484
- 801c99c:	08028246 	.word	0x08028246
- 801c9a0:	08028023 	.word	0x08028023
- 801c9a4:	0802b888 	.word	0x0802b888
+ 801c99c:	0802825e 	.word	0x0802825e
+ 801c9a0:	0802803b 	.word	0x0802803b
+ 801c9a4:	0802b8a0 	.word	0x0802b8a0
  801c9a8:	20007020 	.word	0x20007020
- 801c9ac:	08028169 	.word	0x08028169
- 801c9b0:	08027fce 	.word	0x08027fce
+ 801c9ac:	08028181 	.word	0x08028181
+ 801c9b0:	08027fe6 	.word	0x08027fe6
   ili9341_set_foreground((setting.step_delay || setting.sweep_time_us ) ? LCD_BRIGHT_COLOR_GREEN : LCD_FG_COLOR);
  801c9b4:	2015      	movs	r0, #21
  801c9b6:	e5d5      	b.n	801c564 <draw_cal_status+0x3b4>
@@ -60435,12 +60435,12 @@ keypad_click(int key) {
  801caa4:	f005 fccc 	bl	8022440 <lcd_printf>
  801caa8:	e7e7      	b.n	801ca7a <draw_cal_status+0x8ca>
  801caaa:	bf00      	nop
- 801caac:	0802823a 	.word	0x0802823a
+ 801caac:	08028252 	.word	0x08028252
  801cab0:	20007020 	.word	0x20007020
  801cab4:	20006e28 	.word	0x20006e28
- 801cab8:	08028256 	.word	0x08028256
- 801cabc:	0802c3b0 	.word	0x0802c3b0
- 801cac0:	08028169 	.word	0x08028169
+ 801cab8:	0802826e 	.word	0x0802826e
+ 801cabc:	0802c3c8 	.word	0x0802c3c8
+ 801cac0:	08028181 	.word	0x08028181
 	...
 
 0801cad0 <current_menu_is_form>:
@@ -60841,19 +60841,19 @@ keypad_click(int key) {
  801ce2c:	e740      	b.n	801ccb0 <draw_menu_buttons+0x1c0>
  801ce2e:	bf00      	nop
  801ce30:	200070e8 	.word	0x200070e8
- 801ce34:	0802b728 	.word	0x0802b728
+ 801ce34:	0802b740 	.word	0x0802b740
  801ce38:	200032f0 	.word	0x200032f0
  801ce3c:	2000713e 	.word	0x2000713e
  801ce40:	200014e2 	.word	0x200014e2
- 801ce44:	0802b418 	.word	0x0802b418
- 801ce48:	0802cae8 	.word	0x0802cae8
- 801ce4c:	0802ca68 	.word	0x0802ca68
+ 801ce44:	0802b430 	.word	0x0802b430
+ 801ce48:	0802cb00 	.word	0x0802cb00
+ 801ce4c:	0802ca80 	.word	0x0802ca80
  801ce50:	00030004 	.word	0x00030004
- 801ce54:	0802bd14 	.word	0x0802bd14
- 801ce58:	0802bd3c 	.word	0x0802bd3c
- 801ce5c:	0802825a 	.word	0x0802825a
- 801ce60:	08028263 	.word	0x08028263
- 801ce64:	0802cbcc 	.word	0x0802cbcc
+ 801ce54:	0802bd2c 	.word	0x0802bd2c
+ 801ce58:	0802bd54 	.word	0x0802bd54
+ 801ce5c:	08028272 	.word	0x08028272
+ 801ce60:	0802827b 	.word	0x0802827b
+ 801ce64:	0802cbe4 	.word	0x0802cbe4
  801ce68:	43ce0000 	.word	0x43ce0000
         } else if (m->data == KM_LOWOUTLEVEL) {
  801ce6c:	2b0b      	cmp	r3, #11
@@ -60965,10 +60965,10 @@ keypad_click(int key) {
  801cf84:	f240 1197 	movw	r1, #407	@ 0x197
  801cf88:	e7ed      	b.n	801cf66 <draw_menu_buttons+0x476>
  801cf8a:	bf00      	nop
- 801cf8c:	08028267 	.word	0x08028267
- 801cf90:	08028263 	.word	0x08028263
+ 801cf8c:	0802827f 	.word	0x0802827f
+ 801cf90:	0802827b 	.word	0x0802827b
  801cf94:	43ce0000 	.word	0x43ce0000
- 801cf98:	0802b418 	.word	0x0802b418
+ 801cf98:	0802b430 	.word	0x0802b430
  801cf9c:	00000000 	.word	0x00000000
 
 0801cfa0 <drawMessageBox>:
@@ -61063,9 +61063,9 @@ void drawMessageBox(const char *header, char *text, uint32_t delay){
  801d042:	e7fc      	b.n	801d03e <input_is_calibrated+0x2e>
  801d044:	200007ec 	.word	0x200007ec
  801d048:	20005b54 	.word	0x20005b54
- 801d04c:	08028295 	.word	0x08028295
- 801d050:	0802826d 	.word	0x0802826d
- 801d054:	080282bd 	.word	0x080282bd
+ 801d04c:	080282ad 	.word	0x080282ad
+ 801d050:	08028285 	.word	0x08028285
+ 801d054:	080282d5 	.word	0x080282d5
  801d058:	20005b8a 	.word	0x20005b8a
  801d05c:	00000000 	.word	0x00000000
 
@@ -61094,8 +61094,8 @@ void drawMessageBox(const char *header, char *text, uint32_t delay){
  801d084:	2001      	movs	r0, #1
  801d086:	e7fc      	b.n	801d082 <output_is_calibrated+0x22>
  801d088:	200007ec 	.word	0x200007ec
- 801d08c:	080282bd 	.word	0x080282bd
- 801d090:	080282c3 	.word	0x080282c3
+ 801d08c:	080282d5 	.word	0x080282d5
+ 801d090:	080282db 	.word	0x080282db
  801d094:	20005b8a 	.word	0x20005b8a
 	...
 
@@ -61452,14 +61452,14 @@ static void browser_open_file(int sel) {
  801d354:	4605      	mov	r5, r0
  801d356:	e7ee      	b.n	801d336 <browser_open_file+0x296>
  801d358:	200070a2 	.word	0x200070a2
- 801d35c:	08027857 	.word	0x08027857
+ 801d35c:	0802786f 	.word	0x0802786f
  801d360:	20007f2c 	.word	0x20007f2c
  801d364:	200070f4 	.word	0x200070f4
- 801d368:	0802be98 	.word	0x0802be98
+ 801d368:	0802beb0 	.word	0x0802beb0
  801d36c:	2000709c 	.word	0x2000709c
  801d370:	20007cdc 	.word	0x20007cdc
  801d374:	20007268 	.word	0x20007268
- 801d378:	080282e0 	.word	0x080282e0
+ 801d378:	080282f8 	.word	0x080282f8
  801d37c:	200070a8 	.word	0x200070a8
  801d380:	200032f0 	.word	0x200032f0
  801d384:	20001454 	.word	0x20001454
@@ -61818,7 +61818,7 @@ static void browser_open_file(int sel) {
  801d618:	f808 3005 	strb.w	r3, [r8, r5]
  801d61c:	b295      	uxth	r5, r2
  801d61e:	e7e9      	b.n	801d5f4 <browser_open_file+0x554>
- 801d620:	080282e0 	.word	0x080282e0
+ 801d620:	080282f8 	.word	0x080282f8
  801d624:	200032f0 	.word	0x200032f0
  801d628:	20007168 	.word	0x20007168
  801d62c:	20001454 	.word	0x20001454
@@ -62009,15 +62009,15 @@ repeat:
  801d7ae:	bf00      	nop
  801d7b0:	20007168 	.word	0x20007168
  801d7b4:	20007cdc 	.word	0x20007cdc
- 801d7b8:	080282e0 	.word	0x080282e0
+ 801d7b8:	080282f8 	.word	0x080282f8
  801d7bc:	434f4e6d 	.word	0x434f4e6d
  801d7c0:	200032f4 	.word	0x200032f4
  801d7c4:	200032f0 	.word	0x200032f0
  801d7c8:	434f4e6e 	.word	0x434f4e6e
  801d7cc:	200007f0 	.word	0x200007f0
- 801d7d0:	080282eb 	.word	0x080282eb
- 801d7d4:	0802830d 	.word	0x0802830d
- 801d7d8:	08028312 	.word	0x08028312
+ 801d7d0:	08028303 	.word	0x08028303
+ 801d7d4:	08028325 	.word	0x08028325
+ 801d7d8:	0802832a 	.word	0x0802832a
  801d7dc:	200070a2 	.word	0x200070a2
 
 0801d7e0 <check_frequency_slider>:
@@ -62175,8 +62175,8 @@ repeat:
  801d924:	2000701c 	.word	0x2000701c
  801d928:	200070ec 	.word	0x200070ec
  801d92c:	20001468 	.word	0x20001468
- 801d930:	0802c6ac 	.word	0x0802c6ac
- 801d934:	0802c648 	.word	0x0802c648
+ 801d930:	0802c6c4 	.word	0x0802c6c4
+ 801d934:	0802c660 	.word	0x0802c660
 	...
 
 0801d940 <ui_mode_menu>:
@@ -62274,7 +62274,7 @@ repeat:
  801d9e8:	bd10      	pop	{r4, pc}
  801d9ea:	bf00      	nop
  801d9ec:	200070bc 	.word	0x200070bc
- 801d9f0:	0802c2b4 	.word	0x0802c2b4
+ 801d9f0:	0802c2cc 	.word	0x0802c2cc
 	...
 
 0801da00 <menu_calibrate_harmonic_acb>:
@@ -62316,8 +62316,8 @@ repeat:
  801da44:	200007ec 	.word	0x200007ec
  801da48:	2000713e 	.word	0x2000713e
  801da4c:	20005b80 	.word	0x20005b80
- 801da50:	08028319 	.word	0x08028319
- 801da54:	0802c1e4 	.word	0x0802c1e4
+ 801da50:	08028331 	.word	0x08028331
+ 801da54:	0802c1fc 	.word	0x0802c1fc
 	...
 
 0801da60 <menu_calibrate_normal_acb>:
@@ -62359,8 +62359,8 @@ repeat:
  801daa4:	200007ec 	.word	0x200007ec
  801daa8:	2000713e 	.word	0x2000713e
  801daac:	20005b80 	.word	0x20005b80
- 801dab0:	08028319 	.word	0x08028319
- 801dab4:	0802c1c4 	.word	0x0802c1c4
+ 801dab0:	08028331 	.word	0x08028331
+ 801dab4:	0802c1dc 	.word	0x0802c1dc
 	...
 
 0801dac0 <menu_sweep_acb>:
@@ -62443,9 +62443,9 @@ repeat:
  801db64:	f7ff bf1c 	b.w	801d9a0 <menu_push_submenu>
  801db68:	200032f0 	.word	0x200032f0
  801db6c:	49742400 	.word	0x49742400
- 801db70:	0802831e 	.word	0x0802831e
- 801db74:	08028336 	.word	0x08028336
- 801db78:	0802c168 	.word	0x0802c168
+ 801db70:	08028336 	.word	0x08028336
+ 801db74:	0802834e 	.word	0x0802834e
+ 801db78:	0802c180 	.word	0x0802c180
  801db7c:	00000000 	.word	0x00000000
 
 0801db80 <menu_smodulation_acb>:
@@ -62511,11 +62511,11 @@ static UI_FUNCTION_ADV_CALLBACK(menu_smodulation_acb){
  801dbf6:	f7ff bed3 	b.w	801d9a0 <menu_push_submenu>
  801dbfa:	bf00      	nop
  801dbfc:	200032f0 	.word	0x200032f0
- 801dc00:	0802bfd0 	.word	0x0802bfd0
- 801dc04:	08028341 	.word	0x08028341
- 801dc08:	08028349 	.word	0x08028349
- 801dc0c:	0802835e 	.word	0x0802835e
- 801dc10:	0802c5bc 	.word	0x0802c5bc
+ 801dc00:	0802bfe8 	.word	0x0802bfe8
+ 801dc04:	08028359 	.word	0x08028359
+ 801dc08:	08028361 	.word	0x08028361
+ 801dc0c:	08028376 	.word	0x08028376
+ 801dc10:	0802c5d4 	.word	0x0802c5d4
 	...
 
 0801dc20 <menu_sreffer_acb>:
@@ -62535,8 +62535,8 @@ static UI_FUNCTION_ADV_CALLBACK(menu_smodulation_acb){
  801dc36:	f7ff beb3 	b.w	801d9a0 <menu_push_submenu>
  801dc3a:	bf00      	nop
  801dc3c:	200032f0 	.word	0x200032f0
- 801dc40:	0802bfb0 	.word	0x0802bfb0
- 801dc44:	0802c39c 	.word	0x0802c39c
+ 801dc40:	0802bfc8 	.word	0x0802bfc8
+ 801dc44:	0802c3b4 	.word	0x0802c3b4
 	...
 
 0801dc50 <menu_marker_modify_acb>:
@@ -62664,10 +62664,10 @@ static UI_FUNCTION_ADV_CALLBACK(menu_smodulation_acb){
  801dd2c:	200032f0 	.word	0x200032f0
  801dd30:	20007128 	.word	0x20007128
  801dd34:	2000713e 	.word	0x2000713e
- 801dd38:	0802c360 	.word	0x0802c360
+ 801dd38:	0802c378 	.word	0x0802c378
  801dd3c:	200070a8 	.word	0x200070a8
- 801dd40:	0802c4fc 	.word	0x0802c4fc
- 801dd44:	0802bc40 	.word	0x0802bc40
+ 801dd40:	0802c514 	.word	0x0802c514
+ 801dd44:	0802bc58 	.word	0x0802bc58
 	...
 
 0801dd50 <menu_limit_select_acb>:
@@ -62769,11 +62769,11 @@ static UI_FUNCTION_ADV_CALLBACK(menu_smodulation_acb){
  801de1a:	bf00      	nop
  801de1c:	200070a8 	.word	0x200070a8
  801de20:	200032f0 	.word	0x200032f0
- 801de24:	0802b4c4 	.word	0x0802b4c4
- 801de28:	08028374 	.word	0x08028374
+ 801de24:	0802b4dc 	.word	0x0802b4dc
+ 801de28:	0802838c 	.word	0x0802838c
  801de2c:	200070a7 	.word	0x200070a7
  801de30:	20001454 	.word	0x20001454
- 801de34:	0802c4c0 	.word	0x0802c4c0
+ 801de34:	0802c4d8 	.word	0x0802c4d8
 	...
 
 0801de40 <menu_multi_band_acb>:
@@ -62882,7 +62882,7 @@ static UI_FUNCTION_ADV_CALLBACK(menu_smodulation_acb){
  801defc:	200032f0 	.word	0x200032f0
  801df00:	20001454 	.word	0x20001454
  801df04:	20005b8a 	.word	0x20005b8a
- 801df08:	0802c414 	.word	0x0802c414
+ 801df08:	0802c42c 	.word	0x0802c42c
  801df0c:	00000000 	.word	0x00000000
 
 0801df10 <menu_band_select_acb>:
@@ -62974,11 +62974,11 @@ static UI_FUNCTION_ADV_CALLBACK(menu_smodulation_acb){
   menu_push_submenu(menu_band_modify);
  801dfc0:	f7ff bcee 	b.w	801d9a0 <menu_push_submenu>
  801dfc4:	200032f0 	.word	0x200032f0
- 801dfc8:	0802864f 	.word	0x0802864f
- 801dfcc:	08028382 	.word	0x08028382
+ 801dfc8:	08028667 	.word	0x08028667
+ 801dfcc:	0802839a 	.word	0x0802839a
  801dfd0:	200070a6 	.word	0x200070a6
  801dfd4:	20001454 	.word	0x20001454
- 801dfd8:	0802c448 	.word	0x0802c448
+ 801dfd8:	0802c460 	.word	0x0802c460
  801dfdc:	00000000 	.word	0x00000000
 
 0801dfe0 <menu_push_lowoutput>:
@@ -62986,7 +62986,7 @@ static UI_FUNCTION_ADV_CALLBACK(menu_smodulation_acb){
  801dfe0:	4801      	ldr	r0, [pc, #4]	@ (801dfe8 <menu_push_lowoutput+0x8>)
  801dfe2:	f7ff bcdd 	b.w	801d9a0 <menu_push_submenu>
  801dfe6:	bf00      	nop
- 801dfe8:	0802c6ac 	.word	0x0802c6ac
+ 801dfe8:	0802c6c4 	.word	0x0802c6c4
  801dfec:	00000000 	.word	0x00000000
 
 0801dff0 <ui_mode_normal>:
@@ -63412,13 +63412,13 @@ static UI_FUNCTION_ADV_CALLBACK(menu_smodulation_acb){
  801e2fa:	bf00      	nop
  801e2fc:	200070f5 	.word	0x200070f5
  801e300:	200070f4 	.word	0x200070f4
- 801e304:	0802c710 	.word	0x0802c710
+ 801e304:	0802c728 	.word	0x0802c728
  801e308:	200070dc 	.word	0x200070dc
- 801e30c:	08027857 	.word	0x08027857
+ 801e30c:	0802786f 	.word	0x0802786f
  801e310:	200070f8 	.word	0x200070f8
  801e314:	20003927 	.word	0x20003927
  801e318:	200070e8 	.word	0x200070e8
- 801e31c:	0802ca58 	.word	0x0802ca58
+ 801e31c:	0802ca70 	.word	0x0802ca70
  801e320:	200070f0 	.word	0x200070f0
  801e324:	20003926 	.word	0x20003926
 	...
@@ -63460,10 +63460,10 @@ static UI_FUNCTION_ADV_CALLBACK(menu_smodulation_acb){
  801e36e:	4770      	bx	lr
  801e370:	200070c4 	.word	0x200070c4
  801e374:	200070f0 	.word	0x200070f0
- 801e378:	08028390 	.word	0x08028390
+ 801e378:	080283a8 	.word	0x080283a8
  801e37c:	20007128 	.word	0x20007128
  801e380:	45a9c000 	.word	0x45a9c000
- 801e384:	0802c088 	.word	0x0802c088
+ 801e384:	0802c0a0 	.word	0x0802c0a0
 	...
 
 0801e390 <menu_curve_acb>:
@@ -63697,17 +63697,17 @@ static UI_FUNCTION_ADV_CALLBACK(menu_smodulation_acb){
  801e58a:	e740      	b.n	801e40e <menu_curve_acb+0x7e>
  801e58c:	200070bc 	.word	0x200070bc
  801e590:	200007ec 	.word	0x200007ec
- 801e594:	080283a6 	.word	0x080283a6
+ 801e594:	080283be 	.word	0x080283be
  801e598:	000f4240 	.word	0x000f4240
  801e59c:	200032f0 	.word	0x200032f0
- 801e5a0:	0802c294 	.word	0x0802c294
+ 801e5a0:	0802c2ac 	.word	0x0802c2ac
  801e5a4:	200070b8 	.word	0x200070b8
  801e5a8:	2000233c 	.word	0x2000233c
  801e5ac:	20002330 	.word	0x20002330
  801e5b0:	c20c0000 	.word	0xc20c0000
  801e5b4:	20001454 	.word	0x20001454
  801e5b8:	20002334 	.word	0x20002334
- 801e5bc:	080283b7 	.word	0x080283b7
+ 801e5bc:	080283cf 	.word	0x080283cf
  801e5c0:	200070f0 	.word	0x200070f0
  801e5c4:	2000713e 	.word	0x2000713e
  801e5c8:	200070f8 	.word	0x200070f8
@@ -63755,10 +63755,10 @@ static UI_FUNCTION_ADV_CALLBACK(menu_smodulation_acb){
 }
  801e606:	bd38      	pop	{r3, r4, r5, pc}
  801e608:	200070f0 	.word	0x200070f0
- 801e60c:	080283ce 	.word	0x080283ce
+ 801e60c:	080283e6 	.word	0x080283e6
  801e610:	200070f8 	.word	0x200070f8
  801e614:	20007128 	.word	0x20007128
- 801e618:	0802c2b4 	.word	0x0802c2b4
+ 801e618:	0802c2cc 	.word	0x0802c2cc
  801e61c:	200070c0 	.word	0x200070c0
  801e620:	200070bc 	.word	0x200070bc
 	...
@@ -63884,7 +63884,7 @@ static UI_FUNCTION_ADV_CALLBACK(menu_smodulation_acb){
  801e714:	20002334 	.word	0x20002334
  801e718:	200070f8 	.word	0x200070f8
  801e71c:	200070f0 	.word	0x200070f0
- 801e720:	080283e7 	.word	0x080283e7
+ 801e720:	080283ff 	.word	0x080283ff
  801e724:	20007128 	.word	0x20007128
  801e728:	200007ec 	.word	0x200007ec
  801e72c:	00000000 	.word	0x00000000
@@ -63987,7 +63987,7 @@ static UI_FUNCTION_ADV_CALLBACK(menu_smodulation_acb){
  801e7f0:	200032f0 	.word	0x200032f0
  801e7f4:	200070f8 	.word	0x200070f8
  801e7f8:	200070f0 	.word	0x200070f0
- 801e7fc:	0802840b 	.word	0x0802840b
+ 801e7fc:	08028423 	.word	0x08028423
  801e800:	20007128 	.word	0x20007128
  801e804:	200007ec 	.word	0x200007ec
 	...
@@ -64097,7 +64097,7 @@ static UI_FUNCTION_ADV_CALLBACK(menu_smodulation_acb){
  801e8e8:	200032f0 	.word	0x200032f0
  801e8ec:	200070f8 	.word	0x200070f8
  801e8f0:	200070f0 	.word	0x200070f0
- 801e8f4:	0802842d 	.word	0x0802842d
+ 801e8f4:	08028445 	.word	0x08028445
  801e8f8:	20007128 	.word	0x20007128
  801e8fc:	200007ec 	.word	0x200007ec
  801e900:	42c80000 	.word	0x42c80000
@@ -64149,11 +64149,11 @@ static UI_FUNCTION_ADV_CALLBACK(menu_smodulation_acb){
   while (1)
  801e962:	e7fe      	b.n	801e962 <menu_clearconfig_cb+0x52>
  801e964:	200070f0 	.word	0x200070f0
- 801e968:	08028450 	.word	0x08028450
+ 801e968:	08028468 	.word	0x08028468
  801e96c:	20007128 	.word	0x20007128
  801e970:	449a4000 	.word	0x449a4000
- 801e974:	08028462 	.word	0x08028462
- 801e978:	080282bd 	.word	0x080282bd
+ 801e974:	0802847a 	.word	0x0802847a
+ 801e978:	080282d5 	.word	0x080282d5
  801e97c:	20005b8a 	.word	0x20005b8a
  801e980:	40021000 	.word	0x40021000
  801e984:	40002c00 	.word	0x40002c00
@@ -64196,8 +64196,8 @@ static UI_FUNCTION_ADV_CALLBACK(menu_smodulation_acb){
  801e9c2:	2018      	movne	r0, #24
  801e9c4:	f7ff bbac 	b.w	801e120 <ui_mode_keypad>
  801e9c8:	200032f0 	.word	0x200032f0
- 801e9cc:	0802847b 	.word	0x0802847b
- 801e9d0:	08028480 	.word	0x08028480
+ 801e9cc:	08028493 	.word	0x08028493
+ 801e9d0:	08028498 	.word	0x08028498
 	...
 
 0801e9e0 <invoke_quick_menu>:
@@ -64294,7 +64294,7 @@ static UI_FUNCTION_ADV_CALLBACK(menu_settings_draw_line_acb){
  801ea7e:	bf00      	nop
  801ea80:	200032f0 	.word	0x200032f0
  801ea84:	200070f0 	.word	0x200070f0
- 801ea88:	0802848a 	.word	0x0802848a
+ 801ea88:	080284a2 	.word	0x080284a2
  801ea8c:	00000000 	.word	0x00000000
 
 0801ea90 <sa_save_file>:
@@ -64585,28 +64585,28 @@ static void sa_save_file(uint8_t format) {
  801ed06:	e756      	b.n	801ebb6 <sa_save_file+0x126>
  801ed08:	200007ec 	.word	0x200007ec
  801ed0c:	40002800 	.word	0x40002800
- 801ed10:	0802be98 	.word	0x0802be98
+ 801ed10:	0802beb0 	.word	0x0802beb0
  801ed14:	00ff1f3f 	.word	0x00ff1f3f
- 801ed18:	0802849f 	.word	0x0802849f
+ 801ed18:	080284b7 	.word	0x080284b7
  801ed1c:	20003928 	.word	0x20003928
- 801ed20:	08027857 	.word	0x08027857
+ 801ed20:	0802786f 	.word	0x0802786f
  801ed24:	20007f2c 	.word	0x20007f2c
- 801ed28:	08028490 	.word	0x08028490
- 801ed2c:	080284d1 	.word	0x080284d1
+ 801ed28:	080284a8 	.word	0x080284a8
+ 801ed2c:	080284e9 	.word	0x080284e9
  801ed30:	20005b8a 	.word	0x20005b8a
  801ed34:	200070f8 	.word	0x200070f8
- 801ed38:	080284af 	.word	0x080284af
+ 801ed38:	080284c7 	.word	0x080284c7
  801ed3c:	20007cdc 	.word	0x20007cdc
  801ed40:	200070a4 	.word	0x200070a4
  801ed44:	49742400 	.word	0x49742400
- 801ed48:	080284b5 	.word	0x080284b5
- 801ed4c:	080284c7 	.word	0x080284c7
- 801ed50:	080284bf 	.word	0x080284bf
- 801ed54:	080284c6 	.word	0x080284c6
- 801ed58:	080276f4 	.word	0x080276f4
+ 801ed48:	080284cd 	.word	0x080284cd
+ 801ed4c:	080284df 	.word	0x080284df
+ 801ed50:	080284d7 	.word	0x080284d7
+ 801ed54:	080284de 	.word	0x080284de
+ 801ed58:	0802770c 	.word	0x0802770c
  801ed5c:	20007168 	.word	0x20007168
- 801ed60:	0802beb8 	.word	0x0802beb8
- 801ed64:	080284bb 	.word	0x080284bb
+ 801ed60:	0802bed0 	.word	0x0802bed0
+ 801ed64:	080284d3 	.word	0x080284d3
  801ed68:	200032f0 	.word	0x200032f0
             buf += plot_printf(buf, 100, "%U, ", setting.limits[current_trace][i].frequency);
  801ed6c:	4f5f      	ldr	r7, [pc, #380]	@ (801eeec <sa_save_file+0x45c>)
@@ -64790,9 +64790,9 @@ static void sa_save_file(uint8_t format) {
  801eee8:	e6fa      	b.n	801ece0 <sa_save_file+0x250>
  801eeea:	bf00      	nop
  801eeec:	20007168 	.word	0x20007168
- 801eef0:	080284cc 	.word	0x080284cc
- 801eef4:	08027a01 	.word	0x08027a01
- 801eef8:	080276f4 	.word	0x080276f4
+ 801eef0:	080284e4 	.word	0x080284e4
+ 801eef4:	08027a19 	.word	0x08027a19
+ 801eef8:	0802770c 	.word	0x0802770c
  801eefc:	200032f0 	.word	0x200032f0
  801ef00:	20007cdc 	.word	0x20007cdc
  801ef04:	434f4e6d 	.word	0x434f4e6d
@@ -64998,10 +64998,10 @@ static void sa_save_file(uint8_t format) {
  801f0a0:	b2d05e00 	.word	0xb2d05e00
  801f0a4:	00000000 	.word	0x00000000
  801f0a8:	200007ec 	.word	0x200007ec
- 801f0ac:	080284de 	.word	0x080284de
- 801f0b0:	0802830d 	.word	0x0802830d
+ 801f0ac:	080284f6 	.word	0x080284f6
+ 801f0b0:	08028325 	.word	0x08028325
  801f0b4:	200070f0 	.word	0x200070f0
- 801f0b8:	08028505 	.word	0x08028505
+ 801f0b8:	0802851d 	.word	0x0802851d
  801f0bc:	20007128 	.word	0x20007128
  801f0c0:	45870800 	.word	0x45870800
 	...
@@ -65107,8 +65107,8 @@ static void sa_save_file(uint8_t format) {
  801f17e:	f7fe bf37 	b.w	801dff0 <ui_mode_normal>
  801f182:	bf00      	nop
  801f184:	200007ec 	.word	0x200007ec
- 801f188:	08028517 	.word	0x08028517
- 801f18c:	08028529 	.word	0x08028529
+ 801f188:	0802852f 	.word	0x0802852f
+ 801f18c:	08028541 	.word	0x08028541
  801f190:	20005b8a 	.word	0x20005b8a
 	...
 
@@ -65155,8 +65155,8 @@ static void sa_save_file(uint8_t format) {
  801f1d8:	e7f8      	b.n	801f1cc <menu_spur_acb+0x2c>
  801f1da:	bf00      	nop
  801f1dc:	200032f0 	.word	0x200032f0
- 801f1e0:	08028540 	.word	0x08028540
- 801f1e4:	0802854d 	.word	0x0802854d
+ 801f1e0:	08028558 	.word	0x08028558
+ 801f1e4:	08028565 	.word	0x08028565
 	...
 
 0801f1f0 <menu_move_back>:
@@ -65373,22 +65373,22 @@ static void sa_save_file(uint8_t format) {
  801f366:	e7d3      	b.n	801f310 <menu_lowoutput_settings_acb+0xc0>
  801f368:	2000233c 	.word	0x2000233c
  801f36c:	20002330 	.word	0x20002330
- 801f370:	08029638 	.word	0x08029638
+ 801f370:	08029650 	.word	0x08029650
  801f374:	310dfbbf 	.word	0x310dfbbf
- 801f378:	0802855c 	.word	0x0802855c
- 801f37c:	08027857 	.word	0x08027857
+ 801f378:	08028574 	.word	0x08028574
+ 801f37c:	0802786f 	.word	0x0802786f
  801f380:	435a6e80 	.word	0x435a6e80
  801f384:	200032f0 	.word	0x200032f0
- 801f388:	0802856f 	.word	0x0802856f
+ 801f388:	08028587 	.word	0x08028587
  801f38c:	200032c0 	.word	0x200032c0
- 801f390:	08028576 	.word	0x08028576
+ 801f390:	0802858e 	.word	0x0802858e
  801f394:	20006fe4 	.word	0x20006fe4
- 801f398:	0802857c 	.word	0x0802857c
+ 801f398:	08028594 	.word	0x08028594
  801f39c:	20005b54 	.word	0x20005b54
- 801f3a0:	0802c060 	.word	0x0802c060
- 801f3a4:	0802c038 	.word	0x0802c038
+ 801f3a0:	0802c078 	.word	0x0802c078
+ 801f3a4:	0802c050 	.word	0x0802c050
  801f3a8:	20001454 	.word	0x20001454
- 801f3ac:	08028562 	.word	0x08028562
+ 801f3ac:	0802857a 	.word	0x0802857a
 
 0801f3b0 <menu_mixer_drive_acb>:
 {
@@ -65513,7 +65513,7 @@ static void sa_save_file(uint8_t format) {
   menu_move_back(false);
  801f46c:	f7ff bec0 	b.w	801f1f0 <menu_move_back>
  801f470:	200032f0 	.word	0x200032f0
- 801f474:	0802bfb0 	.word	0x0802bfb0
+ 801f474:	0802bfc8 	.word	0x0802bfc8
 	...
 
 0801f480 <menu_mode_acb>:
@@ -65577,13 +65577,13 @@ static void sa_save_file(uint8_t format) {
  801f4d6:	f7fe fa63 	bl	801d9a0 <menu_push_submenu>
     break;
  801f4da:	e7ed      	b.n	801f4b8 <menu_mode_acb+0x38>
- 801f4dc:	0802bfec 	.word	0x0802bfec
+ 801f4dc:	0802c004 	.word	0x0802c004
  801f4e0:	200032f0 	.word	0x200032f0
- 801f4e4:	08028587 	.word	0x08028587
- 801f4e8:	0802858e 	.word	0x0802858e
+ 801f4e4:	0802859f 	.word	0x0802859f
+ 801f4e8:	080285a6 	.word	0x080285a6
  801f4ec:	20005b8a 	.word	0x20005b8a
- 801f4f0:	0802c648 	.word	0x0802c648
- 801f4f4:	0802c6ac 	.word	0x0802c6ac
+ 801f4f0:	0802c660 	.word	0x0802c660
+ 801f4f4:	0802c6c4 	.word	0x0802c6c4
 	...
 
 0801f500 <menu_curve_confirm_cb>:
@@ -66148,14 +66148,14 @@ static void sa_save_file(uint8_t format) {
  801f920:	4808      	ldr	r0, [pc, #32]	@ (801f944 <menu_trigger_level_acb+0x144>)
  801f922:	e7b8      	b.n	801f896 <menu_trigger_level_acb+0x96>
  801f924:	200032f0 	.word	0x200032f0
- 801f928:	080285b0 	.word	0x080285b0
- 801f92c:	080285a2 	.word	0x080285a2
- 801f930:	0802b4c4 	.word	0x0802b4c4
- 801f934:	08028595 	.word	0x08028595
- 801f938:	080285be 	.word	0x080285be
- 801f93c:	0802c524 	.word	0x0802c524
+ 801f928:	080285c8 	.word	0x080285c8
+ 801f92c:	080285ba 	.word	0x080285ba
+ 801f930:	0802b4dc 	.word	0x0802b4dc
+ 801f934:	080285ad 	.word	0x080285ad
+ 801f938:	080285d6 	.word	0x080285d6
+ 801f93c:	0802c53c 	.word	0x0802c53c
  801f940:	200070a8 	.word	0x200070a8
- 801f944:	0802c498 	.word	0x0802c498
+ 801f944:	0802c4b0 	.word	0x0802c4b0
 	...
 
 0801f950 <menu_limit_disable_cb>:
@@ -66229,8 +66229,8 @@ static void sa_save_file(uint8_t format) {
  801f9cc:	200070a8 	.word	0x200070a8
  801f9d0:	200032f0 	.word	0x200032f0
  801f9d4:	200070a7 	.word	0x200070a7
- 801f9d8:	080285ce 	.word	0x080285ce
- 801f9dc:	080282bd 	.word	0x080282bd
+ 801f9d8:	080285e6 	.word	0x080285e6
+ 801f9dc:	080282d5 	.word	0x080282d5
  801f9e0:	20001454 	.word	0x20001454
 	...
 
@@ -66271,7 +66271,7 @@ static void sa_save_file(uint8_t format) {
  801fa30:	2001      	movs	r0, #1
  801fa32:	f7ff bbdd 	b.w	801f1f0 <menu_move_back>
  801fa36:	bf00      	nop
- 801fa38:	0802bf40 	.word	0x0802bf40
+ 801fa38:	0802bf58 	.word	0x0802bf58
  801fa3c:	200032f0 	.word	0x200032f0
 	...
 
@@ -66305,8 +66305,8 @@ static void sa_save_file(uint8_t format) {
  801fa7c:	2001      	movs	r0, #1
  801fa7e:	f7ff bbb7 	b.w	801f1f0 <menu_move_back>
  801fa82:	bf00      	nop
- 801fa84:	0802bf74 	.word	0x0802bf74
- 801fa88:	0802bf4c 	.word	0x0802bf4c
+ 801fa84:	0802bf8c 	.word	0x0802bf8c
+ 801fa88:	0802bf64 	.word	0x0802bf64
  801fa8c:	200032f0 	.word	0x200032f0
 
 0801fa90 <menu_atten_high_acb>:
@@ -66392,8 +66392,8 @@ static void sa_save_file(uint8_t format) {
  801fb1e:	f7ec f9b7 	bl	800be90 <set_auto_attenuation>
  801fb22:	e7f7      	b.n	801fb14 <menu_atten_acb+0x44>
  801fb24:	200032f0 	.word	0x200032f0
- 801fb28:	080285e1 	.word	0x080285e1
- 801fb2c:	08027fce 	.word	0x08027fce
+ 801fb28:	080285f9 	.word	0x080285f9
+ 801fb2c:	08027fe6 	.word	0x08027fe6
 	...
 
 0801fb40 <menu_BAND_disable_cb>:
@@ -66457,8 +66457,8 @@ static void sa_save_file(uint8_t format) {
  801fbaa:	bd10      	pop	{r4, pc}
  801fbac:	200032f0 	.word	0x200032f0
  801fbb0:	200070a6 	.word	0x200070a6
- 801fbb4:	080285ce 	.word	0x080285ce
- 801fbb8:	080282bd 	.word	0x080282bd
+ 801fbb4:	080285e6 	.word	0x080285e6
+ 801fbb8:	080282d5 	.word	0x080282d5
  801fbbc:	20001454 	.word	0x20001454
 
 0801fbc0 <menu_unit_acb>:
@@ -66548,7 +66548,7 @@ static void sa_save_file(uint8_t format) {
   menu_move_back(false);
  801fc54:	f7ff bacc 	b.w	801f1f0 <menu_move_back>
  801fc58:	200070a8 	.word	0x200070a8
- 801fc5c:	080285e5 	.word	0x080285e5
+ 801fc5c:	080285fd 	.word	0x080285fd
 
 0801fc60 <menu_subtract_trace_acb>:
 {
@@ -66608,9 +66608,9 @@ static void sa_save_file(uint8_t format) {
  801fcb6:	f7ff ba9b 	b.w	801f1f0 <menu_move_back>
  801fcba:	bf00      	nop
  801fcbc:	200070a8 	.word	0x200070a8
- 801fcc0:	080285ef 	.word	0x080285ef
+ 801fcc0:	08028607 	.word	0x08028607
  801fcc4:	200032f0 	.word	0x200032f0
- 801fcc8:	08028601 	.word	0x08028601
+ 801fcc8:	08028619 	.word	0x08028619
  801fccc:	00000000 	.word	0x00000000
 
 0801fcd0 <menu_trace_acb>:
@@ -66662,8 +66662,8 @@ static void sa_save_file(uint8_t format) {
  801fd1e:	e7f7      	b.n	801fd10 <menu_trace_acb+0x40>
  801fd20:	200070a8 	.word	0x200070a8
  801fd24:	200032f0 	.word	0x200032f0
- 801fd28:	0802860e 	.word	0x0802860e
- 801fd2c:	080282bd 	.word	0x080282bd
+ 801fd28:	08028626 	.word	0x08028626
+ 801fd2c:	080282d5 	.word	0x080282d5
  801fd30:	20005b8a 	.word	0x20005b8a
 	...
 
@@ -66750,11 +66750,11 @@ static void sa_save_file(uint8_t format) {
  801fdd8:	203b      	movs	r0, #59	@ 0x3b
  801fdda:	f7fe f9a1 	bl	801e120 <ui_mode_keypad>
  801fdde:	e7ec      	b.n	801fdba <menu_store_preset_acb+0x7a>
- 801fde0:	0802862a 	.word	0x0802862a
- 801fde4:	08028382 	.word	0x08028382
- 801fde8:	08028634 	.word	0x08028634
+ 801fde0:	08028642 	.word	0x08028642
+ 801fde4:	0802839a 	.word	0x0802839a
+ 801fde8:	0802864c 	.word	0x0802864c
  801fdec:	200070f0 	.word	0x200070f0
- 801fdf0:	0802863d 	.word	0x0802863d
+ 801fdf0:	08028655 	.word	0x08028655
 	...
 
 0801fe00 <menu_load_preset_acb>:
@@ -66823,9 +66823,9 @@ static void sa_save_file(uint8_t format) {
  801fe7c:	e8bd 4070 	ldmia.w	sp!, {r4, r5, r6, lr}
   menu_move_back(true);
  801fe80:	f7ff b9b6 	b.w	801f1f0 <menu_move_back>
- 801fe84:	08028649 	.word	0x08028649
- 801fe88:	08028382 	.word	0x08028382
- 801fe8c:	08028652 	.word	0x08028652
+ 801fe84:	08028661 	.word	0x08028661
+ 801fe88:	0802839a 	.word	0x0802839a
+ 801fe8c:	0802866a 	.word	0x0802866a
  801fe90:	200032f0 	.word	0x200032f0
 	...
 
@@ -67026,7 +67026,7 @@ static void sa_save_file(uint8_t format) {
  8020002:	bf00      	nop
  8020004:	20001458 	.word	0x20001458
  8020008:	200032f0 	.word	0x200032f0
- 802000c:	0802c19c 	.word	0x0802c19c
+ 802000c:	0802c1b4 	.word	0x0802c1b4
 
 08020010 <menu_autosettings_cb>:
 {
@@ -67193,15 +67193,15 @@ static void browser_draw_page(int page) {
     page_count = cnt == 0 ? 1 : (file_count + FILES_PER_PAGE - 1) / FILES_PER_PAGE;
  8020140:	2401      	movs	r4, #1
  8020142:	e7ed      	b.n	8020120 <browser_draw_page+0xb0>
- 8020144:	08027857 	.word	0x08027857
+ 8020144:	0802786f 	.word	0x0802786f
  8020148:	20007f2c 	.word	0x20007f2c
- 802014c:	0802865b 	.word	0x0802865b
- 8020150:	0802815e 	.word	0x0802815e
+ 802014c:	08028673 	.word	0x08028673
+ 8020150:	08028176 	.word	0x08028176
  8020154:	200070f4 	.word	0x200070f4
- 8020158:	0802be98 	.word	0x0802be98
+ 8020158:	0802beb0 	.word	0x0802beb0
  802015c:	200070a2 	.word	0x200070a2
  8020160:	200070a0 	.word	0x200070a0
- 8020164:	08028663 	.word	0x08028663
+ 8020164:	0802867b 	.word	0x0802867b
 	...
 
 08020170 <menu_sdcard_browse_cb>:
@@ -67373,8 +67373,8 @@ static UI_FUNCTION_CALLBACK(menu_sdcard_browse_cb) {
  80202a6:	e7d7      	b.n	8020258 <menu_trigger_acb+0x88>
  80202a8:	200032f0 	.word	0x200032f0
  80202ac:	200014d4 	.word	0x200014d4
- 80202b0:	0802866f 	.word	0x0802866f
- 80202b4:	08028672 	.word	0x08028672
+ 80202b0:	08028687 	.word	0x08028687
+ 80202b4:	0802868a 	.word	0x0802868a
  80202b8:	20005b89 	.word	0x20005b89
  80202bc:	20005b50 	.word	0x20005b50
 
@@ -67455,7 +67455,7 @@ static UI_FUNCTION_CALLBACK(menu_sdcard_browse_cb) {
   ui_mode_normal();
  8020344:	f7fd be54 	b.w	801dff0 <ui_mode_normal>
  8020348:	200070f0 	.word	0x200070f0
- 802034c:	08028677 	.word	0x08028677
+ 802034c:	0802868f 	.word	0x0802868f
  8020350:	200070f8 	.word	0x200070f8
  8020354:	200032f0 	.word	0x200032f0
 	...
@@ -67589,9 +67589,9 @@ static UI_FUNCTION_ADV_CALLBACK(menu_waterfall_acb){
  8020450:	e7f2      	b.n	8020438 <menu_waterfall_acb+0x58>
  8020452:	bf00      	nop
  8020454:	20001458 	.word	0x20001458
- 8020458:	08028683 	.word	0x08028683
+ 8020458:	0802869b 	.word	0x0802869b
  802045c:	200032f0 	.word	0x200032f0
- 8020460:	08028690 	.word	0x08028690
+ 8020460:	080286a8 	.word	0x080286a8
 	...
 
 08020470 <menu_shift_acb>:
@@ -67735,8 +67735,8 @@ static UI_FUNCTION_ADV_CALLBACK(menu_waterfall_acb){
  802058c:	fa0a1f00 	.word	0xfa0a1f00
  8020590:	05f5e100 	.word	0x05f5e100
  8020594:	4cbebc20 	.word	0x4cbebc20
- 8020598:	0802869b 	.word	0x0802869b
- 802059c:	080286b2 	.word	0x080286b2
+ 8020598:	080286b3 	.word	0x080286b3
+ 802059c:	080286ca 	.word	0x080286ca
  80205a0:	200070f0 	.word	0x200070f0
  80205a4:	20007128 	.word	0x20007128
 	...
@@ -67779,7 +67779,7 @@ static UI_FUNCTION_ADV_CALLBACK(menu_waterfall_acb){
  80205e4:	f7fd bd04 	b.w	801dff0 <ui_mode_normal>
  80205e8:	200070a8 	.word	0x200070a8
  80205ec:	200032f0 	.word	0x200032f0
- 80205f0:	0802c498 	.word	0x0802c498
+ 80205f0:	0802c4b0 	.word	0x0802c4b0
 	...
 
 08020600 <menu_measure_acb>:
@@ -68171,20 +68171,20 @@ static UI_FUNCTION_ADV_CALLBACK(menu_waterfall_acb){
  8020924:	462b      	mov	r3, r5
  8020926:	e773      	b.n	8020810 <menu_measure_acb+0x210>
  8020928:	200032f0 	.word	0x200032f0
- 802092c:	080286ca 	.word	0x080286ca
- 8020930:	080282bd 	.word	0x080282bd
+ 802092c:	080286e2 	.word	0x080286e2
+ 8020930:	080282d5 	.word	0x080282d5
  8020934:	20005b8a 	.word	0x20005b8a
  8020938:	200070f0 	.word	0x200070f0
- 802093c:	080286da 	.word	0x080286da
- 8020940:	080286f3 	.word	0x080286f3
+ 802093c:	080286f2 	.word	0x080286f2
+ 8020940:	0802870b 	.word	0x0802870b
  8020944:	20007128 	.word	0x20007128
- 8020948:	08028706 	.word	0x08028706
- 802094c:	0802871f 	.word	0x0802871f
- 8020950:	0802872c 	.word	0x0802872c
- 8020954:	08028740 	.word	0x08028740
- 8020958:	08028751 	.word	0x08028751
- 802095c:	08027e17 	.word	0x08027e17
- 8020960:	0802875b 	.word	0x0802875b
+ 8020948:	0802871e 	.word	0x0802871e
+ 802094c:	08028737 	.word	0x08028737
+ 8020950:	08028744 	.word	0x08028744
+ 8020954:	08028758 	.word	0x08028758
+ 8020958:	08028769 	.word	0x08028769
+ 802095c:	08027e2f 	.word	0x08027e2f
+ 8020960:	08028773 	.word	0x08028773
       reset_settings(setting.mode);
  8020964:	f894 0198 	ldrb.w	r0, [r4, #408]	@ 0x198
       kp_help_text = "Frequency of signal";
@@ -68406,26 +68406,26 @@ static UI_FUNCTION_ADV_CALLBACK(menu_waterfall_acb){
  8020b36:	e6ab      	b.n	8020890 <menu_measure_acb+0x290>
  8020b38:	200070f0 	.word	0x200070f0
  8020b3c:	20007128 	.word	0x20007128
- 8020b40:	0802872c 	.word	0x0802872c
- 8020b44:	08028780 	.word	0x08028780
+ 8020b40:	08028744 	.word	0x08028744
+ 8020b44:	08028798 	.word	0x08028798
  8020b48:	42480000 	.word	0x42480000
  8020b4c:	469c4000 	.word	0x469c4000
  8020b50:	43960000 	.word	0x43960000
- 8020b54:	080287a4 	.word	0x080287a4
+ 8020b54:	080287bc 	.word	0x080287bc
  8020b58:	44bb8000 	.word	0x44bb8000
- 8020b5c:	080287c5 	.word	0x080287c5
- 8020b60:	080287d7 	.word	0x080287d7
+ 8020b5c:	080287dd 	.word	0x080287dd
+ 8020b60:	080287ef 	.word	0x080287ef
  8020b64:	200070ac 	.word	0x200070ac
  8020b68:	00000000 	.word	0x00000000
- 8020b6c:	08028805 	.word	0x08028805
+ 8020b6c:	0802881d 	.word	0x0802881d
  8020b70:	000186a0 	.word	0x000186a0
- 8020b74:	0802c204 	.word	0x0802c204
+ 8020b74:	0802c21c 	.word	0x0802c21c
  8020b78:	200070b4 	.word	0x200070b4
  8020b7c:	200007ec 	.word	0x200007ec
  8020b80:	3727c5ac 	.word	0x3727c5ac
- 8020b84:	080287e5 	.word	0x080287e5
- 8020b88:	080282bd 	.word	0x080282bd
- 8020b8c:	080287f5 	.word	0x080287f5
+ 8020b84:	080287fd 	.word	0x080287fd
+ 8020b88:	080282d5 	.word	0x080282d5
+ 8020b8c:	0802880d 	.word	0x0802880d
 
 08020b90 <browser_key_press>:
   switch (key) {
@@ -68734,16 +68734,16 @@ static void browser_key_press(int key) {
  8020db2:	bf00      	nop
  8020db4:	200070a8 	.word	0x200070a8
  8020db8:	200032f0 	.word	0x200032f0
- 8020dbc:	080285ef 	.word	0x080285ef
- 8020dc0:	08028601 	.word	0x08028601
- 8020dc4:	0802bf88 	.word	0x0802bf88
- 8020dc8:	0802881c 	.word	0x0802881c
- 8020dcc:	0802c510 	.word	0x0802c510
- 8020dd0:	08028824 	.word	0x08028824
- 8020dd4:	0802883e 	.word	0x0802883e
+ 8020dbc:	08028607 	.word	0x08028607
+ 8020dc0:	08028619 	.word	0x08028619
+ 8020dc4:	0802bfa0 	.word	0x0802bfa0
+ 8020dc8:	08028834 	.word	0x08028834
+ 8020dcc:	0802c528 	.word	0x0802c528
+ 8020dd0:	0802883c 	.word	0x0802883c
+ 8020dd4:	08028856 	.word	0x08028856
  8020dd8:	20005b8a 	.word	0x20005b8a
- 8020ddc:	0802c4e8 	.word	0x0802c4e8
- 8020de0:	0802c3b0 	.word	0x0802c3b0
+ 8020ddc:	0802c500 	.word	0x0802c500
+ 8020de0:	0802c3c8 	.word	0x0802c3c8
 	...
 
 08020df0 <set_interval_stop_time>:
@@ -69488,7 +69488,7 @@ static void browser_key_press(int key) {
  80213a4:	200014e0 	.word	0x200014e0
  80213a8:	20007128 	.word	0x20007128
  80213ac:	200070e8 	.word	0x200070e8
- 80213b0:	0802bc54 	.word	0x0802bc54
+ 80213b0:	0802bc6c 	.word	0x0802bc6c
  80213b4:	200070ec 	.word	0x200070ec
  80213b8:	20001464 	.word	0x20001464
  80213bc:	20005b8a 	.word	0x20005b8a
@@ -69909,9 +69909,9 @@ static void browser_key_press(int key) {
  802172c:	200007d8 	.word	0x200007d8
  8021730:	200070f4 	.word	0x200070f4
  8021734:	20001454 	.word	0x20001454
- 8021738:	08028844 	.word	0x08028844
+ 8021738:	0802885c 	.word	0x0802885c
  802173c:	200014b4 	.word	0x200014b4
- 8021740:	0802884f 	.word	0x0802884f
+ 8021740:	08028867 	.word	0x08028867
  8021744:	43ce0000 	.word	0x43ce0000
     long_t step = 0;
  8021748:	2400      	movs	r4, #0
@@ -70166,9 +70166,9 @@ ui_init()
   touch_start_watchdog();             // Start ADC watchdog (measure by timer 3 interval and trigger interrupt if touch pressed)
  8021924:	f7f9 bbcc 	b.w	801b0c0 <touch_start_watchdog>
  8021928:	200017ac 	.word	0x200017ac
- 802192c:	0802b308 	.word	0x0802b308
+ 802192c:	0802b320 	.word	0x0802b320
  8021930:	20001794 	.word	0x20001794
- 8021934:	0802cbbc 	.word	0x0802cbbc
+ 8021934:	0802cbd4 	.word	0x0802cbd4
 	...
 
 08021940 <wait_user>:
@@ -70603,7 +70603,7 @@ static bool SD_RxDataBlock(uint8_t *buff, uint16_t len, uint8_t token) {
   return TRUE;
  8021bd2:	e7e8      	b.n	8021ba6 <SD_RxDataBlock+0x16>
  8021bd4:	40020000 	.word	0x40020000
- 8021bd8:	0802cc0a 	.word	0x0802cc0a
+ 8021bd8:	0802cc22 	.word	0x0802cc22
  8021bdc:	00000000 	.word	0x00000000
 
 08021be0 <SD_WaitDataAccept>:
@@ -70938,7 +70938,7 @@ static void ili9341_DMA_bulk(uint16_t x, uint16_t y, uint16_t w, uint16_t h, pix
  8021e56:	e7e5      	b.n	8021e24 <ili9341_DMA_bulk+0x34>
  8021e58:	40020000 	.word	0x40020000
  8021e5c:	20003924 	.word	0x20003924
- 8021e60:	080264dc 	.word	0x080264dc
+ 8021e60:	080264f4 	.word	0x080264f4
 	...
 
 08021e70 <SD_Select_SPI_LOW>:
@@ -71107,7 +71107,7 @@ static void SD_Select_SPI(void) {
  8021fa4:	20007164 	.word	0x20007164
  8021fa8:	40020000 	.word	0x40020000
  8021fac:	20003924 	.word	0x20003924
- 8021fb0:	080264e4 	.word	0x080264e4
+ 8021fb0:	080264fc 	.word	0x080264fc
 	...
 
 08021fc0 <ili9341_flip>:
@@ -71278,7 +71278,7 @@ void ili9341_flip(bool flip) {
  8022106:	bf00      	nop
  8022108:	40013000 	.word	0x40013000
  802210c:	40020000 	.word	0x40020000
- 8022110:	0802cc0a 	.word	0x0802cc0a
+ 8022110:	0802cc22 	.word	0x0802cc22
  8022114:	48000400 	.word	0x48000400
 	...
 
@@ -71359,7 +71359,7 @@ void ili9341_flip(bool flip) {
  80221aa:	f7ff fdd1 	bl	8021d50 <send_command>
  80221ae:	e7ee      	b.n	802218e <ili9341_init+0x4e>
  80221b0:	48000400 	.word	0x48000400
- 80221b4:	0802cbd4 	.word	0x0802cbd4
+ 80221b4:	0802cbec 	.word	0x0802cbec
  80221b8:	20002024 	.word	0x20002024
  80221bc:	51eb851f 	.word	0x51eb851f
 
@@ -71483,7 +71483,7 @@ static msg_t lcd_put_7x11b(void *ip, uint8_t ch) {
  80222aa:	330b      	adds	r3, #11
  80222ac:	8143      	strh	r3, [r0, #10]
  80222ae:	e7f5      	b.n	802229c <lcd_put_7x11b+0x3c>
- 80222b0:	0802e574 	.word	0x0802e574
+ 80222b0:	0802e58c 	.word	0x0802e58c
 	...
 
 080222c0 <lcd_put5x7>:
@@ -71525,7 +71525,7 @@ static msg_t lcd_put5x7(void *ip, uint8_t ch) {
  8022306:	3308      	adds	r3, #8
  8022308:	8143      	strh	r3, [r0, #10]
  802230a:	e7f5      	b.n	80222f8 <lcd_put5x7+0x38>
- 802230c:	0802d0b0 	.word	0x0802d0b0
+ 802230c:	0802d0c8 	.word	0x0802d0c8
 
 08022310 <ili9341_drawstring>:
 {
@@ -71571,7 +71571,7 @@ static msg_t lcd_put5x7(void *ip, uint8_t ch) {
 }
  8022356:	b002      	add	sp, #8
  8022358:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
- 802235c:	0802d0b0 	.word	0x0802d0b0
+ 802235c:	0802d0c8 	.word	0x0802d0c8
 
 08022360 <ili9341_drawstring_7x13>:
 {
@@ -71625,7 +71625,7 @@ static msg_t lcd_put5x7(void *ip, uint8_t ch) {
 }
  80223b6:	b002      	add	sp, #8
  80223b8:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
- 80223bc:	0802e574 	.word	0x0802e574
+ 80223bc:	0802e58c 	.word	0x0802e58c
 
 080223c0 <ili9341_drawstring_10x14>:
 {
@@ -71676,7 +71676,7 @@ static msg_t lcd_put5x7(void *ip, uint8_t ch) {
 }
  8022416:	b002      	add	sp, #8
  8022418:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
- 802241c:	0802d390 	.word	0x0802d390
+ 802241c:	0802d3a8 	.word	0x0802d3a8
 
 08022420 <lcd_set_font>:
 void lcd_set_font(int type) {put_char = type == FONT_SMALL ? lcd_put5x7 : lcd_put_7x11b;}
@@ -71824,7 +71824,7 @@ int lcd_printf(int16_t x, int16_t y, const char *fmt, ...) {
     return 0;
  802254c:	2500      	movs	r5, #0
  802254e:	e7fa      	b.n	8022546 <ili9341_drawchar_size+0xb6>
- 8022550:	0802d390 	.word	0x0802d390
+ 8022550:	0802d3a8 	.word	0x0802d3a8
  8022554:	20007168 	.word	0x20007168
  8022558:	20007164 	.word	0x20007164
  802255c:	20007166 	.word	0x20007166
@@ -71877,7 +71877,7 @@ int lcd_printf(int16_t x, int16_t y, const char *fmt, ...) {
  80225bc:	b003      	add	sp, #12
  80225be:	f85d fb04 	ldr.w	pc, [sp], #4
  80225c2:	bf00      	nop
- 80225c4:	0802cc38 	.word	0x0802cc38
+ 80225c4:	0802cc50 	.word	0x0802cc50
 	...
 
 080225d0 <ili9341_line>:
@@ -72910,8 +72910,8 @@ static uint32_t gcd(uint32_t x, uint32_t y)
     dat |= SI5351_CLK_PLL_SELECT_B;
  8022cda:	f048 012c 	orr.w	r1, r8, #44	@ 0x2c
  8022cde:	e7ee      	b.n	8022cbe <si5351_setupMultisynth+0xbe>
- 8022ce0:	080264ec 	.word	0x080264ec
- 8022ce4:	080264f0 	.word	0x080264f0
+ 8022ce0:	08026504 	.word	0x08026504
+ 8022ce4:	08026508 	.word	0x08026508
 	...
 
 08022cf0 <si5351_set_frequency_fixedpll>:
@@ -73237,7 +73237,7 @@ static void si5351_set_frequency_fixeddiv(
 }
  8022f40:	4630      	mov	r0, r6
  8022f42:	bd70      	pop	{r4, r5, r6, pc}
- 8022f44:	0802cc0c 	.word	0x0802cc0c
+ 8022f44:	0802cc24 	.word	0x0802cc24
  8022f48:	2000816c 	.word	0x2000816c
  8022f4c:	00000000 	.word	0x00000000
 
@@ -75850,7 +75850,7 @@ static char Si446x_readRSSI(void){
  8024078:	7018      	strb	r0, [r3, #0]
   return 0;
  802407a:	e7e4      	b.n	8024046 <SI4463_start_rx+0x26>
- 802407c:	0802df0c 	.word	0x0802df0c
+ 802407c:	0802df24 	.word	0x0802df24
  8024080:	08080000 	.word	0x08080000
  8024084:	20008185 	.word	0x20008185
 	...
@@ -75875,7 +75875,7 @@ static char Si446x_readRSSI(void){
 }
  80240aa:	b003      	add	sp, #12
  80240ac:	f85d fb04 	ldr.w	pc, [sp], #4
- 80240b0:	08028859 	.word	0x08028859
+ 80240b0:	08028871 	.word	0x08028871
 	...
 
 080240c0 <si_set_offset>:
@@ -76238,7 +76238,7 @@ void SI4432_Listen(int s)
  80242d8:	20007116 	.word	0x20007116
  80242dc:	40007400 	.word	0x40007400
  80242e0:	200007ec 	.word	0x200007ec
- 80242e4:	0802e33c 	.word	0x0802e33c
+ 80242e4:	0802e354 	.word	0x0802e354
 	...
 
 080242f0 <Si446x_RSSI>:
@@ -76452,8 +76452,8 @@ static const uint8_t if_freq_low[6] =  { 0xc0, 0x60, 0x80, 0x40, 0, 0x80};
  8024432:	b003      	add	sp, #12
  8024434:	f85d fb04 	ldr.w	pc, [sp], #4
  8024438:	1b032011 	.word	0x1b032011
- 802443c:	0802df20 	.word	0x0802df20
- 8024440:	0802df18 	.word	0x0802df18
+ 802443c:	0802df38 	.word	0x0802df38
+ 8024440:	0802df30 	.word	0x0802df30
 	...
 
 08024450 <SI4463_set_modem_DSM>:
@@ -76468,7 +76468,7 @@ static const uint8_t if_freq_low[6] =  { 0xc0, 0x60, 0x80, 0x40, 0, 0x80};
  8024454:	461a      	mov	r2, r3
  8024456:	2105      	movs	r1, #5
  8024458:	f7ff bbfa 	b.w	8023c50 <SI4463_do_api>
- 802445c:	0802df10 	.word	0x0802df10
+ 802445c:	0802df28 	.word	0x0802df28
 
 08024460 <force_rbw>:
 }
@@ -76567,7 +76567,7 @@ uint16_t force_rbw(int f)
  8024500:	2000      	movs	r0, #0
 }
  8024502:	4770      	bx	lr
- 8024504:	0802df28 	.word	0x0802df28
+ 8024504:	0802df40 	.word	0x0802df40
  8024508:	20001500 	.word	0x20001500
  802450c:	200032f0 	.word	0x200032f0
  8024510:	20001504 	.word	0x20001504
@@ -76599,7 +76599,7 @@ uint16_t set_rbw(uint16_t WISH)  {
       break;
   return force_rbw(i);
  8024548:	f7ff bf8a 	b.w	8024460 <force_rbw>
- 802454c:	0802df28 	.word	0x0802df28
+ 802454c:	0802df40 	.word	0x0802df40
 
 08024550 <SI4463_set_freq>:
 freq_t SI4463_set_freq(freq_t freq)
@@ -76982,12 +76982,12 @@ void SI4463_init_rx(void)
  80247de:	bf00      	nop
  80247e0:	48000400 	.word	0x48000400
  80247e4:	000186a0 	.word	0x000186a0
- 80247e8:	0802885f 	.word	0x0802885f
- 80247ec:	08028871 	.word	0x08028871
+ 80247e8:	08028877 	.word	0x08028877
+ 80247ec:	08028889 	.word	0x08028889
  80247f0:	20008186 	.word	0x20008186
- 80247f4:	08028887 	.word	0x08028887
+ 80247f4:	0802889f 	.word	0x0802889f
  80247f8:	20001500 	.word	0x20001500
- 80247fc:	0802e360 	.word	0x0802e360
+ 80247fc:	0802e378 	.word	0x0802e378
 
 08024800 <SI4463_init_tx>:
 
