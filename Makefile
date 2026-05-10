@@ -162,6 +162,7 @@ CSRC = $(STARTUPSRC) \
        $(PLATFORMSRC) \
        $(BOARDSRC) \
        $(STREAMSSRC) \
+       $(CHIBIOS)/os/various/syscalls.c \
        FatFs/ff.c \
        FatFs/ffunicode.c \
        usbcfg.c \

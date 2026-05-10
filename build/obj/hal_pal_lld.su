@@ -1,3 +1,0 @@
-ChibiOS/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.c:61:13:initgpio	0	static
-ChibiOS/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.c:88:6:_pal_lld_init	8	static
-ChibiOS/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.c:159:6:_pal_lld_setgroupmode	32	static
