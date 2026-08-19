@@ -775,13 +775,15 @@ enum trace_type {
 // Electrical Delay
 // Phase
 
-#define MAX_UNIT_TYPE 7     // Index of U_DBC
+#define MAX_UNIT_TYPE 8     // Index of U_DBC
+// New units must be appended before U_DBC, the values below U_DBC are stored in
+// setting.unit (flash presets and .prs files) and may not be renumbered
 enum unit_type {
-  U_DBM=0, U_DBMV, U_DBUV, U_RAW, U_VOLT, U_VPP, U_WATT, U_DBC //  dBc only for displaying delta marker info
+  U_DBM=0, U_DBMV, U_DBUV, U_RAW, U_VOLT, U_VPP, U_WATT, U_DBV, U_DBC //  dBc only for displaying delta marker info
 };
 
-#define UNIT_IS_LINEAR(T) ( T >= U_VOLT ? true : false)
-#define UNIT_IS_LOG(T) ( T >= U_VOLT ? false : true)
+#define UNIT_IS_LINEAR(T) ((T) >= U_VOLT && (T) <= U_WATT)
+#define UNIT_IS_LOG(T)   (!UNIT_IS_LINEAR(T))
 
 float value(float);
 float index_to_value(const int i);
@@ -984,6 +986,7 @@ extern int8_t marker_tracking;
 
 void plot_init(void);
 void update_grid(void);
+void update_grid_if_changed(void);
 void request_to_redraw_grid(void);
 void redraw_frame(void);
 //void redraw_all(void);
@@ -1593,6 +1596,7 @@ extern const char * const averageText[];
 extern uint8_t menu_current_level;
 void menu_invoke(int item);
 extern char    kp_buf[];
+void ui_set_keypad_text(const char *text);
 void set_numeric_value(void);
 
 void ui_mode_normal(void);
@@ -1758,6 +1762,11 @@ void testLog(void);        // debug log
 void sd_card_load_config(char *filename);
 extern systime_t last_auto_save;
 void save_csv(uint8_t mask);
+#ifdef __SD_FILE_BROWSER__
+// Full path of the preset last loaded from SD, empty when the active preset did
+// not come from SD. Used to default the name when storing a preset back to SD.
+extern char sd_preset_path[FF_LFN_BUF];
+#endif
 #endif
 
 /*
@@ -1834,7 +1843,7 @@ int plot_printf(char *str, int, const char *fmt, ...);
 #define define_to_STR(x)  STR1(x)
 
 // sa_core.c
-
+#define MIN_RSSI_VALUE  ( -160 )
 typedef uint8_t  deviceRSSI_t;
 typedef int16_t  pureRSSI_t;
 extern int current_index;

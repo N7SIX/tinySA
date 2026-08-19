@@ -70,8 +70,21 @@ endif
 # or     va.b-nnn-gxxxxxxx
 # or     ...
 
+VERSION_FILE = version.txt
+GIT_VERSION = $(strip $(shell git describe --tags --long --always --dirty 2>/dev/null))
+
+ifeq ($(GIT_VERSION),)
+  GIT_VERSION = unknown
+endif
+
+FILE_VERSION = $(strip $(shell cat $(VERSION_FILE) 2>/dev/null))
+
+ifneq ($(FILE_VERSION),$(GIT_VERSION))
+  $(shell printf '%s\n' '$(GIT_VERSION)' > $(VERSION_FILE))
+endif
+
 ifeq ($(VERSION),)
-  VERSION="$(PROJECT)"
+  VERSION="$(PROJECT)_$(GIT_VERSION)"
 endif
 
 ##############################################################################
@@ -106,7 +119,7 @@ endif
 
 # Define project name here
 ifeq ($(TARGET),F303)
-PROJECT = tinySA4_N7SIX_v7.6.$(shell git rev-list --count HEAD).$(shell git rev-parse --short HEAD)
+PROJECT = tinySA4
 else
 PROJECT = tinySA
 endif
@@ -162,7 +175,6 @@ CSRC = $(STARTUPSRC) \
        $(PLATFORMSRC) \
        $(BOARDSRC) \
        $(STREAMSSRC) \
-       $(CHIBIOS)/os/various/syscalls.c \
        FatFs/ff.c \
        FatFs/ffunicode.c \
        usbcfg.c \
@@ -297,17 +309,12 @@ RULESPATH = $(CHIBIOS)/os/common/startup/ARMCMx/compilers/GCC
 include $(RULESPATH)/rules.mk
 #include $(CHIBIOS)/memory.mk
 
-# Auto-clean before build
-ifneq ($(MAKECMDGOALS),clean)
-ifneq ($(MAKECMDGOALS),)
-$(info Cleaning old build artifacts...)
-$(shell rm -f -rf build/tinySA4* build/lst/*.* build/obj/*.*)
-endif
-endif
+$(OBJS): $(VERSION_FILE)
+
 
 ifeq ($(TARGET),F303)
 clean:
-	rm -f -rf build/tinySA4* build/lst/*.* build/obj/*.*
+	rm -f -rf build/tinySA4.* build/lst/*.* build/obj/*.*
 else
 clean:
 	rm -f -rf build/$(PROJECT).* build/lst/*.* build/obj/*.*
@@ -331,4 +338,4 @@ else
 	@etags *.[ch] NANOVNA_STM32_F072/*.[ch] $(shell find ChibiOS/os/hal/ports/STM32/STM32F0xx ChibiOS/os -name \*.\[ch\] -print) 
 endif
 	@ls -l TAGS
-
+  

@@ -96,6 +96,31 @@ char    kp_buf[NUMINPUT_LEN+2];  // !!!!!! WARNING size must be + 2 from NUMINPU
 #else
 char    kp_buf[TXTINPUT_LEN+1];  // !!!!!! WARNING size must be + 2 from NUMINPUT_LEN or TXTINPUT_LEN + 1
 #endif
+
+void ui_set_keypad_text(const char *text)
+{
+  plot_printf(kp_buf, sizeof(kp_buf), "%s", text);
+}
+
+// Set when kp_buf holds a default that the next keypad must start with instead
+// of an empty buffer, so a single ENTER accepts it unchanged
+static bool keypad_text_preset = false;
+
+// Set while handling a keypad key that was held down longer than a short tap
+static bool keypad_long_press = false;
+
+#ifdef __SD_FILE_BROWSER__
+// Preset the keypad input with the first len characters of text
+static void ui_preset_keypad_text(const char *text, int len)
+{
+  if (len > (int)sizeof(kp_buf) - 1)
+    len = sizeof(kp_buf) - 1;
+  memcpy(kp_buf, text, len);
+  kp_buf[len] = 0;
+  keypad_text_preset = true;
+}
+#endif
+
 static uint8_t ui_mode = UI_NORMAL;
 static uint8_t keypad_mode;
 static char   *kp_help_text = NULL;
@@ -658,6 +683,7 @@ show_version(void)
   ili9341_drawstring_10x14(info_about[i++], x , y);
   ili9341_drawstring_10x14(hw_text, x + 138 , y);
   y+=FONT_GET_HEIGHT*3+2-5;
+  ili9341_drawstring_7x13(info_about[i++], x , y);
   while (info_about[i]) {
     do {shift>>=1; y+=5;} while (shift&1);
     ili9341_drawstring_7x13(info_about[i++], x, y+=bFONT_STR_HEIGHT+2-5);
@@ -4344,6 +4370,12 @@ static const char *file_ext[] = {
   [FMT_BND_FILE] = "bnd",
 };
 
+#ifdef __SD_FILE_BROWSER__
+// Full path of the preset last loaded from SD, empty when the active preset did
+// not come from SD (startup preset, stored slot or factory defaults).
+char sd_preset_path[FF_LFN_BUF] = {0};
+#endif
+
 static void sa_save_file(uint8_t format);
 
 static UI_FUNCTION_CALLBACK(menu_sdcard_cb) {
@@ -5297,6 +5329,7 @@ static const menuitem_t menu_display[] = {
 static const menuitem_t menu_unit[] =
 {
   { MT_ADV_CALLBACK,U_DBM,   "dBm",             menu_unit_acb},
+  { MT_ADV_CALLBACK,U_DBV,   "dBV",             menu_unit_acb},
   { MT_ADV_CALLBACK,U_DBMV,  "dBmV",            menu_unit_acb},
   { MT_ADV_CALLBACK,U_DBUV,  "dB"S_MICRO"V",    menu_unit_acb},
   { MT_ADV_CALLBACK,U_VOLT,  "Vrms",            menu_unit_acb},
@@ -6183,7 +6216,8 @@ float my_round(float v)
   }
   return v;
 }
-const char * const unit_string[MAX_UNIT_TYPE*2] = { "dBm", "dBmV", "dB"S_MICRO"V", "RAW", "Vrms", "Vpp", "W", "dB", "dB", "dB", "RAW", "Vrms", "Vpp", "W" }; // unit + 6 is delta unit
+const char * const unit_string[MAX_UNIT_TYPE*2] = { "dBm", "dBmV", "dB"S_MICRO"V", "RAW", "Vrms", "Vpp", "W", "dBV",
+                                                    "dB",  "dB",   "dB",           "RAW", "Vrms", "Vpp", "W", "dB" }; // unit + MAX_UNIT_TYPE is delta unit
 
 //static const float scale_value[]={50000, 20000, 10000, 5000, 2000, 1000, 500, 200, 100, 50, 20,10,5,2,1,0.5,0.2,0.1,0.05,0.02,0.01,0.005,0.002, 0.001,0.0005,0.0002, 0.0001};
 //static const char * const scale_vtext[]= {"50000", "20000", "10000", "5000", "2000", "1000", "500", "200", "100", "50", "20","10","5","2","1","0.5","0.2","0.1","0.05","0.02","0.01", "0.005","0.002","0.001", "0.0005","0.0002","0.0001"};
@@ -6348,8 +6382,9 @@ redraw_cal_status:
 #endif
 //  if (setting.mode == M_LOW) {
     // Attenuation
-    ili9341_set_foreground(setting.auto_attenuation ? LCD_FG_COLOR : LCD_BRIGHT_COLOR_GREEN);
-    lcd_printf(x, y, "Atten:\n%4.2FdB", get_attenuation());
+    const float attenuation = get_attenuation();
+    ili9341_set_foreground(setting.auto_attenuation ? (attenuation > 0.f ? LCD_BRIGHT_COLOR_RED : LCD_FG_COLOR) : LCD_BRIGHT_COLOR_GREEN);
+    lcd_printf(x, y, "Atten:\n%4.2FdB", attenuation);
     y = add_quick_menu(y+= YSTEP, (menuitem_t *)menu_atten);
 //  }
 
@@ -6363,7 +6398,7 @@ redraw_cal_status:
 #ifdef TINYSA3
   if (setting.spur_removal != S_OFF) {
 #endif
-    ili9341_set_foreground(setting.spur_removal == S_ON ? LCD_BRIGHT_COLOR_GREEN : LCD_FG_COLOR);
+    ili9341_set_foreground(setting.spur_removal == S_ON ? LCD_BRIGHT_COLOR_GREEN : (setting.spur_removal == S_OFF ? LCD_BRIGHT_COLOR_RED : LCD_FG_COLOR));
     lcd_printf(x, y, "Spur:\n%s", S_IS_AUTO(setting.spur_removal) ? "AUTO" : (setting.spur_removal == S_OFF ?"OFF" : "ON"));
     y = add_quick_menu(y += YSTEP, (menuitem_t *)menu_config);
 #ifdef TINYSA3
@@ -6412,7 +6447,7 @@ redraw_cal_status:
 #if 0                   // Activate for sweep time debugging
   lcd_printf(x, y, "%cScan:\n%5.3Fs", fscan[setting.step_delay_mode&7], (float)setting.sweep_time_us/ONE_SECOND_TIME);
 #endif
-  ili9341_set_foreground((setting.step_delay_mode&7) != 0 ? LCD_BRIGHT_COLOR_GREEN : LCD_FG_COLOR);
+  ili9341_set_foreground((setting.step_delay_mode&7) != 0 ? (setting.step_delay_mode == SD_FAST ? LCD_BRIGHT_COLOR_RED : LCD_BRIGHT_COLOR_GREEN) : LCD_FG_COLOR);
   lcd_printf(x, y, "%cScan:", fscan[setting.step_delay_mode&7]);
   ili9341_set_foreground((setting.step_delay || setting.sweep_time_us ) ? LCD_BRIGHT_COLOR_GREEN : LCD_FG_COLOR);
   lcd_printf(x, y+YSTEP, "%5.3Fs",(float)setting.actual_sweep_time_us/ONE_SECOND_TIME);
@@ -6532,33 +6567,27 @@ redraw_cal_status:
 
   // Version
   y += YSTEP + YSTEP/2 ;
-#ifdef TINYSA4 // 'tinySA4_N7SIX_v7.6.x.xxxxxx'
-  {
-    char *version_start = &TINYSA_VERSION[13]; // Skip "tinySA4_N7SIX_"
-    // Parse "v7.6.2238.c979386" to create "7.6.2.c9" format
-    char *dot1 = strchr(version_start, '.'); // After "v7"
-    if (dot1) {
-      char *dot2 = strchr(dot1 + 1, '.'); // After "v7.6"
-      if (dot2) {
-        char *dot3 = strchr(dot2 + 1, '.'); // After "v7.6.2238"
-        if (dot3) {
-          // Format: "7.6.X.Y" where X is first digit of commit count, Y is first char of hash
-          char commit_count_first_digit = *(dot2 + 1); // First digit after "v7.6."
-          char hash_first_char = *(dot3 + 1); // First char after "v7.6.2239."
-          snprintf(buf, BLEN + 1, "7.6.%c.%c", commit_count_first_digit, hash_first_char);
-        } else {
-          strncpy(buf, "7.6.?.??", BLEN + 1);
-        }
-      } else {
-        strncpy(buf, "7.6.?.??", BLEN + 1);
-      }
-    } else {
-      strncpy(buf, "7.6.?.??", BLEN + 1);
-    }
-  }
+#ifdef TINYSA4 // 'tinySA4_v1.2-[0-9]*-gxxxxxxx'
+  strncpy(buf,&TINYSA_VERSION[9], BLEN+1); // '1.2-...'
 #else // 'tinySA_v1.2-[0-9]*-gxxxxxxx'
   strncpy(buf,&TINYSA_VERSION[8], BLEN+1); // '1.2-...'
 #endif
+  if (buf[5]=='-' ) { // '1.2-n-g...'
+    if (buf[4]=='0')  // '1.2-0-g...'
+      buf[3] = 0;  // -> '1.2'
+    else {
+      buf[5] = buf[4]; // -> '1.200n'
+      buf[4] = '0';
+      buf[3] = '0';
+    }
+  } else if (buf[6]=='-' ) { // 1.2-nn-g...
+    buf[3] = '0'; // -> '1.20nn'
+  } else { // 1.2-345-g... (or 1.2-3456...)
+    buf[3] = buf[4]; // -> '1.2345'
+    buf[4] = buf[5];
+    buf[5] = buf[6];
+  }
+  buf[6] = 0;
   ili9341_drawstring(buf, x, y);
 
 #ifdef TINYSA4
@@ -6643,9 +6672,11 @@ static const menuitem_t *menu_next_item(const menuitem_t *m, int *sub_item){
 }
 
 static const menuitem_t *current_menu_item(int i, int *sub_item){
+  if (i < 0)
+    return NULL;
   *sub_item = 0;
   const menuitem_t * m = menu_stack[menu_current_level];
-  while (i--) m = menu_next_item(m,sub_item);
+  while (i-- && m != NULL) m = menu_next_item(m,sub_item);
   return m;
 }
 
@@ -7795,7 +7826,10 @@ full_keypad_click(int c, int kp_index)
   if (c == S_LARROW[0]) { // Backspace
     if (kp_index == 0)
       return KP_CANCEL;
-    --kp_index;
+    if (keypad_long_press)          // long press erases the whole input, stay in the keypad
+      kp_index = 0;
+    else
+      --kp_index;
   } else if (kp_index < TXTINPUT_LEN) { // any other text input
     kp_buf[kp_index++] = c;
   }
@@ -7828,7 +7862,9 @@ keypad_apply_touch(void)
     int old = selection;
     draw_keypad_button(selection = i);  // draw new focus
     draw_keypad_button(old);            // Erase old focus
+    systime_t ticks = chVTGetSystemTimeX();
     touch_wait_release();
+    keypad_long_press = (chVTGetSystemTimeX() - ticks) >= BUTTON_DOWN_LONG_TICKS;
     selection = -1;
     draw_keypad_button(i);              // erase new focus
     return i;                           // Process input;
@@ -7844,8 +7880,20 @@ ui_process_keypad(void)
 {
   int status;
   int keypads_last_index = keypads[0].pos - 1;
-  kp_buf[0] = 0;
+  // Keep a preset default only when the keypad is really shown, a remote menu
+  // invoke must not silently accept it
+  bool preset_text = keypad_text_preset && !in_menu_command;
+  keypad_text_preset = false;
+  keypad_long_press = false;
+  if (!preset_text)
+    kp_buf[0] = 0;
   if (in_menu_command) return;
+  if (preset_text) {                          // show the default, ENTER accepts it as is
+    if (keypads[0].c == NUM_KEYBOARD)
+      draw_numeric_input(kp_buf);
+    else
+      draw_text_input(kp_buf);
+  }
   while (TRUE) {
     status = btn_check();
     if (status & (EVT_UP|EVT_DOWN)) {
@@ -7862,6 +7910,7 @@ ui_process_keypad(void)
     }
 
     if (status == EVT_BUTTON_SINGLE_CLICK) {
+      keypad_long_press = false;        // lever click is never a long press
       if (selection >= 0 && keypad_click(selection))
         /* exit loop on done or cancel */
         break;
@@ -8023,6 +8072,17 @@ static void sa_save_file(uint8_t format) {
 #endif
   }
   else {
+#ifdef __SD_FILE_BROWSER__
+    // Storing a preset: offer the SD preset it was loaded from as default name,
+    // so a single ENTER writes back to that same file
+    if (format == FMT_PRS_FILE && sd_preset_path[0]) {
+      int len = strlen(sd_preset_path);
+      int ext = strlen(file_ext[format]) + 1;             // ".prs"
+      if (len > ext && sd_preset_path[len - ext] == '.')  // keypad adds the extension back
+        len -= ext;
+      ui_preset_keypad_text(sd_preset_path, len);
+    }
+#endif
     ui_mode_keypad(KM_FILENAME);
     if (kp_buf[0] == 0) return;
     plot_printf(fs_filename, FF_LFN_BUF, "%s.%s", kp_buf, file_ext[format]);
@@ -8074,8 +8134,8 @@ static void sa_save_file(uint8_t format) {
               buf += plot_printf(buf, 100, "%U,", getFrequency(i));
           }
           if (file_mask & 2)  buf += plot_printf(buf, 100, "%.3f", value(measured[TRACE_ACTUAL][i]));
-          if (file_mask & 4)  buf += plot_printf(buf, 100, " %.3f ", value(measured[TRACE_STORED][i]));
-          if (file_mask & 8)  buf += plot_printf(buf, 100, " %.3f ", value(measured[TRACE_STORED2][i]));
+          if (file_mask & 4)  buf += plot_printf(buf, 100, " %.3f", value(measured[TRACE_STORED][i]));
+          if (file_mask & 8)  buf += plot_printf(buf, 100, " %.3f", value(measured[TRACE_STORED2][i]));
           if (file_mask & 16) buf += plot_printf(buf, 100, " %.3f", value(measured[TRACE_TEMP][i]));
           buf += plot_printf(buf, 100, "\r\n");
           res = f_write(fs_file, (char *)spi_buffer, buf - (char *)spi_buffer, &size);

@@ -233,6 +233,9 @@ caldata_recall(uint16_t id)
 
   /* duplicated saved data onto sram to be able to modify marker/trace */
   memcpy(dst, src, sizeof(setting_t));
+#ifdef __SD_FILE_BROWSER__
+  sd_preset_path[0] = 0;              // this preset came from flash, not from SD
+#endif
 #if 0
   // Restore stored trace
   src = &(src[1]);
@@ -283,4 +286,3 @@ clear_all_config_prop_data(void)
     p += FLASH_PAGESIZE;
   }
 }
-

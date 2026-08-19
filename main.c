@@ -93,10 +93,9 @@ uint16_t redraw_request = 0; // contains REDRAW_XXX flags
 // Version text, displayed in Config->Version menu, also send by info command
 const char * const info_about[]={
   BOARD_NAME,
-  "2025-2030 Copyright @Sean Ebue, N7SIX",
   "2019-2024 Copyright @Erik Kaashoek",
   "2016-2020 Copyright @edy555",
-  "SW licensed under GPL. See: https://github.com/N7SIX/tinySA",
+  "SW licensed under GPL. See: https://github.com/erikkaashoek/tinySA",
   "Version: " VERSION,
   "Build Time: " __DATE__ " - " __TIME__,
   "Kernel: " CH_KERNEL_VERSION,
@@ -162,7 +161,8 @@ static THD_FUNCTION(Thread1, arg)
   while (1) {
 //  START_PROFILE
     if (sweep_mode&(SWEEP_ENABLE|SWEEP_ONCE)) {
-      backup_t b;
+      /* Initialize the reserved byte covered by the checksum too. */
+      backup_t b = {0};
       b.data.frequency0 = setting.frequency0;
       b.data.frequency1 = setting.frequency1;
       if (setting.auto_attenuation)
@@ -956,12 +956,7 @@ VNA_SHELL_FUNCTION(cmd_text)
 {
   if (argc!= 1)
     return;
-  char *p = argv[0];
-  char *t = kp_buf;
-  while (*p) {
-    *t++ = *p++;
-  }
-  *t = 0;
+  ui_set_keypad_text(argv[0]);
   uistat.value = my_atof(kp_buf);
   uistat.freq_value = my_atoui(kp_buf);
   set_numeric_value();
@@ -1433,7 +1428,7 @@ VNA_SHELL_FUNCTION(cmd_scan)
   }
   if (argc >= 3) {
     int points = my_atoi(argv[2]);
-    if (points <= 0 || points > POINTS_COUNT) {
+    if (points < 2 || points > POINTS_COUNT) {
       shell_printf("sweep points exceeds range "define_to_STR(POINTS_COUNT)"\r\n");
       return;
     }
@@ -1991,10 +1986,10 @@ show_one:
     do_one = true;
     goto show_one;
   }
-#if MAX_UNIT_TYPE != 7
+#if MAX_UNIT_TYPE != 8
 #error "Unit type enum possibly changed, check cmd_trace function"
 #endif
-  static const char cmd_type_list[] = "dBm|dBmV|dBuV|RAW|V|Vpp|W";
+  static const char cmd_type_list[] = "dBm|dBmV|dBuV|RAW|V|Vpp|W|dBV";
   if (argc == 1) {
     int type = get_str_index(argv[0], cmd_type_list);
     if (type >= 0) {
@@ -2042,15 +2037,23 @@ show_one:
   static const char cmd_load_list[] = "copy|freeze|subtract|view|value";
   if (argc >= 2) {
     switch (get_str_index(argv[next_arg++], cmd_load_list)) {
-    case 0:
-      store_trace(t, my_atoi(argv[next_arg++])-1); // copy {trace}
+    case 0: {
+      int destination = my_atoi(argv[next_arg++])-1; // copy {trace}
+      if ((uint32_t)destination >= TRACES_MAX)
+        goto usage;
+      store_trace(t, destination);
       goto update;
+      }
     case 1:
       setting.stored[t]= (get_str_index(argv[next_arg++], "off|on") == 1); // freeze {off|on}
       goto update;
-    case 2:
-      subtract_trace(t,my_atoi(argv[next_arg++])-1);
+    case 2: {
+      int source = my_atoi(argv[next_arg++])-1;
+      if ((uint32_t)source >= TRACES_MAX)
+        goto usage;
+      subtract_trace(t, source);
       goto update;
+      }
     case 3:
       if (get_str_index(argv[next_arg++], "off|on") == 1)
         { TRACE_ENABLE(1<<t); }
@@ -2059,8 +2062,10 @@ show_one:
       goto update;
     case 4:
       {
+      if (argc != 3)
+        goto usage;
       int i = my_atoi(argv[next_arg++]);
-      if (i>= sweep_points)
+      if ((uint32_t)i >= sweep_points)
         goto usage;
       float v = my_atof(argv[next_arg]);
       measured[t][i] = v;
@@ -2139,8 +2144,12 @@ VNA_SHELL_FUNCTION(cmd_marker)
       //      M_NORMAL=0,M_REFERENCE=1, M_DELTA=2, M_NOISE=4, M_STORED=8, M_AVER=16, M_TRACKING=32, M_DELETE=64  // Tracking must be last.
     case 3:
       tr=0;
-      if (argc == 3 && argv[2][0] >= '1' && argv[2][0] <= '9') {
+      if (argc != 3)
+        goto usage;
+      if (argv[2][0] >= '1' && argv[2][0] <= '9') {
         tr = my_atoui(argv[2])-1;
+        if ((uint32_t)tr >= MARKERS_MAX)
+          goto usage;
         markers[t].mtype |= M_DELTA;
         markers[t].ref= tr;
       } else if (get_str_index(argv[2],cmd_marker_on_off) == 0) {
@@ -2154,10 +2163,11 @@ VNA_SHELL_FUNCTION(cmd_marker)
       marker_mask = M_TRACKING;
       goto set_mask;
     case 6:
-      tr=0;
-      if (argc == 3 && argv[2][0] >= '1' && argv[2][0] <= '9') {
-        tr = my_atoui(argv[2])-1;
-      }
+      if (argc != 3 || argv[2][0] < '1' || argv[2][0] > '9')
+        goto usage;
+      tr = my_atoui(argv[2])-1;
+      if ((uint32_t)tr >= TRACES_MAX)
+        goto usage;
       markers[t].trace= tr;
       return;
     case 7:
@@ -2286,14 +2296,14 @@ typedef struct version_t {
   const char *hw_text;
 } version_t;
 
-#define MAX_VERSION_TEXT    5
-const version_t hw_version_text[MAX_VERSION_TEXT] =
+const version_t hw_version_text[] =
 {
  { 165, 179,    "V0.4.5.1",     1,      0, " ZS405"},
  { 180, 195,    "V0.4.5.1.1",   2,      0, " ZS405"},
  { 250, 350,    "V0.4.6",       3,      1, "+ ZS406"},
  { 2200, 2299,  "V0.5.4",       103,    1, "+ ZS407"},
 };
+#define MAX_VERSION_TEXT    (sizeof(hw_version_text) / sizeof(hw_version_text[0]))
 
 uint16_t hwid = 0;
 uint16_t hw_if = 0;
@@ -2308,7 +2318,7 @@ const char *get_hw_version_text(void)
     chThdSleepMilliseconds(1);
     v = adc1_single_read(0);
   }
-  for (int i=0; i<MAX_VERSION_TEXT;i++) {
+  for (size_t i=0; i<MAX_VERSION_TEXT;i++) {
     if (hw_version_text[i].min_adc <= v && v <= hw_version_text[i].max_adc) {
       hwid = hw_version_text[i].hwid;
       hw_if = hw_version_text[i].hw_if;
@@ -2385,7 +2395,7 @@ VNA_SHELL_FUNCTION(cmd_color)
     return;
   }
   i = my_atoi(argv[0]);
-  if (i >= MAX_PALETTE)
+  if (i < 0 || i >= MAX_PALETTE)
     return;
   color = RGBHEX(my_atoui(argv[1]));
   config.lcd_palette[i] = color;
@@ -2708,8 +2718,8 @@ void shell_reset_console(void){
   // Reset I/O queue over Serial
 //  oqResetI(&SD1.oqueue);
 //  iqResetI(&SD1.iqueue);
-  oqResetI(&SD1.oqueue);
-  iqResetI(&SD1.iqueue);
+  qResetI(&SD1.oqueue);
+  qResetI(&SD1.iqueue);
 
 }
 
@@ -2759,6 +2769,10 @@ static bool shell_check_connect(void){
 
 // Init shell I/O connection over USB
 static void shell_init_connection(void){
+/*
+ * Init shell thread object (need for switch threads)
+ */
+  osalThreadQueueObjectInit(&shell_thread);
 /*
  * Initializes and start serial-over-USB CDC driver SDU1, connected to USBD1
  */
@@ -3532,6 +3546,3 @@ void hard_fault_handler_c(uint32_t *sp)
   while (true) {
   }
 }
-
-
-
